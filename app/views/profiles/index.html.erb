@@ -1,0 +1,25 @@
+<%= render 'shared/tagbar' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">Profiles</h2>
+    <h2 class="page-subhead">Short paragraph explaining the aims of the section, </h2>
+
+    <div class="grid_flex">
+      <% @profiles.each do |profile| %>
+        <%= link_to profile_path(profile) do %>
+          <div class="card">
+            <div class="card-img" style="background-image: url('<%= profile.photo %>')">
+              <div class="card-tag"><%= profile.tag %></div>
+            </div>
+            <div class="card-headline">
+              "<%= profile.headline %>"
+            </div>
+            <div class="card-subhead"><%= profile.subhead %></div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
+

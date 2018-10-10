@@ -1,0 +1,11 @@
+  // Graphical variables
+@import "config/fonts";
+@import "config/variables";
+@import "config/general";
+@import "config/grid";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+@import "layouts/profile";

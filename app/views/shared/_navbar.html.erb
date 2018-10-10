@@ -1,0 +1,30 @@
+<div class="navbar">
+
+  <!-- Left Navigation -->
+  <a href="/" class="navbar-left">
+    <%= image_tag "logo_temp.png", id: "logo" %>
+  </a>
+
+  <!-- Center Navigation -->
+  <div class="navbar-center hidden-xs">
+
+    <%= link_to "About", about_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Updates", updates_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Profiles", profiles_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Opinions", opinions_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Video", video_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Podcast", podcast_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Events", events_path, class: "navbar-item navbar-link" %>
+    <%= link_to "Spaces", spaces_path, class: "navbar-item navbar-link" %>
+
+  </div>
+
+  <!-- right Navigation -->
+  <div class="navbar-right">
+    <i class="social fab fa-twitter"></i>
+    <i class="social fab fa-facebook-f"></i>
+    <i class="social fab fa-instagram"></i>
+    <i class="social fab fa-linkedin-in"></i>
+  </div>
+
+</div>

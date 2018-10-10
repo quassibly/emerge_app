@@ -1,0 +1,24 @@
+<%= render 'shared/tagbar' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">Opinions</h1>
+    <h2 class="page-subhead">Short paragraph explaining the aims of the section</h2>
+
+    <div class="grid_flex">
+      <% @opinions.each do |opinion| %>
+        <%= link_to opinion_path(opinion) do %>
+          <div class="card">
+            <div class="card-img" style="background-image: url('<%= opinion.photo %>')">
+              <div class="card-tag"><%= opinion.tag %></div>
+            </div>
+            <div class="card-headline">
+              <span class="card-contributor"><%= opinion.contributor.name %></span> <span class="card-quote">"<%= opinion.headline %>"</span>
+            </div>
+            <div class="card-subhead"><%= opinion.subhead %></div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

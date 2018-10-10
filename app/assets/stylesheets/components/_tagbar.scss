@@ -1,0 +1,35 @@
+/* Main tagbar */
+.tagbar-container {
+  background: white;
+  transition: all 0.3s ease;
+  height: 32px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky !important;
+  top: 70px;
+  z-index: 1;
+}
+
+.tagbar {
+  justify-content: space-between;
+}
+
+/* Basic tagbar item */
+.tagbar-item {
+  cursor: pointer;
+  padding: 0 5px;
+  font-family: $primary-font;
+  flex: auto;
+}
+
+/* tagbar link */
+.tagbar-link {
+  font-size: 13px;
+  text-decoration: none;
+}
+.tagbar-link:hover {
+  color: #da552f;
+  text-decoration: none;
+}

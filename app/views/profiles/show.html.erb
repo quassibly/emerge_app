@@ -1,0 +1,21 @@
+<div class="profile-header-photo" style="background-image: url('<%= @profile.photo %>')">
+  <div class="profile-head-card">
+    <div class="profile-category"><%= @profile.category %></div>
+    <div class="profile-headline"><h1>"<%= @profile.headline %>"</h1></div>
+    <div class="profile-strapline"><%= @profile.subhead %></div>
+    <div class="profile-tag"><%= @profile.tag %></div>
+  </div>
+</div>
+
+<div class="profile-container">
+  <div class="profile-social">
+    <i class="social fab fa-twitter"></i>
+    <i class="social fab fa-facebook-f"></i>
+    <i class="social fab fa-instagram"></i>
+    <i class="social fab fa-linkedin-in"></i>
+  </div>
+
+  <div class="profile-body"><%= @profile.body %></div>
+</div>
+
+

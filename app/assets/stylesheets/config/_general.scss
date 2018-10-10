@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  background: image-url('Frame.jpg') repeat-y center;
+  min-height: 1vh;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $secondary-font;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: $secondary-font;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-size: 25px;
+  letter-spacing: .02em;
+}
+
+input, select {
+  outline: none !important;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+.heading {
+  font-family: $secondary-font;
+  font-weight: 300;
+}
+
+.link {
+  padding: 18px 4px;
+}
+
+.container-pp {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.main-container {
+  min-height: calc(100vh - 170px);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.social {
+  padding: 5px;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.primary {
+  font-family: $primary-font;
+}
+
+.secondary {
+  font-family: $secondary-font !important;
+}
+
+.white {
+  color: white;
+}
