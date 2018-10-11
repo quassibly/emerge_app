@@ -1,0 +1,12 @@
+
+<%= form_for @profile, url: {action: "create"}, html: {class: "article_form"} do |f| %>
+  <%= f.text_field :photo, placeholder: "photo url" %>
+  <%= f.hidden_field :category, value: "profile" %>
+  <%= f.text_field :person, placeholder: "Person" %>
+  <%= f.text_field :headline, placeholder: "Headline" %>
+  <%= f.text_field :subhead, placeholder: "Subhead" %>
+  <%= f.select :tag, ["Art", "Politics", "Business", "Society", "Education", "Spirituality", "Science", "Technology", "Philosophy"], prompt: "select tag" %>
+  <%= f.collection_select :contributor_id, Contributor.all.sort, :id, :name, prompt: "select contributor" %>
+  <%= f.trix_editor :body %>
+  <%= f.submit %>
+<% end %>
