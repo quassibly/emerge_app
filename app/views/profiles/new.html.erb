@@ -1,10 +1,35 @@
-<%= form_for @profile, url: {action: "create"}, html: {class: "article_form"} do |f| %>
-  <%= f.hidden_field :category, value: "profile" %>
-  <h3>Subject: <%= f.text_field :subject, value: "Name" %></h3>
-  <h3>Headline: <%= f.text_field :headline %></h3>
-  <h3>Strapline:<%= f.text_field :subhead %></h3>
-  <h3>Tag: <%= f.text_field :tag %></h3>
-  <h3>Contributor: <%= f.text_field :contributor_id %></h3>
-  <h3>Featured Photo: <%= f.text_field :photo %></h3>
 
+<%= form_for @profile, url: {action: "create"}, html: {class: "article_form"} do |f| %>
+  <div class="profile-header-photo">
+    <%= f.text_field :photo, placeholder: "photo url" %>
+    <div class="profile-head-card">
+      <div class="profile-category">
+        <%= f.text_field :category, class: "profile-category", value: "profile" %>
+        <%= f.text_field :person, placeholder: "Person" %>
+      </div>
+      <div class="profile-headline">
+        <%= f.text_field :headline, class: "profile-headline", placeholder: "Headline" %>
+      </div>
+      <div class="profile-subhead">
+        <%= f.text_field :subhead, placeholder: "Subhead" %>
+      </div>
+      <div class="profile-tag">
+        <%= f.text_field :tag, placeholder: "tag" %>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-social">
+        <i class="social fab fa-twitter"></i>
+        <i class="social fab fa-facebook-f"></i>
+        <i class="social fab fa-instagram"></i>
+        <i class="social fab fa-linkedin-in"></i>
+      </div>
+      <div class="profile-body">
+        <%= f.trix_editor :body %>
+      </div>
+    </div>
+  </div>
+  <%= f.text_field :contributor_id, placeholder: "contributor id #" %>
+  <%= f.submit %>
 <% end %>
