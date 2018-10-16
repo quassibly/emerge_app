@@ -27,37 +27,15 @@ Article.create(category: "profile",
   tag: "Journal",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/link-list-89-tech-billionaires-creeping-on-strangers-and-why-the-80s-are-the-gift-that-keeps-on-giving/89_LinkList-header-1600x1068.jpg",
-  body: "This week, we revel in Schadenfreude as Hedi Slimane’s debut collection for Celine is universally panned, learn what the founder of WhatsApp has to say about the most powerful company in the world (#deletefacebook), and get to the bottom of Kanye West’s bizarre rant on the topic of the 13th Amendment.
-  Not into travel guide books? This article in <strong>The Guardian</strong> outlines a novel way of getting to know a new city. The rules are simple: pick a stranger and don’t let them out of your sight. Here at FvF we can’t decide whether “following”—a modern day version of the 19th Century flâneur—is genius or creepy, but let&#8217;s just say that our attention is piqued.
-  Meet Brian Acton: the tech billionaire who’s happy to put his money where his mouth is when it comes to taking a moral stand. Talking publicly for the first time since he left Facebook, the WhatsApp co-founder explains to <strong>Forbes Magazine</strong> why he was so disappointed in the direction of the company that he quit one year before his stock grants vested—losing him a cool $850 Million in the process.
-  It’s not easy being the incoming creative director at a much-loved fashion house, but few collections have taken quite so much heat as Hedi Slimane’s debut for Celine. Launching on the same day as the Brett Kavanaugh hearing, it was widely criticised for being insensitive given the current political climate and ignoring the needs of women. Writer such as Tim Blanks called the collection “a gust of toxic masculinity” and one enterprising Instagrammer made their views clear by setting up the account @oldceline, which showcases images from when Phoebe Philo was at the helm. In what must be the definition of Schadenfreude, <strong>Fashionista</strong> have gathered together all the most scathing reviews in one convenient article.
-  If you’re still trying to work out why Kanye West recently called for the 13th Amendment—which forbid slavery—to be abolished, this <strong>Washington Post </strong>piece is a good place to start. It traces how a “sleight of hand” in the amendment’s wording has lead to the practice of prisoners in American jails being forced to work for next-to-nothing in “contemptible” conditions. According to the article, Kanye’s rant makes more sense than first thought: slavery can’t fully end until this practice, which disproportionately affects African Americans, is put to an end.Whether you’re more of a Madonna fan or just can’t resist a bit of Brian Eno, <strong>Pitchfork</strong> has you covered. They’ve made a list of 200 of the best albums from the ’80s covering pop, ambient, rap, and every genre in between—meaning that there really is something for everyone. With hundreds of hours of music to go through, it should keep us going all winter long.
-  Also, be sure to check out the FvF Mixtapes for some tunes mixed by our friends and favorite artists, and subscribe to our newsletter to stay up to date with FvF stories.
-  Victoria’s academic journey began with journalism—a discipline she credits for making her a good communicator—but she soon made the move to urban planning, feeling unsatisfied with being taught to maintain a ‘neutral’ journalistic position. After completing her urban planning masters at Columbia University, Victoria relocated to Accra, Ghana. It was while working on transportation and sanitation projects in Ghana as well as in Lagos, Nigeria, that Victoria became familiar with the process of city planners receiving a budget and implementing their project—without considering the people it would impact or displace.
-  “Sometimes, the frameworks we have for what’s helpful for the city can be problematic,” she explains. “That’s why I became interested in doing a PhD, because I get to ask how people shape these discourses, and if we want to have different discourses, how do we do that?” For Victoria, the answer is simple: urban planners and designers must welcome the citizens into the design process. Focusing on Accra’s residential neighborhoods of Ga Mashie and Nima, Victoria’s academic work is rooted in understanding the distinct ways in which communities utilize their local public space.
-    One of Sheffield’s responses to enhancing existing urban space is the Grade II listed building Park Hill, renovated into luxury apartments featuring colour-block aluminum panels, in an embrace of the building’s original concrete framework. Wandering uphill to observe the Brutalist labyrinth from within, Victoria reflects on how city planning can be approached horizontally, subverting the top-down command which characterizes most design practices. Collaboration is crucial: Victoria’s notion of designing “with” the citizens characterizes her research, particularly through the practical element of collaborative learning workshops. Here, her interest lies in storytelling and photography as creative methods of communicating residents’ lived experiences to the city government officials. “These residents themselves can now present their design principles and say, ‘Actually, this is how we live,’” she explains.
-    “The residents themselves can now present their design principles and say, ‘Actually, this is how we live.’”
-    Among Victoria’s key discussion topics at The Sooner Now conference in Berlin are her photography workshops with the youth of Ga Mashie, which are carried out in collaboration with local resident and youth activist Rita Esionam Garglo. Victoria describes their focus as “learning about the children&#8217;s imaginations of the space, and how they’re understanding what’s happening in their community.” Before exhibiting the photos of their favourite spots in the district, the group named themselves Akwaaba Photo, meaning ‘Welcome’ in Twi—a gesture to invite others into the community, sharing their unique perspectives. Many of Akwaaba’s images present locations only frequented by the children, surprising Ga Mashie’s adult residents in the group. For Victoria, this embodies the significance of the project: “It’s an interesting way of presenting different narratives about the city in a particular neighborhood.”
-    Uniting children with cameras and presenting their stories to the world, Victoria resonates with local-to-global ambition. Leading by example, and bridging with clarity the interdependent territories of research and action, her work is challenging the dominant voices in the city and amplifying those who are usually silenced. “A lot of planners and designers see themselves as neutral,” she explains. “It would be cool for them to realize that it’s not actually a neutral role—that it’s a very activist role.” Victoria breaks down the history and politics embedded in the designing of West African cities, still bearing the weight of colonial town planning enforced by the British: “It’s very much about having a modern city based on foreign frameworks, inherited from the colonial experience. Think about what’s happening in Dubai, New York or London. That becomes the aspiration, but it’s not the reality.”
-    Making visible the actual lived experiences of residents in West African neighborhoods such as Ga Mashie, Victoria is helping to elevate their needs as a priority in city planning. Along the way, her platforms are re-calibrating the potential for accessibility. “I don’t like the idea that I’m the one doing the PhD, so I’m the only one who has access to the knowledge,” Victoria says. “The more I read about it, the more I see the potential for engaging in different ways.”
-    “There’s so much that artists, planners and designers can all learn from each other—different ways of seeing the city or seeing space, and that challenges a lot of our assumptions.”
-    It would be fair to believe that the photography workshops and storytelling events are just the beginning, as Victoria considers the future connections in the community’s personal and professional relations. “We learn from each other. It’s really important for us to not stay in our professional lanes. There’s so much that artists, planners and designers can all learn from each other—different ways of seeing the city or seeing space, and that challenges a lot of our assumptions.” Encountering another of Sheffield’s hills, this one revealing the miniature garden Love Square, a smart pocket park abundant with wildflowers and city dwellers on lunch breaks, Victoria recalls a saying she once heard: “If you want to go fast, go alone. If you want to go far, go together.”
-    <em>Victoria Okoye is an urban planner, researcher and writer on public spaces, spatial appropriation, and citizen-centered urban design in West African cities. She is currently working on her PhD at the University of Sheffield, where she explores the ways in which city dwellers in Accra inhabit, appropriate, and adapt their public spaces. To learn more about her work visit her blog, African Urbanism.
-    Victoria Okoye will speak at The Sooner Now Berlin about her interest in collaborative learning practices and her experiences co-organizing Akwaaba Photo, a photography workshop and exhibition with the youth in Accra’s Ga Mashie neighborhood.
-    The Sooner Now is a joint initiative by FvF and MINI fostering collective imaginations of urban futures. This year, the long-standing collaboration is supported by urban design magazine IDEAT. After two years of forward-thinking conversations, the event series returns to Berlin on October 13 to examine urban utopias then and now. Together with an eclectic cast of innovators—architects, designers, technologists, journalists, policy makers—we share inspiring ideas in a day-long program of dialogue, experiment, and play.</em>Known for its infamous ruin bars, thermal baths, and hearty cuisine, Budapest has a myriad of associations attached to its name.
-    It is, however, lesser known for its progressive electronic music scene. Though intimately small and overshadowed by state-controlled media outlets, this hidden part of Budapest is gaining traction thanks to a group of energized individuals. “Our parents’ generation was more about traditional concert-going,” says Imre Kiss of music label Farbwechsel. “Back then, in the 1980s, clubs didn’t exist the way they do now. Maybe we are the ones who are laying the bedrocks for a new scene.” Farbwechsel’s members are self-proclaimed bedroom producers who label what they do as “moody electronic music for those who prefer staying at home to going out.”
-    Farbwechsel was founded by Martin Mikolai (aka S. Olbricht), Balázs Semsei (aka Norwell), Bálint Zalkai (aka Alpár), Erik Bánhalmi, and Dániel Jani in 2012—with Lajos Nádházi and Imre Kiss joining soon after. “I met Martin through mutual friends at one of the bars around here,” says Nádházi, who is better known as AiWA, from Telep, a small bar and art gallery in the heart of Budapest. Kiss was introduced to the label through Balázs while living in London and making music from his bedroom. “I never found my crowd in London, so when they offered me a place at Farbwechsel, I took it as a sign for me to move back,” he says. Although the trio have similar roots in electronic dance music, their techniques and sounds vary. All three find inspiration in UK labels such as Cong Burn, Livity Sound, and Houndstooth; Mikolai and Nádházi love Detroit techno and Chicago house, Kiss is into Dutch electro. Just like them, many of Hungary’s younger generation are drawn to international movements. Yet this interest often remains within the confines of the capital which is generally more progressive and accepting of new sounds (whereas the country in general fears the unknown), as Kiss points out: “Budapest is an island within Hungary.”
-    <em>FvF were invited by Telekom Electronic Beats to visit their City Festival at Várkert Bazár in Budapest where musicians Martin Mikolai, Lajos Nádházi, and Imre Kiss showed us around their city.</em>
-    Following a 40-year-long communist rule under Soviet occupation, Hungary has been on an undeniably rocky path to a stable liberal democracy. Today, broadcasts are still rarely more than state propaganda. Media outlets have been struggling to remain independent as dozens of private newspapers, radio stations, and TV channels have either closed down or have been indirectly acquired by the government. “The problem lies in the primitiveness that the people have been driven to through the steady dismantling of liberal systems. They only see what is shown on TV, and on TV you only see what the government wants you to see,” says  Nádházi. Consequently, as the government only finances controlled media organizations, Kiss says that many creatives lack the platforms to share their art.
-    This naturally influences Budapest’s nightlife. Clubs are increasingly endangered due to their perceived subversive tendencies, and underground artists find themselves in precarious positions for similar reasons. At the same time as the city’s popularity among foreigners has risen to an all-time high, affordable properties for locals are at an all-time low. Established clubs, such as Corvin Club and Auróra, have faced or are still facing shutdown and staff changes. Independently run labels, such as Farbwechsel, have a relatively low profile locally and generally remain underground, despite their increasing popularity abroad.
-    To oppose the state’s xenophobic propaganda, Farbwechsel create music which, in juxtaposition to the government’s values, reflects their global mindset: It is experimental, forward-thinking, open, and welcoming. “We would probably face more issues if our music was more mainstream, but in reality we don’t reach a large enough local audience for anyone to care,” says Nádházi. In turn, online platforms and global recognition are crucial to getting booked internationally, which is essential when the local scene is too small to support its own artists. In their early days, Farbwechsel immediately caught the attention of platforms such as Telekom Electronic Beats and Boiler Room whose initiatives support emerging talent. “I always knew that the music I make is relatively niche, and hoped that my ambitions would take me beyond the Hungarian music scene,” he says.
-    “When we noticed the attention from the press we realized this is our chance to push others into the spotlight.”
-    On a local scale, the trio run the bi-weekly club night Crisis Sound System at LÄRM. LÄRM is one of the only venues solely dedicated to techno in Budapest, creating a space for Hungarian and globally renowned DJs alike. The club is located behind Fogas Ház, a popular ruin pub in Budapest’s Jewish quarter. However, the local notion of ruin bars is not exactly positive and “many rightfully complain that they have debased the club scene,” according to Kiss. “In a city where going out means getting drunk above anything else, the culture of paying for and listening to your favorite DJ remains overshadowed,” he says.
-    Farbwechsel strive to keep as many things local to Budapest as possible and engage with the community in many different ways. For instance, the musicians use the label as a platform to promote smaller, less established Budapest-based artists. “When we noticed the attention from the press we realized this is our chance to push others into the spotlight. If we feel that someone is creating something great, we invite them to play at one of our nights at LÄRM,” says Mikolai.
-    Additionally, over the past few summers, they have hosted weekend barbeques in collaboration with culinary spot Impostor Bar &#038; Eatery. “It was always meant as an open event: anyone is welcome to come, bring their friends, and enjoy music in a new and more local setting,” says Kiss. This is also a conscious effort to bring people together in small communities that aren’t overwhelmed by tourists. In places like Budapest, where the city center is relatively small, the recent influx of tourists can easily make locals feel alienated. Despite this trend, it’s clear the locals still have a fierce love for Budapest. When asked about how the city inspires their music, the three exchange glances. “Maybe we would make happier music if we lived somewhere else, but we will never know,” Nádházi says.
-    Farbwechsel’s approach to producing underground tunes is progressive, experimental, and collaborative as they strive to promote local talent. By organizing events, such as Crisis Sound System at LÄRM, they have made a name for themselves in an emerging and often overlooked dance scene.
-    FvF visited the Telekom Electronic Beats City Festival at Várkert Bazár in Budapest where musicians Martin Mikolai, Lajos Nádházi, and Imre Kiss showed us around their city.
-    As part of our ongoing collaboration with Telekom Electronic Beats who have been working with creative minds of Eastern Europe for many years we’re eagerly exploring more Eastern European cities and scenes. ")
+  body: '
+    <p>This week, we revel in Schadenfreude as Hedi Slimane’s debut collection for Celine is universally panned, learn what the founder of WhatsApp has to say about the most powerful company in the world (#deletefacebook), and get to the bottom of Kanye West’s bizarre rant on the topic of the 13th Amendment.</p>
+    <p>Not into travel guide books? <a href="https://www.theguardian.com/cities/2018/sep/21/i-follow-a-different-person-every-day-using-strangers-to-explore-the-city">This article in <strong>The Guardian</strong></a> outlines a novel way of getting to know a new city. The rules are simple: pick a stranger and don’t let them out of your sight. Here at FvF we can’t decide whether “following”—a modern day version of the 19th Century flâneur—is genius or creepy, but let&#8217;s just say that our attention is piqued.</p>
+    <p>Meet Brian Acton: the tech billionaire who’s happy to put his money where his mouth is when it comes to taking a moral stand. Talking publicly for the first time since he left Facebook, the WhatsApp co-founder <a href="https://www.forbes.com/sites/parmyolson/2018/09/26/exclusive-whatsapp-cofounder-brian-acton-gives-the-inside-story-on-deletefacebook-and-why-he-left-850-million-behind/">explains to <strong>Forbes Magazine</strong> </a>why he was so disappointed in the direction of the company that he quit one year before his stock grants vested—losing him a cool $850 Million in the process.</p>
+    <p>It’s not easy being the incoming creative director at a much-loved fashion house, but few collections have taken quite so much heat as Hedi Slimane’s debut for Celine. Launching on the same day as the Brett Kavanaugh hearing, it was widely criticised for being insensitive given the current political climate and ignoring the needs of women. Writer such as Tim Blanks called the collection “a gust of toxic masculinity” and one enterprising Instagrammer made their views clear by setting up the account @oldceline, which showcases images from when Phoebe Philo was at the helm. In what must be the definition of Schadenfreude, <strong>Fashionista</strong> <a href="https://fashionista.com/2018/10/hedi-slimane-celine-debut-bad-reviews">have gathered together</a> all the most scathing reviews in one convenient article.</p>
+    <p>If you’re still trying to work out why Kanye West recently called for the 13th Amendment—which forbid slavery—to be abolished, <a href="https://www.washingtonpost.com/news/morning-mix/wp/2018/10/01/kanye-wests-baffling-13th-amendment-twitter-outburst-maybe-not-so-baffling-after-all/?noredirect=on&#038;utm_term=.5beac0130c1b">this <strong>Washington Post </strong>piece</a> is a good place to start. It traces how a “sleight of hand” in the amendment’s wording has lead to the practice of prisoners in American jails being forced to work for next-to-nothing in “contemptible” conditions. According to the article, Kanye’s rant makes more sense than first thought: slavery can’t fully end until this practice, which disproportionately affects African Americans, is put to an end.</p>
+    <p>Whether you’re more of a Madonna fan or just can’t resist a bit of Brian Eno, <strong>Pitchfork</strong> has you covered. <a href="https://pitchfork.com/features/lists-and-guides/the-200-best-albums-of-the-1980s/">They’ve made a list</a> of 200 of the best albums from the ’80s covering pop, ambient, rap, and every genre in between—meaning that there really is something for everyone. With hundreds of hours of music to go through, it should keep us going all winter long.</p>
+    <p><em>Hopefully you enjoyed the reads from this week’s Link List, but if you’ve still got an internet itch to scratch, you can find more <a href="http://www.freundevonfreunden.com/tag/link-list/">here</a>.</em></p>
+    <p>Also, be sure to check out the FvF Mixtapes for some tunes mixed by our friends and favorite artists, and subscribe to our <a href="https://freundevonfreunden.us1.list-manage.com/subscribe?u=2fc2888916822c4e0131388d9&amp;id=d1c4084573">newsletter</a> to stay up to date with FvF stories.</p>')
 Article.create(category: "profile",
   person: "",
   headline: "How Assemble’s Joe Halligan wants to change future cities, one street at a time",
@@ -65,18 +43,369 @@ Article.create(category: "profile",
   tag: "Interviews",
   contributor_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0651-1600x1067.jpg",
-  body: "Perhaps because it used to be a school, the Assemble office has a jovial, almost improvised feel to it. The space matches the radically democratic approach of this collective working across architecture, art, and design.
-  As soon as Joe Halligan opens the door to the studio, two of his colleagues head into the communal kitchen and put a coffee pot on the hob: necessary fuel for the working practice of the young firm and their multidisciplinary projects. This space, in Bermondsey, is their second-ever office, after they had set up shop and re-designed their inaugural one in Stratford, and then left when the lease expired.
-  It was intentional: they take up five-year leases, give new uses to the space, and then move on. As a result, Assemble is not your usual sleek, pared back, all-white architecture office. The bathrooms still look like school bathrooms, and the former swimming pool has been turned into a skeleton structure made with columns, beams, and no walls, which they rent out to other makers who can customize the space. “It’s up to the tenants to decide how much they want to do, and for how many years,” Halligan says. “This way we keep rents as low as possible.” There is also a high-ceiling workshop where they have made tiles, furniture and a mock-up of the facade of their Goldsmiths CCA project—where Halligan’s colleagues walk around in personalized overalls, with “Assemble” written on one side of the chest and their names on the other.
-  <em>Joe Halligan will be part of The Sooner Now Berlin on October 13, where he will discuss his vision for more democratic future cities where public engagement is key. Learn more about the event series that is part of our ongoing collaboration with MINI at the end of this article.</em>
-  The collective started without quite knowing it was starting. In 2010, a group of 18 friends—mostly architecture classmates from Cambridge—decided to join forces and work, in the evenings and weekends, on a self-built temporary cinema in a disused petrol station in Clerkenwell. “We wanted to investigate making stuff again, and we were kind of bored sitting in architecture offices, we wanted to get our hands dirty, engage with the city and work out how you build stuff.” Since the Cineroleum, they have amassed an impressively diverse body of work, from Brutalist playgrounds to traveling exhibitions via affordable housing.
-  The calculatedly disheveled atmosphere of their office isn’t just a front. Assemble’s horizontal, co-operative approach to working, as well as their blending of architecture, design, and art, has got them much attention, not just because it’s different to traditional architecture practices, but because it works: the group won the Turner Prize in 2015—making them the first architects, and the first collective, not to mention the youngest to ever win it.
-  The most bureaucratic part of their structure used to be the careful lunch rota on the wall—the more you eat in the office, the more you have to cook. There are still no bosses and everyone can veto (for each potential new project “there is a temperature reading in our thursday meetings”) but, post-award, the firm has become a bit more structured, as they have a rolling management group in which five members run things from incoming work to HR, rotating these tasks every three months.
-  The project for which they won the Turner Prize was the ongoing Granby Four Streets, a community-led project to rebuild Granby, a Liverpool neighborhood that was nearly made derelict by decades of poorly-planned regeneration initiatives. Only four streets were left, and their remaining residents, fed up of living among precarious buildings, got organized and saved the houses from demolition. After a spectacular self-made effort of clearing, painting, and planting they then enlisted Assemble to help refurbish ten of them and carefully plan the whole neighborhood preserving its cultural heritage. They also set up a workshop in which they work with residents to handmake products like bathroom tiles or door handles—first for the houses and later commissioned and distributed worldwide.
-  Granby Four Streets speaks for their vision of architecture as a tool for social change. Though lots of people think, says Halligan, that “Assemble is the project: figuring out how 15 people can work together without hierarchy.” So far, so good, he says, though “the horizontal structure makes the whole thing harder for other people to understand what exactly Assemble is.” It has as many purposes as it does members, but for Halligan, the most interesting angle is the focus on making: “whether that’s buildings, documents or furniture and engaging with the city through it.”
-  With more than half of the human population now living in cities and yet more wanting to move to them, Halligan sees mass development and expansion as the biggest urban challenge for the future. “When you have this speed of development to accommodate [everyone wanting to live in cities], it seems extremely difficult to understand how we can create the categorys of city which I think are really good, which are cities that have a complexity, layers of history, some kind of uniqueness and people who’ve lived there for a long time,” he explains. With property becoming a commodity like it has in London, he adds, cities are becoming “much more elitist: there’s only one category person who can afford to live there, which means cities are not as good.” It is difficult for architects to stop this: given property is a financial tool, developers have no interest in making good or durable buildings, but instead on building as quickly as possible to sell as quickly as possible.
-  His hope is that people will engage more with their environment: “architects and the public have to become the developers,” he says, noting the Liverpool project. “Granby is going to be a much better neighborhood to live in than any of the developments that you see in London. But it could only happen there because those houses cost £1.” This symbolic monetary gesture ensured buyers for the neglected neighborhood in order to regenerate—in London neighborhoods are unlikely to be left derelict as they’re simply too valuable to developers.
-  Still, there is hope, which is what his The Sooner Now keynote speech in Berlin will focus on. Halligan talks about the inspiration he gets from Adams Sutherland at the organization Grizedale Arts, and how change starts at the local level: “it starts with you making your cereal bowl, then making your front garden, to then making the houses on your street, to then making the government which rules the place in which you live,” he explains. “Making really can become a quite political act, and maybe that will produce better cities and more engagement.”")
+  body: '
+    <div id="story-content" class="story-main npc">
+      <section class="story-chapter">
+        <p>Perhaps because it used to be a school, the Assemble office has a jovial, almost improvised feel to it. The space matches the radically democratic approach of this collective working across architecture, art, and design.</p>
+      </section>
+      <section class="story-chapter">
+        <p>As soon as Joe Halligan opens the door to the studio, two of his colleagues head into the communal kitchen and put a coffee pot on the hob: necessary fuel for the working practice of the young firm and their multidisciplinary projects. This space, in Bermondsey, is their second-ever office, after they had set up shop and re-designed their inaugural one in Stratford, and then left when the lease expired.</p>
+        <p>It was intentional: they take up five-year leases, give new uses to the space, and then move on. As a result, Assemble is not your usual sleek, pared back, all-white architecture office. The bathrooms still look like school bathrooms, and the former swimming pool has been turned into a skeleton structure made with columns, beams, and no walls, which they rent out to other makers who can customize the space. “It’s up to the tenants to decide how much they want to do, and for how many years,” Halligan says. “This way we keep rents as low as possible.” There is also a high-ceiling workshop where they have made tiles, furniture and a mock-up of the facade of their Goldsmiths CCA project—where Halligan’s colleagues walk around in personalized overalls, with “Assemble” written on one side of the chest and their names on the other.</p>
+        <p><em>Joe Halligan will be part of <a href="https://www.freundevonfreunden.com/thesoonernow-berlin-2018-friendsspace">The Sooner Now Berlin</a> on October 13, where he will discuss his vision for more democratic future cities where public engagement is key. Learn more about the event series that is part of our ongoing collaboration with MINI at the end of this article.</em></p>
+      </section>
+      <section class="story-chapter">
+        <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0744-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0744-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0744">
+        </figure>
+      </section><section class="story-chapter">
+    <div class="l-inner portrait-align">
+    <div class="portrait-wrap story-unit">
+      <div class="portrait-lt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0721-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0721-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+      <div class="portrait-rt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0719-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0719-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/the-sooner-now-berlin-assemble-joe-halligan/Freunde-von-Freunden-Joseph-Halligan-0668.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/the-sooner-now-berlin-assemble-joe-halligan/Freunde-von-Freunden-Joseph-Halligan-0668.jpg"
+              width="1500"
+              height="1000"
+              alt="Freunde-von-Freunden-Joseph-Halligan-0668">
+                  </figure>
+  </div>
+</section><section class="story-chapter">
+    <div class="l-inner portrait-align">
+    <div class="portrait-wrap story-unit">
+      <div class="portrait-lt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0690-cropped-801x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0690-cropped-801x1200.jpg"
+                 alt=""
+                 width="601"
+                 height="900">
+                      </figure>
+              </div>
+      <div class="portrait-rt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0714-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0714-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0696-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0696-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0696">
+        <figcaption>A zinc passivated steel chair designed by Assemble for the cafe of the Goldsmiths Centre for Contemporary Art.</figcaption>          </figure>
+  </div>
+</section><section class="story-chapter">
+  <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit quote-unit">
+        <h4 class="quote"><p>“We wanted to get our hands dirty, engage with the city and work out how you build stuff.”</p>
+</h4>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+    <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit">
+        <div class="story-unit module"><p>The collective started without quite knowing it was starting. In 2010, a group of 18 friends—mostly architecture classmates from Cambridge—decided to join forces and work, in the evenings and weekends, on a self-built temporary cinema in a disused petrol station in Clerkenwell. “We wanted to investigate making stuff again, and we were kind of bored sitting in architecture offices, we wanted to get our hands dirty, engage with the city and work out how you build stuff.” Since the Cineroleum, they have amassed an impressively diverse body of work, from Brutalist playgrounds to traveling exhibitions via affordable housing.</p>
+<p>The calculatedly disheveled atmosphere of their office isn’t just a front. Assemble’s horizontal, co-operative approach to working, as well as their blending of architecture, design, and art, has got them much attention, not just because it’s different to traditional architecture practices, but because it works: the group won the Turner Prize in 2015—making them the first architects, and the first collective, not to mention the youngest to ever win it.</p>
+<p>The most bureaucratic part of their structure used to be the careful lunch rota on the wall—the more you eat in the office, the more you have to cook. There are still no bosses and everyone can veto (for each potential new project “there is a temperature reading in our thursday meetings”) but, post-award, the firm has become a bit more structured, as they have a rolling management group in which five members run things from incoming work to HR, rotating these tasks every three months.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="story-chapter fs-image-chapter bay-chapter bay-stick">
+
+      <div class="img bay" style="background-image: url(https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan-workplace/Freunde-von-Freunden-TSN-Joseph-Halligan-0532-1600x1067.jpg);"></div>
+    <div class="l-wide cf">
+      <div class="bay-content bay-overlay flush-l">
+        <p>“Lots of people think that Assemble is the project: figuring out how 15 people can work together without hierarchy.”</p>
+      </div>
+    </div>
+
+
+  </section>
+<section class="story-chapter">
+    <div class="l-inner portrait-align">
+    <div class="portrait-wrap story-unit">
+      <div class="portrait-lt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan-workplace/Freunde-von-Freunden-TSN-Joseph-Halligan-0456-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan-workplace/Freunde-von-Freunden-TSN-Joseph-Halligan-0456-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+      <div class="portrait-rt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0479-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0479-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0545-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0545-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0545">
+                  </figure>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0504-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0504-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0504">
+                  </figure>
+  </div>
+</section><section class="story-chapter">
+  <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit quote-unit">
+        <h4 class="quote"><p>“Diverse, rich, and complex cities are the best types of cities.”</p>
+</h4>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+    <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit">
+        <div class="story-unit module"><p>The project for which they won the Turner Prize was the ongoing Granby Four Streets, a community-led project to rebuild Granby, a Liverpool neighborhood that was nearly made derelict by decades of poorly-planned regeneration initiatives. Only four streets were left, and their remaining residents, fed up of living among precarious buildings, got organized and saved the houses from demolition. After a spectacular self-made effort of clearing, painting, and planting they then enlisted Assemble to help refurbish ten of them and carefully plan the whole neighborhood preserving its cultural heritage. They also set up a workshop in which they work with residents to handmake products like bathroom tiles or door handles—first for the houses and later commissioned and distributed worldwide.</p>
+<p>Granby Four Streets speaks for their vision of architecture as a tool for social change. Though lots of people think, says Halligan, that “Assemble is the project: figuring out how 15 people can work together without hierarchy.” So far, so good, he says, though “the horizontal structure makes the whole thing harder for other people to understand what exactly Assemble is.” It has as many purposes as it does members, but for Halligan, the most interesting angle is the focus on making: “whether that’s buildings, documents or furniture and engaging with the city through it.”</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0607-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0607-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0607">
+                  </figure>
+  </div>
+</section><section class="story-chapter">
+    <div class="l-inner portrait-align">
+    <div class="portrait-wrap story-unit">
+      <div class="portrait-lt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0436-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0436-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+      <div class="portrait-rt img">
+                  <figure>
+            <img class="lazyload"
+                 data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0612-800x1200.jpg"
+                 data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0612-800x1200.jpg"
+                 alt=""
+                 width="600"
+                 height="900">
+                      </figure>
+              </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0621-1600x1067.jpg"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0621-1600x1067.jpg"
+              width="1600"
+              height="1067"
+              alt="Freunde-von-Freunden-TSN-Joseph-Halligan-0621">
+                  </figure>
+  </div>
+</section><section class="story-chapter">
+    <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit">
+        <div class="story-unit module"><p>With more than half of the human population now living in cities and yet more wanting to move to them, Halligan sees mass development and expansion as the biggest urban challenge for the future. “When you have this speed of development to accommodate [everyone wanting to live in cities], it seems extremely difficult to understand how we can create the types of city which I think are really good, which are cities that have a complexity, layers of history, some kind of uniqueness and people who’ve lived there for a long time,” he explains. With property becoming a commodity like it has in London, he adds, cities are becoming “much more elitist: there’s only one type person who can afford to live there, which means cities are not as good.” It is difficult for architects to stop this: given property is a financial tool, developers have no interest in making good or durable buildings, but instead on building as quickly as possible to sell as quickly as possible.</p>
+<p>His hope is that people will engage more with their environment: “architects and the public have to become the developers,” he says, noting the Liverpool project. “Granby is going to be a much better neighborhood to live in than any of the developments that you see in London. But it could only happen there because those houses cost £1.” This symbolic monetary gesture ensured buyers for the neglected neighborhood in order to regenerate—in London neighborhoods are unlikely to be left derelict as they’re simply too valuable to developers.</p>
+<p>Still, there is hope, which is what his The Sooner Now keynote speech in Berlin will focus on. Halligan talks about the inspiration he gets from Adams Sutherland at the organization Grizedale Arts, and how change starts at the local level: “it starts with you making your cereal bowl, then making your front garden, to then making the houses on your street, to then making the government which rules the place in which you live,” he explains. “Making really can become a quite political act, and maybe that will produce better cities and more engagement.”</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+  <div class="l-inner">
+    <h3 class="center_head circ-headline">Projects from Assemble</h3>
+      </div>
+</section><section class="story-chapter">
+    <div id="detail-shots-2307" class="story-unit npc blk-controls slideshow-chapter">
+
+    <div class="slider">
+              <div class="neverThinglink">
+                      <figure>
+              <img src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-JoeHalligan-Brutalist-Playground-1600x1066.jpg" alt="The Brutalist Playground, 2015: Assemble worked in collaboration with artist Simon Terrill to design an immersive installation that recreated a trio of post-war play structures out of foam." />
+              <figcaption class="overlay fly-bottomright">
+                The Brutalist Playground, 2015: Assemble worked in collaboration with artist Simon Terrill to design an immersive installation that recreated a trio of post-war play structures out of foam.              </figcaption>
+            </figure>
+                  </div>
+              <div class="neverThinglink">
+                      <figure>
+              <img src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-Joe-Halligan-Yardhouse-1600x1067.jpg" alt="Yardhouse, 2012–14: Yardhouse was an affordable workspace building in Sugarhouse Yard in Stratford. The pilot for the provision of new creative workspaces in the Olympic Park was funded by the London Legacy Development Corporation." />
+              <figcaption class="overlay fly-bottomright">
+                Yardhouse, 2012–14: Yardhouse was an affordable workspace building in Sugarhouse Yard in Stratford. The pilot for the provision of new creative workspaces in the Olympic Park was funded by the London Legacy Development Corporation.              </figcaption>
+            </figure>
+                  </div>
+              <div class="neverThinglink">
+                      <figure>
+              <img src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-Joe-Halligan-The-Turner-Prize-800x1200.jpg" alt="Turner Prize Exhibition, 2015: Assemble\'s contribution was a showroom to present Granby Workshop to a wider public." />
+              <figcaption class="overlay fly-bottomright">
+                Turner Prize Exhibition, 2015: Assemble\'s contribution was a showroom to present Granby Workshop to a wider public.              </figcaption>
+            </figure>
+                  </div>
+              <div class="neverThinglink">
+                      <figure>
+              <img src="https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-Joe-Halligan-Granby-Four-Street-800x1200.jpg" alt="Granby Four Streets, 2013: The ongoing community-led project breathes new life into Granby Street, a once a lively high street at the center of Liverpool’s most racially and ethnically diverse community. The demolition of all but four Victorian terraces during decades of regeneration initiatives saw a once thriving community scattered." />
+              <figcaption class="overlay fly-bottomright">
+                Granby Four Streets, 2013: The ongoing community-led project breathes new life into Granby Street, a once a lively high street at the center of Liverpool’s most racially and ethnically diverse community. The demolition of all but four Victorian terraces during decades of regeneration initiatives saw a once thriving community scattered.              </figcaption>
+            </figure>
+                  </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="story-chapter">
+    <div class="l-inner">
+    <div class="grid">
+      <div class="story-copy grid-unit">
+        <div class="story-unit module"><p><em><a href="https://assemblestudio.co.uk" target="_blank">Assemble</a> is a multi-disciplinary collective working across architecture, design, and art that champions an interdependent and collaborative working practice seeking to actively involve the public as both participant and collaborator in the on-going realization of the work. Their projects include <a href="https://assemblestudio.co.uk/projects/granby-four-streets-2" target="_blank">Granby Four Streets</a> and the <a href="https://assemblestudio.co.uk/projects/goldsmiths-centre-for-contemporary-art-2" target="_blank">Goldsmith Centre for Contemporary Art</a>, among many others. </em></p>
+<p><em>Joe Halligan will speak at <a href="https://www.freundevonfreunden.com/thesoonernow-berlin-2018-friendsspace" target="_blank">The Sooner Now Berlin </a>about hidden opportunities in urban environments and how the public can actively engage in their future.</em></p>
+<p><em>The Sooner Now is a joint initiative by FvF and <a href="https://www.mini.de/de_DE/home/explore/mini-kooperationen/freunde-von-freunden.html" target="_blank">MINI</a> fostering collective imaginations of urban futures. This year, the long-standing collaboration is supported by urban design magazine <a href="https://www.instagram.com/ideatgermany/?hl=en" target="_blank">IDEAT</a>. After two years of forward-thinking conversations, the event series returns to Berlin on <a href="https://www.freundevonfreunden.com/thesoonernow-berlin-2018-friendsspace">October 13</a> to examine urban utopias then and now. Together with an eclectic cast of innovators—architects, designers, technologists, journalists, policy makers—we share inspiring ideas in a day-long program of dialogue, experiment, and play.</em></p>
+<p>Text: <a href="http://www.freundevonfreunden.com/tag/marta-bausells">Marta Bausells</a><br />
+Photography: <a href="http://www.freundevonfreunden.com/tag/liz-seabrook">Liz Seabrook </a>, <a href="https://assemblestudio.co.uk" target="_blank">Assemble</a></p>
+</div>
+      </div>
+    </div>
+  </div>
+</section><section class="story-chapter">
+
+  <div class="l-inner">
+    <figure class="img img-medium">
+              <img  class="lazyload"
+              data-src="https://www.freundevonfreunden.com/wp-content/uploads/berlin-2018-friends-space/180911-TSN-FB-Banner-Berlin_S-1600x900.png"
+              data-lrg="https://www.freundevonfreunden.com/wp-content/uploads/berlin-2018-friends-space/180911-TSN-FB-Banner-Berlin_S-1600x900.png"
+              width="1600"
+              height="900"
+              alt="180911-TSN-FB-Banner-Berlin_S">
+                  </figure>
+  </div>
+</section>  </div>
+
+    <div id="story-content" class="story-main npc">
+  <section class="story-chapter related-stories-section">
+    <div class="l-inner">
+      <h3 class="center_head circ-headline">Related Stories</h3>
+      <div class="grid">
+        <div class="story-copy grid-unit">
+          <ul class="content_links">
+                            <li class="grid_item neverThinglink">
+                  <span class="img_cntr image-link">
+                    <a href="https://www.freundevonfreunden.com/interviews/azeema-magazine-steps-up-for-women-of-color-translating-personal-heritages-into-stories-with-daring-powerful-voices/">
+                      <img width="220" height="147" src="https://www.freundevonfreunden.com/wp-content/uploads/azeema-magazine-steps-up-for-women-of-color-translating-personal-heritages-into-stories-with-daring-powerful-voices/Freunde-von-Freunden-Azeema-43-220x147.jpg" class="attachment-story-thumbnail-image-tsize size-story-thumbnail-image-tsize" alt="Freunde-von-Freunden-Azeema-43" title="Azeema Magazine steps up for women of color, translating personal heritages into stories with daring, powerful voices" />                    </a>
+                  </span>
+                  <p class="locale">
+                    <a href="https://www.freundevonfreunden.com/city/london/" title="View all posts in London, UK"><strong>London</strong>,  UK</a>                 </p>
+                  <p class="title"><a href="https://www.freundevonfreunden.com/interviews/azeema-magazine-steps-up-for-women-of-color-translating-personal-heritages-into-stories-with-daring-powerful-voices/">Azeema Magazine steps up for women of color, translating personal heritages into stories with daring, powerful voices</a></p>
+                </li>
+                            <li class="grid_item neverThinglink">
+                  <span class="img_cntr image-link">
+                    <a href="https://www.freundevonfreunden.com/interviews/shifting-the-me-culture-in-favor-of-a-shared-eco-responsibility-with-interior-architect-sevil-peach/">
+                      <img width="220" height="147" src="https://www.freundevonfreunden.com/wp-content/uploads/sevil-peach/Freunde-von-Freunden-Sevil-Peach-3956-220x147.jpg" class="attachment-story-thumbnail-image-tsize size-story-thumbnail-image-tsize" alt="Freunde-von-Freunden-Sevil-Peach-3956" title="Shifting the ‘me’ culture in favor of a shared eco-responsibility with interior architect Sevil Peach" />                    </a>
+                  </span>
+                  <p class="locale">
+                    <a href="https://www.freundevonfreunden.com/city/london/" title="View all posts in London, UK"><strong>London</strong>,  UK</a>                 </p>
+                  <p class="title"><a href="https://www.freundevonfreunden.com/interviews/shifting-the-me-culture-in-favor-of-a-shared-eco-responsibility-with-interior-architect-sevil-peach/">Shifting the ‘me’ culture in favor of a shared eco-responsibility with interior architect Sevil Peach</a></p>
+                </li>
+                            <li class="grid_item neverThinglink">
+                  <span class="img_cntr image-link">
+                    <a href="https://www.freundevonfreunden.com/interviews/katie-scott-turns-science-into-fantasy-with-her-modern-take-on-anatomical-illustration/">
+                      <img width="220" height="147" src="https://www.freundevonfreunden.com/wp-content/uploads/katie-scott-turns-science-into-fantasy-with-her-modern-take-on-anatomical-illustration/Freunde-von-Freunden-Katie-Scott-3725-220x147.jpg" class="attachment-story-thumbnail-image-tsize size-story-thumbnail-image-tsize" alt="Freunde-von-Freunden-Katie-Scott-3725" title="Katie Scott turns science into fantasy with her modern take on anatomical illustration" />                    </a>
+                  </span>
+                  <p class="locale">
+                    <a href="https://www.freundevonfreunden.com/city/london/" title="View all posts in London, UK"><strong>London</strong>,  UK</a>                 </p>
+                  <p class="title"><a href="https://www.freundevonfreunden.com/interviews/katie-scott-turns-science-into-fantasy-with-her-modern-take-on-anatomical-illustration/">Katie Scott turns science into fantasy with her modern take on anatomical illustration</a></p>
+                </li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+</article>')
 Article.create(category: "profile",
   person: "",
   headline: "Uncovering the forgotten female artists of Kazakhstan with an exhibition spotlighting four generations",
