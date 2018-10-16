@@ -1,0 +1,17 @@
+<div class="tagbar-container">
+  <div class="tagbar">
+    <div class="hidden-xs hidden-sm">
+      <span class="tagbar-item upcase">Tags: </span>
+      <%= link_to "All", opinions_path, class: "tagbar-link" %>
+      <%= link_to "Art", opinions_path(tag: "Art"), class: "tagbar-link" %>
+      <%= link_to "Politics", opinions_path(tag: "Politics"), class: "tagbar-link" %>
+      <%= link_to "Business", opinions_path(tag: "Business"), class: "tagbar-link" %>
+      <%= link_to "Society", opinions_path(tag: "Society"), class: "tagbar-link" %>
+      <%= link_to "Education", opinions_path(tag: "Education"), class: "tagbar-link" %>
+      <%= link_to "Sprituality", opinions_path(tag: "Spirituality"), class: "tagbar-link" %>
+      <%= link_to "Science", opinions_path(tag: "Science"), class: "tagbar-link" %>
+      <%= link_to "Technology", opinions_path(tag: "Technology"), class: "tagbar-link" %>
+      <%= link_to "Philosophy", opinions_path(tag: "Philosophy"), class: "tagbar-link" %>
+    </div>
+  </div>
+</div>
