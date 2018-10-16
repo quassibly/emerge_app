@@ -12,7 +12,6 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require trix
 //= require_tree .
 //
-//= require trix
-//= require trix_attachments

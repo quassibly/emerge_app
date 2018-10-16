@@ -15,7 +15,7 @@
     <i class="social fab fa-linkedin-in"></i>
   </div>
 
-  <div class="profile-body"><%= @profile.body.html_safe %></div>
+  <div class="profile-body"><%= sanitize @profile.body %></div>
 </div>
 
 
