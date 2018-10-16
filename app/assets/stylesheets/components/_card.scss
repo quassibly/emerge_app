@@ -11,6 +11,18 @@
   line-height: 1.3;
   background-color: #ffffff;
 }
+.card-big {
+  max-width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10px;
+  border: solid 1px;
+  padding: 30px;
+  letter-spacing: .02em;
+  line-height: 1.3;
+  background-color: #ffffff;
+}
 
 .card-headline {
   height: 88px;

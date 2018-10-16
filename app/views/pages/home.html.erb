@@ -1,1 +1,62 @@
-This is the home page
+<div class="home-grid">
+    <%= link_to article_path(Article.first) do %>
+      <div class="card-big top-left">
+        <div class="card-img" style="background-image: url('<%= Article.first.photo %>')">
+          <div class="card-tag"><%= Article.first.tag %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= Article.first.contributor.name %></span> <span class="card-quote">"<%= Article.first.headline %>"</span>
+        </div>
+        <div class="card-subhead"><%= Article.first.subhead %></div>
+      </div>
+    <% end %>
+
+    <%= link_to article_path(Article.offset(1).first) do %>
+      <div class="card-big bottom-left">
+        <div class="card-img" style="background-image: url('<%= Article.offset(1).first.photo %>')">
+          <div class="card-tag"><%= Article.offset(1).first.tag %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= Article.offset(1).first.contributor.name %></span> <span class="card-quote">"<%= Article.offset(1).first.headline %>"</span>
+        </div>
+        <div class="card-subhead"><%= Article.offset(1).first.subhead %></div>
+      </div>
+    <% end %>
+
+    <%= link_to article_path(Article.offset(2).first) do %>
+      <div class="card top-right">
+        <div class="card-img" style="background-image: url('<%= Article.offset(2).first.photo %>')">
+          <div class="card-tag"><%= Article.offset(2).first.tag %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= Article.offset(2).first.contributor.name %></span> <span class="card-quote">"<%= Article.offset(2).first.headline %>"</span>
+        </div>
+        <div class="card-subhead"><%= Article.offset(2).first.subhead %></div>
+      </div>
+    <% end %>
+
+    <%= link_to article_path(Article.offset(3).first) do %>
+      <div class="card mid-right">
+        <div class="card-img" style="background-image: url('<%= Article.offset(3).first.photo %>')">
+          <div class="card-tag"><%= Article.offset(3).first.tag %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= Article.offset(3).first.contributor.name %></span> <span class="card-quote">"<%= Article.offset(3).first.headline %>"</span>
+        </div>
+        <div class="card-subhead"><%= Article.offset(3).first.subhead %></div>
+      </div>
+    <% end %>
+
+    <%= link_to article_path(Article.offset(4).first) do %>
+      <div class="card bottom-right">
+        <div class="card-img" style="background-image: url('<%= Article.offset(4).first.photo %>')">
+          <div class="card-tag"><%= Article.offset(4).first.tag %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= Article.offset(4).first.contributor.name %></span> <span class="card-quote">"<%= Article.offset(4).first.headline %>"</span>
+        </div>
+        <div class="card-subhead"><%= Article.offset(4).first.subhead %></div>
+      </div>
+    <% end %>
+
+</div>

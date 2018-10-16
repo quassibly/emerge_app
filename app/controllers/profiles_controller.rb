@@ -1,6 +1,10 @@
 class ProfilesController < ApplicationController
   def index         # GET /profiles
     @profiles = Article.where(category: "profile")
+    if params[:tag].present?
+      @profiles = @profiles.where(tag: params[:tag])
+    end
+
   end
 
   def show          # GET /profiles/:id
