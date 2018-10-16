@@ -21,10 +21,18 @@
 
   <!-- right Navigation -->
   <div class="navbar-right">
-    <i class="social fab fa-twitter"></i>
-    <i class="social fab fa-facebook-f"></i>
-    <i class="social fab fa-instagram"></i>
-    <i class="social fab fa-linkedin-in"></i>
+    <%= link_to "https://twitter.com/intent/follow?screen_name=cocreationloft" do %>
+      <i class="social fab fa-twitter"></i>
+    <% end %>
+    <%= link_to "https://www.facebook.com/cocreationloft/" do %>
+      <i class="social fab fa-facebook-f"></i>
+    <% end %>
+    <%= link_to "https://www.instagram.com/cocreationloft/" do %>
+      <i class="social fab fa-instagram"></i>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/feed/" do %>
+      <i class="social fab fa-linkedin-in"></i>
+    <% end %>
   </div>
 
 </div>
