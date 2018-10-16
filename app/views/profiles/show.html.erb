@@ -9,10 +9,15 @@
 
 <div class="profile-container">
   <div class="profile-social">
-    <i class="social fab fa-twitter"></i>
-    <i class="social fab fa-facebook-f"></i>
-    <i class="social fab fa-instagram"></i>
-    <i class="social fab fa-linkedin-in"></i>
+    <%= link_to "http://twitter.com/share?text=#{@profile.headline}&url=#{request.original_url}" do %>
+      <i class="social fab fa-twitter"></i>
+    <% end %>
+    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@profile.headline}" do %>
+      <i class="social fab fa-facebook-f"></i>
+    <% end %>
+    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@profile.headline}" do %>
+      <i class="social fab fa-linkedin-in"></i>
+    <% end %>
   </div>
 
   <div class="profile-body"><%= sanitize @profile.body %></div>
