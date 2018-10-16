@@ -2,16 +2,16 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
-      <a href="" class="tagbar-item tagbar-link">All</a>
-      <a href="" class="tagbar-item tagbar-link">Art</a>
-      <a href="" class="tagbar-item tagbar-link">Politics</a>
-      <a href="" class="tagbar-item tagbar-link">Business</a>
-      <a href="" class="tagbar-item tagbar-link">Society</a>
-      <a href="" class="tagbar-item tagbar-link">Education</a>
-      <a href="" class="tagbar-item tagbar-link">Spirituality</a>
-      <a href="" class="tagbar-item tagbar-link">Science</a>
-      <a href="" class="tagbar-item tagbar-link">Technology</a>
-      <a href="" class="tagbar-item tagbar-link">Philosophy</a>
+        <%= link_to "All", profiles_path, class: "tagbar-link" %>
+        <%= link_to "Art", profiles_path(tag: "Art"), class: "tagbar-link" %>
+        <%= link_to "Politics", profiles_path(tag: "Politics"), class: "tagbar-link" %>
+        <%= link_to "Business", profiles_path(tag: "Business"), class: "tagbar-link" %>
+        <%= link_to "Society", profiles_path(tag: "Society"), class: "tagbar-link" %>
+        <%= link_to "Education", profiles_path(tag: "Education"), class: "tagbar-link" %>
+        <%= link_to "Sprituality", profiles_path(tag: "Spirituality"), class: "tagbar-link" %>
+        <%= link_to "Science", profiles_path(tag: "Science"), class: "tagbar-link" %>
+        <%= link_to "Technology", profiles_path(tag: "Technology"), class: "tagbar-link" %>
+        <%= link_to "Philosophy", profiles_path(tag: "Philosophy"), class: "tagbar-link" %>
     </div>
   </div>
 </div>
