@@ -3,15 +3,9 @@
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
         <%= link_to "All", profiles_path, class: "tagbar-link" %>
-        <%= link_to "Art", profiles_path(tag: "Art"), class: "tagbar-link" %>
-        <%= link_to "Politics", profiles_path(tag: "Politics"), class: "tagbar-link" %>
-        <%= link_to "Business", profiles_path(tag: "Business"), class: "tagbar-link" %>
-        <%= link_to "Society", profiles_path(tag: "Society"), class: "tagbar-link" %>
-        <%= link_to "Education", profiles_path(tag: "Education"), class: "tagbar-link" %>
-        <%= link_to "Sprituality", profiles_path(tag: "Spirituality"), class: "tagbar-link" %>
-        <%= link_to "Science", profiles_path(tag: "Science"), class: "tagbar-link" %>
-        <%= link_to "Technology", profiles_path(tag: "Technology"), class: "tagbar-link" %>
-        <%= link_to "Philosophy", profiles_path(tag: "Philosophy"), class: "tagbar-link" %>
+        <% Article.where(category: "profile").pluck(:tag).uniq.each do |tag| %>
+          <%= link_to tag, profiles_path(tag: tag), class: "tagbar-link" %>
+        <% end %>
     </div>
   </div>
 </div>
