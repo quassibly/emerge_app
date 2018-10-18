@@ -5,16 +5,16 @@ $(document).ready(function() {
   };
 
   function uploadAttachment(attachment) {
-    var csrfToken = $('meta[name="csrf-token"]').attr('content');
+    // var csrfToken = $('meta[name="csrf-token"]').attr('content');
     var file = attachment.file;
     var form = new FormData;
     var endpoint = "/images";
     form.append("Content-Type", file.type);
     form.append("image[image]", file);
 
-    xhr = new XMLHttpRequest;
-    xhr.open("POST", endpoint, true);
-    xhr.setRequestHeader("X-CSRF-Token", csrfToken);
+    var xhr = new XMLHttpRequest;
+    xhr.open("POST", "/images.json", true);
+    xhr.setRequestHeader("X-CSRF-Token", Rails.csrfToken());
 
     xhr.upload.onprogress = function(event) {
       var progress = event.loaded / event.total * 100;
@@ -22,10 +22,10 @@ $(document).ready(function() {
     };
 
     xhr.onload = function() {
-      if (this.status >= 200 && this.status < 300) {
-        var data = JSON.parse(this.responseText);
+      if (xhr.status === 201) {
+        var data = JSON.parse(xhr.responseText);
         return attachment.setAttributes({
-          url: data.url,
+          url: data.image_url,
           href: data.url
         });
       }

@@ -1,7 +1,6 @@
 
-
 <%= form_for @profile, url: {action: "create"}, html: {class: "article_form"} do |f| %>
-  <%= f.file_field :photo, placeholder: "photo url" %>
+  <%= f.text_field :photo, placeholder: "photo url" %>
   <%= f.hidden_field :category, value: "profile" %>
   <%= f.text_field :person, placeholder: "Person" %>
   <%= f.text_field :headline, placeholder: "Headline" %>

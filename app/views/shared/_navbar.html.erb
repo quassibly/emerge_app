@@ -6,7 +6,7 @@
   </a>
 
   <!-- Center Navigation -->
-  <div class="navbar-center hidden-xs">
+  <div class="navbar-center hidden-xs hidden-sm">
 
     <%= link_to "About", about_path, class: "navbar-item navbar-link" %>
     <%= link_to "Updates", updates_path, class: "navbar-item navbar-link" %>
@@ -21,10 +21,20 @@
 
   <!-- right Navigation -->
   <div class="navbar-right">
-    <i class="social fab fa-twitter"></i>
-    <i class="social fab fa-facebook-f"></i>
-    <i class="social fab fa-instagram"></i>
-    <i class="social fab fa-linkedin-in"></i>
+    <div class="hidden-xs hidden-sm">
+      <%= link_to "https://twitter.com/intent/follow?screen_name=cocreationloft" do %>
+        <i class="social fab fa-twitter"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com/cocreationloft/" do %>
+        <i class="social fab fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.instagram.com/cocreationloft/" do %>
+        <i class="social fab fa-instagram"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/feed/" do %>
+        <i class="social fab fa-linkedin-in"></i>
+      <% end %>
+    </div>
   </div>
 
 </div>
