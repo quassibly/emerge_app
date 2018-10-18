@@ -2,10 +2,10 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
-        <%= link_to "All", opinions_path, class: "tagbar-link" %>
-        <% Article.where(category: "opinion").pluck(:tag).uniq.each do |tag| %>
-          <%= link_to tag, opinions_path(tag: tag), class: "tagbar-link" %>
-        <% end %>
+      <%= link_to "All", opinions_path, class: "tagbar-link" %>
+      <% Article.where(category: "opinion").pluck(:tag).uniq.each do |tag| %>
+        <%= link_to tag, opinions_path(tag: tag), class: "tagbar-link" %>
+      <% end %>
     </div>
   </div>
 </div>

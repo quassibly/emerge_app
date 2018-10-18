@@ -2,16 +2,10 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
-      <a href="" class="tagbar-item tagbar-link">All</a>
-      <a href="" class="tagbar-item tagbar-link">Art</a>
-      <a href="" class="tagbar-item tagbar-link">Politics</a>
-      <a href="" class="tagbar-item tagbar-link">Business</a>
-      <a href="" class="tagbar-item tagbar-link">Society</a>
-      <a href="" class="tagbar-item tagbar-link">Education</a>
-      <a href="" class="tagbar-item tagbar-link">Spirituality</a>
-      <a href="" class="tagbar-item tagbar-link">Science</a>
-      <a href="" class="tagbar-item tagbar-link">Technology</a>
-      <a href="" class="tagbar-item tagbar-link">Philosophy</a>
+      <%= link_to "All", profiles_path, class: "tagbar-link" %>
+      <% Article.where(category: "profile").pluck(:tag).uniq.each do |tag| %>
+        <%= link_to tag, profiles_path(tag: tag), class: "tagbar-link" %>
+      <% end %>
     </div>
   </div>
 </div>
