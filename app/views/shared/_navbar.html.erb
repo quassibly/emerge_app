@@ -8,14 +8,14 @@
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
 
-    <%= link_to "About", about_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Updates", updates_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Profiles", profiles_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Opinions", opinions_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Video", video_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Podcast", podcast_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Events", events_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Spaces", spaces_path, class: "navbar-item navbar-link" %>
+    <%= link_to "About", about_path, class: current_class?(about_path) %>
+    <%= link_to "Updates", updates_path, class: current_class?(updates_path) %>
+    <%= link_to "Profiles", profiles_path, class: current_class?(profiles_path) %>
+    <%= link_to "Opinions", opinions_path, class: current_class?(opinions_path) %>
+    <%= link_to "Video", video_path, class: current_class?(video_path) %>
+    <%= link_to "Podcast", podcast_path, class: current_class?(podcast_path) %>
+    <%= link_to "Events", events_path, class: current_class?(events_path) %>
+    <%= link_to "Spaces", spaces_path, class: current_class?(spaces_path) %>
 
   </div>
 

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
   Trix.config.attachments.preview.caption = {
     name: false,
     size: false
@@ -40,4 +40,4 @@ $(document).ready(function() {
       return uploadAttachment(attachment);
     }
   });
-});
+// });
