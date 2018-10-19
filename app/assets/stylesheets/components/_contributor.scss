@@ -1,0 +1,25 @@
+.contributor-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 10px;
+  border: solid 1px;
+  padding: 30px;
+}
+
+.contributor-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.contributor-text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.contributor-header {
+  font-family: $secondary-font;
+  font-size: 25px;
+  margin: 10px 0;
+}
