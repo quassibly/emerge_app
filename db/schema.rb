@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181010163005) do
+ActiveRecord::Schema.define(version: 20181020110853) do
 
   create_table "articles", force: :cascade do |t|
     t.string "category"
@@ -19,12 +19,15 @@ ActiveRecord::Schema.define(version: 20181010163005) do
     t.string "subhead"
     t.string "tag"
     t.integer "contributor_id"
+    t.integer "photographer_id"
     t.string "photo"
     t.text "body"
-    t.boolean "deleted"
+    t.boolean "published", default: false
+    t.boolean "deleted", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["contributor_id"], name: "index_articles_on_contributor_id"
+    t.index ["photographer_id"], name: "index_articles_on_photographer_id"
   end
 
   create_table "contributors", force: :cascade do |t|
@@ -42,6 +45,13 @@ ActiveRecord::Schema.define(version: 20181010163005) do
     t.text "image_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "photographers", force: :cascade do |t|
+    t.integer "contributor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["contributor_id"], name: "index_photographers_on_contributor_id"
   end
 
 end

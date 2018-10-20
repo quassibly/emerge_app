@@ -8,6 +8,7 @@
 
 Article.destroy_all
 Contributor.destroy_all
+Photographer.destroy_all
 # User.destroy_all
 
 
@@ -20,9 +21,16 @@ Contributor.create(name: "Vanessa Oberin", photo: "https://pbs.twimg.com/profile
 Contributor.create(name: "Seda Yildiz", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 Contributor.create(name: "Andie Cusick", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 
+Photographer.create(contributor_id: 1)
+Photographer.create(contributor_id: 2)
+Photographer.create(contributor_id: 3)
+Photographer.create(contributor_id: 4)
+Photographer.create(contributor_id: 5)
+Photographer.create(contributor_id: 6)
+
 Article.create(category: "profile",
   person: "",
-  headline: "Link List #89: Tech billionaires, creeping on strangers, and why the 80’s are the gift that keeps on giving Workplace",
+  headline: "Link List #89: Tech billionaires",
   subhead: "A creative digest of the web's offerings",
   tag: "Society",
   contributor_id: 2,
@@ -38,7 +46,7 @@ Article.create(category: "profile",
     <p>Also, be sure to check out the FvF Mixtapes for some tunes mixed by our friends and favorite artists, and subscribe to our <a href="https://freundevonfreunden.us1.list-manage.com/subscribe?u=2fc2888916822c4e0131388d9&amp;id=d1c4084573">newsletter</a> to stay up to date with FvF stories.</p>')
 Article.create(category: "profile",
   person: "",
-  headline: "How Assemble’s Joe Halligan wants to change future cities, one street at a time",
+  headline: "Assemble’s Joe Halligan wants to change future cities",
   subhead: "The young architecture collective works horizontally and democratically, and it has a similar vision for our cities, London",
   tag: "Business",
   contributor_id: 1,
@@ -424,7 +432,7 @@ Article.create(category: "profile",
   Although female artists no longer have to fear such extreme punishment for making art, arguably they still have a way to go to catch up to their male contemporaries. “It’s still a very patriarchal society. It’s very hierarchical, to a surprising degree,” says Rits-Volloch. “Men don’t do the washing-up! It’s unheard of,” she adds. The exhibition’s third curator, David Elliot, who has a long history of working in the region, remains optimistic about gender politics in Kazakhstan: “It&#8217;s not alone in being rather patriarchal,” he says, “and remember the origin of the Amazons—who were real!—are found in Iron Age Kazakhstan.”")
 Article.create(category: "profile",
   person: "",
-  headline: "In the capital of Slovakia, crafting plastics! studio are set on proving bioplastic is ready for mass consumption",
+  headline: "Slovakia, crafting plastics!",
   subhead: "In cooperation with local scientists, designers Vlasta Kubušová and Miroslav Král have developed a material of the future, Bratislava",
   tag: "Environment",
   contributor_id: 3,
