@@ -21,6 +21,8 @@ Contributor.create(name: "Vanessa Oberin", photo: "https://pbs.twimg.com/profile
 Contributor.create(name: "Seda Yildiz", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 Contributor.create(name: "Andie Cusick", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 
+puts "#{Contributor.count} contributors have been seeded"
+
 Photographer.create(contributor_id: 1)
 Photographer.create(contributor_id: 2)
 Photographer.create(contributor_id: 3)
@@ -28,12 +30,15 @@ Photographer.create(contributor_id: 4)
 Photographer.create(contributor_id: 5)
 Photographer.create(contributor_id: 6)
 
+puts "#{Photographer.count} photographers have been seeded"
+
 Article.create(category: "profile",
   person: "",
   headline: "Link List #89: Tech billionaires",
   subhead: "A creative digest of the web's offerings",
   tag: "Society",
   contributor_id: 2,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/link-list-89-tech-billionaires-creeping-on-strangers-and-why-the-80s-are-the-gift-that-keeps-on-giving/89_LinkList-header-1600x1068.jpg",
   body: '
     <p>This week, we revel in Schadenfreude as Hedi Slimane’s debut collection for Celine is universally panned, learn what the founder of WhatsApp has to say about the most powerful company in the world (#deletefacebook), and get to the bottom of Kanye West’s bizarre rant on the topic of the 13th Amendment.</p>
@@ -50,6 +55,7 @@ Article.create(category: "profile",
   subhead: "The young architecture collective works horizontally and democratically, and it has a similar vision for our cities, London",
   tag: "Business",
   contributor_id: 1,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/creating-the-more-democratic-cities-of-the-future-one-street-at-a-time-with-assembles-joe-halligan/Freunde-von-Freunden-TSN-Joseph-Halligan-0651-1600x1067.jpg",
   body: '
     <div id="story-content" class="story-main npc">
@@ -420,6 +426,7 @@ Article.create(category: "profile",
   subhead: "Bread & Roses mixes contemporary, modern, and folk art practices for the first time, Berlin",
   tag: "Art",
   contributor_id: 2,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/auto-draft/Freunde-von-Freunden-Focus-on-Kazakhstan-4835-1600x1067.jpg",
   body: "“In our research we’ve uncovered a number of women artists who are extremely important to the development of Kazakh art who were invisible: They made work under their husband’s names, their art wasn’t preserved or sold and once their husbands passed away that was it,” says Dr. Rachel Rits-Volloch.
   As the founding director of MOMENTUM, a not-for-profit platform dedicated to time-based art, Rits-Volloch is part of the effort to shift this narrative. In collaboration with the Ministry of Culture and Sports of the Republic of Kazakhstan and the National Museum of the Republic of Kazakhstan, Momentum is organizing the exhibition Bread &#038; Roses, which will showcase four generations of female Kazakh art at Berlin’s Kunstquartier Bethanien. Bread &#038; Roses has been made possible through the cultural initiative Focus Kazakhstan, a four-pronged exhibition format aiming to bring contemporary art from Kazakhstan to an international audience. Incredibly, it’s the first time that the government has ever sponsored a contemporary art project.
@@ -436,6 +443,7 @@ Article.create(category: "profile",
   subhead: "In cooperation with local scientists, designers Vlasta Kubušová and Miroslav Král have developed a material of the future, Bratislava",
   tag: "Environment",
   contributor_id: 3,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/crafting-plastic-studio/Freunde-von-Freunden-TSN-Crafting-Plastic-Studio-18-1600x1068.jpg",
   body: "When crafting plastics! studio co-founder Vlasta Kubušová first heard of a fully biodegradable material with plastic-like attributes that was invented in her hometown, she was fascinated and couldn’t understand why we were not already using it.
   Together with her partner and fellow product designer Miroslav Král, they asked the scientist responsible, Pavel Alexy. Alexy and his team had just registered a related patent and his answer was simple: Join our laboratory and we will invent something together.
@@ -454,6 +462,7 @@ Article.create(category: "profile",
   subhead: "A journey into object cultures, future memories and Viennese resilience, Los Angeles",
   tag: "Spirituality",
   contributor_id: 4,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/andrea-lenardin-madden/Freunde-von-Freunden-Andrea-Lenardin-85-1600x1067.jpg",
   body: "For ‘declared_’, a current collaboration with long-time collaborator Peter Noever, Lenardin retraces the history of everyday objects that have gained iconic status today, but that might not be with us tomorrow. Physical items such as a category of tableware home to a specific region or an analog medium—like paper—that become obsolete through standardization and digitalization are redesigned for the future. Their exhibition at Galerie Rauminhalt in Vienna is also a call upon the design community to shape the evolution of familiar objects by submitting an idea for their (un)expected future use. “Today, our relation to the material world is occupied by the principles of minimalism, a sharing culture, and nomadic living,” says Lenardin without any hint of nostalgia or pessimism. “I’m just really curious how the not-having-of-things will affect future generations—how all the collections not made will be memorized.”
   Thinking of her own generation and her upbringing in Austria, there are several items that Lenardin recalls to be essential in her life. One of them, the Post-it, is as mundane as it is iconic. Introduced and patented by 3M over 40 years ago, the sticky note—easily recognizable by its canary yellow color—remains a mythical object. For some, Lenardin among them, see the invention of the Post-it as the advent of a new means of communication: “It was quintessentially the first text-message, if you disregard the telegram,” she explains. “But as such, it has become obsolete with digital messaging services.” For ‘declared_’ Lenardin collaborated with 3M to produce the largest original Post-it Pad possible. Exhibition visitors can meet at the limited edition ‘Post-it bar’ and draw on an elevated pad 55 x 55 inches large, containing 840 sticky notes.
@@ -472,6 +481,7 @@ Article.create(category: "profile",
   subhead: "Unlearning as a methodology in the Fourth Istanbul Design Biennial, Instanbul",
   tag: "Education",
   contributor_id: 5,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/in-the-age-of-acceleration-deniz-ova-emphasizes-the-urgency-of-reformulating-design-education/Freunde-von-Freunden-Deniz-Ova-055-1600x1068.jpg",
   body: "When Deniz Ova first moved to Turkey in 2007 she wasn’t intending on settling there for good.
   Born and raised in Stuttgart—where she was working in event organization and management—Ova relocated to Istanbul after she was offered a job at the Istanbul Foundation for Culture and Arts (IKSV). “Though it was initially a short-term plan, twelve years later I’m still working for IKSV!” she says. After initially living in the heart of the city, Ova finally settled in the Bomonti district, which is well-known for its multicultural community and recent urban transformation. “Here you can still hear church bells on Sunday morning and see crowds of people gathered; it reminds me of the Noel or Easter celebrations we used to have in Germany,” she says.
@@ -499,6 +509,7 @@ Article.create(category: "profile",
   subhead: "The author, speaker and now self-taught furniture maker explores the notion of home in Joshua Tree",
   tag: "Art",
   contributor_id: 6,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/io-draft/Freunde-von-Freunden-iO-Tillet-Wright-1202-1600x1065.jpg",
   body: "Io is the fourth largest moon in the solar system. As the innermost Galilean moon that orbits Jupiter, it’s also the most volcanically active, erupting with sulphur resulting from the moon being stretched and squeezed. Named after this energetic, seemingly angry moon is 32-year-old iO Tillett Wright.
     The native New Yorker is, like the moon he was named after, a ball of energy—energy that’s channeled into a plethora of projects at any one time. Speaking to iO, what strikes you immediately is an uncompromising and effervescent personality (shyness simply isn’t part of his vernacular), combined with a frenetic pace—something only those who grew up in New York City can truly relate to. “I’m a multi-hyphenate, for sure! Creative life is too often defined by people asking what you do: umm, well, I wrote a book and I take pictures of people and I speak to people and I, I…,” says iO, trailing off with the sheer exhausted voice of someone who’s been asked to talk about this one too many times.
@@ -518,6 +529,7 @@ Article.create(category: "opinion",
   subhead: "Companion takes a stroll between the streets and through the history of the Japanese quarter",
   tag: "Society",
   contributor_id: 1,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/auto-draft/Freunde-von-Freunden-District-Tour-Duesseldorf-0006-1600x1067.jpg",
   body: "About one quarter of all Japanese people in Germany live in and around Düsseldorf. No wonder, then, that this metropolitan region is also being shaped by Japanese culture. Over the years, the district around the centrally located Immermannstraße in particular has become a sort of Little Tokyo that attracts locals and tourists with culinary delicacies, ceramics, art, tea, and literature from Japan—reason enough for COMPANION to have look around and meet up with the community.
   The table looks like a chaotic setting from a scene in an anime show: countless small plates and cups, hardly larger than a doll’s, cover almost every millimeter. Squeezing onto similarly tiny stools around the table, there are a handful of full-grown adults—ready and waiting for tea time. Here at ANMO Art/Cha, in a quiet cross street off the bustling Immermannstraße in Düsseldorf’s center, Japanese tea tasting is taking place. The interested guests sip happily through the assortment of mild-to-bitter green teas, as well as through specialties of sweet and tart tea, matcha and earthy-tasting pu-er.
@@ -532,6 +544,7 @@ Article.create(category: "opinion",
   subhead: "Our Secret Table hosts intimate dinners in secret locations, and identifies a long overdue need to diversify its city’s culinary portfolio",
   tag: "Society",
   contributor_id: 2,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/our-secret-table/Freunde-von-Freunden-Our-Secret-Table-11_OST-1600x1067.jpg",
   body: "Although the Italian capital boasts unparalleled relationships with food and art, the dining project Our Secret Table establishes a marriage that Rome has long missed. Merging curatorial practice and exclusive dining as a gesture of love, its founder reassesses the true essence of la dolce vita.
   Born out of the love for her city and a curiosity for unusual hidden places, Our Secret Table is the brainchild of Valentina Guttuso, artistic director and founder of design and event agency TALEA. Keen to push the boundaries of traditional Roman environments, Guttuso’s eye for architecture and spatial design unites people at locations across Rome that remain top-secret until the last minute, while she has kicked off a movement focused on conviviality and social experimentation.
@@ -550,6 +563,7 @@ Article.create(category: "opinion",
   subhead: "Bag label QWSTION creates its stores with a multifunctional approach, where meeting place meets design platform, and retail space",
   tag: "Business",
   contributor_id: 3,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/eine-neue-generation-von-ladenbetreibern-belebt-den-einzelhandel-mit-konzepten-fur-zeitgemases-einkaufen/Freunde-von-Freunden-Qwestion-Vienna-14-1600x1064.jpg",
   body: "In-store shopping may have dipped in popularity but it’s yet to be a relic of a bygone era. The once-doomed retail sector has undergone an adjustment phase to adapt to times of digitalization and the spread of major chains.
   In the past, consumers would enter a shop, point to the items he or she wanted, and a person behind the counter would pull them from the shelves. A lot has changed since then. Businesses reoriented themselves to better meet the needs of their customers and another paradigm shift came with the advent of online shopping. Large retailers, such as Amazon, have since offered not only a comfortable shopping experience, but also the lowest prices and largest selection. You are no longer required to leave the house to meet your daily needs; nearly everything can be ordered online and delivered straight to your door. In our convenience culture, permanent retail establishments have had to get creative in order to survive in the midst of online shopping and the unchanging presence of chains. In response, some young brands are specializing in the high-quality production of one particular item. Such is the case with Swiss bag manufacturer QWSTION.
@@ -576,6 +590,7 @@ Article.create(category: "opinion",
   subhead: "The film and supper club dedicated to promoting the work of leading females in the fields of food and film",
   tag: "Society",
   contributor_id: 4,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/clam-club-feminist-film-and-supper-club/Freunde-von-Freunden-Clam-Club-Friends-Space-0644-1600x1068.jpg",
   body: "Talented women all over the world are joining forces in increasing numbers to combat the patriarchy through the concentrated synergy of their networks. One of these young communities is Clam Club, the inaugural meeting of which recently took place in Berlin. And this is only the beginning.
   Flickering candles give off just enough light to admire the delicate flowers and seashells scattered between dishes of glowing pink beetroot labneh and crackers spread across long communal tables. The warm scent of caramelized butter floats through the air, subtle clangs and sizzles are emitted from the kitchen, while a documentary featuring on-the-fly kitchen interviews are being screened onto the bare walls of this converted warehouse space in Berlin-Kreuzberg.
@@ -596,6 +611,7 @@ Article.create(category: "opinion",
   subhead: "Revisiting the style that slipped in and out of fashion and favor for generations",
   tag: "Art",
   contributor_id: 5,
+  photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/sos-brutalism/Freunde-von-Freunden-Brutalism-SOS-Kariakoo-Market-Benedikt-Redmann-1461x1200.jpg",
   body: "There’s no architectural movement quite as polarizing as Brutalism. To some people, ugly is the first term that springs to mind. Others may enthuse over its intriguing aesthetic, evoking nostalgia; they see beauty in the raw, frank and resistant qualities.
   Defining Brutalism, however, causes less debate. Flourishing from the 1950s to the late ’70s the style was both futuristic and progressive. Brutalism or “beton brut” refers to the exposed concrete, architecture that simultaneously celebrates boldness and experimentalism—and not characteristically brutal or menacing. While in opposition to the sleek elegance of Bauhaus and romance of Art Deco it has gained momentous international attention—be it admiration or rejection—scholars have defined Brutalism as a global phenomenon that has surpassed material expectations.
@@ -603,7 +619,8 @@ Article.create(category: "opinion",
   Inside the bustling market hall of Kariakoo in Dar es Salaam, Tanzania, one of East Africa’s busiest shopping districts, colorful stalls of local vendors selling regional fare along with clothing to souvenirs and hardware are strung along the labyrinth rows. The hall is covered by a towering concrete canopy inspired by patterns in nature and divided by columns repurposed to collect rainwater, shoppers find themselves inside a complex structure once a symbol of the region’s urban development. Built in the ’70s, a decade after the country’s independence from Britain, the construction of the large-scale marketplace led by one of Africa’s first architecture studios anticipated a wave of similar projects. Although the design summarizes region-specific efforts of Tropical Modernism, its maintenance isn’t a priority to local authorities—let alone to international world heritage lists.
   Yet more importantly for Tanzania and other sub-saharan countries, such as Kenya, Ghana, and Zambia, as well as Middle Eastern and South Asian regions, the then growth of local infrastructures helped shape national identities. Although the break from colonial powers didn’t yet include financial independence, the implementation of Brutalist concepts nurtured generations of young creatives eager to marry local traditions and international technologies and resources. Results included constructions with grid structures or layered facades.
   With geo-political changes, various Middle Eastern countries saw the potential of Brutalist-style urban developments to represent power, wealth and progress, the construction of the Iranian University of Shiraz built in 1971 to celebrate the monarchy’s 2500th anniversary being a case in point. To complement religious sites with examples of the modernist movement,  architects were given the task of merging local heritage and international influences.
-  Much of Russia’s architectural landscape is dotted with Soviet-era Brutalist constructions, such as St Petersburg’s Hotel Rus, which is one of many cherished examples of the modernist movement. O. Gurevich and V. Zhukov: Hotel Rus, Saint Petersburg, Russia, 1980–1988. Photo by Konstantin Antipin, 2016.
+  Much of Russia’s architectural landscape is dotted with Soviet-era Brutalist constructions, such as St Petersburg’s Hotel Rus, which is one of many cherished examples of the modernist movement. O. Gurevich and V. Zhukov: Hotel Rus, Saint Petersburg, Russia, 1980–1988. photographer_id: 1,
+  Photo by Konstantin Antipin, 2016.
   The University of Shiraz in Iran was influenced by American universities increasingly built in concrete. The architect, Minoru Yamasaki, later designed the World Trade Center. Minoru Yamasaki and Mohammad Reza Moghtader: Pahlavi University (today: University of Shiraz), Shiraz, Iran, 1960–1979. Photo by Hamid Reza Bani, 2017.
   Latin American buildings such as the Teresa Carreno Theater in Caracas, Venezuela, verify the local popularity of colossal and often dramatic structures. Jesús Sandoval, Tomás Lugo Marcano, Dietrich Kunckel: Theater Teresa Carreño, Caracas, Venezuela, 1971–1983. Photo by Antolin Sanchez, 1990.
   In Kuwait, Brutalism created meeting points of local traditions and durable structures; Suq Al-Muttaheda houses multifunctional car parks, office spaces and bazaars. 40 years after its inauguration, the original facades remain unmodified. John S. Bonnington Partnership and Kuwait Engineering Office: Suq Al-Muttaheda / Suq Al Masseel, Kuwait City, Kuwait, 1973–1979. Photo by Nelson Garrido, 2013.
@@ -616,6 +633,7 @@ Article.create(category: "opinion",
   subhead: "Creating honest yet playful records of society, the artist continues to take his viewers inside his studio",
   tag: "Society",
   contributor_id: 6,
+  photographer_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/to-challenge-our-perceptions-of-queer-relationships-artist-paul-sepuya-depicts-intimate-fragments-of-reality/Freunde-von-Freunden-Paul-Sepuya-Work-Darkroom-Mirror-HR-Feature-Crop-1600x1067.jpg",
   body: "We strive to revisit many of our protagonists and check in on their new creative endeavours. Six years on, we followed up with artist Paul Mpagi Sepuya to see how his body of work has evolved.
   Varying between simple portraits, sometimes nude, and experiential collages that either portray the artist, one or more of his subjects or combine all three, the results feature carefully crafted fragments that rarely depict entire bodies. By draping fabrics, shooting against mirrors, layering extracts of older works, Sepuya experiments within the confines of his studio, whose function he sees as an important element of his practice. Years into his career, Sepuya’s photographs remain deliberately provocative: the homoerotic images depict intimacy as an exploration of human relationships—all of Sepuya’s subjects are friends, intimates, and muses.<br>
@@ -629,3 +647,5 @@ Article.create(category: "opinion",
   It’s not and cannot be about defining anything, proscribing or styling. To be honest, my work is pretty much just “gay” in terms of content. It is homoerotic and homosocial. But it has formal elements and the questions asked are very queer.
   How would you describe the raising interest in queer art and its meaning to the contemporary art world?
   Raising interest is a trend, but queerness is essentially human and will go on. Hopefully we artists working in these themes connect to the larger world of ideas, the fundamental histories of the medium. That’s why I am interested in its embeddedness in the operations of photography, whether or not a queer or black person is “visible” in an expected way. Queerness is everywhere, blackness is everywhere, and this explosion of work should change how we look at all art going forward, because a trend for a type of representation will come and go.")
+
+puts "#{Article.count} articles have been seeded"
