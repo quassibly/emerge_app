@@ -10,16 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181020110853) do
+ActiveRecord::Schema.define(version: 20181020142014) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
     t.string "category"
     t.string "person"
     t.string "headline"
+    t.string "seo_title"
     t.string "subhead"
+    t.string "meta"
     t.string "tag"
-    t.integer "contributor_id"
-    t.integer "photographer_id"
+    t.bigint "contributor_id"
+    t.bigint "photographer_id"
     t.string "photo"
     t.text "body"
     t.boolean "published", default: false
@@ -48,10 +53,13 @@ ActiveRecord::Schema.define(version: 20181020110853) do
   end
 
   create_table "photographers", force: :cascade do |t|
-    t.integer "contributor_id"
+    t.bigint "contributor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["contributor_id"], name: "index_photographers_on_contributor_id"
   end
 
+  add_foreign_key "articles", "contributors"
+  add_foreign_key "articles", "photographers"
+  add_foreign_key "photographers", "contributors"
 end
