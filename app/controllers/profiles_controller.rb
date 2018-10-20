@@ -1,4 +1,6 @@
 class ProfilesController < ApplicationController
+  before_action :set_category
+
   def index         # GET /profiles
     @profiles = Article.where(category: "profile")
     if params[:tag].present?
@@ -44,5 +46,9 @@ class ProfilesController < ApplicationController
 
   def profile_params
     params.require(:article).permit(:person, :headline, :subhead, :tag, :contributor_id, :photo, :body)
+  end
+
+  def set_category
+    @category = "profiles"
   end
 end
