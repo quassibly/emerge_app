@@ -1,21 +1,24 @@
-<div class="profile-header-photo" style="background-image: url('<%= @opinion.photo %>')">
-  <div class="profile-head-card">
+<div class="opinion-container">
+  <h1>Opinion</h1>
+  <div class="opinion-header-photo round" style="background-image: url('<%= @opinion.contributor.photo %>')">
+  </div>
+  <div class="opinion-head-card">
     <div class="profile-category"><%= @opinion.category %></div>
     <div class="profile-headline"><h1><%= @opinion.headline %></h1></div>
     <div class="profile-strapline"><%= @opinion.subhead %></div>
     <div class="profile-tag"><%= @opinion.tag %></div>
   </div>
-</div>
 
-<div class="profile-container">
-  <div class="profile-social">
-    <i class="social fab fa-twitter"></i>
-    <i class="social fab fa-facebook-f"></i>
-    <i class="social fab fa-instagram"></i>
-    <i class="social fab fa-linkedin-in"></i>
+  <div class="profile-container">
+    <div class="profile-social">
+      <i class="social fab fa-twitter"></i>
+      <i class="social fab fa-facebook-f"></i>
+      <i class="social fab fa-instagram"></i>
+      <i class="social fab fa-linkedin-in"></i>
+    </div>
+
+    <div class="profile-body"><%= sanitize @opinion.body %></div>
+    <%= render 'shared/contributor' %>
   </div>
-
-  <div class="profile-body"><%= sanitize @opinion.body %></div>
-  <%= render 'shared/contributor' %>
 </div>
 
