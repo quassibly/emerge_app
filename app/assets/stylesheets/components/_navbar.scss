@@ -50,12 +50,17 @@
 
 /* Navbar link */
 .navbar-link {
-  color: #000000;
+  color: grey;
   text-decoration: none;
 }
 .navbar-link:hover {
   color: #da552f;
   text-decoration: none;
+}
+
+.navbar-item.active {
+  color: black;
+  font-weight: bold;
 }
 
 /* Dropdown menu */

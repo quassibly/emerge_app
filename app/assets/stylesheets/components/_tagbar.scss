@@ -29,6 +29,13 @@
   font-size: 13px;
   text-decoration: none;
 }
+
+.tagbar-link.active {
+  color: white;
+  background-color: black;
+  padding: 3px 5px;
+}
+
 .tagbar-link:hover {
   color: #da552f;
   text-decoration: none;

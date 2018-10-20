@@ -7,15 +7,10 @@
 
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
-
-    <%= link_to "About", about_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Updates", updates_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Profiles", profiles_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Opinions", opinions_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Video", video_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Podcast", podcast_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Events", events_path, class: "navbar-item navbar-link" %>
-    <%= link_to "Spaces", spaces_path, class: "navbar-item navbar-link" %>
+    <% @tabs = ["about", "updates", "profiles", "opinions", "video", "podcast", "events", "spaces"] %>
+    <% @tabs.each do |tab| %>
+      <%= link_to tab.capitalize, send("#{tab}_path"), class: current_category?(send("#{tab}_path")) %>
+    <% end %>
 
   </div>
 
