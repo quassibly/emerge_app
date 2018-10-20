@@ -13,12 +13,12 @@ Contributor.destroy_all
 
 # User.create(email: "meredith.avery@gmail.com", password: "password")
 
-Contributor.create(name: "Marta Bausells")
-Contributor.create(name: "Chloe Stead")
-Contributor.create(name: "Jana Németh")
-Contributor.create(name: "Vanessa Oberin")
-Contributor.create(name: "Seda Yildiz")
-Contributor.create(name: "Andie Cusick")
+Contributor.create(name: "Tarn Rodgers Johns", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
+Contributor.create(name: "Meredith Avery", photo: "https://pbs.twimg.com/profile_images/1051476685567213569/ve1gg6pJ_400x400.jpg", bio: "n00bie Berliner, wannabe developer, forever nerd.", twitter: "https://twitter.com/MeredithKAvery", instagram: "https://www.instagram.com/quassibly/", website: "https://github.com/quassibly/")
+Contributor.create(name: "Jana Németh", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
+Contributor.create(name: "Vanessa Oberin", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
+Contributor.create(name: "Seda Yildiz", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
+Contributor.create(name: "Andie Cusick", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 
 Article.create(category: "profile",
   person: "",
