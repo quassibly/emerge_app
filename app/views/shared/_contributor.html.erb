@@ -7,4 +7,17 @@
     <%= @profile.contributor.instagram %>
     <%= @profile.contributor.website %>
   </div>
+</div>
+
+<% if @profile.photographer.present? %>
+  <div class="contributor-container">
+    <%= image_tag @profile.photographer.contributor.photo, class: "contributor-image" %>
+    <div class="contributor-text-container">
+      <h2><%= @profile.photographer.contributor.name %></h2>
+      <p><%= @profile.photographer.contributor.bio %></p>
+      <%= @profile.photographer.contributor.twitter %>
+      <%= @profile.photographer.contributor.instagram %>
+      <%= @profile.photographer.contributor.website %>
+    </div>
   </div>
+<% end %>
