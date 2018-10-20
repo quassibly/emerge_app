@@ -28,8 +28,14 @@
 .tagbar-link {
   font-size: 13px;
   text-decoration: none;
+  padding: 3px 5px;
 }
 .tagbar-link:hover {
   color: #da552f;
   text-decoration: none;
+}
+
+.tagbar .active {
+  color: white;
+  background-color: black;
 }

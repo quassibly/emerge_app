@@ -2,10 +2,14 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
-        <%= link_to "All", profiles_path, class: "tagbar-link" %>
-        <% Article.where(category: "profile").pluck(:tag).uniq.each do |tag| %>
+      <%= link_to "All", profiles_path, class: "tagbar-link" %>
+      <% Article.where(category: "profile").pluck(:tag).uniq.each do |tag| %>
+        <% if tag == params[:tag] %>
+          <%= link_to tag, profiles_path(tag: tag), class: "tagbar-link active" %>
+        <% else %>
           <%= link_to tag, profiles_path(tag: tag), class: "tagbar-link" %>
         <% end %>
+      <% end %>
     </div>
   </div>
 </div>
