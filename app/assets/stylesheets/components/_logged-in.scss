@@ -1,0 +1,11 @@
+.logged-in-container {
+  background-color: $color-success;
+  color: white !important;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.logged-in-button {
+  color: white;
+  padding: 0 5px;
+}
