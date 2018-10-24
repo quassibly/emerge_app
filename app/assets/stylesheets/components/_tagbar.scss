@@ -30,6 +30,13 @@
   text-decoration: none;
   padding: 3px 5px;
 }
+
+.tagbar-link.active {
+  color: white;
+  background-color: black;
+  padding: 3px 5px;
+}
+
 .tagbar-link:hover {
   color: #da552f;
   text-decoration: none;

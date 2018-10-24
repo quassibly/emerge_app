@@ -53,13 +53,14 @@
   color: grey;
   text-decoration: none;
 }
-.navbar-link-active {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 900;
-}
 .navbar-link:hover {
   color: #da552f;
+  text-decoration: none;
+}
+
+.navbar-item.active {
+  color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 

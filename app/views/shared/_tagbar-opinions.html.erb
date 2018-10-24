@@ -2,13 +2,9 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
-      <%= link_to "All", opinions_path, class: "tagbar-link" %>
+      <%= link_to "All", opinions_path, class: current_tag?(nil) %>
       <% Article.where(category: "opinion").pluck(:tag).uniq.each do |tag| %>
-        <% if tag == params[:tag] %>
-          <%= link_to tag, opinions_path(tag: tag), class: "tagbar-link active" %>
-        <% else %>
-          <%= link_to tag, opinions_path(tag: tag), class: "tagbar-link" %>
-        <% end %>
+        <%= link_to tag, opinions_path(tag: tag), class: current_tag?(tag) %>
       <% end %>
     </div>
   </div>
