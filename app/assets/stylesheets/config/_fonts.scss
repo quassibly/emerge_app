@@ -4,21 +4,21 @@ $secondary-font: 'Gascogne';
 
 @font-face {
   font-family: 'Cinetype';
-  src: url('cinetype/GT-Cinetype-Regular.eot');
-  src: url('cinetype/GT-Cinetype-Regular.woff') format('woff'),
-       url('cinetype/GT-Cinetype-Regular.ttf') format('truetype');
+  src: font-url('cinetype/GT-Cinetype-Regular.eot');
+  src: font-url('cinetype/GT-Cinetype-Regular.woff') format('woff'),
+       font-url('cinetype/GT-Cinetype-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 // @font-face {
 //   font-family: 'Cinetype';
-//   src: url('cinetype/GT-Cinetype-Regular-Italic.eot');
-//   src: url('cinetype/GT-Cinetype-Regular-Italic.woff') format('woff'),
-//        url('cinetype/GT-Cinetype-Regular-Italic.ttf') format('truetype');
+//   src: font-url('cinetype/GT-Cinetype-Regular-Italic.eot');
+//   src: font-url('cinetype/GT-Cinetype-Regular-Italic.woff') format('woff'),
+//        font-url('cinetype/GT-Cinetype-Regular-Italic.ttf') format('truetype');
 //   font-weight: italic;
 // }
 
 @font-face {
   font-family: 'Gascogne';
-  src: url('gascogne/GascogneTS-Light.otf');
+  src: font-url('gascogne/GascogneTS-Light.otf');
   font-weight: lighter;
 }
