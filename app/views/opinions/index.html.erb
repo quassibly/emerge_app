@@ -8,7 +8,7 @@
     <div class="grid_flex">
       <% @opinions.each do |opinion| %>
         <%= link_to opinion_path(opinion) do %>
-          <div class="card">
+          <%= content_tag :div, class: published?(opinion) do %>
             <div class="card-img" style="background-image: url('<%= opinion.photo %>')">
               <div class="card-tag"><%= opinion.tag %></div>
             </div>
@@ -16,7 +16,16 @@
               <span class="card-contributor"><%= opinion.contributor.name %></span> <span class="card-quote"><%= opinion.headline %></span>
             </div>
             <div class="card-subhead"><%= opinion.subhead %></div>
-          </div>
+            <% if user_signed_in? %>
+              <div class="logged-in-card">
+                <% if opinion.published %>
+                  <p>published</p>
+                <% else %>
+                  <p>draft</p>
+                <% end %>
+              </div>
+            <% end %>
+          <% end %>
         <% end %>
       <% end %>
     </div>

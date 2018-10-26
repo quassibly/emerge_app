@@ -8,4 +8,9 @@ module ApplicationHelper
     return 'tagbar-link active' if params[:tag] == current_tag
     'tagbar-link'
   end
+
+  def published?(current_article)
+    return 'card draft' if current_article.published == false
+    'card'
+  end
 end

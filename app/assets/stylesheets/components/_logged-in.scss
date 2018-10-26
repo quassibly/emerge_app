@@ -9,3 +9,10 @@
   color: white;
   padding: 0 5px;
 }
+.logged-in-card {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logged-in-icon {
+  display: flex;
+}
