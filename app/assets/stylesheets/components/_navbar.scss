@@ -12,6 +12,9 @@
   z-index: 1;
   margin: 4px;
 }
+.navbar-home {
+  background-color: white;
+}
 
 /* Left section */
 .navbar-left {
@@ -97,4 +100,7 @@
 
 #logo {
   height: 60px;
+}
+#logo-home {
+  height: 200px;
 }
