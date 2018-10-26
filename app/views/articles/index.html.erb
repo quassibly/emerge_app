@@ -1,3 +1,31 @@
-  <a href="/" class="navbar-left">
-    <%= image_tag "logo_temp.png", id: "logo-home" %>
-  </a>
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">articles</h1>
+    <h2 class="page-subhead">Thought-provoking commentary from writers, thinkers and changemakers across the world.</h2>
+
+    <div class="grid_flex">
+      <% @articles.each do |article| %>
+        <%= link_to article_path(article) do %>
+          <%= content_tag :div, class: published?(article) do %>
+            <div class="card-img" style="background-image: url('<%= article.photo %>')">
+              <div class="card-tag"><%= article.tag %></div>
+            </div>
+            <div class="card-headline">
+              <span class="card-contributor"><%= article.contributor.name %></span> <span class="card-quote"><%= article.headline %></span>
+            </div>
+            <div class="card-subhead"><%= article.subhead %></div>
+            <% if user_signed_in? %>
+              <div class="logged-in-card">
+                <% if article.published %>
+                  <p>published</p>
+                <% else %>
+                  <p>draft</p>
+                <% end %>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
