@@ -1,9 +1,19 @@
+<% if current_home? %>
+  <div class="navbar-home">
+    <a href="/" class="navbar-left">
+      <%= image_tag "logo_temp.png", id: "logo-home" %>
+    </a>
+  </div>
+<% end %>
+
 <div class="navbar">
 
   <!-- Left Navigation -->
+    <div class="logo-hide">
   <a href="/" class="navbar-left">
-    <%= image_tag "logo_temp.png", id: "logo" %>
+      <%= image_tag "logo_temp.png", id: "logo", class: "logo-hide" %>
   </a>
+    </div>
 
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
@@ -32,3 +42,9 @@
   </div>
 
 </div>
+
+<!-- <script>
+  $(document).scroll(function(){
+     $("logo").toggleClass('hidden', $(this).scrollTop() > 10);
+ });
+</script> -->

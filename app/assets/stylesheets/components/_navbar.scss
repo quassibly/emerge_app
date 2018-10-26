@@ -14,6 +14,7 @@
 }
 .navbar-home {
   background-color: white;
+z-index: 0;
 }
 
 /* Left section */
@@ -103,4 +104,5 @@
 }
 #logo-home {
   height: 200px;
+  margin: 0 auto;
 }

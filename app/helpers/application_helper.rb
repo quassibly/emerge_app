@@ -1,4 +1,9 @@
 module ApplicationHelper
+  def current_home?
+    return true if request.path == "/"
+    false
+  end
+
   def current_category?(test_path)
     return 'navbar-item navbar-link active' if request.path == test_path
     'navbar-item navbar-link'
