@@ -1,7 +1,19 @@
+<div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
+  <div class="home-head-card">
+    <div class="profile-category"><%= @articles[0].category %></div>
+    <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
+    <div class="profile-subhead"><%= @articles[0].subhead %></div>
+    <div class="profile-tag"><%= @articles[0].tag %></div>
+  </div>
+</div>
+
+<div class="home-feature-container">
+  <div class="home-feature-image" style="background-image: url('<%= @articles[0].photo %>')">
+
+  </div>
+</div>
 <div class="grid-container">
   <div class="interviews_grid">
-    <h1 class="page-head">articles</h1>
-    <h2 class="page-subhead">Thought-provoking commentary from writers, thinkers and changemakers across the world.</h2>
 
     <div class="grid_flex">
       <% @articles.each do |article| %>
