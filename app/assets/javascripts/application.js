@@ -14,5 +14,4 @@
 //= require turbolinks
 //= require trix
 //= require_tree .
-//= require navbar
 //
