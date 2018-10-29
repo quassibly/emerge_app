@@ -2,3 +2,60 @@ $primary-color: #000000;
 $secondary-color: #ffffff;
 $color-success: #4B88A2;
 $color-warning: #BB0A21;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                10rem !default;
+$dropdown-max-width:                767px;
+$dropdown-padding-y:                .5rem !default;
+$dropdown-spacer:                   .125rem !default;
+$dropdown-bg:                       white !default;
+$dropdown-border-color:             rgba(black, .15) !default;
+$dropdown-border-radius:            0 !default;
+$dropdown-border-width:             1px !default;
+$dropdown-divider-bg:               grey !default;
+$dropdown-box-shadow:               0 .5rem 1rem rgba(black, .175) !default;
+
+$dropdown-link-color:               gray !default;
+$dropdown-link-hover-color:         darken(gray, 5%) !default;
+$dropdown-link-hover-bg:            gray !default;
+
+$dropdown-link-active-color:        black !default;
+$dropdown-link-active-bg:           black !default;
+
+$dropdown-link-disabled-color:     gray !default;
+
+$dropdown-item-padding-y:           .25rem !default;
+$dropdown-item-padding-x:           1.5rem !default;
+
+$dropdown-header-color:             gray !default;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;

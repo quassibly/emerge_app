@@ -1,5 +1,5 @@
 * {
-  // box-sizing: border-box;
+  box-sizing: border-box;
   font-family: $secondary-font;
 }
 
@@ -102,4 +102,16 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+&.show {
+    max-height: 99em;
+    transition: max-height .5s ease-in-out;
+  }
 }
