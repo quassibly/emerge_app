@@ -1,6 +1,6 @@
 * {
   // box-sizing: border-box;
-  font-family: $primary-font;
+  font-family: $secondary-font;
 }
 
 body {
@@ -32,6 +32,7 @@ h2 {
   font-family: $secondary-font;
   font-size: 25px;
   letter-spacing: .02em;
+  line-height: 1.2em;
 }
 
 input, select {
