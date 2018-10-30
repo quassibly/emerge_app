@@ -15,7 +15,7 @@ module ApplicationHelper
   end
 
   def published?(current_article)
-    return 'card draft' if current_article.published == false
+    return 'card draft' if current_article.published == false && user_signed_in?
     'card'
   end
 end

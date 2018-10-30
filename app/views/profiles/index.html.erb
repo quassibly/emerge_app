@@ -8,7 +8,7 @@
     <div class="grid_flex">
       <% @profiles.each do |profile| %>
         <%= link_to profile_path(profile) do %>
-          <div class="card">
+          <%= content_tag :div, class: published?(profile) do %>
             <div class="card-img" style="background-image: url('<%= profile.photo %>')">
               <div class="card-tag tag"><%= profile.tag %></div>
             </div>
@@ -16,7 +16,7 @@
               <%= profile.headline %>
             </div>
             <div class="card-subhead"><%= profile.subhead %></div>
-          </div>
+          <% end %>
         <% end %>
       <% end %>
     </div>
