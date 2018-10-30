@@ -1,9 +1,11 @@
 <div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
-  <div class="home-head-card">
-    <div class="profile-category"><%= @articles[0].category %></div>
-    <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
-    <div class="profile-subhead"><%= @articles[0].subhead %></div>
-    <div class="profile-tag"><%= @articles[0].tag %></div>
+  <div class="home-header-card-container">
+    <div class="profile-category category"><%= @articles[0].category %></div>
+    <div class="home-head-card">
+      <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
+      <div class="profile-subhead"><%= @articles[0].subhead %></div>
+      <div class="profile-tag tag"><%= @articles[0].tag %></div>
+    </div>
   </div>
 </div>
 
@@ -20,7 +22,8 @@
         <%= link_to article_path(article) do %>
           <%= content_tag :div, class: published?(article) do %>
             <div class="card-img" style="background-image: url('<%= article.photo %>')">
-              <div class="card-tag"><%= article.tag %></div>
+              <div class="card-tag tag"><%= article.tag %></div>
+              <div class="card-category category"><%= article.category %></div>
             </div>
             <div class="card-headline">
               <span class="card-contributor"><%= article.contributor.name %></span> <span class="card-quote"><%= article.headline %></span>

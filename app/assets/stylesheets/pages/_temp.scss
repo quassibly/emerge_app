@@ -1,4 +1,8 @@
 .temp {
+  &-container {
+    min-height: calc(100vh - 375px);
+    margin: 100px auto;
+  }
   &-card {
     width: 50%;
     padding: 30px 80px;
@@ -6,7 +10,7 @@
   }
   &-head {
     text-align: center;
-    margin: 100px 0 25px;
+    // margin: 100px 0 25px;
   }
   &-subhead {
     text-align: center;

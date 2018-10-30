@@ -35,6 +35,28 @@ h2 {
   line-height: 1.2em;
 }
 
+l1, l2, l3, l4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $primary-font;
+  font-weight: 100;
+}
+
+l1 {
+  font-size: 40px;
+}
+
+l2 {
+  font-size: 25px;
+}
+
+l3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  line-height: 1.3em;
+}
+
 input, select {
   outline: none !important;
 }
@@ -50,6 +72,29 @@ a {
 .heading {
   font-family: $secondary-font;
   font-weight: 300;
+}
+
+.category {
+  font-family: $primary-font;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: solid black 1px;
+  background-color: white;
+  padding: 4px;
+  letter-spacing: .15em;
+  text-shadow: none;
+  color: black;
+}
+
+.tag {
+  font-family: $primary-font;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: solid black 1px;
+  color: white;
+  background-color: black;
+  padding: 4px;
+  letter-spacing: .15em;
 }
 
 .link {
