@@ -37,6 +37,26 @@
   left: auto;
 }
 
+.dropdown-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-menu-columns {
+  list-style: none;
+  margin: 11px -11px;
+  padding: 0px;
+}
+.dropdown-menu-columns li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
+  text-align: center;
+  outline: solid 1px;
+}
+
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
 // Just add .dropup after the standard .dropdown class and you're set.
 .dropup {

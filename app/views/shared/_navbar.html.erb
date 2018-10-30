@@ -43,10 +43,15 @@
     <div class="navbar-item hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-        <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu"><% @tabs = ["about", "updates", "profiles", "opinions", "video", "podcast", "events", "spaces"] %>
-            <% @tabs.each do |tab| %>
-              <li><%= link_to tab.capitalize, send("#{tab}_path") %></li>
-            <% end %>
+        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-columns navbar-dropdown-menu">
+          <% @tabs = ["about", "updates", "profiles", "opinions"] %>
+          <% @tabs.each do |tab| %>
+            <li><%= link_to tab.capitalize, send("#{tab}_path"), class: 'navbar-item navbar-link' %></li>
+          <% end %>
+          <% @tabs = ["video", "podcast", "events", "spaces"] %>
+          <% @tabs.each do |tab| %>
+            <li><%= link_to tab.capitalize, send("#{tab}_path"), class: 'navbar-item navbar-link' %></li>
+          <% end %>
         </ul>
       </div>
     </div>
