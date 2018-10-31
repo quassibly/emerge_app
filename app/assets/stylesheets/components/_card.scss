@@ -1,3 +1,7 @@
+.grid_flex {
+  grid-gap: 100px 20px;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin: 50px 10px;
+  // margin: 50px 10px;
   max-width: 750px;
   height: 525px;
   border: solid 1px;

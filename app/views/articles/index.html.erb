@@ -14,11 +14,33 @@
 
   </div>
 </div>
-<div class="grid-container">
-  <div class="interviews_grid">
 
-    <div class="grid_flex">
-      <% @articles.each do |article| %>
+<div class="home-grid-container">
+  <div class="feature-card">
+    <% article = @articles[2] %>
+    <%= link_to article_path(article) do %>
+      <%= content_tag :div, class: published?(article) do %>
+        <div class="card-img" style="background-image: url('<%= article.photo %>')">
+          <div class="card-tag tag"><%= article.tag %></div>
+          <div class="card-category category"><%= article.category %></div>
+        </div>
+        <div class="card-headline">
+          <span class="card-contributor"><%= article.contributor.name %></span> <span class="card-quote"><%= article.headline %></span>
+        </div>
+        <div class="card-subhead"><%= article.subhead %></div>
+        <% if user_signed_in? %>
+          <div class="logged-in-card">
+            <% if article.published %>
+              <p>published</p>
+            <% else %>
+              <p>draft</p>
+            <% end %>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+    <% @articles.each do |article| %>
         <%= link_to article_path(article) do %>
           <%= content_tag :div, class: published?(article) do %>
             <div class="card-img" style="background-image: url('<%= article.photo %>')">
@@ -41,6 +63,4 @@
           <% end %>
         <% end %>
       <% end %>
-    </div>
-  </div>
 </div>
