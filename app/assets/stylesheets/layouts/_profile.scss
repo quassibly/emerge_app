@@ -1,17 +1,19 @@
 .profile {
   &-header-photo {
     width: 100%;
-    height: 800px;
-    max-height: 50vh;
+    height: 90vh;
+    max-height: calc(100vh - 250px);
     display: flex;
     justify-content: center;
-    top: 0px;  }
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   &-head-card {
     display: flex;
     flex-direction: column;
-    margin: calc(50vh - 175px) 0 0 0;
-    width: 50%;
-    min-width: 700px;
+    margin: calc(100vh - 426px) 16px 0 16px;
+    max-width: 720px;
     border: solid 1px;
     padding: 30px;
     background-color: #ffffff;
@@ -22,30 +24,27 @@
     margin: -12px auto 0;
   }
   &-headline {
-    max-height: 5.2em;
     overflow: hidden;
-    margin: 10px 0;
+    margin: 8px 0;
+    height: 5em;
   }
   &-subhead {
     font-family: $secondary-font;
     font-size: 25px;
     margin: 10px 0;
     height: 2em;
+    overflow: hidden;
   }
   &-tag {
-    font-family: $primary-font;
-    font-size: 13px;
-    padding: 4px;
-    border: solid #000000 1px;
-    text-transform: uppercase;
     letter-spacing: .15em;
     margin: 0 auto;
+    margin-top: 18px
   }
   &-container {
     width: 80%;
     background-color: white;
     margin: 150px auto;
-    max-width: 50%;
+    max-width: 720px;
   }
   &-social {
     text-align: center;
@@ -58,4 +57,8 @@
     line-height: 1.6em;
     padding: 30px;
   }
+}
+
+.profile-body p:first-child {
+  font-size: 25px;
 }

@@ -15,11 +15,16 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
-    min-width: 700px;
+    max-width: 720px;
     border: solid 1px;
     padding: 30px;
     background-color: #ffffff;
     height: 275px;
     text-align: center;
+}
+.opinion-container {
+  width: 80%;
+  background-color: white;
+  margin: 32px auto;
+  max-width: 720px;
 }
