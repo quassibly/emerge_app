@@ -38,7 +38,7 @@
   color: white;
   position: relative;
 }
-.card-tag {
+.card-category {
   position: absolute;
   bottom: 10px;
   left: -10px;
@@ -52,7 +52,7 @@
   // font-size: 12px;
   // letter-spacing: .15em;
 }
-.card-category {
+.card-tag {
   position: absolute;
   bottom: 10px;
   right: -10px;
@@ -67,7 +67,7 @@
   // letter-spacing: .15em;
 }
 .card-subhead {
-  height: 85px;
+  height: 5em;
   overflow: hidden;
   font-family: $secondary-font;
   font-size: 19px;

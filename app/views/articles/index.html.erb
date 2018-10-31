@@ -27,7 +27,7 @@
           <div class="card-category category"><%= article.category %></div>
         </div>
         <div class="card-headline">
-          <span class="card-contributor"><%= article.contributor.name %></span> <span class="card-quote"><%= article.headline %></span>
+          <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-quote"><%= article.headline %></span>
         </div>
         <div class="card-subhead"><%= article.subhead %></div>
         <% if user_signed_in? %>
@@ -50,7 +50,7 @@
               <div class="card-category category"><%= article.category %></div>
             </div>
             <div class="card-headline">
-              <span class="card-contributor"><%= article.contributor.name %></span> <span class="card-quote"><%= article.headline %></span>
+              <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
             </div>
             <div class="card-subhead"><%= article.subhead %></div>
             <% if user_signed_in? %>

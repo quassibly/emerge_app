@@ -6,19 +6,20 @@
     <h2 class="page-subhead">Thought-provoking commentary from writers, thinkers and changemakers across the world.</h2>
 
     <div class="grid_flex">
-      <% @opinions.each do |opinion| %>
-        <%= link_to opinion_path(opinion) do %>
-          <%= content_tag :div, class: published?(opinion) do %>
-            <div class="card-img" style="background-image: url('<%= opinion.photo %>')">
-              <div class="card-tag tag"><%= opinion.tag %></div>
+      <% @opinions.each do |article| %>
+        <%= link_to article_path(article) do %>
+          <%= content_tag :div, class: published?(article) do %>
+            <div class="card-img" style="background-image: url('<%= article.photo %>')">
+              <div class="card-tag tag"><%= article.tag %></div>
+<!--               <div class="card-category category"><%= article.category %></div> -->
             </div>
             <div class="card-headline">
-              <span class="card-contributor"><%= opinion.contributor.name %></span> <span class="card-quote"><%= opinion.headline %></span>
+              <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
             </div>
-            <div class="card-subhead"><%= opinion.subhead %></div>
+            <div class="card-subhead"><%= article.subhead %></div>
             <% if user_signed_in? %>
               <div class="logged-in-card">
-                <% if opinion.published %>
+                <% if article.published %>
                   <p>published</p>
                 <% else %>
                   <p>draft</p>

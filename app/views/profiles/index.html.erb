@@ -6,16 +6,26 @@
     <h2 class="page-subhead">Take a dive into the life, work and values of change makers and thinkers.</h2>
 
     <div class="grid_flex">
-      <% @profiles.each do |profile| %>
-        <%= link_to profile_path(profile) do %>
-          <%= content_tag :div, class: published?(profile) do %>
-            <div class="card-img" style="background-image: url('<%= profile.photo %>')">
-              <div class="card-tag tag"><%= profile.tag %></div>
+      <% @profiles.each do |article| %>
+        <%= link_to article_path(article) do %>
+          <%= content_tag :div, class: published?(article) do %>
+            <div class="card-img" style="background-image: url('<%= article.photo %>')">
+              <div class="card-tag tag"><%= article.tag %></div>
+<!--               <div class="card-category category"><%= article.category %></div> -->
             </div>
             <div class="card-headline">
-              <%= profile.headline %>
+              <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
             </div>
-            <div class="card-subhead"><%= profile.subhead %></div>
+            <div class="card-subhead"><%= article.subhead %></div>
+            <% if user_signed_in? %>
+              <div class="logged-in-card">
+                <% if article.published %>
+                  <p>published</p>
+                <% else %>
+                  <p>draft</p>
+                <% end %>
+              </div>
+            <% end %>
           <% end %>
         <% end %>
       <% end %>
