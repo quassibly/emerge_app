@@ -1,41 +1,20 @@
-<% if @articles[0].category == "profile" %>
-  <%= link_to profile_path(@articles[0]) do %>
-    <div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
-      <div class="home-header-card-container">
-        <div class="profile-category category"><%= @articles[0].category %></div>
-        <div class="home-head-card">
-          <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
-          <div class="profile-subhead"><%= @articles[0].subhead %></div>
-          <div class="profile-tag tag"><%= @articles[0].tag %></div>
-        </div>
+<%= link_to article_path(@articles[0]) do %>
+  <div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
+    <div class="home-header-card-container">
+      <div class="profile-category category"><%= @articles[0].category %></div>
+      <div class="home-head-card">
+        <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
+        <div class="profile-subhead"><%= @articles[0].subhead %></div>
+        <div class="profile-tag tag"><%= @articles[0].tag %></div>
       </div>
     </div>
+  </div>
 
-    <div class="home-feature-container">
-      <div class="home-feature-image" style="background-image: url('<%= @articles[0].photo %>')">
+  <div class="home-feature-container">
+    <div class="home-feature-image" style="background-image: url('<%= @articles[0].photo %>')">
 
-      </div>
     </div>
-  <% end %>
-<% elsif @articles[0].category == "opinion" %>
-  <%= link_to opinion_path(@articles[0]) do %>
-    <div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
-      <div class="home-header-card-container">
-        <div class="profile-category category"><%= @articles[0].category %></div>
-        <div class="home-head-card">
-          <div class="profile-headline"><h1><%= @articles[0].headline %></h1></div>
-          <div class="profile-subhead"><%= @articles[0].subhead %></div>
-          <div class="profile-tag tag"><%= @articles[0].tag %></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="home-feature-container">
-      <div class="home-feature-image" style="background-image: url('<%= @articles[0].photo %>')">
-
-      </div>
-    </div>
-  <% end %>
+  </div>
 <% end %>
 
 <div class="home-grid-container">
