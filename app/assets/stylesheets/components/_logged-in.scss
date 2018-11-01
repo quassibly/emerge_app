@@ -1,18 +1,31 @@
-.logged-in-container {
-  background-color: $color-success;
-  color: white !important;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.logged-in {
+  &-container {
+    background-color: $green;
+    color: white !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-button {
+    color: white;
+    padding: 0 5px;
+  }
+  &-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-icon {
+    display: flex;
+  }
+  &-left {
+    display:flex;
+  }
 }
-.logged-in-button {
-  color: white;
-  padding: 0 5px;
+
+.admin {
+  font-family: $admin-font;
 }
-.logged-in-card {
-  display: flex;
-  flex-direction: row-reverse;
+h3.admin {
+  color: $green;
 }
-.logged-in-icon {
-  display: flex;
-}
+

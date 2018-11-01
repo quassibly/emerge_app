@@ -1,0 +1,65 @@
+button, input, select, textarea {
+  font-family: inherit;
+  font-size : 100%;
+  height: inherit;
+  min-height: inherit;
+}
+
+.form-profile-head-card {
+  display: flex;
+  flex-direction: column;
+  margin: -200px auto 0 auto;
+  max-width: 720px;
+  border: solid 1px;
+  padding: 30px;
+  background-color: #ffffff;
+  height: 275px;
+  text-align: center;
+}
+
+.form-profile-container {
+  width: 80%;
+  background-color: white;
+  margin: 30px auto;
+  max-width: 720px;
+}
+
+#article_photo {
+  height: 2em;
+  background: white;
+  margin-top: 24px;
+}
+
+#article_headline {
+  overflow: hidden;
+  margin: 8px 0;
+  height: 10em;
+  font-family: $secondary-font;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+}
+
+#article_subhead {
+  margin-top: 0px;
+  font-family: $secondary-font;
+  font-size: 25px;
+  letter-spacing: .02em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+#article_tag {
+  font-family: $primary-font;
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: solid black 1px;
+  color: white;
+  background-color: black;
+  padding: 4px;
+  letter-spacing: .15em;
+  margin: 0 auto;
+  height: 7em;
+  text-align: center;
+}

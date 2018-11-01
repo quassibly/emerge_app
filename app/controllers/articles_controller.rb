@@ -11,4 +11,13 @@ class ArticlesController < ApplicationController
       redirect_to opinion_path(@article)
     end
   end
+
+  def edit
+    @article = Article.find(params[:id])
+    if @article.category == "profile"
+      redirect_to edit_profile_path(@article)
+    else @article.category == "opinion"
+      redirect_to edit_opinion_path(@article)
+    end
+  end
 end
