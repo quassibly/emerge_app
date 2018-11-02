@@ -4,9 +4,14 @@
     margin: 100px auto;
   }
   &-card {
-    width: 50%;
     padding: 30px 80px;
     margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    max-width: 720px;
+  }
+  &-card h2 {
+    margin: 16px auto;
   }
   &-head {
     text-align: center;
@@ -14,5 +19,8 @@
   }
   &-subhead {
     text-align: center;
+  }
+  &-about {
+    text-align: left;
   }
 }
