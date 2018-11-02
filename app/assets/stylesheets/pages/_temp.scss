@@ -9,6 +9,7 @@
     width: 80%;
     background-color: white;
     max-width: 720px;
+    text-align: center;
   }
   &-card h2 {
     margin: 16px auto;
@@ -23,4 +24,17 @@
   &-about {
     text-align: left;
   }
+}
+
+.contribute {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  line-height: 1.3em;
+  font-family: $primary-font;
+  color: grey;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 8px;
 }
