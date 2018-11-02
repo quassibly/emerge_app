@@ -18,4 +18,9 @@ module ApplicationHelper
     return 'card draft' if current_article.published == false && user_signed_in?
     'card'
   end
+
+  def show_view?
+    return true if request.path =~ /^\/profiles\/\d+$/ || /^\/opinions\/\d+$/
+    false
+  end
 end

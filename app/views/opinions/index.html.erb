@@ -7,27 +7,33 @@
 
     <div class="grid_flex">
       <% @opinions.each do |article| %>
-        <%= link_to article_path(article) do %>
-          <%= content_tag :div, class: published?(article) do %>
-            <div class="card-img" style="background-image: url('<%= article.photo %>')">
-              <div class="card-tag tag"><%= article.tag %></div>
-<!--               <div class="card-category category"><%= article.category %></div> -->
-            </div>
-            <div class="card-headline">
-              <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
-            </div>
-            <div class="card-subhead"><%= article.subhead %></div>
+        <div class="card-container">
+          <%= link_to edit_article_path(article) do %>
             <% if user_signed_in? %>
               <div class="logged-in-card">
-                <% if article.published %>
-                  <p>published</p>
-                <% else %>
-                  <p>draft</p>
-                <% end %>
+                <h3 class="logged-in-left admin">edit</h3>
+                  <% if article.published %>
+                    <h3 class="admin">published</h3>
+                  <% else %>
+                    <h3 class="admin">draft</h3>
+                  <% end %>
               </div>
             <% end %>
           <% end %>
-        <% end %>
+
+          <%= link_to article_path(article) do %>
+            <%= content_tag :div, class: published?(article) do %>
+              <div class="card-img" style="background-image: url('<%= article.photo %>')">
+                <div class="card-tag tag"><%= article.tag %></div>
+              </div>
+              <div class="card-headline">
+                <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+              </div>
+              <div class="card-subhead"><%= article.subhead %></div>
+            <% end %>
+          <% end %>
+        </div>
+
       <% end %>
     </div>
   </div>

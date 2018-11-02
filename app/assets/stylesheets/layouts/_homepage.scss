@@ -3,8 +3,9 @@
 .home-grid-container {
   display: grid;
   grid-auto-flow: dense;
-  grid-gap: 8px;
+  grid-gap: 24px;
   justify-item: stretch;
+  margin: 0 56px;
 }
 
 @media (min-width: 1500px) {

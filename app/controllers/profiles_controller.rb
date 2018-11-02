@@ -10,6 +10,7 @@ class ProfilesController < ApplicationController
 
   def show          # GET /profiles/:id
     @profile = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def new           # GET /profiles/new
@@ -24,6 +25,7 @@ class ProfilesController < ApplicationController
 
   def edit
     @profile = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update

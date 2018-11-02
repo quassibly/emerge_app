@@ -8,10 +8,12 @@ class OpinionsController < ApplicationController
 
   def show          # GET /opinions/:id
     @opinion = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def new           # GET /opinions/new
     @opinion = Article.new
+    @article = Article.new
   end
 
   def create        # POST /opinions

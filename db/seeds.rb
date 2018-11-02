@@ -13,6 +13,7 @@ User.destroy_all
 
 
 User.create(email: "meredith.avery@gmail.com", password: "password")
+User.create(email: "trodgersjohns@gmail.com", password: "thisistarnspassword")
 
 Contributor.create(name: "Tarn Rodgers Johns", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
 Contributor.create(name: "Meredith Avery", photo: "https://pbs.twimg.com/profile_images/1051476685567213569/ve1gg6pJ_400x400.jpg", bio: "n00bie Berliner, wannabe developer, forever nerd.", twitter: "https://twitter.com/MeredithKAvery", instagram: "https://www.instagram.com/quassibly/", website: "https://github.com/quassibly/")
