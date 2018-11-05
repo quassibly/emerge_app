@@ -45,6 +45,6 @@ class OpinionsController < ApplicationController
   private
 
   def opinion_params
-    params.require(:article).permit(:headline, :strapline, :tag, :contributor_id, :photo, :body, :published, :deleted)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photo, :body, :published, :deleted, :category)
   end
 end

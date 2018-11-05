@@ -47,7 +47,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:article).permit(:person, :headline, :subhead, :tag, :contributor_id, :photo, :body)
+    params.require(:article).permit(:person, :headline, :subhead, :tag, :contributor_id, :photo, :body, :category)
   end
 
   def set_category
