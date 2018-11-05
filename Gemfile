@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'shrine'
+gem 'shrine-cloudinary'
+gem 'cloudinary'
 gem 'trix'
 gem 'responders'
 gem 'devise'
