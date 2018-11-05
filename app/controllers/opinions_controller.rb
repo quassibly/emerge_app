@@ -1,6 +1,6 @@
 class OpinionsController < ApplicationController
   def index         # GET /opinions
-    @opinions = Article.where(category: "opinion").where(deleted: true)
+    @opinions = Article.where(category: "opinion").where(deleted: false)
     if params[:tag].present?
       @opinions = @opinions.where(tag: params[:tag])
     end
