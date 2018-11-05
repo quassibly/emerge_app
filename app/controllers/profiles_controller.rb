@@ -2,10 +2,11 @@ class ProfilesController < ApplicationController
   before_action :set_category
 
   def index         # GET /profiles
-    @profiles = Article.where(category: "profile")
+    @profiles = Article.where(category: "profile").where(deleted: false)
     if params[:tag].present?
       @profiles = @profiles.where(tag: params[:tag])
     end
+    @profiles = @profiles.sort_by &:published_at
   end
 
   def show          # GET /profiles/:id
