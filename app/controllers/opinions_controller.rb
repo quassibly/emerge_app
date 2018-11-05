@@ -1,9 +1,10 @@
 class OpinionsController < ApplicationController
   def index         # GET /opinions
-    @opinions = Article.where(category: "opinion")
+    @opinions = Article.where(category: "opinion").where(deleted: true)
     if params[:tag].present?
       @opinions = @opinions.where(tag: params[:tag])
     end
+    @opinions = @opinions.sort_by &:updated_at
   end
 
   def show          # GET /opinions/:id
