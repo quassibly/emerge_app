@@ -8,9 +8,10 @@
   <!-- right Navigation -->
   <div class="logged-in-right">
     <%= link_to "Edit", edit_article_path(@article), class: "admin white" if show_view? %>
-    <%= link_to new_profile_path, class: "logged-in-button" do %>
-        <i class="fas fa-plus-square"></i></i>
-    <% end %>
+    <%= link_to "+Profile", new_profile_path, class: "logged-in-button" %>
+    <%= link_to "+Opinion", new_opinion_path, class: "logged-in-button" %>
+    <%= link_to "+Contributor", new_contributor_path, class: "logged-in-button" %>
+    <%= link_to "+Photographer", new_photographer_path, class: "logged-in-button" %>
     <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
       <i class="fas fa-sign-out-alt"></i>
     <% end %>
