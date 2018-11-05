@@ -20,8 +20,8 @@ Contributor.create(name: "Meredith Avery", photo: "https://pbs.twimg.com/profile
 
 puts "#{Contributor.count} contributors have been seeded"
 
-Photographer.create(contributor_id: 1)
-Photographer.create(contributor_id: 2)
+Photographer.create(name: "Tarn Rodgers Johns", photo: "https://pbs.twimg.com/profile_images/1049324815872675842/XYIAYcaO_400x400.jpg", bio: "Journalist and copywriter. Published @FTlifearts @Vice @Broadly @Independent. Currently working on a project @CoCreationLoft Berlin.", twitter: "https://twitter.com/TarnRJ", instagram: "https://www.instagram.com/tarnrj/", website: "tarnrodgersjohns.contently.com")
+Photographer.create(name: "Meredith Avery", photo: "https://pbs.twimg.com/profile_images/1051476685567213569/ve1gg6pJ_400x400.jpg", bio: "n00bie Berliner, wannabe developer, forever nerd.", twitter: "https://twitter.com/MeredithKAvery", instagram: "https://www.instagram.com/quassibly/", website: "https://github.com/quassibly/")
 
 puts "#{Photographer.count} photographers have been seeded"
 

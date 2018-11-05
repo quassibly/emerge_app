@@ -1,0 +1,12 @@
+<%= form_for @photographer, url: {action: "create"}, html: {class: "contributor_form"} do |f| %>
+  <div class="contributor-container">
+    <%= f.text_field :photo, placeholder: "photo url" %>
+    <div class="contributor-text-container">
+      <h2><%= f.text_field :name, placeholder: "photographer name" %></h2>
+      <p><%= f.text_field :bio, placeholder: "short biography" %></p>
+      <%= f.text_field :twitter, placeholder: "twitter username" %>
+      <%= f.text_field :instagram, placeholder: "instagram username" %>
+    </div>
+  </div>
+  <%= f.submit %>
+<% end %>

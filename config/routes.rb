@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'events', to: 'pages#events', as: :events
   get 'spaces', to: 'pages#spaces', as: :spaces
 
-  resources :articles, :contributors, :profiles, :opinions, :images
+  resources :articles, :contributors, :photographers, :profiles, :opinions, :images
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

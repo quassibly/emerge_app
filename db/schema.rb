@@ -53,10 +53,14 @@ ActiveRecord::Schema.define(version: 20181105155525) do
   end
 
   create_table "photographers", force: :cascade do |t|
-    t.bigint "contributor_id"
+    t.string "name"
+    t.string "photo"
+    t.text "bio"
+    t.string "twitter"
+    t.string "instagram"
+    t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["contributor_id"], name: "index_photographers_on_contributor_id"
   end
 
   create_table "photos", force: :cascade do |t|
@@ -79,5 +83,4 @@ ActiveRecord::Schema.define(version: 20181105155525) do
 
   add_foreign_key "articles", "contributors"
   add_foreign_key "articles", "photographers"
-  add_foreign_key "photographers", "contributors"
 end
