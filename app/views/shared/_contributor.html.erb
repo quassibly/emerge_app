@@ -11,13 +11,13 @@
   </div>
   <% if @profile.photographer.present? %>
     <div class="contributor-container">
-      <%= image_tag @profile.photographer.contributor.photo, class: "contributor-image" %>
+      <%= image_tag @profile.photographer.photo, class: "contributor-image" %>
       <div class="contributor-text-container">
-        <h2><%= @profile.photographer.contributor.name %></h2>
-        <p><%= @profile.photographer.contributor.bio %></p>
-        <%= @profile.photographer.contributor.twitter %>
-        <%= @profile.photographer.contributor.instagram %>
-        <%= @profile.photographer.contributor.website %>
+        <h2><%= @profile.photographer.name %></h2>
+        <p><%= @profile.photographer.bio %></p>
+        <%= @profile.photographer.twitter %>
+        <%= @profile.photographer.instagram %>
+        <%= @profile.photographer.website %>
       </div>
     </div>
   <% end %>

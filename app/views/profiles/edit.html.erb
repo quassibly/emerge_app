@@ -1,7 +1,7 @@
 <%= form_for @profile, url: {action: "update"}, html: {class: "article_form"} do |f| %>
   <%= f.hidden_field :category, value: "profile" %>
   <div class="profile-header-photo" style="background-image: url('<%= @profile.photo %>')">
-      <%= f.file_field :photo, placeholder: "photo url" %>
+      <%= f.text_field :photo, placeholder: "photo url" %>
   </div>
     <div class="form-profile-head-card">
       <%= f.text_area :headline, placeholder: "Headline" %>
@@ -23,13 +23,12 @@
     </div>
 
 
+      <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
+      <%= f.collection_select :photographer_id, Photographer.all.sort, :id, :name, prompt: "select photographer" %>
 
       <div class="profile-body"><%= f.trix_editor :body %></div>
 
       <%= f.submit %>
 
-      <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
-    <%= render 'shared/contributor' %>
   </div>
 <% end %>
-

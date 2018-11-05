@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.where(published: true)
+    @articles = Article.where(published: true).where.(deleted: false)
+    @articles = @articles.sort_by &updated_at
   end
 
   def show
