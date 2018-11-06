@@ -1,7 +1,7 @@
 <div class="tagbar-container">
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
-      <%= link_to "All", opinions_path, class: current_tag?(nil) %>
+      <%= link_to "All", opinions_path, class: "tagbar-link blank" %>
       <% Article.where(category: "opinion").where(published: true).where(deleted: false).pluck(:tag).uniq.each do |tag| %>
         <%= link_to tag, opinions_path(tag: tag), class: current_tag?(tag) %>
       <% end %>
