@@ -24,4 +24,16 @@ module ApplicationHelper
     return true if request.path =~ /^\/opinions\/\d+$/
     false
   end
+
+  def contributor_view?
+    return true if request.path =~ /^\/contributors\/\d+$/
+    false
+  end
+
+  def photographer_view?
+    return true if request.path =~ /^\/photographers\/\d+$/
+    false
+  end
+
+
 end

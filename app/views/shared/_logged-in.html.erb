@@ -8,6 +8,9 @@
   <!-- right Navigation -->
   <div class="logged-in-right">
     <%= link_to "Edit", edit_article_path(@article), class: "admin white" if show_view? %>
+    <%= link_to "Edit", edit_contributor_path(@contributor), class: "admin white" if contributor_view? %>
+    <%= link_to "Edit", edit_photographer_path(@photographer), class: "admin white" if photographer_view? %>
+
     <%= link_to "+Profile", new_profile_path, class: "logged-in-button" %>
     <%= link_to "+Opinion", new_opinion_path, class: "logged-in-button" %>
     <%= link_to "+Contributor", new_contributor_path, class: "logged-in-button" %>
