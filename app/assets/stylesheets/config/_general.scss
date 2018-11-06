@@ -10,16 +10,16 @@ body {
 }
 
 body.home {
-  background: image-url('Frame-home.png') repeat-y center;
+  background: image-url('Frame-home.png') top repeat-y;
 }
 body.grey {
-  background: image-url('Frame-grey.png') repeat-y center;
+  background: image-url('Frame-grey.png') top repeat-y;
 }
 body.index {
-  background: image-url('Frame-articles.png') repeat-y center;
+  background: image-url('Frame-articles.png') top repeat-y;
 }
 body.temp {
-  background: image-url('Frame-placeholder.png') repeat-y center;
+  background: image-url('Frame-placeholder.png') top repeat-y;
 }
 
 p {
