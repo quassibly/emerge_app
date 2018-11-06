@@ -2,7 +2,7 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <%= link_to "All", profiles_path, class: current_tag?(nil) %>
-      <% Article.where(category: "profile").pluck(:tag).uniq.each do |tag| %>
+      <% Article.where(category: "profile").where(published: true).where(deleted: false).pluck(:tag).uniq.each do |tag| %>
         <%= link_to tag, profiles_path(tag: tag), class: current_tag?(tag) %>
       <% end %>
     </div>

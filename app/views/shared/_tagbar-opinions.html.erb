@@ -3,7 +3,7 @@
     <div class="hidden-xs hidden-sm">
       <span class="tagbar-item upcase">Tags: </span>
       <%= link_to "All", opinions_path, class: current_tag?(nil) %>
-      <% Article.where(category: "opinion").pluck(:tag).uniq.each do |tag| %>
+      <% Article.where(category: "opinion").where(published: true).where(deleted: false).pluck(:tag).uniq.each do |tag| %>
         <%= link_to tag, opinions_path(tag: tag), class: current_tag?(tag) %>
       <% end %>
     </div>
