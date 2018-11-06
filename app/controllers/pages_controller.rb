@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
+  before_action :set_page_temp
 
   def home
   end
@@ -26,5 +27,11 @@ class PagesController < ApplicationController
   end
 
   def spaces
+  end
+
+  private
+
+  def set_page_temp
+    @page = 'temp'
   end
 end
