@@ -1,4 +1,6 @@
 class OpinionsController < ApplicationController
+  before_action :set_category
+
   def index         # GET /opinions
     @opinions = Article.where(category: "opinion").where(deleted: false)
     if params[:tag].present?
@@ -25,6 +27,7 @@ class OpinionsController < ApplicationController
 
   def edit
     @opinion = Article.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update
@@ -47,5 +50,9 @@ class OpinionsController < ApplicationController
 
   def opinion_params
     params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photo, :body, :published, :deleted, :category)
+  end
+
+  def set_category
+    @category = "opinions"
   end
 end

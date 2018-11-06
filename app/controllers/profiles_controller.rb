@@ -16,6 +16,7 @@ class ProfilesController < ApplicationController
 
   def new           # GET /profiles/new
     @profile = Article.new
+    @article = Article.new
   end
 
   def create        # POST /profiles
@@ -48,7 +49,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:article).permit(:person, :headline, :subhead, :tag, :contributor_id, :photo, :body, :category)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photo, :body, :published, :deleted, :category)
   end
 
   def set_category

@@ -1,6 +1,6 @@
 <div class="opinion-container">
   <%= form_for @opinion, url: {action: "create"}, html: {class: "article_form"} do |f| %>
-    <%= f.hidden_field :category, value: "profile" %>
+    <%= f.hidden_field :category, value: "opinion" %>
     <h1>Opinion</h1>
     <div style="height: 240px"></div>
     <div class="form-profile-head-card">
