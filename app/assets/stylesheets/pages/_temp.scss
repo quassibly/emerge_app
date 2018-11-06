@@ -21,9 +21,7 @@
   &-subhead {
     text-align: center;
   }
-  &-about {
-    text-align: left;
-  }
+
 }
 
 .contribute {
@@ -37,4 +35,9 @@
   margin: 0 auto;
   display: block;
   padding: 8px;
+}
+
+#about {
+  text-align: left;
+  max-width: 1080px;
 }
