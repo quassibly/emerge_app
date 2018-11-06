@@ -25,6 +25,7 @@ body.temp {
 p {
   margin: 10px;
   line-height: 1.6em;
+  letter-spacing: .1em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -136,6 +137,7 @@ a {
 
 .upcase {
   text-transform: uppercase;
+  letter-spacing: .12em !important;
 }
 
 .center {

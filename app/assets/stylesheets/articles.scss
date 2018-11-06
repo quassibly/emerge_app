@@ -10,6 +10,8 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    max-width: calc(100vw - 6px);
+    margin: 0 auto;
     margin-bottom: 175px;
 }
 .home-header-card-container {
@@ -33,7 +35,7 @@
   // border: solid 1px;
   padding: 30px;
   // background-color: #ffffff;
-  height: 275px;
+  height: 176px;
   text-align: center;
 }
 
