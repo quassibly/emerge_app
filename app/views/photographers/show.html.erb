@@ -1,0 +1,12 @@
+<div class="profile-container">
+  <div class="contributor-container">
+    <%= image_tag @photographer.photo, class: "contributor-image" %>
+    <div class="contributor-text-container">
+      <h2><%= @photographer.name %></h2>
+      <p><%= @photographer.bio %></p>
+      <%= @photographer.twitter %>
+      <%= @photographer.instagram %>
+      <%= @photographer.website %>
+    </div>
+  </div>
+</div>
