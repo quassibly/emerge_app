@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
-
 //= require trix
+//= require trix_attachments
 //= require_tree .
 //
 
