@@ -2,6 +2,7 @@ class OpinionsController < ApplicationController
   before_action :set_category
 
   def index         # GET /opinions
+    @page = 'index'
     @opinions = Article.where(category: "opinion").where(deleted: false)
     if params[:tag].present?
       @opinions = @opinions.where(tag: params[:tag])
@@ -10,11 +11,13 @@ class OpinionsController < ApplicationController
   end
 
   def show          # GET /opinions/:id
+    @page = 'grey'
     @opinion = Article.find(params[:id])
     @article = Article.find(params[:id])
   end
 
   def new           # GET /opinions/new
+    @page = 'grey'
     @opinion = Article.new
     @article = Article.new
   end
@@ -26,6 +29,7 @@ class OpinionsController < ApplicationController
   end
 
   def edit
+    @page = 'grey'
     @opinion = Article.find(params[:id])
     @article = Article.find(params[:id])
   end

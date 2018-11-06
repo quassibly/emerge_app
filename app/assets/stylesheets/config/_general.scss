@@ -6,8 +6,20 @@
 body {
   margin: 0;
   position: relative;
-  background: image-url('Frame.jpg') repeat-y center;
   min-height: 1vh;
+}
+
+body.home {
+  background: image-url('Frame-home.png') repeat-y center;
+}
+body.grey {
+  background: image-url('Frame-grey.png') repeat-y center;
+}
+body.index {
+  background: image-url('Frame-articles.png') repeat-y center;
+}
+body.temp {
+  background: image-url('Frame-placeholder.png') repeat-y center;
 }
 
 p {

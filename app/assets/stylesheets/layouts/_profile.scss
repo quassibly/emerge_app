@@ -60,4 +60,10 @@
 
 .profile-body p:first-child {
   font-size: 25px;
+    max-width: 720px;
+}
+
+.profile-body img {
+  max-width: 720px;
+  height: auto;
 }

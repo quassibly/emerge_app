@@ -1,10 +1,12 @@
 class ArticlesController < ApplicationController
   def index
+    @page = 'home'
     @articles = Article.where(published: true).where(deleted: false)
     @articles = @articles.sort_by &:updated_at
   end
 
   def show
+    @page = 'grey'
     @article = Article.find(params[:id])
     if @article.category == "profile"
       redirect_to profile_path(@article)
@@ -14,6 +16,7 @@ class ArticlesController < ApplicationController
   end
 
   def edit
+    @page = 'grey'
     @article = Article.find(params[:id])
     if @article.category == "profile"
       redirect_to edit_profile_path(@article)

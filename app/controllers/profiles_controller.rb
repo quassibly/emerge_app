@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
   before_action :set_category
 
   def index         # GET /profiles
+    @page = 'index'
     @profiles = Article.where(category: "profile").where(deleted: false)
     if params[:tag].present?
       @profiles = @profiles.where(tag: params[:tag])
@@ -10,11 +11,13 @@ class ProfilesController < ApplicationController
   end
 
   def show          # GET /profiles/:id
+    @page = 'grey'
     @profile = Article.find(params[:id])
     @article = Article.find(params[:id])
   end
 
   def new           # GET /profiles/new
+    @page = 'grey'
     @profile = Article.new
     @article = Article.new
   end
@@ -26,6 +29,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    @page = 'grey'
     @profile = Article.find(params[:id])
     @article = Article.find(params[:id])
   end
