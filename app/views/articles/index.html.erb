@@ -27,18 +27,9 @@
           <div class="card-category category"><%= article.category %></div>
         </div>
         <div class="card-headline">
-          <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-quote"><%= article.headline %></span>
+          <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
         </div>
         <div class="card-subhead"><%= article.subhead %></div>
-        <% if user_signed_in? %>
-          <div class="logged-in-card">
-            <% if article.published %>
-              <p>published</p>
-            <% else %>
-              <p>draft</p>
-            <% end %>
-          </div>
-        <% end %>
       <% end %>
     <% end %>
   </div>
@@ -53,15 +44,6 @@
               <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
             </div>
             <div class="card-subhead"><%= article.subhead %></div>
-            <% if user_signed_in? %>
-              <div class="logged-in-card">
-                <% if article.published %>
-                  <p>published</p>
-                <% else %>
-                  <p>draft</p>
-                <% end %>
-              </div>
-            <% end %>
           <% end %>
         <% end %>
       <% end %>
