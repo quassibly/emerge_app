@@ -20,7 +20,8 @@ module ApplicationHelper
   end
 
   def show_view?
-    return true if request.path =~ /^\/profiles\/\d+$/ || /^\/opinions\/\d+$/
+    return true if request.path =~ /^\/profiles\/\d+$/
+    return true if request.path =~ /^\/opinions\/\d+$/
     false
   end
 end
