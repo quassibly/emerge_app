@@ -2,15 +2,15 @@
 .navbar {
   background: white;
   transition: all 0.3s ease;
-  height: 60px;
-  outline: solid 1px;
+  height: 62px;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 4px;
   z-index: 1;
-  margin: 4px 4px 0 4px;
+  margin: 0;
 }
 .navbar-home {
   // background-color: white;

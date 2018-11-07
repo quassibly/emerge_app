@@ -1,13 +1,13 @@
 .footer {
   background: white;
   min-height: 80px;
-  outline: solid 1px;
+  border: solid 1px;
   display: flex;
   align-items: top;
   justify-content: space-between;
   position: sticky;
   top: 4px;
-  margin: 4px;
+  margin: 0;
   margin-top: 336px;
   padding: 24px 80px;
 }
