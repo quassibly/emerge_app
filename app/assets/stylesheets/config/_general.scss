@@ -172,6 +172,10 @@ blockquote {
 .hidden {
   display: none !important;
 }
+.hidden-logo {
+  opacity: 0;
+  // transition: opacity .1s;
+}
 
 
 .collapse {

@@ -63,3 +63,16 @@
         <% end %>
       <% end %>
 </div>
+
+<script>
+  window.onscroll = function() {hideLogo()};
+  document.getElementById("logo").classList.add("hidden-logo");
+
+  function hideLogo() {
+    if (document.body.scrollTop > 145 || document.documentElement.scrollTop > 145) {
+      document.getElementById("logo").classList.remove("hidden-logo");
+    } else {
+      document.getElementById("logo").classList.add("hidden-logo");
+    }
+  }
+</script>
