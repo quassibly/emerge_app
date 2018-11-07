@@ -1,11 +1,12 @@
 .profile {
   &-header-photo {
-    width: 100%;
+    width: calc(100% - 6px);
     height: 90vh;
     max-height: calc(100vh - 250px);
     display: flex;
     justify-content: center;
     top: 0px;
+    margin: 0 3px;
     background-repeat: no-repeat;
     background-position: center;
   }

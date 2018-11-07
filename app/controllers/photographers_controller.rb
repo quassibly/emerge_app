@@ -15,7 +15,7 @@ class PhotographersController < ApplicationController
   def create        # POST /contributors
     @photographer = Photographer.new(contributor_params)
     @photographer.save
-    redirect_to contributor_path(@photographer)
+    redirect_to photographer_path(@photographer)
   end
 
   def edit
@@ -25,7 +25,7 @@ class PhotographersController < ApplicationController
   def update
     @photographer = Photographer.find(params[:id])
     @photographer.update(contributor_params)
-    redirect_to contributor_path(@photographer)
+    redirect_to photographer_path(@photographer)
   end
 
   def destroy
