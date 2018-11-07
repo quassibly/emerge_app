@@ -59,7 +59,8 @@
 }
 
 .profile-body img {
-  max-width: 720px;
+  margin: 48px -100px;
+  width: calc(100% + 200px);
   height: auto;
 }
 
