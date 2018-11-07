@@ -53,7 +53,7 @@ class OpinionsController < ApplicationController
   private
 
   def opinion_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id :photo, :body, :published, :deleted, :category, :seo_title, :meta)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta)
   end
 
   def set_category
