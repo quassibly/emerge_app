@@ -8,11 +8,13 @@
     max-height: calc(100vh - 300px);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    max-width: calc(100vw - 6px);
+    max-width: calc(200vh - 300px);
     margin: 0 auto;
 }
+
 .home-header-card-container {
   display: flex;
   flex-direction: column;

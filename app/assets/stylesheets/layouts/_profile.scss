@@ -3,12 +3,14 @@
     width: calc(100% - 6px);
     height: 90vh;
     max-height: calc(100vh - 250px);
+    max-width: calc(200vh - 250px);
     display: flex;
     justify-content: center;
     top: 0px;
-    margin: 0 3px;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   &-head-card {
     display: flex;
