@@ -1,8 +1,12 @@
 class ArticlesController < ApplicationController
   def index
     @page = 'home'
-    @articles = Article.where(published: true).where(deleted: false)
+    @main = Article.find_by feature: "main"
+    @feature1 = Article.find_by feature: "feature1"
+    @feature2 = Article.find_by feature: "feature2"
+    @articles = Article.where(published: true).where(deleted: false).where(feature: nil)
     @articles = @articles.sort_by &:updated_at
+    @articles.reverse!
   end
 
   def show
@@ -31,4 +35,11 @@ class ArticlesController < ApplicationController
     @article.published_at = DateTime.new
     @article.save
   end
+
+  private
+
+  def article_params
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
+  end
+
 end

@@ -1,33 +1,53 @@
 <%= link_to article_path(@articles[0]) do %>
-<div class="home-header-photo" style="background-image: url('<%= @articles[0].photo %>')">
+<div class="home-header-photo" style="background-image: url('<%= @main.photo %>')">
   </div>
 
   <div class="home-header-card-container">
-    <div class="profile-category category"><%= @articles[0].category %></div>
+    <div class="profile-category category"><%= @main.category %></div>
       <div class="home-head-card">
-        <div class="card-headline upcase"><%= @articles[0].headline %></div>
-        <div class="profile-subhead"><%= @articles[0].subhead %></div>
-        <div class="profile-tag tag"><%= @articles[0].tag %></div>
+        <div class="card-headline upcase"><%= @main.headline %></div>
+        <div class="profile-subhead"><%= @main.subhead %></div>
+        <div class="profile-tag tag"><%= @main.tag %></div>
       </div>
   </div>
 
 <% end %>
 <div class="home-grid-container">
-  <div class="feature-card">
-    <% article = @articles[2] %>
-    <%= link_to article_path(article) do %>
-      <%= content_tag :div, class: published?(article) do %>
-        <div class="card-img" style="background-image: url('<%= article.photo %>')">
-          <div class="card-tag tag"><%= article.tag %></div>
-          <div class="card-category category"><%= article.category %></div>
-        </div>
-        <div class="card-headline">
-          <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
-        </div>
-        <div class="card-subhead"><%= article.subhead %></div>
+  <% if @feature1 != nil %>
+    <div class="feature-card">
+      <% article = @feature1 %>
+      <%= link_to article_path(article) do %>
+        <%= content_tag :div, class: published?(article) do %>
+          <div class="card-img" style="background-image: url('<%= article.photo %>')">
+            <div class="card-tag tag"><%= article.tag %></div>
+            <div class="card-category category"><%= article.category %></div>
+          </div>
+          <div class="card-headline">
+            <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
+          </div>
+          <div class="card-subhead"><%= article.subhead %></div>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+  <% if @feature2 != nil %>
+    <div class="feature-card">
+      <% article = @feature2 %>
+      <%= link_to article_path(article) do %>
+        <%= content_tag :div, class: published?(article) do %>
+          <div class="card-img" style="background-image: url('<%= article.photo %>')">
+            <div class="card-tag tag"><%= article.tag %></div>
+            <div class="card-category category"><%= article.category %></div>
+          </div>
+          <div class="card-headline">
+            <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
+          </div>
+          <div class="card-subhead"><%= article.subhead %></div>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+
     <% @articles.each do |article| %>
         <%= link_to article_path(article) do %>
           <%= content_tag :div, class: published?(article) do %>

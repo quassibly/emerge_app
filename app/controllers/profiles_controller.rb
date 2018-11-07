@@ -8,6 +8,7 @@ class ProfilesController < ApplicationController
       @profiles = @profiles.where(tag: params[:tag])
     end
     @profiles = @profiles.sort_by &:updated_at
+    @profiles.reverse!
   end
 
   def show          # GET /profiles/:id
@@ -53,7 +54,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
   end
 
   def set_category

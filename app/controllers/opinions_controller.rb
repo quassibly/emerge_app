@@ -8,6 +8,7 @@ class OpinionsController < ApplicationController
       @opinions = @opinions.where(tag: params[:tag])
     end
     @opinions = @opinions.sort_by &:updated_at
+    @opinions.reverse!
   end
 
   def show          # GET /opinions/:id
@@ -53,7 +54,7 @@ class OpinionsController < ApplicationController
   private
 
   def opinion_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
   end
 
   def set_category
