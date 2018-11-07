@@ -8,8 +8,11 @@
 
 .contributor-image {
   border-radius: 50%;
+  min-width: 72px;
+  min-height: 72px;
   width: 72px;
   height: 72px;
+  object-fit: cover;
 }
 
 .contributor-name {

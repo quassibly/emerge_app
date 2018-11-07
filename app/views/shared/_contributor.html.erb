@@ -39,13 +39,22 @@
 
 <% if @opinion.present? %>
   <div class="contributor-container">
-    <%= image_tag @opinion.contributor.photo, class: "contributor-image" %>
+    <%= image_tag @article.contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
-      <h2><%= @opinion.contributor.name %></h2>
-      <p><%= @opinion.contributor.bio %></p>
-      <%= @opinion.contributor.twitter %>
-      <%= @opinion.contributor.instagram %>
-      <%= @opinion.contributor.website %>
+      <div>Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span></div>
+      <%= @article.contributor.bio %>
+      <div>
+        <% if @article.contributor.twitter.present? %>
+          <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-twitter"></i>
+          <% end %>
+        <% end %>
+        <% if @article.contributor.instagram.present? %>
+          <%= link_to "https://www.instagram.com/#{@article.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-instagram"></i>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 <% end %>
