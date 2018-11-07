@@ -8,8 +8,9 @@
   margin: 0 56px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .home-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "feature2   feature2  ."
     "feature2   feature2  ."
@@ -19,8 +20,9 @@
     ".          feature3  feature3";
   }
 }
-@media (min-width: 751px) and (max-width: 1499px) {
+@media (min-width: 900px) and (max-width: 1399px) {
   .home-grid-container {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "feature2   feature2"
     "feature2   feature2"
@@ -32,8 +34,9 @@
     "feature3  feature3";
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 899px) {
   .home-grid-container {
+    grid-template-columns: 1fr;
     grid-template-areas:
     "feature2"
     "feature2"
