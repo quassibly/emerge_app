@@ -4,8 +4,9 @@ module ApplicationHelper
     false
   end
 
-  def current_category?(test_path)
-    return 'navbar-item navbar-link active' if request.path == test_path
+  def current_category?(tab)
+    return 'navbar-item navbar-link active' if request.path == "/#{tab}"
+    return 'navbar-item navbar-link active' if request.path.match(/\D*/)[0] == "/#{tab}/"
     'navbar-item navbar-link'
   end
 

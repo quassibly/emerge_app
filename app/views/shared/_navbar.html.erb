@@ -19,7 +19,7 @@
   <div class="navbar-center hidden-xs hidden-sm">
     <% @tabs = ["about", "updates", "profiles", "opinions", "video", "podcast", "events", "spaces"] %>
     <% @tabs.each do |tab| %>
-      <%= link_to tab.capitalize, send("#{tab}_path"), class: current_category?(send("#{tab}_path")) %>
+      <%= link_to tab.capitalize, send("#{tab}_path"), class: current_category?("#{tab}") %>
     <% end %>
   </div>
 
