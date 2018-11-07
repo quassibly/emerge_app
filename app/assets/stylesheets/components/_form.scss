@@ -13,7 +13,7 @@ button, input, select, textarea {
   border: solid 1px;
   padding: 30px;
   background-color: #ffffff;
-  height: 275px;
+  height: 228px;
   text-align: center;
 }
 
@@ -31,11 +31,9 @@ button, input, select, textarea {
 }
 
 #article_headline {
-  overflow: hidden;
   margin: 8px 0;
-  height: 10em;
   font-family: $secondary-font;
-  font-size: 40px;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: .1em;
   text-align: center;
@@ -44,7 +42,7 @@ button, input, select, textarea {
 #article_subhead {
   margin-top: 0px;
   font-family: $secondary-font;
-  font-size: 25px;
+  font-size: 17px;
   letter-spacing: .02em;
   line-height: 1.2em;
   text-align: center;
@@ -54,12 +52,11 @@ button, input, select, textarea {
   font-family: $primary-font;
   font-size: 12px;
   text-transform: uppercase;
-  outline: solid black 1px;
   color: white;
   background-color: black;
-  padding: 4px;
+  padding: 0;
   letter-spacing: .15em;
   margin: 0 auto;
-  height: 7em;
+  height: 2em;
   text-align: center;
 }

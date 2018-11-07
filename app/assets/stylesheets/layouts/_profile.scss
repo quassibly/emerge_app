@@ -16,9 +16,9 @@
     margin: calc(100vh - 426px) 16px 0 16px;
     max-width: 720px;
     border: solid 1px;
-    padding: 30px;
+    padding: 18px;
     background-color: #ffffff;
-    height: 275px;
+    min-height: 228px;
     text-align: center;
   }
   &-category {
@@ -34,8 +34,7 @@
   }
   &-tag {
     letter-spacing: .15em;
-    margin: 0 auto;
-    // margin-top: 18px
+    margin: auto auto 0px auto;
   }
   &-container {
     width: 80%;

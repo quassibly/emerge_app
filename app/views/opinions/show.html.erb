@@ -2,8 +2,9 @@
   <div class="opinion-header-photo round" style="background-image: url('<%= @opinion.contributor.photo %>')">
   </div>
   <div class="opinion-head-card">
-    <div class="profile-headline"><h1><%= @opinion.headline %></h1></div>
-    <div class="profile-subhead"><%= @opinion.subhead %></div>
+    <div class="opinion-contributor upcase"><%= @opinion.contributor.name %></div>
+    <div class="profile-headline upcase"><h1><%= @opinion.headline %></h1></div>
+    <div class="opinion-subhead"><%= @opinion.subhead %></div>
     <div class="profile-tag tag"><%= @opinion.tag %></div>
   </div>
 

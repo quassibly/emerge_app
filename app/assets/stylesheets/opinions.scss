@@ -11,6 +11,9 @@
   position: relative;
   top: 25px;
 }
+.opinion-contributor {
+  font-size: 25px;
+}
 .opinion-head-card {
     display: flex;
     flex-direction: column;
@@ -19,8 +22,11 @@
     border: solid 1px;
     padding: 30px;
     background-color: #ffffff;
-    height: 275px;
+    // height: 275px;
     text-align: center;
+}
+.opinion-subhead{
+  font-size: 25px;
 }
 .opinion-container {
   width: 80%;
