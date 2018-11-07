@@ -56,15 +56,14 @@
     line-height: 1.6em;
     padding: 30px;
   }
-}
-
-.profile-body img {
-  margin: 48px -100px;
-  width: calc(100% + 200px);
-  height: auto;
-}
-
-.profile-body p:first-child {
-  font-size: 25px;
+  &-body img {
+    margin: 48px -100px;
+    width: calc(100% + 200px);
+    height: auto;
+  }
+  &-body div:first-child {
+    font-size: 25px;
     max-width: 720px;
+    line-height: 1.3em;
+  }
 }
