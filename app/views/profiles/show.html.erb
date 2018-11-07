@@ -24,5 +24,13 @@
   <%= render 'shared/contributor' %>
 </div>
 
+<script>
+  var imgs = document.querySelectorAll('.profile-body img');
+  console.log(imgs);
+
+  [].forEach.call(imgs, function(img) {
+  img.closest("div").classList.add("wide");
+});
+</script>
 
 

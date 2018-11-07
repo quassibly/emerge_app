@@ -86,9 +86,10 @@ a {
 blockquote {
   font-size: 25px;
   width: calc(100% + 100px);
-  margin: 80px -50px;
+  margin: 0 -50px;
   line-height: 1.3em;
   letter-spacing: .02em;
+  text-align: center;
 }
 
 .heading {
