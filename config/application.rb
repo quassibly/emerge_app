@@ -16,3 +16,6 @@ module EmergeApp
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+config.action_view.sanitized_allowed_tags = ['strong', 'em', 'a', 'img']
+config.action_view.sanitized_allowed_attributes = ['href', 'title']
