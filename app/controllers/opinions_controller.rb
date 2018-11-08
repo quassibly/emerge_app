@@ -7,7 +7,7 @@ class OpinionsController < ApplicationController
     if params[:tag].present?
       @opinions = @opinions.where(tag: params[:tag])
     end
-    @opinions = @opinions.sort_by &:updated_at
+    @opinions = @opinions.sort_by &:published_at
     @opinions.reverse!
   end
 

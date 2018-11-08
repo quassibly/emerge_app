@@ -7,7 +7,7 @@ class ProfilesController < ApplicationController
     if params[:tag].present?
       @profiles = @profiles.where(tag: params[:tag])
     end
-    @profiles = @profiles.sort_by &:updated_at
+    @profiles = @profiles.sort_by &:published_at
     @profiles.reverse!
   end
 

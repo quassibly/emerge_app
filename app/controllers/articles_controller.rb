@@ -4,8 +4,8 @@ class ArticlesController < ApplicationController
     @main = Article.find_by feature: "main"
     @feature1 = Article.find_by feature: "feature1"
     @feature2 = Article.find_by feature: "feature2"
-    @articles = Article.where(published: true).where(deleted: false).where(feature: nil)
-    @articles = @articles.sort_by &:updated_at
+    @articles = Article.where(published: true).where(deleted: false).where(feature: "")
+    @articles = @articles.sort_by &:published_at
     @articles.reverse!
   end
 

@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20181107194008) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "published_at"
-    t.string "feature"
+    t.string "feature", default: ""
     t.index ["contributor_id"], name: "index_articles_on_contributor_id"
     t.index ["photographer_id"], name: "index_articles_on_photographer_id"
   end
