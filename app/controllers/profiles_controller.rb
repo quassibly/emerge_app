@@ -35,6 +35,11 @@ class ProfilesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def rawedit
+    @page = 'grey'
+    @profile = Article.find(params[:id])
+  end
+
   def update
     @profile = Article.find(params[:id])
     @profile.update(profile_params)
