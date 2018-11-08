@@ -1,3 +1,97 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profile {
+  &-header-photo {
+    width: calc(100% - 6px);
+    height: 90vh;
+    max-height: calc(100vh - 250px);
+    max-width: calc(200vh - 250px);
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-head-card {
+    display: flex;
+    flex-direction: column;
+    margin: calc(100vh - 426px) 16px 0 16px;
+    max-width: 720px;
+    border: solid 1px;
+    padding: 18px;
+    background-color: #ffffff;
+    min-height: 228px;
+    text-align: center;
+  }
+  &-category {
+    margin: -12px auto 0;
+  }
+  &-headline {
+    margin: 8px 0;
+  }
+  &-subhead {
+    font-family: $secondary-font;
+    font-size: 17px;
+    margin: 10px 0;
+  }
+  &-tag {
+    letter-spacing: .15em;
+    margin: auto auto 0px auto;
+  }
+  &-container {
+    margin: 150px auto;
+  }
+  &-social {
+    text-align: center;
+    margin: 40px 0;
+  }
+  &-body {
+    font-family: $secondary-font;
+    text-size: 18px;
+    letter-spacing: .02em;
+    line-height: 1.6em;
+    padding: 30px;
+  }
+  &-body div:first-child {
+    font-size: 25px;
+    line-height: 1.3em;
+  }
+}
+
+.profile-body .body {
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 18px;
+  background-color: white;
+}
+.profile-body .wide {
+  display: flex;
+}
+  .profile-body a {
+    margin: 0 auto;
+  }
+    .profile-body figure {
+      }
+      .profile-body img {
+        max-width: 100%;
+        max-height: 600px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+      }
+
+.profile-body .video {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  margin: 0 auto;
+}
+
+

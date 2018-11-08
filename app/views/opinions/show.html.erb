@@ -33,10 +33,23 @@
 
 <script>
   var imgs = document.querySelectorAll('.profile-body img');
+  var divs = document.querySelectorAll('.profile-body div');
+  var videos = document.querySelectorAll('.profile-body video');
   console.log(imgs);
+  console.log(divs);
+
+  [].forEach.call(divs, function(div) {
+    div.classList.add("body");
+  });
 
   [].forEach.call(imgs, function(img) {
-  img.closest("div").classList.add("wide");
-});
+    img.closest("div").classList.remove("body");
+    img.closest("div").classList.add("wide");
+  });
+
+  [].forEach.call(videos, function(video) {
+    video.closest("div").classList.remove("body");
+    video.closest("div").classList.add("video");
+  });
 </script>
 
