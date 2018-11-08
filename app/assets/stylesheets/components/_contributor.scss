@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 400px;
+  width: 440px;
   margin: 48px auto;
 }
 
 .contributor-image {
   border-radius: 50%;
-  min-width: 72px;
-  min-height: 72px;
-  width: 72px;
-  height: 72px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -24,6 +24,9 @@
   flex-direction: column;
   padding-left: 16px;
   font-size:13px;
+}
+.contributor-text-header{
+  padding: 4px 0;
 }
 .contributor-text-container-left {
   display: flex;
