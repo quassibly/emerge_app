@@ -71,11 +71,12 @@
 }
 .profile-body .wide {
   display: flex;
+   justify-content: center;
 }
   .profile-body a {
-    margin: 0 auto;
   }
     .profile-body figure {
+      margin: 0;
       }
       .profile-body img {
         max-width: 100%;
