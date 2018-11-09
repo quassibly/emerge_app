@@ -65,5 +65,10 @@
 }
 
 .feature-card .card-img {
-  min-height: 614px;
+  @media screen and (max-width: 899px) {
+    min-height: 480px;
+  }
+  @media screen and (min-width: 900px) {
+    min-height: 614px;
+  }
 }
