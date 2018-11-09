@@ -22,10 +22,10 @@
             <div class="card-tag tag"><%= article.tag %></div>
             <div class="card-category category"><%= article.category %></div>
           </div>
-          <div class="card-headline">
-            <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
-          </div>
+          <div class="card-text">
+            <div class="card-headline"><%= article.headline %></div>
           <div class="card-subhead"><%= article.subhead %></div>
+          </div>
         <% end %>
       <% end %>
     </div>

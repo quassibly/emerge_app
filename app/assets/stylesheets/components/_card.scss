@@ -22,11 +22,15 @@
 .card.draft {
   background-color: $grey;
 }
+.card-text {
+  height: 90px;
+}
 
 .card-headline {
   font-family: $secondary-font;
   font-size: 25px;
-  margin: .5em 0;
+  margin: .5em 0 0;
+  letter-spacing: .03em;
 }
 .card-img {
   height: 390px;
@@ -65,18 +69,20 @@
   // letter-spacing: .15em;
 }
 .card-subhead {
-  height: 5em;
   overflow: hidden;
   font-family: $secondary-font;
   font-size: 17px;
+  line-height: 1.1em;
 }
 
 .card-contributor {
   font-size: 25px;
+  letter-spacing: .03em;
 }
 
 .card-quote {
   font-family: $primary-font;
   font-style: italic;
   font-size: 25px;
+  letter-spacing: .03em;
 }

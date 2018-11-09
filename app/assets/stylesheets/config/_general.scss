@@ -40,13 +40,15 @@ h1 {
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: .1em;
+  white-space: pre-wrap;
 }
 
 h2 {
   font-family: $secondary-font;
   font-size: 25px;
-  letter-spacing: .045em;
+  letter-spacing: .03em;
   line-height: 1.2em;
+  white-space: pre-wrap;
 }
 
 l1, l2, l3, l4 {

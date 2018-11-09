@@ -7,7 +7,7 @@
     width: calc(100% - 6px);
     height: 90vh;
     max-height: calc(100vh - 250px);
-    max-width: calc(200vh - 250px);
+    max-width: 200vh;
     display: flex;
     justify-content: center;
     top: 0px;
@@ -33,21 +33,23 @@
   &-headline {
     margin: 16px 0 8px;
     padding: 0 100px;
+    white-space: pre-wrap;
   }
   &-subhead {
     font-family: $secondary-font;
     font-size: 25px;
-    margin: 10px 0;
-    letter-spacing: .02em;
+    margin: 10px 0 16px 0;
+    letter-spacing: .03em;
     max-width: 760px;
     padding: 0 60px;
+    white-space: pre-wrap;
   }
   &-tag {
     letter-spacing: .15em;
-    margin: 16px auto 0px auto;
+    margin: 0 auto;
   }
   &-container {
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
   }
   &-social {
     text-align: center;
@@ -55,7 +57,7 @@
   }
   &-body {
     font-family: $secondary-font;
-    text-size: 18px;
+    font-size: 18px;
     letter-spacing: .02em;
     line-height: 1.5em;
     padding: 0 30px;
@@ -64,6 +66,7 @@
   &-body div:first-child {
     font-size: 25px;
     line-height: 1.3em;
+    letter-spacing: .03em;
   }
 }
 
@@ -105,11 +108,9 @@ video {
 }
 
 figcaption {
-
-    margin-top: -8px;
-    font-size: 13px;
-    letter-spacing: .04em;
-
+  margin-top: -8px;
+  font-size: 13px;
+  letter-spacing: .04em;
 }
 
 
