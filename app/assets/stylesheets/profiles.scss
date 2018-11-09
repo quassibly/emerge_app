@@ -34,6 +34,12 @@
     margin: 16px 0 8px;
     padding: 0 80px;
     white-space: pre-wrap;
+    @media screen and (max-width: 1399px) {
+      padding: 0 8px;
+    }
+    @media screen and (min-width: 1400px) {
+      padding: 0 80px;
+    }
   }
   &-subhead {
     font-family: $secondary-font;
@@ -41,8 +47,13 @@
     margin: 10px 0 16px 0;
     letter-spacing: .03em;
     max-width: 760px;
-    padding: 0 60px;
     white-space: pre-wrap;
+    @media screen and (max-width: 1399px) {
+      padding: 0 8px;
+    }
+    @media screen and (min-width: 1400px) {
+      padding: 0 60px;
+    }
   }
   &-tag {
     letter-spacing: .15em;

@@ -3,17 +3,6 @@
     min-height: calc(100vh - 375px);
     margin: 100px auto;
   }
-  &-card {
-    padding: 30px 80px;
-    margin: 0 auto;
-    width: 80%;
-    background-color: white;
-    max-width: 720px;
-    text-align: center;
-  }
-  &-card h2 {
-    margin: 16px auto;
-  }
   &-head {
     text-align: center;
     // margin: 100px 0 25px;
@@ -24,6 +13,24 @@
 
 }
 
+.temp-card {
+
+    margin: 0 auto;
+    background-color: white;
+    max-width: 720px;
+    text-align: center;
+    @media screen and (max-width: 899px) {
+      width: 100%;
+      padding: 18px 8px;
+    }
+    @media screen and (min-width: 900px) {
+      width: 80%;
+      padding: 30px 80px;
+    }
+  }
+.temp-card h2 {
+    margin: 16px auto;
+  }
 .contribute {
   font-size: 19px;
   text-transform: uppercase;
@@ -35,6 +42,7 @@
   margin: 0 auto;
   display: block;
   padding: 8px;
+  overflow-wrap: break-word;
 }
 
 #about {

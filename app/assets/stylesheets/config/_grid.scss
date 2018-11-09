@@ -44,5 +44,11 @@
 
 .grid-container {
   margin: 0 auto;
-  width: calc(100% - 148px);
+  @media screen and (max-width: 1399px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1400px) {
+    width: calc(100% - 148px);
+  }
+
 }

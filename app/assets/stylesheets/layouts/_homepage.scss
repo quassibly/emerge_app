@@ -5,11 +5,12 @@
   grid-auto-flow: dense;
   grid-gap: 24px;
   justify-item: stretch;
-  margin: 0 56px;
+
 }
 
 @media (min-width: 1400px) {
   .home-grid-container {
+    margin: 0 56px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "feature2   feature2  ."
@@ -22,6 +23,7 @@
 }
 @media (min-width: 900px) and (max-width: 1399px) {
   .home-grid-container {
+    margin: 0 56px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "feature2   feature2"
@@ -36,6 +38,7 @@
 }
 @media (max-width: 899px) {
   .home-grid-container {
+    margin: 0 8px;
     grid-template-columns: 1fr;
     grid-template-areas:
     "feature2"
