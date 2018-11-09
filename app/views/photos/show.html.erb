@@ -1,15 +1,5 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag @photo.image_url %>
+<%= image_tag @photo.image_url, class: "image_show" %>
 <p>
-  <strong>Image data:</strong>
-  <%= @photo.image_data %>
-
-</p>
-<p>
-  <strong>Image link:</strong>
   <%= @photo.image_url %>
-
 </p>
-
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
