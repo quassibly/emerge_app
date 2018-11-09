@@ -77,6 +77,12 @@
   padding: 0 18px;
   background-color: white;
 }
+.profile-body .body a {
+  text-decoration: underline;
+    &:hover {
+      color: grey;
+    }
+}
 .profile-body .wide {
   display: flex;
   justify-content: center;
