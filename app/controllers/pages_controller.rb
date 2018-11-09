@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def about
+    @page = 'grey'
   end
 
   def updates

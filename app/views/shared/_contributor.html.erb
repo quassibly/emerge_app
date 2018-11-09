@@ -2,28 +2,28 @@
   <div class="contributor-container">
     <%= image_tag @profile.contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
-      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @profile.contributor.name %></span></div>
-      <%= @profile.contributor.bio %>
-      <div>
-        <% if @profile.contributor.twitter.present? %>
-          <%= link_to "https://twitter.com/#{@profile.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
-            <i class="social fab fa-twitter"></i>
+      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @profile.contributor.name %></span>
+        <div>
+          <% if @profile.contributor.twitter.present? %>
+            <%= link_to "https://twitter.com/#{@profile.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
+              <i class="social fab fa-twitter"></i>
+            <% end %>
           <% end %>
-        <% end %>
-        <% if @profile.contributor.instagram.present? %>
-          <%= link_to "https://www.instagram.com/#{@profile.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
-            <i class="social fab fa-instagram"></i>
+          <% if @profile.contributor.instagram.present? %>
+            <%= link_to "https://www.instagram.com/#{@profile.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
+              <i class="social fab fa-instagram"></i>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
+
+      <%= @profile.contributor.bio %>
     </div>
   </div>
   <% if @profile.photographer.present? %>
     <div class="contributor-container">
       <div class="contributor-text-container-left">
-        <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @profile.photographer.name %></span></div>
-        <%= @profile.photographer.bio %>
-          <div>
+        <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @profile.photographer.name %></span>
           <% if @profile.photographer.twitter.present? %>
             <%= link_to "https://twitter.com/#{@profile.photographer.twitter}", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-twitter"></i>
@@ -34,7 +34,7 @@
               <i class="social fab fa-instagram"></i>
             <% end %>
           <% end %>
-        </div>
+        <%= @profile.photographer.bio %>
       </div>
       <%= image_tag @profile.photographer.photo, class: "contributor-image" %>
     </div>

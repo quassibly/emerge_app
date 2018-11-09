@@ -31,16 +31,20 @@
     margin: -12px auto 0;
   }
   &-headline {
-    margin: 8px 0;
+    margin: 16px 0 8px;
+    padding: 0 100px;
   }
   &-subhead {
     font-family: $secondary-font;
-    font-size: 17px;
+    font-size: 25px;
     margin: 10px 0;
+    letter-spacing: .02em;
+    max-width: 760px;
+    padding: 0 60px;
   }
   &-tag {
     letter-spacing: .15em;
-    margin: auto auto 0px auto;
+    margin: 16px auto 0px auto;
   }
   &-container {
     margin: 100px auto;
@@ -53,8 +57,9 @@
     font-family: $secondary-font;
     text-size: 18px;
     letter-spacing: .02em;
-    line-height: 1.6em;
+    line-height: 1.5em;
     padding: 0 30px;
+    margin-bottom: 80px;
   }
   &-body div:first-child {
     font-size: 25px;
@@ -64,19 +69,20 @@
 
 .profile-body .body {
   width: 90%;
-  max-width: 720px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 12px auto;
   padding: 0 18px;
   background-color: white;
 }
 .profile-body .wide {
   display: flex;
-   justify-content: center;
+  justify-content: center;
+  margin: 48px auto;
 }
   .profile-body a {
   }
     .profile-body figure {
-      margin: 0;
+      margin: 0 32px;
       }
       .profile-body img {
         max-width: 100%;
@@ -89,16 +95,20 @@
 .profile-body .video {
   width: 100%;
 }
+.compact {
+  margin-bottom: 0 !important;
+}
 
 video {
   width: 100%;
-  margin: 16px auto;
+  margin: 48px auto;
 }
 
 figcaption {
 
     margin-top: -8px;
-    font-size: 14px;
+    font-size: 13px;
+    letter-spacing: .04em;
 
 }
 

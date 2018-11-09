@@ -1,9 +1,6 @@
 // Place all the styles related to the opinions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.opinion-container {
-  text-align: center;
-}
 .opinion-header-photo {
   height: 275px;
   width: 275px;
@@ -13,7 +10,8 @@
   background-size: cover;
 }
 .opinion-contributor {
-  font-size: 25px;
+  font-size: 21px;
+  font-family: $primary-font;
 }
 .opinion-head-card {
     display: flex;
@@ -28,6 +26,8 @@
 }
 .opinion-subhead{
   font-size: 25px;
+  letter-spacing: .02em;
+  padding: 0 60px;
 }
 .opinion-container {
   width: 80%;

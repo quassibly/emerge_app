@@ -1,13 +1,13 @@
-<%= link_to article_path(@articles[0]) do %>
+<%= link_to article_path(@main) do %>
 <div class="home-header-photo" style="background-image: url('<%= @main.photo %>')">
   </div>
 
   <div class="home-header-card-container">
     <div class="profile-category category"><%= @main.category %></div>
       <div class="home-head-card">
-        <div class="card-headline upcase"><%= @main.headline %></div>
+        <div class="card-headline upcase"><h1><%= @main.headline %></h1></div>
         <div class="profile-subhead"><%= @main.subhead %></div>
-        <div class="profile-tag tag"><%= @main.tag %></div>
+        <div class="main-tag tag"><%= @main.tag %></div>
       </div>
   </div>
 

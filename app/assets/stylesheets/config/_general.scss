@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-family: $secondary-font;
-  font-size: 40px;
+  font-size: 32px;
   text-transform: uppercase;
   letter-spacing: .1em;
 }
@@ -45,7 +45,7 @@ h1 {
 h2 {
   font-family: $secondary-font;
   font-size: 25px;
-  letter-spacing: .12em;
+  letter-spacing: .045em;
   line-height: 1.2em;
 }
 
@@ -86,7 +86,7 @@ a {
 blockquote {
   font-size: 25px;
   width: 100%;
-  margin: 0 auto;
+  margin: 48px auto;
   line-height: 1.3em;
   letter-spacing: .02em;
   text-align: center;
@@ -176,6 +176,10 @@ blockquote {
 .hidden-logo {
   opacity: 0;
   // transition: opacity .1s;
+}
+
+.tall {
+  line-height: 1.4em;
 }
 
 

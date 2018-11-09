@@ -1163,7 +1163,7 @@ button, input, select, textarea {
 .profile-tag {
   letter-spacing: .15em;
   margin: 0 auto;
-  margin-top: 18px;
+  margin-bottom: -27px;
 }
 /* line 42, /Users/meredithavery/code/Emerge/emerge_app/app/assets/stylesheets/layouts/_profile.scss */
 .profile-container {
