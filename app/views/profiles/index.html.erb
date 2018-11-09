@@ -26,12 +26,14 @@
             <%= content_tag :div, class: published?(article) do %>
               <div class="card-img" style="background-image: url('<%= article.photo %>')">
                 <div class="card-tag tag"><%= article.tag %></div>
-  <!--               <div class="card-category category"><%= article.category %></div> -->
               </div>
-              <div class="card-headline">
+              <div class="card-text small">
+                <div class="card-headline">
                 <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+                </div>
+                <div class="card-subhead"><%= article.subhead %></div>
               </div>
-              <div class="card-subhead"><%= article.subhead %></div>
+
             <% end %>
           <% end %>
         </div>
