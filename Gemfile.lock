@@ -80,6 +80,8 @@ GEM
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
+    friendly_id (5.2.4)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     http (3.3.0)
@@ -237,6 +239,7 @@ DEPENDENCIES
   cloudinary
   coffee-rails (~> 4.2)
   devise
+  friendly_id (~> 5.2)
   jbuilder (~> 2.5)
   jquery-rails
   jquery-turbolinks (~> 2.1)

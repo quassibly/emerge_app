@@ -24,6 +24,7 @@ gem 'cloudinary'
 gem 'trix'
 gem 'responders'
 gem 'devise'
+gem 'friendly_id', '~> 5.2'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
