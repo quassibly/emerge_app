@@ -3,7 +3,7 @@
     <%= image_tag @profile.contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
       <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @profile.contributor.name %></span>
-        <div>
+
           <% if @profile.contributor.twitter.present? %>
             <%= link_to "https://twitter.com/#{@profile.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-twitter"></i>
@@ -15,9 +15,9 @@
             <% end %>
           <% end %>
         </div>
+      <%= @profile.contributor.bio %>
       </div>
 
-      <%= @profile.contributor.bio %>
     </div>
   </div>
   <% if @profile.photographer.present? %>
@@ -38,6 +38,7 @@
       </div>
     </div>
     <%= image_tag @profile.photographer.photo, class: "contributor-image" %>
+  </div>
   <% end %>
 <% end %>
 
@@ -45,9 +46,7 @@
   <div class="contributor-container">
     <%= image_tag @article.contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
-      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span></div>
-      <%= @article.contributor.bio %>
-      <div>
+      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
         <% if @article.contributor.twitter.present? %>
           <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
             <i class="social fab fa-twitter"></i>
@@ -59,6 +58,7 @@
           <% end %>
         <% end %>
       </div>
+      <%= @article.contributor.bio %>
     </div>
   </div>
 <% end %>
