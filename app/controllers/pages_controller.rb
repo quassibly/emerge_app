@@ -30,6 +30,14 @@ class PagesController < ApplicationController
   def spaces
   end
 
+  def imprint
+    @page = 'grey'
+  end
+
+  def gdpr
+    @page = 'grey'
+  end
+
   private
 
   def set_page_temp

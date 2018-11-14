@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'events', to: 'pages#events', as: :events
   get 'spaces', to: 'pages#spaces', as: :spaces
   get 'profiles/:id/rawedit', to: 'profiles#rawedit', as: :rawedit
+  get 'imprint', to: 'pages#imprint', as: :imprint
+  get 'gdpr', to: 'pages#gdpr', as: :gdpr
 
   resources :articles, :contributors, :photographers, :profiles, :opinions, :images
 
