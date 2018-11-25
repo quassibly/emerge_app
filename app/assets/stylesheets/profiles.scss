@@ -9,6 +9,7 @@
     max-height: calc(100vh - 250px);
     max-width: 200vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     top: 0px;
     margin: 0 auto;
@@ -19,18 +20,18 @@
   &-head-card {
     display: flex;
     flex-direction: column;
-    margin: calc(100vh - 426px) 16px 0 16px;
+    margin: calc(100vh - 426px) auto 0 auto;
     max-width: 720px;
     border: solid 1px;
     padding: 18px;
     background-color: #ffffff;
     text-align: center;
-    @media screen and (max-width: 899px) {
-      min-height: 388px;
-    }
-    @media screen and (min-width: 900px) {
-      min-height: 228px;
-    }
+    // @media screen and (max-width: 899px) {
+    //   min-height: 388px;
+    // }
+    // @media screen and (min-width: 900px) {
+    //   min-height: 228px;
+    // }
   }
   &-category {
     margin: -12px auto 0;
@@ -62,7 +63,7 @@
   }
   &-tag {
     letter-spacing: .15em;
-    margin: 0 auto;
+    margin: -12px auto;
   }
   &-container {
     @media screen and (max-width: 899px) {
@@ -83,63 +84,47 @@
     line-height: 1.5em;
     padding: 0 30px;
     margin-bottom: 80px;
-  }
-  &-body div:first-child {
-    font-size: 25px;
-    line-height: 1.3em;
-    letter-spacing: .03em;
-  }
-}
-
-.profile-body .body {
-  width: 90%;
-  max-width: 700px;
-  margin: 12px auto;
-  padding: 0 18px;
-  background-color: white;
-}
-.profile-body .body a {
-  text-decoration: underline;
-    &:hover {
-      color: grey;
+    & .body {
+      width: 90%;
+      max-width: 700px;
+      margin: 12px auto;
+      padding: 0 18px;
+      background-color: white;
     }
-}
-.profile-body .wide {
-  display: flex;
-  justify-content: center;
-  margin: 48px auto;
-}
-  .profile-body a {
-  }
-    .profile-body figure {
+    & .body a {
+      text-decoration: underline;
+      &:hover {
+        color: grey;
+      }
+    }
+    & .wide {
+      display: flex;
+      justify-content: center;
+      margin: 48px auto;
+    }
+    & a {
+    }
+    & figure {
       margin: 0 32px;
-      }
-      .profile-body img {
-        max-width: 100%;
-        max-height: 600px;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-      }
+    }
+    & img {
+      max-width: 100%;
+      max-height: 600px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
 
-.profile-body .video {
-  width: 100%;
-}
-.compact {
-  margin-bottom: 0 !important;
+    & .video {
+      width: 100%;
+    }
+    & div:first-child {
+      font-size: 25px;
+      line-height: 1.3em;
+      letter-spacing: .03em;
+    }
+  }
 }
 
-video {
-  width: 100%;
-  margin: 48px auto;
-}
-
-figcaption {
-  margin-top: -8px;
-  font-size: 13px;
-  letter-spacing: .04em;
-  line-height: 1.1em;
-  max-width: 400px;
-}
 
 

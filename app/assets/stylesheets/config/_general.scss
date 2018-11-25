@@ -95,6 +95,20 @@ blockquote {
   max-width: 840px;
 }
 
+
+video {
+  width: 100%;
+  margin: 48px auto;
+}
+
+figcaption {
+  margin-top: -8px;
+  font-size: 13px;
+  letter-spacing: .04em;
+  line-height: 1.1em;
+  max-width: 400px;
+}
+
 .heading {
   font-family: $secondary-font;
   font-weight: 300;
@@ -184,13 +198,16 @@ blockquote {
   line-height: 1.4em;
 }
 
+.compact {
+  margin-bottom: 0 !important;
+}
 
 .collapse {
   display: block;
   max-height: 0px;
   overflow: hidden;
   transition: max-height .5s cubic-bezier(0, 1, 0, 1);
-&.show {
+  &.show {
     max-height: 99em;
     transition: max-height .5s ease-in-out;
   }
