@@ -10,6 +10,8 @@ Article.destroy_all
 Photographer.destroy_all
 Contributor.destroy_all
 User.destroy_all
+Space.destroy_all
+Event.destroy_all
 
 
 User.create(email: "meredith.avery@gmail.com", password: "password")
@@ -382,4 +384,193 @@ Article.create(category: "opinion",
   ",
     published: true)
 
+Article.create(
+  category: "update",
+  headline: "This is update #1",
+  subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  contributor_id: 1,
+  published: true,
+  body: "
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
+
+  <p>Vitae auctor eu augue ut lectus arcu. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Et malesuada fames ac turpis egestas integer eget. Purus sit amet volutpat consequat mauris nunc congue nisi. At tellus at urna condimentum mattis pellentesque id nibh tortor. Risus feugiat in ante metus dictum at tempor. Ac turpis egestas maecenas pharetra. Feugiat in ante metus dictum at tempor. Ut lectus arcu bibendum at varius. Felis eget nunc lobortis mattis aliquam faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in. Sed id semper risus in hendrerit gravida. Condimentum mattis pellentesque id nibh tortor id. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Amet massa vitae tortor condimentum lacinia quis. Volutpat ac tincidunt vitae semper. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Quam elementum pulvinar etiam non.</p>
+
+  <p>Proin fermentum leo vel orci porta non pulvinar neque laoreet. Tempus egestas sed sed risus pretium quam vulputate dignissim. Et leo duis ut diam quam nulla porttitor massa. Dis parturient montes nascetur ridiculus mus. Lacus suspendisse faucibus interdum posuere lorem ipsum. Quam vulputate dignissim suspendisse in. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Non nisi est sit amet facilisis magna etiam. Netus et malesuada fames ac turpis egestas integer eget. Dolor purus non enim praesent. Quisque egestas diam in arcu.</p>
+
+  <p>Bibendum est ultricies integer quis auctor elit sed vulputate. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Pretium vulputate sapien nec sagittis aliquam malesuada. Nisl suscipit adipiscing bibendum est ultricies. Blandit aliquam etiam erat velit scelerisque in dictum non. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Enim diam vulputate ut pharetra sit. Ac ut consequat semper viverra nam libero justo laoreet sit. Est velit egestas dui id ornare arcu. Massa id neque aliquam vestibulum. Varius quam quisque id diam vel quam elementum pulvinar.</p>
+
+  <p>Arcu bibendum at varius vel pharetra vel turpis nunc. Sed augue lacus viverra vitae congue. Accumsan in nisl nisi scelerisque eu. Eleifend quam adipiscing vitae proin. Nam at lectus urna duis convallis. Auctor elit sed vulputate mi sit amet mauris. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Quam adipiscing vitae proin sagittis nisl rhoncus. Massa sapien faucibus et molestie ac feugiat sed lectus. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Adipiscing vitae proin sagittis nisl. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Pharetra convallis posuere morbi leo urna molestie. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Id diam maecenas ultricies mi eget. A erat nam at lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id. Euismod nisi porta lorem mollis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Gravida dictum fusce ut placerat.</p>
+  "
+  )
+Article.create(
+  category: "update",
+  headline: "Second update goes here",
+  subhead: "Turpis egestas sed tempus urna et pharetra.",
+  contributor_id: 1,
+  published: true,
+  body: "
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
+
+  <p>Vitae auctor eu augue ut lectus arcu. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Et malesuada fames ac turpis egestas integer eget. Purus sit amet volutpat consequat mauris nunc congue nisi. At tellus at urna condimentum mattis pellentesque id nibh tortor. Risus feugiat in ante metus dictum at tempor. Ac turpis egestas maecenas pharetra. Feugiat in ante metus dictum at tempor. Ut lectus arcu bibendum at varius. Felis eget nunc lobortis mattis aliquam faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in. Sed id semper risus in hendrerit gravida. Condimentum mattis pellentesque id nibh tortor id. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Amet massa vitae tortor condimentum lacinia quis. Volutpat ac tincidunt vitae semper. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Quam elementum pulvinar etiam non.</p>
+
+  <p>Proin fermentum leo vel orci porta non pulvinar neque laoreet. Tempus egestas sed sed risus pretium quam vulputate dignissim. Et leo duis ut diam quam nulla porttitor massa. Dis parturient montes nascetur ridiculus mus. Lacus suspendisse faucibus interdum posuere lorem ipsum. Quam vulputate dignissim suspendisse in. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Non nisi est sit amet facilisis magna etiam. Netus et malesuada fames ac turpis egestas integer eget. Dolor purus non enim praesent. Quisque egestas diam in arcu.</p>
+
+  <p>Bibendum est ultricies integer quis auctor elit sed vulputate. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Pretium vulputate sapien nec sagittis aliquam malesuada. Nisl suscipit adipiscing bibendum est ultricies. Blandit aliquam etiam erat velit scelerisque in dictum non. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Enim diam vulputate ut pharetra sit. Ac ut consequat semper viverra nam libero justo laoreet sit. Est velit egestas dui id ornare arcu. Massa id neque aliquam vestibulum. Varius quam quisque id diam vel quam elementum pulvinar.</p>
+
+  <p>Arcu bibendum at varius vel pharetra vel turpis nunc. Sed augue lacus viverra vitae congue. Accumsan in nisl nisi scelerisque eu. Eleifend quam adipiscing vitae proin. Nam at lectus urna duis convallis. Auctor elit sed vulputate mi sit amet mauris. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Quam adipiscing vitae proin sagittis nisl rhoncus. Massa sapien faucibus et molestie ac feugiat sed lectus. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Adipiscing vitae proin sagittis nisl. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Pharetra convallis posuere morbi leo urna molestie. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Id diam maecenas ultricies mi eget. A erat nam at lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id. Euismod nisi porta lorem mollis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Gravida dictum fusce ut placerat.</p>
+  "
+  )
+  Article.create(
+    category: "update",
+    headline: "But what about update three?",
+    subhead: "Donec massa sapien faucibus et molestie ac feugiat sed lectus.",
+    contributor_id: 1,
+    published: true,
+    body: "
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
+
+    <p>Vitae auctor eu augue ut lectus arcu. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Et malesuada fames ac turpis egestas integer eget. Purus sit amet volutpat consequat mauris nunc congue nisi. At tellus at urna condimentum mattis pellentesque id nibh tortor. Risus feugiat in ante metus dictum at tempor. Ac turpis egestas maecenas pharetra. Feugiat in ante metus dictum at tempor. Ut lectus arcu bibendum at varius. Felis eget nunc lobortis mattis aliquam faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in. Sed id semper risus in hendrerit gravida. Condimentum mattis pellentesque id nibh tortor id. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Amet massa vitae tortor condimentum lacinia quis. Volutpat ac tincidunt vitae semper. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Quam elementum pulvinar etiam non.</p>
+
+    <p>Proin fermentum leo vel orci porta non pulvinar neque laoreet. Tempus egestas sed sed risus pretium quam vulputate dignissim. Et leo duis ut diam quam nulla porttitor massa. Dis parturient montes nascetur ridiculus mus. Lacus suspendisse faucibus interdum posuere lorem ipsum. Quam vulputate dignissim suspendisse in. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Non nisi est sit amet facilisis magna etiam. Netus et malesuada fames ac turpis egestas integer eget. Dolor purus non enim praesent. Quisque egestas diam in arcu.</p>
+
+    <p>Bibendum est ultricies integer quis auctor elit sed vulputate. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Pretium vulputate sapien nec sagittis aliquam malesuada. Nisl suscipit adipiscing bibendum est ultricies. Blandit aliquam etiam erat velit scelerisque in dictum non. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Enim diam vulputate ut pharetra sit. Ac ut consequat semper viverra nam libero justo laoreet sit. Est velit egestas dui id ornare arcu. Massa id neque aliquam vestibulum. Varius quam quisque id diam vel quam elementum pulvinar.</p>
+
+    <p>Arcu bibendum at varius vel pharetra vel turpis nunc. Sed augue lacus viverra vitae congue. Accumsan in nisl nisi scelerisque eu. Eleifend quam adipiscing vitae proin. Nam at lectus urna duis convallis. Auctor elit sed vulputate mi sit amet mauris. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Quam adipiscing vitae proin sagittis nisl rhoncus. Massa sapien faucibus et molestie ac feugiat sed lectus. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Adipiscing vitae proin sagittis nisl. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Pharetra convallis posuere morbi leo urna molestie. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Id diam maecenas ultricies mi eget. A erat nam at lectus urna duis convallis convallis. Lectus proin nibh nisl condimentum id. Euismod nisi porta lorem mollis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Gravida dictum fusce ut placerat.</p>
+    "
+    )
+
 puts "#{Article.count} articles have been seeded"
+
+Medium.create(
+  type: 'Video',
+  title: 'Why fascism is so tempting - and how your data could power it.',
+  description: 'Harari warns that the greatest danger that now faces liberal democracy is that the revolution in information technology will make dictatorships more efficient and capable of control.',
+  url: 'https://www.ted.com/talks/yuval_noah_harari_why_fascism_is_so_tempting_and_how_your_data_could_power_it?language=en&fbclid=IwAR01H20xVFhjPlb6HwPxJvObd_l5zBJhzbj_x0HuhG6IsfvnW38pVAs19No',
+  tag: 'politics',
+  )
+Medium.create(
+  type: 'Video',
+  title: 'We need to restore femininity',
+  description: 'As femininity cannot be measured, we often consider it to be without value. Being feminine is not about a measurable result, it is about the experience.',
+  url:'https://www.youtube.com/watch?v=-PFYthpdEIU&feature=youtu.be&fbclid=IwAR3heiTcssdLKwD4dffaSYSNQ5ZYrw6BnTfL--UKzfq9yncM0kigstrwhCc',
+  tag: 'feminism',
+  )
+Medium.create(
+  type: 'Video',
+  title: 'Anand Giridharadas, Author',
+  description:'Intersection of money and meaning',
+  url:'https://www.youtube.com/watch?v=wg-lDwHTw8k&fbclid=IwAR1R9oGjMoRxoxzQ80riWJVuGKZvZwLxAUS5I7h2i2Ja9yXpdcO43gvKgaI',
+  tag:'Business',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Philosophize This',
+  description:'The thinkers and ideas that forged the world we live in broken down and explained, in a way which means you don’t need to be a graduate level philosopher to understand.',
+  url:'http://philosophizethis.org/',
+  tag:'Philosophy',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Future Fossils',
+  description:'Provocative, profound discussions at the intersection of science, art, and philosophy with paleontologist-futurist Michael Garfield and new amazing guests each week. ',
+  url:'https://www.stitcher.com/podcast/michael-garfield/future-fossils',
+  tag:'science',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Unbroken Chain',
+  description:'Conversations along the journey: plant medicines, ordinary magic, and the wisdom within us all. ',
+  url:'https://soundcloud.com/unbrokenchainpodcast',
+  tag:'Spirituality',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Syncronicity',
+  description:'Synchronicity (the podcast) touches on experiences and concepts that often go overlooked. The rare moments that lift the veil. Join in as we explore the unseen worlds we interact with everyday. Each guest has a unique perspective on life, reality and the mystery behind it all.',
+  url:'https://syncpodcast.com/',
+  tag:'Spirituality',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Revolutionary Left Radio',
+  description:'Discussing political philosophy, current events, activism, and the inevitable historical downfall of capitalism from a revolutionary leftist perspective.',
+  url:'https://revolutionaryleftradio.libsyn.com',
+  tag:'politics',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'The Future is Beautiful ',
+  description:'Our podcast goes deeper where Amisha Ghadiali (who initiated this project) interviews people whose work and lives are challenging the dominant story. The conversations are long, authentic and unedited. They explore the weave between politics, spirituality, sustainability and creativity',
+  url:'http://www.thefutureisbeautiful.co/',
+  tag:'politics',
+  )
+Medium.create(
+  type:'Podcast',
+  title:'Emerge',
+  description:'A podcast based inquiry into the next phase of the human experiment.',
+  url:'https://anchor.fm/emerge',
+  tag:'politics',
+  )
+
+puts "#{Medium.count} media have been seeded"
+
+Space.create(
+  name:'Das Dach',
+  category: 'Company',
+  location: 'Berlin',
+  address: 'Köpenicker Str. 145
+10997 Berlin',
+  phone:'+49 151 1567 7627',
+  url:'www.dasdach.berlin',
+  description:'We support and implement entrepreneurial and non-profit businesses with a focus on systemic change and cascading business models. Our support includes project conception, planning and implementation as well as organisational development and events.',
+  )
+Space.create(
+  name:'Schumacher College',
+  category: 'School',
+  location:'UK',
+  address:'The Old Postern, Dartington, Totnes, Devon, TQ9 6EA, UK',
+  phone:'+44 (0)1803 865934',
+  url:'https://www.schumachercollege.org.uk/',
+  description:'Transformative Learning for Ecological and Social Change
+Schumacher College is an internationally renowned learning community offering ecology-centred masters programmes and short courses.
+The focus here is on experiential learning in small-class settings with the aim of providing practical skills and strategic thinking to face the multiple challenges of the 21st Century.
+
+Set in the beautiful surroundings of the historic Dartington Estate, in South Devon, students are encouraged to develop a deep, participatory relationship with nature.  Since it opened in 1991 the College has become internationally recognised for its work, welcoming students from over 80 countries around the world.
+',
+  )
+Space.create(
+  name:'Tamera',
+  category:'Education Center',
+  location: 'Portugal',
+  address:'Healing Biotope 1.0
+Monte Do Cerro,
+7630-303 Colos Portugal',
+  phone:'+351 283 635306',
+  url:'https://www.tamera.org/',
+  description:'WE WORK FOR A GLOBAL SYSTEM CHANGE
+from war to peace, from exploitation to cooperation, from fear to trust',
+  )
+Space.create(
+  name:'Esalen Institute',
+  category: 'Retreat',
+  location: 'California',
+  address:'55000 Highway 1, Big Sur, CA 93920',
+  phone: '1-888-8-ESALEN',
+  url:'https://www.esalen.org/',
+  description: 'Esalen is more than a retreat center or an educational institute. Anchored by the inspiring beauty of Big Sur and an unparalleled intellectual history, Esalen is a world-wide network of seekers who look beyond dogma to explore deeper spiritual possibilities; forge new understandings of self and society; and pioneer new paths for change.',
+  )
+
+puts "#{Space.count} spaces have been seeded"
+
+Event.create(
+  name: 'Burning Man',
+  category: 'Spiritual',
+  event_type: 'Festival',
+  location: 'US',
+  date: 'August 25, 2019',
+  end_date: 'September 2, 2019',
+  address: 'Black Rock City',
+  url:'burningman.org',
+  description: 'Burning Man is not a festival! It’s a city wherein almost everything that happens is created entirely by its citizens, who are active participants in the experience.',
+  )
+puts "#{Event.count} events have been seeded"

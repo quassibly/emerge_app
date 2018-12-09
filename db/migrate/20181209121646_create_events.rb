@@ -3,7 +3,7 @@ class CreateEvents < ActiveRecord::Migration[5.1]
     create_table :events do |t|
       t.string :name
       t.string :category
-      t.string :type
+      t.string :event_type
       t.string :location
       t.datetime :date
       t.datetime :end_date

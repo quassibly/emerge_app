@@ -1,0 +1,2 @@
+class Podcast < Medium
+end
