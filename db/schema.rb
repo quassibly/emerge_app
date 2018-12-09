@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181109080622) do
+ActiveRecord::Schema.define(version: 20181209121755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,20 @@ ActiveRecord::Schema.define(version: 20181109080622) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "type"
+    t.string "location"
+    t.datetime "date"
+    t.datetime "end_date"
+    t.string "address"
+    t.string "url"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "friendly_id_slugs", id: :serial, force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -81,6 +95,18 @@ ActiveRecord::Schema.define(version: 20181109080622) do
 
   create_table "photos", force: :cascade do |t|
     t.text "image_data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spaces", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "location"
+    t.string "address"
+    t.string "phone"
+    t.string "url"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
