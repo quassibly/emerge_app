@@ -54,6 +54,7 @@ class ProfilesController < ApplicationController
   def delete
     @profile = Article.find(params[:id])
     @profile.deleted = true
+    @profile.save
   end
 
   private
