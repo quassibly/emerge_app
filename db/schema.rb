@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181209130306) do
+ActiveRecord::Schema.define(version: 20190107204933) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
+    t.string "type"
     t.string "category"
     t.string "person"
     t.string "headline"
@@ -23,6 +24,7 @@ ActiveRecord::Schema.define(version: 20181209130306) do
     t.string "subhead"
     t.string "meta"
     t.string "tag"
+    t.string "url"
     t.bigint "contributor_id"
     t.bigint "photographer_id"
     t.string "photo"
@@ -50,21 +52,6 @@ ActiveRecord::Schema.define(version: 20181209130306) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.string "category"
-    t.string "event_type"
-    t.string "location"
-    t.datetime "date"
-    t.datetime "end_date"
-    t.string "address"
-    t.string "url"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean "deleted", default: false
-  end
-
   create_table "friendly_id_slugs", id: :serial, force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -81,17 +68,6 @@ ActiveRecord::Schema.define(version: 20181209130306) do
     t.text "image_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "media", force: :cascade do |t|
-    t.string "type"
-    t.string "title"
-    t.text "description"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "tag"
-    t.boolean "deleted", default: false
   end
 
   create_table "photographers", force: :cascade do |t|
@@ -111,17 +87,22 @@ ActiveRecord::Schema.define(version: 20181209130306) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "spaces", force: :cascade do |t|
+  create_table "pins", force: :cascade do |t|
     t.string "name"
     t.string "category"
+    t.string "event_type"
     t.string "location"
-    t.string "address"
     t.string "phone"
+    t.datetime "date"
+    t.datetime "end_date"
+    t.string "address"
     t.string "url"
     t.text "description"
+    t.boolean "published", default: false
+    t.boolean "deleted", default: false
+    t.datetime "published_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "deleted", default: false
   end
 
   create_table "users", force: :cascade do |t|
