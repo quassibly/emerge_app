@@ -1,0 +1,11 @@
+<div class="update-header-card">
+  <h1><%= @article.headline %></h1>
+  <h2><%= @article.subhead %></h2>
+</div>
+<div class="updates-center">
+  <div class="updates-sharing"></div>
+  <div class="updates-bar"></div>
+  <div class="updates-date"><%= @article.published_at %></div>
+</div>
+
+<%= @article.body.html_safe %>

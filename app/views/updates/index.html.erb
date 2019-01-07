@@ -1,0 +1,11 @@
+<div class="updates-container">
+  <h1 class="page-head">Updates</h1>
+  <h2 class="page-subhead">Stay up to date with what emerges as we explore what's emerging</h2>
+
+  <div class="updates-grid">
+    <% @articles.each do |article| %>
+      <%= render 'shared/updatecard', article: article %>
+    <% end %>
+  </div>
+</div>
+

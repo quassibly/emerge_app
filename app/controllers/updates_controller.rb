@@ -3,11 +3,12 @@ class UpdatesController < ApplicationController
 
   def index
     @page = 'index'
-    @articles = Article.wherw(category: @category).where(deleted:false)
+    @articles = Article.where(category: @category).where(deleted:false)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles.sort_recent!
+    @articles = @articles.sort_by &:published_at
+    @articles.reverse!
   end
 
   def show
@@ -50,7 +51,7 @@ class UpdatesController < ApplicationController
   end
 
   def find_article
-    @media = Media.find(params[:id])
+    @article = Article.find(params[:id])
   end
 
   def update_params
