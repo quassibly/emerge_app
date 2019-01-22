@@ -1,1 +1,16 @@
-<%= render 'shared/mediacard' %>
+<%= render 'shared/tagbar-videos' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">Videos</h2>
+    <h2 class="page-subhead">Tune into what’s emerging with our video discovery tool.</h2>
+
+    <div class='grid_flex'>
+      <% @videos.each do |article| %>
+        <%= render 'shared/mediacard', article: article %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

@@ -90,9 +90,12 @@ ActiveRecord::Schema.define(version: 20190107204933) do
   create_table "pins", force: :cascade do |t|
     t.string "name"
     t.string "category"
+    t.string "tag"
+    t.string "classification"
     t.string "event_type"
     t.string "location"
     t.string "phone"
+    t.string "photo"
     t.datetime "date"
     t.datetime "end_date"
     t.string "address"

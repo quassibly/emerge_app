@@ -14,8 +14,12 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     if @article.category == "profile"
       redirect_to profile_path(@article)
-    else @article.category == "opinion"
+    elsif @article.category == "opinion"
       redirect_to opinion_path(@article)
+    elsif @article.category.downcase == 'video'
+      redirect_to video_path(@article)
+    elsif @article.category.downcase == 'podcast'
+      redirect_to podcast_path(@article)
     end
   end
 
@@ -24,8 +28,12 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     if @article.category == "profile"
       redirect_to edit_profile_path(@article)
-    else @article.category == "opinion"
+    elsif @article.category == "opinion"
       redirect_to edit_opinion_path(@article)
+    elsif @article.category == "video"
+      redirect_to edit_video_path(@article)
+    elsif @article.category == "podcast"
+      redirect_to edit_podcast_path(@article)
     end
   end
 

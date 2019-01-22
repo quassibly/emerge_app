@@ -1,24 +1,43 @@
 class VideosController < ApplicationController
-  before_action :set_type
+  before_action :set_category
 
   def index
     @page = 'index'
-    @media = Media.where(type: 'video').where(deleted: false)
+    @videos = Article.where(category: 'video').where(deleted: false)
     if params[:tag].present?
-      @media = @media.where(tag: params[:tag])
+      @videos = @videos.where(tag: params[:tag])
     end
-    @media = @media.sort_by &:updated_at
-    @media.reverse!
+    @videos = @videos.sort_by &:updated_at
+    @videos.reverse!
   end
 
   def show
     @page = 'grey'
-    @media = Media.find(params[:id])
+    @article = Article.find(params[:id])
+  end
+
+  def new
+    @page = 'grey'
+    @article = Article.new
+  end
+
+  def edit
+    @article = Article.find(params[:id])
+  end
+
+  def update
+    @article = Article.find(params[:id])
+    @article.update(video_params)
+    redirect_to videos_path
   end
 
   private
 
-  def set_type
-    @type = 'video'
+  def set_category
+    @category = 'video'
+  end
+
+  def video_params
+    params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url)
   end
 end

@@ -1,0 +1,42 @@
+<div class="card-container">
+  <%= link_to edit_article_path(article) do %>
+    <% if user_signed_in? %>
+    <div class="logged-in-card">
+      <h3 class="logged-in-left admin">edit</h3>
+      <% if article.published %>
+      <h3 class="admin">published</h3>
+      <% else %>
+      <h3 class="admin">draft</h3>
+      <% end %>
+    </div>
+    <% end %>
+  <% end %>
+
+  <% if article.url.include? 'youtube' %>
+    <%= link_to article_path(article) do %>
+      <%= content_tag :div, class: media_published?(article) do %>
+        <% unless article.photo.nil? %>
+          <%= image_tag article.photo, class: 'media_image' %>
+        <% end %>
+        <div class="card-tag tag"><%= article.tag %></div>
+        <div class="card-headline">
+          <%= article.headline %>
+        </div>
+        <div class="card-subhead"><%= article.subhead %></div>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= link_to article.url do %>
+      <%= content_tag :div, class: media_published?(article) do %>
+        <% unless article.photo.nil? %>
+          <%= image_tag article.photo, class: 'media_image' %>
+        <% end %>
+                <div class="card-tag tag"><%= article.tag %></div>
+                <div class="card-headline">
+                  <%= article.headline %>
+                </div>
+                <div class="card-subhead"><%= article.subhead %></div>
+        <% end %>
+    <% end %>
+  <% end %>
+</div>

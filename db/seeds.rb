@@ -158,7 +158,7 @@ Article.create(category: "profile",
   headline: "Slovakia, crafting plastics!",
   subhead: "In cooperation with local scientists, designers Vlasta Kubušová and Miroslav Král have developed a material of the future, Bratislava",
   tag: "Environment",
-  contributor_id: 3,
+  contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/crafting-plastic-studio/Freunde-von-Freunden-TSN-Crafting-Plastic-Studio-18-1600x1068.jpg",
   feature: '',
@@ -181,7 +181,7 @@ Article.create(category: "profile",
   headline: "Andrea Lenardin and her transatlantic research into the shifting meaning of things",
   subhead: "A journey into object cultures, future memories and Viennese resilience, Los Angeles",
   tag: "Spirituality",
-  contributor_id: 4,
+  contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/andrea-lenardin-madden/Freunde-von-Freunden-Andrea-Lenardin-85-1600x1067.jpg",
   feature: '',
@@ -204,7 +204,7 @@ Article.create(category: "profile",
   headline: "In the age of acceleration, Deniz Ova wants to reformulate design education",
   subhead: "Unlearning as a methodology in the Fourth Istanbul Design Biennial, Instanbul",
   tag: "Education",
-  contributor_id: 5,
+  contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/in-the-age-of-acceleration-deniz-ova-emphasizes-the-urgency-of-reformulating-design-education/Freunde-von-Freunden-Deniz-Ova-055-1600x1068.jpg",
   feature: '',
@@ -235,7 +235,7 @@ Article.create(category: "profile",
   headline: "After a book tour, the desert calls. In conversation with iO Tillett Wright",
   subhead: "The author, speaker and now self-taught furniture maker explores the notion of home in Joshua Tree",
   tag: "Art",
-  contributor_id: 6,
+  contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/io-draft/Freunde-von-Freunden-iO-Tillet-Wright-1202-1600x1065.jpg",
   feature: '',
@@ -299,7 +299,7 @@ Article.create(category: "opinion",
   headline: "A new generation of business owners are enlivening the retail sector with store concepts for a sensory shopping experience",
   subhead: "Bag label QWSTION creates its stores with a multifunctional approach, where meeting place meets design platform, and retail space",
   tag: "Business",
-  contributor_id: 3,
+  contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/eine-neue-generation-von-ladenbetreibern-belebt-den-einzelhandel-mit-konzepten-fur-zeitgemases-einkaufen/Freunde-von-Freunden-Qwestion-Vienna-14-1600x1064.jpg",
   feature: '',
   body: "
@@ -328,7 +328,7 @@ Article.create(category: "opinion",
   headline: "A spotlight on women in film and gastronomy with the Clam Club collective",
   subhead: "The film and supper club dedicated to promoting the work of leading females in the fields of food and film",
   tag: "Society",
-  contributor_id: 4,
+  contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/clam-club-feminist-film-and-supper-club/Freunde-von-Freunden-Clam-Club-Friends-Space-0644-1600x1068.jpg",
   feature: '',
   body: "
@@ -352,7 +352,7 @@ Article.create(category: "opinion",
   headline: "Once a futuristic movement that symbolized progress, the need to preserve Brutalism is more apparent than ever &#8212; Freunde von Freunden",
   subhead: "Revisiting the style that slipped in and out of fashion and favor for generations",
   tag: "Art",
-  contributor_id: 5,
+  contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/sos-brutalism/Freunde-von-Freunden-Brutalism-SOS-Kariakoo-Market-Benedikt-Redmann-1461x1200.jpg",
   feature: '',
   body: "
@@ -377,7 +377,7 @@ Article.create(category: "opinion",
   headline: "To challenge our perceptions of queer relationships, artist Paul Mpagi Sepuya depicts intimate fragments of reality",
   subhead: "Creating honest yet playful records of society, the artist continues to take his viewers inside his studio",
   tag: "Society",
-  contributor_id: 6,
+  contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/to-challenge-our-perceptions-of-queer-relationships-artist-paul-sepuya-depicts-intimate-fragments-of-reality/Freunde-von-Freunden-Paul-Sepuya-Work-Darkroom-Mirror-HR-Feature-Crop-1600x1067.jpg",
   feature: '',
   body: "
@@ -455,91 +455,101 @@ Article.create(
     )
 
 Article.create(
-  category: 'Video',
+  category: 'video',
   headline: 'Why fascism is so tempting - and how your data could power it.',
+  contributor_id: 1,
   body: 'Harari warns that the greatest danger that now faces liberal democracy is that the revolution in information technology will make dictatorships more efficient and capable of control.',
   url: 'https://www.ted.com/talks/yuval_noah_harari_why_fascism_is_so_tempting_and_how_your_data_could_power_it?language=en&fbclid=IwAR01H20xVFhjPlb6HwPxJvObd_l5zBJhzbj_x0HuhG6IsfvnW38pVAs19No',
   tag: 'politics',
   feature: '',
   )
 Article.create(
-  category: 'Video',
+  category: 'video',
   headline: 'We need to restore femininity',
+  contributor_id: 1,
   body: 'As femininity cannot be measured, we often consider it to be without value. Being feminine is not about a measurable result, it is about the experience.',
   url:'https://www.youtube.com/watch?v=-PFYthpdEIU&feature=youtu.be&fbclid=IwAR3heiTcssdLKwD4dffaSYSNQ5ZYrw6BnTfL--UKzfq9yncM0kigstrwhCc',
   tag: 'feminism',
   feature: '',
   )
 Article.create(
-  category: 'Video',
+  category: 'video',
   headline: 'Anand Giridharadas, Author',
+  contributor_id: 1,
   body:'Intersection of money and meaning',
-  url:'https://www.youtube.com/watch?v=wg-lDwHTw8k&fbclid=IwAR1R9oGjMoRxoxzQ80riWJVuGKZvZwLxAUS5I7h2i2Ja9yXpdcO43gvKgaI',
+  url:'https://www.youtube.com/watch?v=wg-lDwHTw8k',
   tag:'Business',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Philosophize This',
+  contributor_id: 1,
   body:'The thinkers and ideas that forged the world we live in broken down and explained, in a way which means you don’t need to be a graduate level philosopher to understand.',
   url:'http://philosophizethis.org/',
   tag:'Philosophy',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Future Fossils',
+  contributor_id: 1,
   body:'Provocative, profound discussions at the intersection of science, art, and philosophy with paleontologist-futurist Michael Garfield and new amazing guests each week. ',
   url:'https://www.stitcher.com/podcast/michael-garfield/future-fossils',
   tag:'science',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Unbroken Chain',
+  contributor_id: 1,
   body:'Conversations along the journey: plant medicines, ordinary magic, and the wisdom within us all. ',
   url:'https://soundcloud.com/unbrokenchainpodcast',
   tag:'Spirituality',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Syncronicity',
+  contributor_id: 1,
   body:'Synchronicity (the podcast) touches on experiences and concepts that often go overlooked. The rare moments that lift the veil. Join in as we explore the unseen worlds we interact with everyday. Each guest has a unique perspective on life, reality and the mystery behind it all.',
   url:'https://syncpodcast.com/',
   tag:'Spirituality',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Revolutionary Left Radio',
+  contributor_id: 1,
   body:'Discussing political philosophy, current events, activism, and the inevitable historical downfall of capitalism from a revolutionary leftist perspective.',
   url:'https://revolutionaryleftradio.libsyn.com',
   tag:'politics',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'The Future is Beautiful ',
+  contributor_id: 1,
   body:'Our podcast goes deeper where Amisha Ghadiali (who initiated this project) interviews people whose work and lives are challenging the dominant story. The conversations are long, authentic and unedited. They explore the weave between politics, spirituality, sustainability and creativity',
   url:'http://www.thefutureisbeautiful.co/',
   tag:'politics',
   feature: '',
   )
 Article.create(
-  category:'Podcast',
+  category:'podcast',
   headline:'Emerge',
+  contributor_id: 1,
   body:'A podcast based inquiry into the next phase of the human experiment.',
   url:'https://anchor.fm/emerge',
   tag:'politics',
   feature: '',
   )
 
-puts "#{Article.count} media have been seeded"
+puts "#{Article.count} articles have been seeded"
 
 Pin.create(
   name:'Das Dach',
-  category: 'Company',
+  category: 'space',
   location: 'Berlin',
   address: 'Köpenicker Str. 145
 10997 Berlin',
@@ -549,7 +559,7 @@ Pin.create(
   )
 Pin.create(
   name:'Schumacher College',
-  category: 'School',
+  category: 'space',
   location:'UK',
   address:'The Old Postern, Dartington, Totnes, Devon, TQ9 6EA, UK',
   phone:'+44 (0)1803 865934',
@@ -563,7 +573,7 @@ Set in the beautiful surroundings of the historic Dartington Estate, in South De
   )
 Pin.create(
   name:'Tamera',
-  category:'Education Center',
+  category: 'space',
   location: 'Portugal',
   address:'Healing Biotope 1.0
 Monte Do Cerro,
@@ -575,7 +585,7 @@ from war to peace, from exploitation to cooperation, from fear to trust',
   )
 Pin.create(
   name:'Esalen Institute',
-  category: 'Retreat',
+  category: 'space',
   location: 'California',
   address:'55000 Highway 1, Big Sur, CA 93920',
   phone: '1-888-8-ESALEN',
@@ -584,7 +594,7 @@ Pin.create(
   )
 Pin.create(
   name: 'Burning Man',
-  category: 'Spiritual',
+  category: 'event',
   event_type: 'Festival',
   location: 'US',
   date: 'August 25, 2019',

@@ -1,0 +1,11 @@
+<div class="videos-container">
+  <% youtubeID = @article.url.match('v=(.{11})') %>
+  <div class="video-container">
+    <iframe class=embedded-video src=<%= "https://www.youtube.com/embed/#{youtubeID[1]}" %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-header">
+    <h1><%= @article.headline %></h1>
+    <h2><%= @article.subhead %></h2>
+    <%= @article.body.html_safe %>
+  </div>
+</div>

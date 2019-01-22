@@ -20,6 +20,16 @@ module ApplicationHelper
     'card'
   end
 
+  def media_published?(current_article)
+    return 'card-media draft' if current_article.published == false && user_signed_in?
+    'card-media'
+  end
+
+  def pin_published?(current_pin)
+    return 'card-pin draft' if current_pin.published == false && user_signed_in?
+    'card-pin'
+  end
+
   def show_view?
     return true if request.path =~ /^\/profiles\/\d+$/
     return true if request.path =~ /^\/opinions\/\d+$/
