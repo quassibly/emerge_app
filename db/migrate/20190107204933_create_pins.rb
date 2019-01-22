@@ -3,9 +3,12 @@ class CreatePins < ActiveRecord::Migration[5.1]
     create_table :pins do |t|
       t.string :name
       t.string :category
+      t.string :tag
+      t.string :classification
       t.string :event_type
       t.string :location
       t.string :phone
+      t.string :photo
       t.datetime :date
       t.datetime :end_date
       t.string :address

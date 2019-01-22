@@ -1,0 +1,14 @@
+<%= render 'shared/tagbar' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">Spaces</h2>
+    <h2 class="page-subhead">Discover hubs of the emerging new culture.</h2>
+
+    <div class="grid_flex">
+      <% @profiles.each do |article| %>
+        <%= render 'shared/card', article: article %>
+      <% end %>
+    </div>
+  </div>
+</div>

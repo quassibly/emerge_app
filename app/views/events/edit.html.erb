@@ -1,0 +1,19 @@
+
+<div class="opinion-container">
+  <%= form_for @pin, url: {action: "update"}, html: {class: "article_form"} do |f| %>
+    <%= f.hidden_field :category, value: "event" %>
+    <h1>Event</h1>
+    <p><%= f.text_area :name, placeholder: "Event name" %></p>
+    <p><%= f.text_area :tag, placeholder: "Enter tag"%></p>
+    <p><%= f.text_area :event_type, placeholder: "Type of event" %></p>
+    <p><%= f.text_area :location, placeholder: 'Location' %></p>
+    <p><%= f.text_area :phone, placeholder: 'Phone Number' %></p>
+    <p><%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %></p>
+    <p><%= f.date_field :date %> to <%= f.date_field :end_date %></p>
+    <p><%= f.text_area :url, placeholder: "event url" %></p>
+    <p><%= f.trix_editor :description, placeholder: 'Description' %></p>
+    <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>
+    <%= f.submit %>
+    </div>
+  <% end %>
+</div>
