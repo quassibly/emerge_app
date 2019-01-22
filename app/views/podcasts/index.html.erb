@@ -1,0 +1,14 @@
+<%= render 'shared/tagbar' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head">Podcasts</h2>
+    <h2 class="page-subhead">Tune into what’s emerging with our podcast discovery tool.</h2>
+
+    <div class="grid_flex">
+      <% @podcasts.each do |article| %>
+        <%= render 'shared/mediacard', article: article %>
+      <% end %>
+    </div>
+  </div>
+</div>

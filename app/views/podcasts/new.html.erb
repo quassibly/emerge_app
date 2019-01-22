@@ -1,0 +1,16 @@
+<div class="opinion-container">
+  <%= form_for @article, url: {action: "create"}, html: {class: "article_form"} do |f| %>
+    <%= f.hidden_field :category, value: "podcast" %>
+    <h1>Podcast</h1>
+    <p><%= f.text_area :headline, placeholder: "Title" %></p>
+    <p><%= f.text_area :subhead, placeholder: "WHY TO LISTEN" %></p>
+    <p><%= f.text_area :tag, placeholder: "Enter tag"%></p>
+    <p><%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %></p>
+    <p><%= f.select :feature, [1, 2, 3, 4, 5], :include_blank => "level of piority?" %></p>
+    <p><%= f.text_area :url, placeholder: "podcast url" %></p>
+    <p><%= f.trix_editor :body, placeholder: 'Description' %></p>
+    <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>
+    <%= f.submit %>
+    </div>
+  <% end %>
+</div>
