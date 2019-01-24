@@ -1,11 +1,46 @@
-<div class="update-header-card">
-  <h1><%= @article.headline %></h1>
-  <h2><%= @article.subhead %></h2>
-</div>
-<div class="updates-center">
-  <div class="updates-sharing"></div>
-  <div class="updates-bar"></div>
-  <div class="updates-date"><%= @article.published_at %></div>
+<div class="profile-container">
+  <div class="update-header-card">
+    <h1><%= @article.headline %></h1>
+    <h2><%= @article.subhead %></h2>
+  </div>
+  <div class="updates-center">
+    <div class="updates-sharing">
+      <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
+        <i class="social fab fa-twitter"></i>
+      <% end %>
+      <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
+        <i class="social fab fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
+        <i class="social fab fa-linkedin-in"></i>
+      <% end %>
+    </div>
+    <div class="updates-bar"><hr></div>
+    <div class="updates-date"><%= @article.published_at %></div>
+  </div>
 </div>
 
-<%= @article.body.html_safe %>
+<div class="profile-body"><%= @article.body.html_safe %></div>
+
+
+<script>
+  var imgs = document.querySelectorAll('.profile-body img');
+  var divs = document.querySelectorAll('.profile-body div');
+  var videos = document.querySelectorAll('.profile-body video');
+  console.log(imgs);
+  console.log(divs);
+
+  [].forEach.call(divs, function(div) {
+    div.classList.add("body");
+  });
+
+  [].forEach.call(imgs, function(img) {
+    img.closest("div").classList.remove("body");
+    img.closest("div").classList.add("wide");
+  });
+
+  [].forEach.call(videos, function(video) {
+    video.closest("div").classList.remove("body");
+    video.closest("div").classList.add("video");
+  });
+</script>

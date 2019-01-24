@@ -13,12 +13,12 @@
     margin: 0 56px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
+    "feature2   feature2  update"
+    "feature2   feature2  update"
     "feature2   feature2  ."
-    "feature2   feature2  ."
-    "feature2   feature2  ."
-    ".          feature3  feature3"
-    ".          feature3  feature3"
-    ".          feature3  feature3";
+    "feature3   feature3  ."
+    "feature3   feature3  ."
+    "feature3   feature3  .";
   }
 }
 @media (min-width: 900px) and (max-width: 1399px) {
@@ -29,8 +29,8 @@
     "feature2   feature2"
     "feature2   feature2"
     "feature2   feature2"
-    ".          ."
-    ".          ."
+    "update          ."
+    "update          ."
     "feature3  feature3"
     "feature3  feature3"
     "feature3  feature3";
@@ -51,7 +51,24 @@
 }
 
 .feature-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    padding: 30px;
+    letter-spacing: .02em;
+    line-height: 1.3;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.feature-card2 {
   grid-area: feature2;
+  padding: 0;
+}
+
+.feature-card3 {
+  grid-area: feature3;
+  padding: 0;
 }
 
 .home-grid-container a {
@@ -64,6 +81,9 @@
   height: 790px;
 }
 
+.feature-updates-card {
+  grid-area: update;
+}
 .feature-card .card-img {
   @media screen and (max-width: 899px) {
     min-height: 480px;
@@ -71,4 +91,14 @@
   @media screen and (min-width: 900px) {
     min-height: 614px;
   }
+}
+
+.home-card-container {
+  display: flex;
+  flex-direction: column;
+  grid-row: span 2;
+}
+
+.home-section {
+  margin: 120px auto;
 }

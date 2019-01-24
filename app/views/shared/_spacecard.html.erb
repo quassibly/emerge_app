@@ -1,0 +1,28 @@
+<div class="card-container">
+  <%= link_to edit_pin_path(pin) do %>
+    <% if user_signed_in? %>
+    <div class="logged-in-card">
+      <h3 class="logged-in-left admin">edit</h3>
+      <% if pin.published %>
+      <h3 class="admin">published</h3>
+      <% else %>
+      <h3 class="admin">draft</h3>
+      <% end %>
+    </div>
+    <% end %>
+  <% end %>
+
+  <%= link_to pin_path(pin) do %>
+    <%= content_tag :div, class: pin_published?(pin) do %>
+      <% unless pin.photo.nil? %>
+        <%= image_tag pin.photo, class: 'media_image' %>
+      <% end %>
+      <div class="card-tag tag"><%= pin.tag %></div>
+      <div class="card-headline">
+        <%= pin.name %>
+      </div>
+      <div class="card-subhead"><%= pin.location %></div>
+    <% end %>
+  <% end %>
+
+</div>

@@ -1,3 +1,39 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.event-header-photo {
+  width: 800px;
+  height: 90vh;
+  max-height: calc(100vh - 250px);
+  max-width: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.event-head-card {
+  display: flex;
+  flex-direction: column;
+  margin: -24px auto 0 auto;
+  max-width: 420px;
+  border: solid 1px;
+  padding: 18px;
+  background-color: #ffffff;
+  text-align: center;
+}

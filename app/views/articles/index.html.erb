@@ -14,10 +14,10 @@
 <% end %>
 <div class="home-grid-container">
   <% if @feature1 != nil %>
-    <div class="feature-card">
+    <div class="feature-card2">
       <% article = @feature1 %>
       <%= link_to article_path(article) do %>
-        <%= content_tag :div, class: published?(article) do %>
+        <%= content_tag :div, class: 'feature-card' do %>
           <div class="card-img" style="background-image: url('<%= article.photo %>')">
             <div class="card-tag tag"><%= article.tag %></div>
             <div class="card-category category"><%= article.category %></div>
@@ -31,10 +31,10 @@
     </div>
   <% end %>
   <% if @feature2 != nil %>
-    <div class="feature-card">
+    <div class="feature-card3">
       <% article = @feature2 %>
       <%= link_to article_path(article) do %>
-        <%= content_tag :div, class: published?(article) do %>
+        <%= content_tag :div, class: 'feature-card' do %>
           <div class="card-img" style="background-image: url('<%= article.photo %>')">
             <div class="card-tag tag"><%= article.tag %></div>
             <div class="card-category category"><%= article.category %></div>
@@ -47,10 +47,57 @@
       <% end %>
     </div>
   <% end %>
+  <%= link_to updates_path do %>
+    <div class="feature-update-card">
+      <div class='card middle'>
+        <div>
+          <h1 class='center'>Updates
+          </h1>
 
-    <% @articles.each do |article| %>
-      <%= render 'shared/card', article: article %>
+          <h2 class='center'>Stay up to date with what emerges as we explore what's emerging</h2>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <% @articles.take(2).each do |article| %>
+    <%= render 'shared/homecard', article: article %>
+  <% end %>
+</div>
+
+<div class="home-section">
+  <h1 class='center'>Videos</h1>
+  <div class="grid_flex">
+    <% @videos.each do |video| %>
+      <%= render 'shared/mediacard', article: video %>
     <% end %>
+  </div>
+</div>
+
+<div class="home-section">
+  <h1 class='center'>Podcasts</h1>
+  <div class="grid_flex">
+    <% @podcasts.each do |podcast| %>
+      <%= render 'shared/mediacard', article: podcast %>
+    <% end %>
+  </div>
+</div>
+
+<div class="home-section">
+  <h1 class='center'>Events</h1>
+  <div class="grid_flex">
+    <% @events.each do |event| %>
+      <%= render 'shared/eventcard', pin: event %>
+    <% end %>
+  </div>
+</div>
+
+<div class="home-section">
+  <h1 class='center'>Spaces</h1>
+  <div class="grid_flex">
+    <% @spaces.each do |space| %>
+      <%= render 'shared/spacecard', pin: space %>
+    <% end %>
+  </div>
 </div>
 
 <script>

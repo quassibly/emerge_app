@@ -2,7 +2,7 @@ class UpdatesController < ApplicationController
   before_action :set_category, :set_background
 
   def index
-    @page = 'index'
+    @page = 'grey'
     @articles = Article.where(category: @category).where(deleted:false)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
@@ -15,7 +15,7 @@ class UpdatesController < ApplicationController
     find_article
   end
 
-  def mew
+  def new
     @article = Article.new
   end
 

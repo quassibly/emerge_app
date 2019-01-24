@@ -10,6 +10,60 @@
   display:flex;
   flex-direction: column;
 }
+
 .updates-card {
+      display: flex;
+      flex-direction: column;
+      max-width: 750px;
+      border: solid 1px;
+      padding: 30px;
+      letter-spacing: .02em;
+      line-height: 1.3;
+      background-color: #ffffff;
+      margin: 12px auto;
+}
+
+.updates-card-content {
+  margin: 0 auto;
+  padding: 16px 0px;
+}
+
+.updates-card-head {
+  max-width: 80%;
+  margin: 8px auto;
+}
+
+.updates-card-subhead {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.updates-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.updates-bar {
+  width: 40px;
+  margin: 0 8px;
+}
+
+.update-form-head-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 720px;
+    border: solid 1px;
+    padding: 30px;
+    background-color: #ffffff;
+    height: 228px;
+    text-align: center;
+}
+
+.update-header-card {
+  max-width: 800px;
+  text-align: center;
   margin: 0 auto;
 }

@@ -7,6 +7,11 @@ class ArticlesController < ApplicationController
     @articles = Article.where(published: true).where(deleted: false).where(feature: "")
     @articles = @articles.sort_by &:published_at
     @articles.reverse!
+    @articles = @articles
+    @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
+    @podcasts = Article.where(published: true).where(deleted: false).where(category: 'podcast')
+    @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
+    @spaces = Pin.where(published: true).where(deleted: false).where(category: 'space')
   end
 
   def show

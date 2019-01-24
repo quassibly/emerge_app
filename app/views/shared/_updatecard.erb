@@ -1,15 +1,25 @@
 <div class="card-container">
   <%= link_to update_path(article) do %>
-    <%= content_tag :div, class: published?(article) do %>
-      <div class="updates-card">
-        <h1><%= article.headline %></h1>
-        <h2><%= article.subhead %></h2>
+    <%= content_tag :div, class: updates_published?(article) do %>
+      <div class="updates-card-content">
+        <h1 class='updates-card-head center'><%= article.headline %></h1>
+        <h2 class='updates-card-subhead center'><%= article.subhead %></h2>
         <div class="updates-center">
-          <div class="updates-sharing"></div>
-          <div class="updates-bar"></div>
+          <div class="updates-sharing">
+            <%= link_to "http://twitter.com/share?text=#{article.headline}&url=#{request.original_url}" do %>
+              <i class="social fab fa-twitter"></i>
+            <% end %>
+            <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{article.headline}" do %>
+              <i class="social fab fa-facebook-f"></i>
+            <% end %>
+            <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{article.headline}" do %>
+              <i class="social fab fa-linkedin-in"></i>
+            <% end %>
+          </div>
+          <div class="updates-bar"><hr></div>
           <div class="updates-date"><%= article.published_at %></div>
         </div>
-        <%= article.body.html_safe %>
+        <%= article.body.truncate(500, separator: '</p>').html_safe %>
       </div>
     <% end %>
   <% end %>

@@ -20,6 +20,11 @@ module ApplicationHelper
     'card'
   end
 
+  def updates_published?(current_article)
+    return 'updates-card draft' if current_article.published == false && user_signed_in?
+    'updates-card'
+  end
+
   def media_published?(current_article)
     return 'card-media draft' if current_article.published == false && user_signed_in?
     'card-media'
