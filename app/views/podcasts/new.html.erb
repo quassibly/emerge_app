@@ -10,6 +10,8 @@
     <p><%= f.text_area :url, placeholder: "podcast url" %></p>
     <p><%= f.trix_editor :body, placeholder: 'Description' %></p>
     <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>
+    <%= f.text_area :meta, placeholder: 'meta tags' %>
+
     <%= f.submit %>
     </div>
   <% end %>

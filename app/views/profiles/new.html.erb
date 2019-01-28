@@ -27,7 +27,7 @@
       <%= f.collection_select :photographer_id, Photographer.all.sort, :id, :name, prompt: "select photographer" %>
 
       <div class="profile-body"><%= f.trix_editor :body %></div>
-
+      <%= f.text_area :meta, placeholder: 'meta tags' %>
       <%= f.submit %>
 
   </div>

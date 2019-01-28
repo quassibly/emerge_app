@@ -9,6 +9,8 @@
     <p><%= f.text_area :url, placeholder: "video url" %></p>
     <p><%= f.trix_editor :body, placeholder: 'Description' %></p>
     <p>Published?: <%= f.select :published, [true, false]%></p>
+    <%= f.text_area :meta, placeholder: 'meta tags' %>
+
     <%= f.submit %>
     </div>
   <% end %>
