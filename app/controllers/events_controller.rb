@@ -20,13 +20,12 @@ class EventsController < ApplicationController
 
   def edit
     @pin = Pin.find(params[:id])
-    @event = Pin.find(params[:id])
   end
 
   def update
-    @event = Pin.find(params[:id])
-    @event.update(event_params)
-    redirect_to event_path(@event)
+    @pin = Pin.find(params[:id])
+    @pin.update(event_params)
+    redirect_to event_path(@pin)
   end
 
   private

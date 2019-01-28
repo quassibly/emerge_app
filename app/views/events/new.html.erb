@@ -1,6 +1,6 @@
 
 <div class="opinion-container">
-  <%= form_for @event, url: {action: "create"}, html: {class: "article_form"} do |f| %>
+  <%= form_for @pin, url: {action: "create"}, html: {class: "article_form"} do |f| %>
     <%= f.hidden_field :category, value: "event" %>
     <h1>Event</h1>
     <p><%= f.text_area :name, placeholder: "Event name" %></p>
