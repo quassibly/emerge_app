@@ -9,7 +9,6 @@ class CreateArticles < ActiveRecord::Migration[5.1]
       t.string :subhead
       t.string :meta
       t.string :tag
-      t.string :url
       t.references :contributor, foreign_key: true
       t.references :photographer, foreign_key: true
       t.string :photo
