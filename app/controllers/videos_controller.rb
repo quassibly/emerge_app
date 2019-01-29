@@ -21,6 +21,12 @@ class VideosController < ApplicationController
     @article = Article.new
   end
 
+  def create
+    @pin = Article.new(video_params)
+    @pin.save
+    redirect_to update_path(@pin)
+  end
+
   def edit
     @article = Article.find(params[:id])
   end
