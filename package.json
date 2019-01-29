@@ -1,5 +1,11 @@
 {
   "name": "emerge_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "gmaps": "^0.4.24"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
 }
