@@ -22,9 +22,9 @@ class VideosController < ApplicationController
   end
 
   def create
-    @pin = Article.new(video_params)
-    @pin.save
-    redirect_to update_path(@pin)
+    @article = Article.new(video_params)
+    @article.save
+    redirect_to update_path(@article)
   end
 
   def edit
@@ -35,6 +35,11 @@ class VideosController < ApplicationController
     @article = Article.find(params[:id])
     @article.update(video_params)
     redirect_to videos_path
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
   end
 
   private

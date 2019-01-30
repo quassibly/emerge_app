@@ -2,7 +2,10 @@
   <div class="interviews_grid">
     <h1 class="page-head">Spaces</h2>
     <h2 class="page-subhead">Discover hubs of the emerging new culture.</h2>
-    <div id="map"></div>
+    <div
+      id="map"
+      data-markers="<%= @markers.to_json %>"
+    ></div>
     <div class="grid_flex">
       <% @pins.each do |pin| %>
         <%= render 'shared/spacecard', pin: pin %>
@@ -11,13 +14,3 @@
   </div>
 </div>
 
-<script>
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 52.494, lng: 13.423},
-      zoom: 8
-    });
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIj6KQqHI5T638mkIAtxx0QJIXvYBxIcE&callback=initMap" async defer></script>

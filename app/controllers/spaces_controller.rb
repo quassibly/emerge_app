@@ -18,6 +18,12 @@ class SpacesController < ApplicationController
     @pin = Pin.new
   end
 
+  def create
+    @pin = Pin.new(space_params)
+    @pin.save
+    redirect_to space_path(@pin)
+  end
+
   def edit
     @pin = Pin.find(params[:id])
     @event = Pin.find(params[:id])
@@ -25,7 +31,7 @@ class SpacesController < ApplicationController
 
   def update
     @space = Pin.find(params[:id])
-    @space.update(event_params)
+    @space.update(space_params)
     redirect_to space_path(@space)
   end
 
@@ -35,7 +41,7 @@ class SpacesController < ApplicationController
     @category = 'space'
   end
 
-  def event_params
+  def space_params
     params.require(:pin).permit(:name, :category, :event_type, :location, :phone, :date, :end_date, :address, :url, :description, :published, :photo)
   end
 end

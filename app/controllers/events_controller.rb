@@ -28,6 +28,12 @@ class EventsController < ApplicationController
     @pin = Pin.new
   end
 
+  def create
+    @pin = Pin.new(event_params)
+    @pin.save
+    redirect_to event_path(@pin)
+  end
+
   def edit
     @pin = Pin.find(params[:id])
   end
