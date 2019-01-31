@@ -21,7 +21,7 @@
       <div class="card-headline">
         <%= pin.name %>
       </div>
-      <div class="card-subhead"><%= "#{pin.date.strftime("%-d.%-m.%Y")} - #{pin.end_date.strftime("%-d.%-m.%Y")}" %></div>
+      <div class="card-subhead"><%= "#{pin.date.strftime("%-d.%-m.%Y")}" unless pin.date.nil? %> <%= " - #{pin.end_date.strftime("%-d.%-m.%Y")}" unless pin.end_date.nil? %></div>
       <div class="card-subhead"><%= pin.location %></div>
     <% end %>
   <% end %>
