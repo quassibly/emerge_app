@@ -46,8 +46,8 @@
   margin: 0 auto;
 }
 
-.card.draft {
-  background-color: $grey;
+.draft {
+  background-color: $grey !important;
 }
 .card-text {
   margin: auto 0 0 0;
@@ -75,6 +75,7 @@
   font-size: 25px;
   margin: .5em 0 0;
   letter-spacing: .03em;
+  line-height: 1.2em;
 }
 .card-img {
   height: 100%;
@@ -124,7 +125,7 @@
   overflow: hidden;
   font-family: $secondary-font;
   font-size: 17px;
-  line-height: 1.1em;
+  line-height: 1.3em;
 }
 
 .card-contributor {
@@ -137,4 +138,15 @@
   font-style: italic;
   font-size: 25px;
   letter-spacing: .03em;
+}
+
+.card-contribute {
+  border: solid 1px black;
+  padding: 20px;
+  margin: 0 auto auto;
+}
+.card-plus {
+  font-family: $secondary-font;
+  font-size: 250px;
+  text-align: center;
 }

@@ -1,15 +1,17 @@
 <div class="card-container">
-  <%= link_to edit_article_path(article) do %>
-    <% if user_signed_in? %>
+  <% if user_signed_in? %>
     <div class="logged-in-card">
-      <h3 class="logged-in-left admin">edit</h3>
-      <% if article.published %>
-        <h3 class="admin">published</h3>
-      <% else %>
-        <h3 class="admin">draft</h3>
-      <% end %>
+      <h3 class="admin">
+        <%= link_to('edit', edit_article_path(article)) %>
+      </h3>
+      <h3>
+        <%= link_to('unpublish', publish_article_path(article)) if article.published %>
+        <%= link_to('publish', publish_article_path(article)) unless article.published %>
+      </h3>
+      <h3>
+        <%= link_to('delete', delete_article_path(article)) %>
+      </h3>
     </div>
-    <% end %>
   <% end %>
 
   <% if article.url.include? 'youtube' %>
@@ -17,9 +19,9 @@
       <%= content_tag :div, class: media_published?(article) do %>
         <% unless article.photo.nil? %>
           <%= image_tag article.photo, class: 'media_image' %>
+          <div class="mediacard-tag tag"><%= article.tag %></div>
         <% end %>
-        <div class="card-tag tag"><%= article.tag %></div>
-        <div class="card-headline">
+        <div class="mediacard-headline">
           <%= article.headline %>
         </div>
         <div class="card-subhead"><%= article.subhead %></div>
@@ -31,12 +33,13 @@
         <% unless article.photo.nil? %>
           <%= image_tag article.photo, class: 'media_image' %>
         <% end %>
-                <div class="card-tag tag"><%= article.tag %></div>
-                <div class="card-headline">
+                <div class="mediacard-tag tag"><%= article.tag %></div>
+                <div class="mediacard-headline">
                   <%= article.headline %>
                 </div>
                 <div class="card-subhead"><%= article.subhead %></div>
         <% end %>
     <% end %>
   <% end %>
+  .
 </div>

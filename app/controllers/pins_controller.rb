@@ -27,6 +27,29 @@ class PinsController < ApplicationController
     end
   end
 
+  def publish!
+    @pin = Pin.find(params[:id])
+    @pin.published = !@pin.published
+    @pin.published_at = Time.new
+    @pin.save
+    if @pin.category == 'event'
+      redirect_to events_path(@pin)
+    elsif @pin.category == 'space'
+      redirect_to spaces_path(@pin)
+    end
+  end
+
+  def delete
+    @pin = Pin.find(params[:id])
+    @pin.deleted = !@pin.deleted
+    @pin.save
+    if @pin.category == 'event'
+      redirect_to events_path(@pin)
+    elsif @pin.category == 'space'
+      redirect_to spaces_path(@pin)
+    end
+  end
+
   private
 
   def pin_params

@@ -11,8 +11,11 @@ Rails.application.routes.draw do
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr
 
-  # get 'articles/:id', to: 'articles#publish!', as: 'publish_article'
-  # get 'articles/', to: 'articles#delete', as: 'delete_article'
+  get 'articles/:id/publish!', to: 'articles#publish!', as: 'publish_article'
+  get 'articles/:id/delete', to: 'articles#delete', as: 'delete_article'
+
+  get 'pins/:id/publish!', to: 'pins#publish!', as: 'publish_pin'
+  get 'pins/:id/delete', to: 'pins#delete', as: 'delete_pin'
 
   resources :articles, :contributors, :photographers, :profiles, :opinions, :images, :updates, :pins, :videos, :podcasts, :events, :spaces
 

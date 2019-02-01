@@ -19,7 +19,7 @@
   flex-direction: column;
   width: 100%;
   border: solid 1px;
-  padding: 30px;
+  padding: 20px;
   letter-spacing: .02em;
   line-height: 1.3;
   background-color: #ffffff;
@@ -53,6 +53,26 @@
   margin: 0 8px;
 }
 
+.updates-date {
+  font-family: $primary-font;
+  letter-spacing: .1em;
+}
+
+.updates-body {
+  font-family: $secondary-font;
+  font-size: 18px;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+  padding: 0 30px;
+}
+
+.updates-more {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
 .update-form-head-card {
     display: flex;
     flex-direction: column;
@@ -69,4 +89,17 @@
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.update-header-text {
+  padding: 20px;
+}
+
+.update-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0;
 }

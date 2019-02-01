@@ -1,9 +1,9 @@
 <div class="profile-container">
   <div class="update-header-card">
-    <h1><%= @article.headline %></h1>
-    <h2><%= @article.subhead %></h2>
+    <h1 class='update-header-text'><%= @article.headline %></h1>
+    <h2 class='update-header-text'><%= @article.subhead %></h2>
   </div>
-  <div class="updates-center">
+  <div class="update-center">
     <div class="updates-sharing">
       <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
         <i class="social fab fa-twitter"></i>
@@ -15,8 +15,10 @@
         <i class="social fab fa-linkedin-in"></i>
       <% end %>
     </div>
-    <div class="updates-bar"><hr></div>
-    <div class="updates-date"><%= @article.published_at %></div>
+    <% unless @article.published_at.nil? %>
+      <div class="updates-bar"><hr></div>
+      <div class="updates-date"><%= @article.published_at.strftime("%-d.%-m.%Y") %></div>
+    <% end %>
   </div>
 </div>
 

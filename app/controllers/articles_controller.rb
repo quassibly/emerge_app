@@ -44,12 +44,40 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # def publish!
-  #   @article = Article.find(params[:id])
-  #   @article.published = true
-  #   @article.published_at = DateTime.new
-  #   @article.save
-  # end
+  def publish!
+    @article = Article.find(params[:id])
+    @article.published = !@article.published
+    @article.published_at = Time.new
+    @article.save
+    if @article.category == "profile"
+      redirect_to profiles_path
+    elsif @article.category == "opinion"
+      redirect_to opinions_path
+    elsif @article.category == "update"
+      redirect_to updates_path
+    elsif @article.category == "video"
+      redirect_to videos_path
+    elsif @article.category == "podcast"
+      redirect_to podcasts_path
+    end
+  end
+
+  def delete
+    @article = Article.find(params[:id])
+    @article.deleted = !@article.deleted
+    @article.save
+    if @article.category == "profile"
+      redirect_to profiles_path
+    elsif @article.category == "opinion"
+      redirect_to opinions_path
+    elsif @article.category == "update"
+      redirect_to updates_path
+    elsif @article.category == "video"
+      redirect_to videos_path
+    elsif @article.category == "podcast"
+      redirect_to podcasts_path
+    end
+  end
 
   private
 

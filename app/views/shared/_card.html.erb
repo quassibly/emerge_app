@@ -1,15 +1,17 @@
 <div class="card-container">
-  <%= link_to edit_article_path(article) do %>
-    <% if user_signed_in? %>
+  <% if user_signed_in? %>
     <div class="logged-in-card">
-      <h3 class="logged-in-left admin">edit</h3>
-      <% if article.published %>
-      <h3 class="admin">published</h3>
-      <% else %>
-      <h3 class="admin">draft</h3>
-      <% end %>
+      <h3 class="admin">
+        <%= link_to('edit', edit_article_path(article)) %>
+      </h3>
+      <h3>
+        <%= link_to('unpublish', publish_article_path(article)) if article.published %>
+        <%= link_to('publish', publish_article_path(article)) unless article.published %>
+      </h3>
+      <h3>
+        <%= link_to('delete', delete_article_path(article)) %>
+      </h3>
     </div>
-    <% end %>
   <% end %>
 
   <%= link_to article_path(article) do %>
