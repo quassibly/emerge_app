@@ -24,7 +24,7 @@ class VideosController < ApplicationController
   def create
     @article = Article.new(video_params)
     @article.save
-    redirect_to update_path(@article)
+    redirect_to videos_path
   end
 
   def edit

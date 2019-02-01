@@ -35,6 +35,8 @@ class ArticlesController < ApplicationController
       redirect_to edit_profile_path(@article)
     elsif @article.category == "opinion"
       redirect_to edit_opinion_path(@article)
+    elsif @article.category == "update"
+      redirect_to edit_update_path(@article)
     elsif @article.category == "video"
       redirect_to edit_video_path(@article)
     elsif @article.category == "podcast"

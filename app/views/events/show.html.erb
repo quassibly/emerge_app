@@ -1,12 +1,10 @@
 <div class="event-header-photo" style="background-image: url('<%= @pin.photo %>')">
-  <div></div>
+  </div>
 </div>
   <div class="event-head-card">
     <h1 class="profile-headline upcase"><%= @pin.name %></h1>
     <div class="card-subhead">
-      <% unless @pin.date.nil? || @pin.end_date.nil? %>
-        <%= "#{@pin.date.strftime("%-d.%-m.%Y")} - #{@pin.end_date.strftime("%-d.%-m.%Y")}" %></div>
-      <% end %>
+      <%= "#{@pin.date.strftime("%-d.%-m.%Y")}" unless @pin.date.nil? %> <%= " - #{@pin.end_date.strftime("%-d.%-m.%Y")}" unless @pin.end_date.nil? %></div>
     <h2 class="profile-subhead"><%= @pin.location %></h2>
     <div class=" "><%= @pin.url %></div>
   </div>

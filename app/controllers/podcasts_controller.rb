@@ -23,9 +23,12 @@ class PodcastsController < ApplicationController
   end
 
   def create
-    @pin = Article.new(podcast_params)
-    @pin.save
-    redirect_to update_path(@pin)
+    @article = Article.new(podcast_params)
+    if @article.save
+      redirect_to podcasts_path
+    else
+      render :new
+    end
   end
 
   def edit

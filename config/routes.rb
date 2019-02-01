@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr
 
+  get 'articles/:id', to: 'articles#publish!', as: 'publish_article'
+  get 'articles/', to: 'articles#delete', as: 'delete_article'
+
   resources :articles, :contributors, :photographers, :profiles, :opinions, :images, :updates, :pins, :videos, :podcasts, :events, :spaces
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

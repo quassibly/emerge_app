@@ -1,4 +1,17 @@
 <div class="card-container">
+    <% if user_signed_in? %>
+    <div class="logged-in-card">
+      <h3 class="admin">
+        <%= link_to('edit', edit_article_path(article)) %>
+        <% if article.published %>
+          <%= link_to('publish', ) %>
+        <% else %>
+          draft
+        <% end %>
+        <%= link_to('delete', ) %>
+      </h3>
+    </div>
+    <% end %>
   <%= link_to update_path(article) do %>
     <%= content_tag :div, class: updates_published?(article) do %>
       <div class="updates-card-content">
