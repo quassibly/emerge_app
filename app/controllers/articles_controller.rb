@@ -44,12 +44,12 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def publish!
-    @article = Article.find(params[:id])
-    @article.published = true
-    @article.published_at = DateTime.new
-    @article.save
-  end
+  # def publish!
+  #   @article = Article.find(params[:id])
+  #   @article.published = true
+  #   @article.published_at = DateTime.new
+  #   @article.save
+  # end
 
   private
 
