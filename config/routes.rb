@@ -7,13 +7,6 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   get 'about', to: 'pages#about', as: :about
-  # get 'updates', to: 'pages#updates', as: :updates
-  get 'profiles_mockup', to: 'pages#profiles_mockup', as: :profiles_mockup
-  get 'opinions_mockup', to: 'pages#opinions_mockup', as: :opinions_mockup
-  # get 'video', to: 'pages#video', as: :video
-  # get 'podcast', to: 'pages#podcast', as: :podcast
-  # get 'events', to: 'pages#events', as: :events
-  # get 'spaces', to: 'pages#spaces', as: :spaces
   get 'profiles/:id/rawedit', to: 'profiles#rawedit', as: :rawedit
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr
