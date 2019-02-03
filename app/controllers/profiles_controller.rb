@@ -1,9 +1,9 @@
-class ProfilesController < ApplicationController
+class ProfilesController < ArticlesController
   before_action :set_category
 
   def index         # GET /profiles
     @page = 'index'
-    @profiles = Article.where(category: "profile").where(deleted: false)
+    @profiles = Article.where(category: "profile", deleted: false, priority: 1..4)
     if params[:tag].present?
       @profiles = @profiles.where(tag: params[:tag])
     end
@@ -60,7 +60,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
+  params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
   end
 
   def set_category

@@ -3,7 +3,7 @@ class OpinionsController < ApplicationController
 
   def index         # GET /opinions
     @page = 'index'
-    @opinions = Article.where(category: "opinion").where(deleted: false)
+    @opinions = Article.where(category: "opinion", deleted: false, priority: 1..4)
     if params[:tag].present?
       @opinions = @opinions.where(tag: params[:tag])
     end
@@ -54,7 +54,7 @@ class OpinionsController < ApplicationController
   private
 
   def opinion_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
   end
 
   def set_category

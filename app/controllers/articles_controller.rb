@@ -1,13 +1,14 @@
   class ArticlesController < ApplicationController
   def index
     @page = 'home'
-    @articles = Article.where(published: true).where(deleted: false).where(feature: "")
+    @articles = Article.where(published: true, deleted: false, priority: 1..4 ).where.not(category: 'update')
+    # @articles = sort_articles(@articles)
     @articles = @articles.sort_by &:published_at
     @articles.reverse!
-    @articles = @articles
     @main = @articles[0]
     @feature1 = @articles[1]
     @feature2 = @articles[2]
+    @articles = @articles.drop(3)
     @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
     @podcasts = Article.where(published: true).where(deleted: false).where(category: 'podcast')
     @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
@@ -82,7 +83,18 @@
   private
 
   def article_params
-    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature)
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
+  end
+
+  def sort_articles(articles)
+    articles.each do |article|
+      article.age = Time.new - article.published_at if article.priority == 1
+      article.age = (Time.new - article.published_at) * 2 if article.priority == 2
+      article.age = (Time.new - article.published_at) * 5 if article.priority == 3
+      article.age = (Time.new - article.published_at) * 10 if article.priority == 4
+    end
+    articles.sort_by &:age
+    return articles
   end
 
 end

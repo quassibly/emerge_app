@@ -10,7 +10,7 @@
     </div>
   <div class="form-profile-container">
     <div class="profile-social">
-      <%= f.select :feature, ["main", "feature1", "feature2"], :include_blank => "feature on home page?" %>
+      <%= f.select :priority, [1, 2, 3, 4, 5] %>
       <%= link_to "http://twitter.com/share?text=#{@profile.headline}&url=#{request.original_url}" do %>
         <i class="social fab fa-twitter"></i>
       <% end %>

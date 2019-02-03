@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
   def index
     @page = 'index'
-    @events = Pin.where(category: 'event').where(deleted: false)
+    @events = Pin.where(category: 'event', deleted: false)
     @events = @events.sort_by &:updated_at
     @events.reverse!
 

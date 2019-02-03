@@ -3,7 +3,7 @@ class VideosController < ApplicationController
 
   def index
     @page = 'index'
-    @videos = Article.where(category: 'video').where(deleted: false)
+    @videos = Article.where(category: 'video', deleted: false, priority: 1..4)
     if params[:tag].present?
       @videos = @videos.where(tag: params[:tag])
     end
@@ -49,6 +49,6 @@ class VideosController < ApplicationController
   end
 
   def video_params
-    params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url)
+    params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
   end
 end

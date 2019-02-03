@@ -6,7 +6,7 @@
     <p><%= f.text_area :subhead, placeholder: "WHY TO LISTEN" %></p>
     <p><%= f.text_area :tag, placeholder: "Enter tag"%></p>
     <p><%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %></p>
-    <p><%= f.select :feature, [1, 2, 3, 4, 5], :include_blank => "level of piority?" %></p>
+    <p><%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "level of piority?" %></p>
     <p><%= f.text_area :url, placeholder: "podcast url" %></p>
     <p><%= f.trix_editor :body, placeholder: 'Description' %></p>
     <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>

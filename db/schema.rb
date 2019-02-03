@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190128111007) do
+ActiveRecord::Schema.define(version: 20190203221232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.string "type"
     t.string "category"
     t.string "person"
     t.string "headline"
@@ -36,6 +35,8 @@ ActiveRecord::Schema.define(version: 20190128111007) do
     t.string "feature"
     t.string "slug"
     t.string "url"
+    t.integer "priority", default: 3
+    t.integer "age"
     t.index ["contributor_id"], name: "index_articles_on_contributor_id"
     t.index ["photographer_id"], name: "index_articles_on_photographer_id"
     t.index ["slug"], name: "index_articles_on_slug", unique: true
@@ -108,6 +109,8 @@ ActiveRecord::Schema.define(version: 20190128111007) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
+    t.string "slug"
+    t.index ["slug"], name: "index_pins_on_slug", unique: true
   end
 
   create_table "users", force: :cascade do |t|

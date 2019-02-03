@@ -4,7 +4,7 @@ class PodcastsController < ApplicationController
 
   def index
     @page = 'index'
-    @podcasts = Article.where(category: 'podcast').where(deleted: false)
+    @podcasts = Article.where(category: 'podcast', deleted: false, priority: 1..4)
     if params[:tag].present?
       @podcasts = @podcasts.where(tag: params[:id])
     end
@@ -48,6 +48,6 @@ class PodcastsController < ApplicationController
   end
 
   def podcast_params
-    params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url)
+    params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
   end
 end
