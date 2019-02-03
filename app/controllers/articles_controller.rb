@@ -1,13 +1,13 @@
-class ArticlesController < ApplicationController
+  class ArticlesController < ApplicationController
   def index
     @page = 'home'
-    @main = Article.find_by feature: "main"
-    @feature1 = Article.find_by feature: "feature1"
-    @feature2 = Article.find_by feature: "feature2"
     @articles = Article.where(published: true).where(deleted: false).where(feature: "")
     @articles = @articles.sort_by &:published_at
     @articles.reverse!
     @articles = @articles
+    @main = @articles[0]
+    @feature1 = @articles[1]
+    @feature2 = @articles[2]
     @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
     @podcasts = Article.where(published: true).where(deleted: false).where(category: 'podcast')
     @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
