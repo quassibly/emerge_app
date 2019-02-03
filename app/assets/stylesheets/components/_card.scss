@@ -141,12 +141,17 @@
 }
 
 .card-contribute {
-  border: solid 1px black;
-  padding: 20px;
+  // border: solid 1px black;
+  // padding: 20px;
   margin: 0 auto auto;
+  grid-area: 1 / -1 / 1 / -1;
+  background-color: white;
+  width: 100%;
+  max-width: 750px;
 }
 .card-plus {
   font-family: $secondary-font;
   font-size: 250px;
   text-align: center;
+  margin: -30px 0 -75px;
 }

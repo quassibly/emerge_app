@@ -9,6 +9,14 @@
       <% @podcasts.each do |article| %>
         <%= render 'shared/mediacard', article: article %>
       <% end %>
+      <div class="card-container card-contribute">
+        <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScg8Ge3BoNOY3tt2T70--AsWyDB-Q66JCt0duiZn8NQ3mU1PQ/viewform', target: "_blank" do %>
+          <div class="card-media">
+            <div class="card-plus">+</div>
+            <div class=card-headline>Do you have an podcast to share with the emerge community?</div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

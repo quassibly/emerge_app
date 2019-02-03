@@ -10,8 +10,12 @@
         <%= render 'shared/mediacard', article: article %>
       <% end %>
       <div class="card-container card-contribute">
-        <div class="card-plus">+</div>
-        <div class=card-headline>Do you have a video to share with the emerge community?</div>
+        <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScShGHY5ndIjXnY_hEcmqx5MlZXSJgiPdYa9KDQ7HQaf4-04w/viewform', target: "_blank" do %>
+          <div class="card-media">
+            <div class="card-plus">+</div>
+            <div class=card-headline>Do you have a video to share with the emerge community?</div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

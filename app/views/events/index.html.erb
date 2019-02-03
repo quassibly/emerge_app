@@ -12,6 +12,14 @@
       <% @events.each do |event| %>
         <%= render 'shared/eventcard', pin: event %>
       <% end %>
+      <div class="card-container card-contribute">
+        <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScshf5S8vloW4_4pwLZGAEoc-VaraB9uiKdbYlHEtIHkkLZzQ/viewform', target: "_blank" do %>
+          <div class="card-media">
+            <div class="card-plus">+</div>
+            <div class=card-headline>Do you have an event to share with the emerge community?</div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

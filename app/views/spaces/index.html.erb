@@ -10,7 +10,16 @@
       <% @pins.each do |pin| %>
         <%= render 'shared/spacecard', pin: pin %>
       <% end %>
+      <div class="card-container card-contribute">
+        <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLSe0m7OSMeBkSRpVtGYi2rAFqROHK6so2hqQlylXe_VLxuCwlQ/viewform', target: "_blank" do %>
+          <div class="card-media">
+            <div class="card-plus">+</div>
+            <div class=card-headline>Do you have an event to share with the emerge community?</div>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
+
 
