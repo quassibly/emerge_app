@@ -4,6 +4,10 @@ class EventsController < ApplicationController
   def index
     @page = 'index'
     @events = Pin.where(category: 'event', deleted: false)
+    @events = @events.where(category: params[:category]) if params[:category].present?
+    @events = @events.where(event_type: params[:event_type]) if params[:event_type].present?
+    @events = @events.where(location: params[:location]) if params[:location].present?
+    @events = @events.where(date: params[:date]) if params[:date].present?
     @events = @events.sort_by &:updated_at
     @events.reverse!
 

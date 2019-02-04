@@ -34,3 +34,10 @@ html, body {
   background-color: #ffffff;
   text-align: center;
 }
+
+.event-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}

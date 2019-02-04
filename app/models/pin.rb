@@ -3,6 +3,6 @@ class Pin < ApplicationRecord
   friendly_id :name, use: [:finders, :slugged]
   validates_presence_of :name, :slug
 
-  geocoded_by :address
+  geocoded_by :location
   after_validation :geocode
 end

@@ -2,7 +2,15 @@
   <div class="interviews_grid">
     <h1 class="page-head">Events</h2>
     <h2 class="page-subhead">Explore live events near you.</h2>
-
+    <div class="event-filters">
+      <%= form_tag events_path, method: :get do %>
+        <%= select(:event, :category, ['Business', 'Development'], prompt: "Category") %>
+        <%= select(:event, :event_type, ['Work', 'Festival', 'Misc'], prompt: 'Event Type') %>
+        <%= select(:event, :location, ['Europe', 'Asia', 'North America'], prompt: 'Location') %>
+        <%= select(:event, :date, ['February', 'March'], prompt: "Month") %>
+        <%= submit_tag("Search") %>
+      <% end %>
+    </div>
     <div
       id="map"
       data-markers="<%= @markers.to_json %>"

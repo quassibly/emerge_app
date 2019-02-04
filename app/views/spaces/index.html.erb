@@ -2,6 +2,13 @@
   <div class="interviews_grid">
     <h1 class="page-head">Spaces</h2>
     <h2 class="page-subhead">Discover hubs of the emerging new culture.</h2>
+    <div class="event-filters">
+      <%= form_tag events_path, method: :get do %>
+        <%= select(:event, :category, ['Business', 'Development'], prompt: "Category") %>
+        <%= select(:event, :location, ['Europe', 'Asia', 'North America'], prompt: 'Location') %>
+        <%= submit_tag("Search") %>
+      <% end %>
+    </div>
     <div
       id="map"
       data-markers="<%= @markers.to_json %>"

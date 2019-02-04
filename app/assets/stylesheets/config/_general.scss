@@ -109,6 +109,41 @@ figcaption {
   max-width: 400px;
 }
 
+select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 0px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  border: 1px solid black;
+  color: #555;
+  background-color: white;
+  margin: 8px 4px;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 184px;
+  background: right / contain no-repeat image-url('select.png');
+}
+
+input[type=submit] {
+  font-size: 13px;
+  font-family: "Cinetype";
+  border: 1px solid black;
+  letter-spacing: .02em;
+  border-radius: 0;
+  background-color: white;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 28px;
+  padding: 0 10px;
+  display: inline-block;
+  margin: 0 32px;
+  transition: all 0.23s ease-in-out 0s;
+  -webkit-appearance: none;
+}
+
 .heading {
   font-family: $secondary-font;
   font-weight: 300;
