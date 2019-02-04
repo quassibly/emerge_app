@@ -101,4 +101,12 @@
 
 .home-section {
   margin: 120px 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-section-head {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
 }

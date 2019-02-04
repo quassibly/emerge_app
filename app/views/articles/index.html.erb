@@ -65,7 +65,7 @@
 </div>
 
 <div class="home-section">
-  <h1 class='center'>Videos</h1>
+  <h1 class='center home-section-head'>Videos</h1>
   <div class="grid_flex">
     <% @videos.each do |video| %>
       <%= render 'shared/mediacard', article: video %>
@@ -74,7 +74,7 @@
 </div>
 
 <div class="home-section">
-  <h1 class='center'>Podcasts</h1>
+  <h1 class='center home-section-head'>Podcasts</h1>
   <div class="grid_flex">
     <% @podcasts.each do |podcast| %>
       <%= render 'shared/mediacard', article: podcast %>
@@ -83,7 +83,7 @@
 </div>
 
 <div class="home-section">
-  <h1 class='center'>Events</h1>
+  <h1 class='center home-section-head'>Events</h1>
   <div class="grid_flex">
     <% @events.each do |event| %>
       <%= render 'shared/eventcard', pin: event %>
@@ -92,7 +92,7 @@
 </div>
 
 <div class="home-section">
-  <h1 class='center'>Spaces</h1>
+  <h1 class='center home-section-head'>Spaces</h1>
   <div class="grid_flex">
     <% @spaces.each do |space| %>
       <%= render 'shared/spacecard', pin: space %>
