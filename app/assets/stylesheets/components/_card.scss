@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   // margin: 50px 10px;
-  max-width: 750px;
-  height: 525px;
+  width: 420px;
+  height: 440px;
   border: solid 1px;
   padding: 30px;
   letter-spacing: .02em;
@@ -50,7 +50,7 @@
   background-color: $grey !important;
 }
 .card-text {
-  margin: auto 0 0 0;
+  margin: 16px 0 auto 0;
   @media screen and (max-width: 899px) {
     height: 140px;
   }
@@ -59,7 +59,6 @@
   }
 }
 .card-text.small {
-  margin: auto 0 0 0;
   @media screen and (max-width: 899px) {
     height: 160px;
     min-height: 160px;
@@ -71,19 +70,17 @@
 }
 
 .card-headline {
-  font-family: $secondary-font;
-  font-size: 25px;
   margin: .5em 0 0;
-  letter-spacing: .03em;
-  line-height: 1.2em;
 }
 .card-img {
-  height: 100%;
+  height: 200px;
+  width: 360px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
+  margin: 0 auto;
 }
 .card-category {
   position: absolute;
@@ -123,9 +120,8 @@
 
 .card-subhead {
   overflow: hidden;
-  font-family: $secondary-font;
-  font-size: 17px;
   line-height: 1.3em;
+  margin: 8px 0;
 }
 
 .card-contributor {

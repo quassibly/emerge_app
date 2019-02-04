@@ -7,8 +7,12 @@
 
     <div class='grid_flex'>
       <% @videos.each do |article| %>
-        <%= render 'shared/mediacard', article: article %>
+        <%= render 'shared/card', article: article %>
       <% end %>
+    </div>
+  </div>
+</div>
+
       <div class="card-container card-contribute">
         <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScShGHY5ndIjXnY_hEcmqx5MlZXSJgiPdYa9KDQ7HQaf4-04w/viewform', target: "_blank" do %>
           <div class="card-media">
@@ -17,8 +21,4 @@
           </div>
         <% end %>
       </div>
-    </div>
-  </div>
-</div>
-
 

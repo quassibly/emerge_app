@@ -6,78 +6,16 @@
     <div class="profile-category category"><%= @main.category %></div>
       <div class="home-head-card">
         <div class="card-headline upcase"><h1><%= @main.headline %></h1></div>
-        <div class="profile-subhead"><%= @main.subhead %></div>
+        <h2 class="profile-subhead"><%= @main.subhead %></h2>
         <div class="main-tag tag"><%= @main.tag %></div>
       </div>
   </div>
-
 <% end %>
-<div class="home-grid-container">
-  <% if @feature1 != nil %>
-    <div class="feature-card2">
-      <% article = @feature1 %>
-      <%= link_to article_path(article) do %>
-        <%= content_tag :div, class: 'feature-card' do %>
-          <div class="card-img" style="background-image: url('<%= article.photo %>')">
-            <div class="card-tag tag"><%= article.tag %></div>
-            <div class="card-category category"><%= article.category %></div>
-          </div>
-          <div class="card-text">
-            <div class="card-headline"><%= article.headline %></div>
-            <div class="card-subhead"><%= article.subhead %></div>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  <% end %>
-  <% if @feature2 != nil %>
-    <div class="feature-card3">
-      <% article = @feature2 %>
-      <%= link_to article_path(article) do %>
-        <%= content_tag :div, class: 'feature-card' do %>
-          <div class="card-img" style="background-image: url('<%= article.photo %>')">
-            <div class="card-tag tag"><%= article.tag %></div>
-            <div class="card-category category"><%= article.category %></div>
-          </div>
-          <div class="card-headline">
-            <span class="card-contributor"><%= article.contributor.name if article.category == "opinion" %></span> <span class="card-headline"><%= article.headline %></span>
-          </div>
-          <div class="card-subhead"><%= article.subhead %></div>
-        <% end %>
-      <% end %>
-    </div>
-  <% end %>
-  <%= link_to updates_path do %>
-    <div class="feature-update-card">
-      <div class='card middle'>
-        <div>
-          <h1 class='center'>Updates
-          </h1>
-
-          <h2 class='center'>Stay up to date with what emerges as we explore what's emerging</h2>
-        </div>
-      </div>
-    </div>
-  <% end %>
-  <% @articles.take(2).each do |article| %>
-    <%= render 'shared/homecard', article: article %>
-  <% end %>
-</div>
 
 <div class="home-section">
-  <h1 class='center home-section-head'>Videos</h1>
   <div class="grid_flex">
-    <% @videos.each do |video| %>
-      <%= render 'shared/mediacard', article: video %>
-    <% end %>
-  </div>
-</div>
-
-<div class="home-section">
-  <h1 class='center home-section-head'>Podcasts</h1>
-  <div class="grid_flex">
-    <% @podcasts.each do |podcast| %>
-      <%= render 'shared/mediacard', article: podcast %>
+    <% @articles.each do |article| %>
+      <%= render 'shared/card', article: article %>
     <% end %>
   </div>
 </div>
