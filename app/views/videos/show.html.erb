@@ -4,8 +4,35 @@
     <iframe class=embedded-video src=<%= "https://www.youtube.com/embed/#{youtubeID[1]}" %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="video-header">
-    <h1><%= @article.headline %></h1>
+    <h1 class='profile-headline'><%= @article.headline %></h1>
     <h2><%= @article.subhead %></h2>
-    <%= @article.body.html_safe %>
   </div>
+  <div class="event-container">
+    <div class="event-body">
+      <%= @article.body.html_safe %>
+    </div>
+  </div>
+
+  <script>
+    var imgs = document.querySelectorAll('.event-body img');
+    var divs = document.querySelectorAll('.event-body div');
+    var videos = document.querySelectorAll('.event-body video');
+    console.log(imgs);
+    console.log(divs);
+
+    [].forEach.call(divs, function(div) {
+      div.classList.add("body");
+    });
+
+    [].forEach.call(imgs, function(img) {
+      img.closest("div").classList.remove("body");
+      img.closest("div").classList.add("wide");
+    });
+
+    [].forEach.call(videos, function(video) {
+      video.closest("div").classList.remove("body");
+      video.closest("div").classList.add("video");
+    });
+  </script>
+
 </div>

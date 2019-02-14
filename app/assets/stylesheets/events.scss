@@ -29,7 +29,7 @@ html, body {
   flex-direction: column;
   margin: -24px auto 0 auto;
   max-width: 700px;
-  border: solid 1px;
+  border: solid 1px black;
   padding: 18px;
   background-color: #ffffff;
   text-align: center;
@@ -40,4 +40,46 @@ html, body {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
+}
+
+.event-date {
+  overflow: hidden;
+  line-height: 1.3em;
+  margin: 8px 0 20px;
+}
+
+.event-link {
+  padding-bottom: 16px;
+  color: $accent-color;
+}
+
+.event-container {
+  @media screen and (max-width: 899px) {
+    margin: 80px auto 0 auto;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 100px auto 0 auto;
+  }
+}
+
+.event-body {
+  font-family: $secondary-font-light;
+  font-size: 18px;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+  padding: 0 30px;
+  margin-bottom: 80px;
+  & .body {
+    width: 90%;
+    max-width: 700px;
+    margin: 12px auto;
+    padding: 0 18px;
+    background-color: white;
+  }
+  & .body a {
+    text-decoration: underline;
+    &:hover {
+      color: grey;
+    }
+  }
 }

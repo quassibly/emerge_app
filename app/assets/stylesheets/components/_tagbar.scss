@@ -22,6 +22,7 @@
   font-family: $primary-font;
   flex: auto;
   text-transform: uppercase;
+  color: black;
 }
 
 /* tagbar link */
@@ -34,6 +35,7 @@
   background-color: $grey;
   margin: 4px;
   letter-spacing: .2em;
+  color: black;
 }
 .tagbar-link.active {
   color: white;

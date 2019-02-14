@@ -32,7 +32,7 @@ module ApplicationHelper
 
   def pin_published?(current_pin)
     return 'card-pin draft' if current_pin.published == false && user_signed_in?
-    'card-pin'
+    'card'
   end
 
   def show_view?

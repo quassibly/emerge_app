@@ -13,7 +13,7 @@
 <% end %>
 
 <div class="home-section">
-  <div class="grid_flex">
+  <div class="home-grid-articles">
     <% @articles.each do |article| %>
       <%= render 'shared/card', article: article %>
     <% end %>
@@ -33,7 +33,7 @@
   <h1 class='center home-section-head'>Spaces</h1>
   <div class="grid_flex">
     <% @spaces.each do |space| %>
-      <%= render 'shared/spacecard', pin: space %>
+      <%= render 'shared/eventcard', pin: space %>
     <% end %>
   </div>
 </div>

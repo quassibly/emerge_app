@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0;
   font-family: $secondary-font;
   font-weight: 100;
+  color: black;
 }
 
 h1 {
@@ -71,6 +72,7 @@ l1, l2, l3, l4 {
   margin-bottom: 0;
   font-family: $primary-font;
   font-weight: 100;
+  color: black;
 }
 
 l1 {
@@ -93,7 +95,7 @@ input, select {
 }
 
 a {
-  color: #000000;
+  color: $accent-color;
   text-decoration: none;
     &:hover {
         opacity: 80%;
@@ -139,7 +141,7 @@ select {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 184px;
-  background: right / contain no-repeat image-url('select.png');
+  background: top right 6px / contain no-repeat image-url('select.png');
 }
 
 input[type=submit] {
@@ -209,6 +211,7 @@ input[type=submit] {
 
 .social {
   padding: 5px;
+  color: black;
 }
 
 .upcase {
@@ -274,5 +277,18 @@ input[type=submit] {
   height: auto;
   object-fit: contain;
   margin: 10px auto;
+}
+
+.imprint-container {
+  min-height: calc(100vh - 375px);
+  margin: 100px auto;
+  max-width: 800px;
+  text-align: center;
+}
+.imprint-body {
+  margin: 0 auto 36px;
+}
+.about-subhead {
+  margin: 48px 10px 14px;
 }
 

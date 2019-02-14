@@ -63,7 +63,7 @@
 }
 
 .navbar-item.active {
-  color: black;
+  color: $accent-color;
   font-weight: bold;
   text-decoration: none;
   font-size: 16px;
@@ -102,9 +102,9 @@
 
 #logo {
   height: 60px;
-  width: 70px;
+  width: 69px;
   padding: 6px;
-  outline: solid 1px;
+  outline: solid black 1px;
 }
 #logo-home {
   height: 116px;

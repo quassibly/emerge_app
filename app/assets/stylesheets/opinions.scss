@@ -1,6 +1,10 @@
 // Place all the styles related to the opinions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.opinion-head-container {
+  display: flex;
+  flex-direction: column;
+}
 .opinion-header-photo {
   height: 275px;
   width: 275px;
@@ -18,7 +22,7 @@
     flex-direction: column;
     margin: 0 auto;
     max-width: 720px;
-    border: solid 1px;
+    border: solid 1px black;
     padding: 30px;
     background-color: #ffffff;
     // height: 275px;
@@ -36,8 +40,10 @@
   }
 }
 .opinion-container {
-  width: 80%;
-  background-color: white;
-  margin: 32px auto;
-  max-width: 720px;
+  @media screen and (max-width: 899px) {
+    margin: 52px auto 0 auto;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 5px auto 0 auto;
+  }
 }

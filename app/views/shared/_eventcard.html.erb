@@ -17,14 +17,22 @@
   <%= link_to pin_path(pin) do %>
     <%= content_tag :div, class: pin_published?(pin) do %>
       <% unless pin.photo.nil? %>
-        <%= image_tag pin.photo, class: 'media_image' %>
+        <div class="card-img" style="background-image: url('<%= pin.photo %>')">
+          <% unless pin.tag.nil? %>
+            <div class="card-tag-left category"><%= pin.tag %></div>
+          <% end %>
+          <% unless pin.event_type.nil? %>
+            <div class="card-tag tag"><%= pin.event_type %></div>
+          <% end %>
+        </div>
       <% end %>
-      <div class="card-tag tag"><%= pin.tag %></div>
-      <div class="card-headline">
-        <%= pin.name %>
+      <div class="card-text small">
+        <h3 class="card-headline">
+          <%= pin.name %>
+        </h3>
+        <h4 class="card-subhead"><%= "#{pin.date.strftime("%-d.%-m.%Y")}" unless pin.date.nil? %> <%= " - #{pin.end_date.strftime("%-d.%-m.%Y")}" unless pin.end_date.nil? %></h4>
+        <h4 class="card-subhead"><%= pin.location %></h4>
       </div>
-      <div class="card-subhead"><%= "#{pin.date.strftime("%-d.%-m.%Y")}" unless pin.date.nil? %> <%= " - #{pin.end_date.strftime("%-d.%-m.%Y")}" unless pin.end_date.nil? %></div>
-      <div class="card-subhead"><%= pin.location %></div>
     <% end %>
   <% end %>
 

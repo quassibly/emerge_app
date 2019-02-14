@@ -62,3 +62,24 @@
     </div>
   </div>
 <% end %>
+
+<% if @article.category == 'update' %>
+  <div class="contributor-container">
+    <%= image_tag @article.contributor.photo, class: "contributor-image" %>
+    <div class="contributor-text-container">
+      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
+        <% if @article.contributor.twitter.present? %>
+          <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-twitter"></i>
+          <% end %>
+        <% end %>
+        <% if @article.contributor.instagram.present? %>
+          <%= link_to "https://www.instagram.com/#{@article.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-instagram"></i>
+          <% end %>
+        <% end %>
+      </div>
+      <%= @article.contributor.bio %>
+    </div>
+  </div>
+<% end %>

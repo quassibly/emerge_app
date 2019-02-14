@@ -15,13 +15,13 @@
     ></div>
     <div class="grid_flex">
       <% @pins.each do |pin| %>
-        <%= render 'shared/spacecard', pin: pin %>
+        <%= render 'shared/eventcard', pin: pin %>
       <% end %>
       <div class="card-container card-contribute">
         <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLSe0m7OSMeBkSRpVtGYi2rAFqROHK6so2hqQlylXe_VLxuCwlQ/viewform', target: "_blank" do %>
-          <div class="card-media">
+          <div class="card">
             <div class="card-plus">+</div>
-            <div class=card-headline>Do you have an event to share with the emerge community?</div>
+            <h2 class=card-headline>Do you have an event to share with the emerge community?</h2>
           </div>
         <% end %>
       </div>

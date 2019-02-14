@@ -22,7 +22,10 @@
   </div>
 </div>
 
-<div class="profile-body"><%= @article.body.html_safe %></div>
+<div class="profile-body">
+  <%= @article.body.html_safe %>
+</div>
+<%= render 'shared/contributor' %>
 
 
 <script>
