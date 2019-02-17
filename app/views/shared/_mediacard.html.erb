@@ -14,17 +14,33 @@
     </div>
   <% end %>
 
-  <%= link_to article_path(article) do %>
-    <%= content_tag :div, class: published?(article) do %>
-      <div class="mediacard-img" style="background-image: url('<%= article.photo %>')">
-        <div class="card-tag tag"><%= article.tag %></div>
-      </div>
-      <div class="card-text small">
-        <h3 class="card-headline">
-          <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
-        </h3>
-        <h4 class="card-subhead"><%= article.subhead %></h4>
-      </div>
+  <% if article.url.include? 'youtube' %>
+    <%= link_to article_path(article) do %>
+      <%= content_tag :div, class: published?(article) do %>
+        <div class="mediacard-img" style="background-image: url('<%= article.photo %>')">
+          <div class="card-tag tag"><%= article.tag %></div>
+        </div>
+        <div class="card-text small">
+          <h3 class="card-headline">
+            <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+          </h3>
+          <h4 class="card-subhead"><%= article.subhead %></h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= link_to article.url, target: '_blank' do %>
+      <%= content_tag :div, class: published?(article) do %>
+        <div class="mediacard-img" style="background-image: url('<%= article.photo %>')">
+          <div class="card-tag tag"><%= article.tag %></div>
+        </div>
+        <div class="card-text small">
+          <h3 class="card-headline">
+            <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+          </h3>
+          <h4 class="card-subhead"><%= article.subhead %></h4>
+        </div>
+      <% end %>
     <% end %>
   <% end %>
 </div>

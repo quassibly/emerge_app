@@ -22,7 +22,7 @@
 
 <div class="home-section">
   <h1 class='center home-section-head'>Events</h1>
-  <div class="grid_flex">
+  <div class="home-grid-flex">
     <% @events.each do |event| %>
       <%= render 'shared/eventcard', pin: event %>
     <% end %>
@@ -31,7 +31,7 @@
 
 <div class="home-section">
   <h1 class='center home-section-head'>Spaces</h1>
-  <div class="grid_flex">
+  <div class="home-grid-flex">
     <% @spaces.each do |space| %>
       <%= render 'shared/eventcard', pin: space %>
     <% end %>

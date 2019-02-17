@@ -4,10 +4,10 @@
     <h2 class="page-subhead">Explore live events near you.</h2>
     <div class="event-filters">
       <%= form_tag events_path, method: :get do %>
-        <%= select(:event, :category, ['Business', 'Development'], prompt: "Category") %>
-        <%= select(:event, :event_type, ['Work', 'Festival', 'Misc'], prompt: 'Event Type') %>
-        <%= select(:event, :location, ['Europe', 'Asia', 'North America'], prompt: 'Location') %>
-        <%= select(:event, :date, ['February', 'March'], prompt: "Month") %>
+        <%= select_tag(:tag, options_for_select(@tags), prompt: "Category") %>
+        <%= select_tag(:event_type, options_for_select(@event_types), prompt: "Event Type") %>
+        <%= select_tag(:region, options_for_select(@regions), prompt: "Location") %>
+        <%= select_tag(:month, options_for_select(@months), prompt: "Month") %>
         <%= submit_tag("Search") %>
       <% end %>
     </div>
@@ -17,8 +17,8 @@
     ></div>
 
     <div class="grid_flex">
-      <% @events.each do |event| %>
-        <%= render 'shared/eventcard', pin: event %>
+      <% @pins.each do |event| %>
+        <%= render "shared/eventcard", pin: event %>
       <% end %>
       <div class="card-container card-contribute">
         <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScshf5S8vloW4_4pwLZGAEoc-VaraB9uiKdbYlHEtIHkkLZzQ/viewform', target: "_blank" do %>

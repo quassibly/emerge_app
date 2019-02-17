@@ -2,6 +2,12 @@
   display:grid;
   grid-gap: 100px 20px;
   grid-template-columns: repeat(auto-fill, 420px);
+}
+
+.home-grid-flex {
+  display:grid;
+  grid-gap: 100px 20px;
+  grid-template-columns: repeat(auto-fill, 420px);
   max-height: 470px;
   overflow: hidden;
 }

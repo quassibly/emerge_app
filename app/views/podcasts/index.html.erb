@@ -7,7 +7,7 @@
 
     <div class="grid_flex">
       <% @podcasts.each do |article| %>
-        <%= render 'shared/mediacard', article: article %>
+        <%= render 'shared/card', article: article %>
       <% end %>
       <div class="card-container card-contribute">
         <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScg8Ge3BoNOY3tt2T70--AsWyDB-Q66JCt0duiZn8NQ3mU1PQ/viewform', target: "_blank" do %>

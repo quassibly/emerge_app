@@ -3,9 +3,9 @@
     <h1 class="page-head">Spaces</h2>
     <h2 class="page-subhead">Discover hubs of the emerging new culture.</h2>
     <div class="event-filters">
-      <%= form_tag events_path, method: :get do %>
-        <%= select(:event, :category, ['Business', 'Development'], prompt: "Category") %>
-        <%= select(:event, :location, ['Europe', 'Asia', 'North America'], prompt: 'Location') %>
+      <%= form_tag spaces_path, method: :get do %>
+        <%= select_tag(:event_type, options_for_select(@event_types), prompt: 'Category') %>
+        <%= select_tag(:region, options_for_select(@regions), prompt: 'Location') %>
         <%= submit_tag("Search") %>
       <% end %>
     </div>

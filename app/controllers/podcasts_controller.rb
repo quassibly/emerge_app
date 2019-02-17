@@ -6,7 +6,7 @@ class PodcastsController < ApplicationController
     @page = 'index'
     @podcasts = Article.where(category: 'podcast', deleted: false, priority: 1..4)
     if params[:tag].present?
-      @podcasts = @podcasts.where(tag: params[:id])
+      @podcasts = @podcasts.where(tag: params[:tag])
     end
     @podcasts = @podcasts.sort_by &:updated_at
     @podcasts.reverse!
@@ -14,7 +14,6 @@ class PodcastsController < ApplicationController
 
   def show
     @page = 'grey'
-    @article = Article.find(params[:id])
   end
 
   def new
