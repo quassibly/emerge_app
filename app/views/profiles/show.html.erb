@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@profile.headline} - #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @profile.subhead %>
+<% content_for :meta_image, cl_image_path(@offer.photo) %>
+
 <div class="profile-header-photo" style="background-image: url('<%= @profile.photo %>')">
   <div class="profile-head-card">
     <h1 class="profile-headline upcase"><%= @profile.headline %></h1>
