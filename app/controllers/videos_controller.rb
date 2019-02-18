@@ -3,7 +3,7 @@ class VideosController < ApplicationController
 
   def index
     @page = 'index'
-    @videos = Article.where(category: 'video', deleted: false
+    @videos = Article.where(category: 'video', deleted: false)
     if params[:tag].present?
       @videos = @videos.where(tag: params[:tag])
     end

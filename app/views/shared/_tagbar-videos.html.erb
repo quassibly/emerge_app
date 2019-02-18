@@ -1,17 +1,6 @@
 <div class="tagbar-container">
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
-      <% #if user_signed_in? %>
-        <%= #link_to 'All', videos_path, class: "tagbar-link blank" %>
-        <% #Article.where(category: 'video').where(deleted: false).pluck(:tag).uniq.each do |tag| %>
-          <%= #link_to tag, videos_path(tag: tag), class: current_tag?(tag) %>
-        <% #end %>
-      <% #else %>
-        <%= #link_to 'All', videos_path, class: "tagbar-link blank" %>
-        <% #Article.where(category: 'video').where(published: true).where(deleted: false).pluck(:tag).uniq.each do |tag| %>
-          <%= #link_to tag, videos_path(tag: tag), class: current_tag?(tag) %>
-        <% #end %>
-      <% #end %>
       <% if user_signed_in? %>
         <%= link_to 'All', videos_path, class: "tagbar-link blank" %>
         <% Article.where(category: 'video').where(deleted: false).pluck(:tag).uniq.each do |tag| %>
