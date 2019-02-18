@@ -4,7 +4,8 @@ class PodcastsController < ApplicationController
 
   def index
     @page = 'index'
-    @podcasts = Article.where(category: 'podcast', deleted: false, priority: 1..4)
+    @podcasts = Article.where(category: 'podcast', published: true, deleted: false)
+    @podcasts = Article.where(category: 'podcast', deleted: false) if user_signed_in?
     if params[:tag].present?
       @podcasts = @podcasts.where(tag: params[:tag])
     end
