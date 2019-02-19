@@ -1,7 +1,8 @@
   class ArticlesController < ApplicationController
   def index
     @page = 'home'
-    @articles = Article.where(published: true, deleted: false, priority: 1..4 ).where.not(category: 'update')
+    @articles = Article.where(published: true, deleted: false )
+    # .where.not(category: 'update')
     # @articles = sort_articles(@articles)
     @articles = @articles.sort_by &:published_at
     @articles.reverse!
