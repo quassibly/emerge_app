@@ -3,7 +3,8 @@ class UpdatesController < ApplicationController
 
   def index
     @page = 'index'
-    @articles = Article.where(category: @category).where(deleted:false)
+    @article = Article.update_cat.published_not_deleted
+    @articles = Article.update_cat.not_deleted if user_signed_in?
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end

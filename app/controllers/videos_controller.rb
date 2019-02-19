@@ -3,13 +3,12 @@ class VideosController < ApplicationController
 
   def index
     @page = 'index'
-    @videos = Article.where(category: 'video', published: true, deleted: false)
-    @videos = Article.where(category: 'video', deleted: false) if user_signed_in?
+    @videos = Article.video.published_not_deleted
+    @videos = Article.video.not_deleted if user_signed_in?
     if params[:tag].present?
       @videos = @videos.where(tag: params[:tag])
     end
-    @videos = @videos.sort_by &:updated_at
-    @videos.reverse!
+    @videos = sort_by_priority
   end
 
   def show
@@ -52,4 +51,10 @@ class VideosController < ApplicationController
   def video_params
     params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
   end
+
+  def sort_by_priority
+    @videos.each { |article| article.published_at = Time.now if article.published_at == nil }
+    @videos.sort_by { |article| (Time.now - article.published_at) * article.priority }
+  end
+
 end
