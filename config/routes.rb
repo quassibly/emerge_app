@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root to: 'articles#index'
 
   get 'about', to: 'pages#about', as: :about
+  get 'about/edit', to: 'pages#aboutedit', as: :edit_about
   get 'profiles/:id/rawedit', to: 'profiles#rawedit', as: :rawedit
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr

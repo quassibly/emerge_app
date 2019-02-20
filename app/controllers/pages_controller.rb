@@ -9,6 +9,10 @@ class PagesController < ApplicationController
     @page = 'grey'
   end
 
+  def aboutedit
+    @page = 'grey'
+  end
+
   def updates
   end
 
