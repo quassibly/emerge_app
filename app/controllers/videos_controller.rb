@@ -63,7 +63,17 @@ class VideosController < ApplicationController
 
   def sort_by_priority
     @videos.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @videos.sort_by { |article| (Time.now - article.published_at) * article.priority }
+    @videos.each { |article| article.age = Time.now - article.published_at }
+    @videos.each do |article|
+      case article.priority
+      when 3
+        article.age = article.age * 4
+      when 4
+        article.age = article.age * 16
+      end
+    end
+    @videos.sort_by &:age
+    @videos.reject { |article| article.priority == 5 }
   end
 
 end

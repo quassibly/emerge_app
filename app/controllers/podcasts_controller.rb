@@ -61,6 +61,16 @@ class PodcastsController < ApplicationController
 
   def sort_by_priority
     @podcasts.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @podcasts.sort_by { |article| (Time.now - article.published_at) * article.priority}
+    @podcasts.reject { |article| article.priority == 5 }
+    @podcasts.each { |article| article.age = Time.now - article.published_at }
+    @podcasts.each do |article|
+      case article.priority
+      when 3
+        article.age = article.age * 4
+      when 4
+        article.age = article.age * 16
+      end
+    end
+    @podcasts.sort_by &:age
   end
 end
