@@ -6,11 +6,13 @@ class Pin < ApplicationRecord
   geocoded_by :location
   after_validation :geocode
 
-  # default_scope {where(deleted: false)}
+  include PgSearch
+  multisearchable against: [ :name, :category, :tag, :classification, :event_type, :location, :address, :description ]
 
   scope :published, -> { where(published: true) }
   scope :not_deleted, -> { where(deleted: false) }
   scope :published_not_deleted, -> { published.not_deleted }
+  scope :since_today, -> { where('date >= ? or end_date >= ?', Date.today, Date.today) }
 
   scope :space, -> {where(category: 'space')}
   scope :event, -> {where(category: 'event')}
