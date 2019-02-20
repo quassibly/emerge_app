@@ -3,8 +3,8 @@ class SpacesController < ApplicationController
 
   def index
     @page = 'index'
-    @pins = Pin.space.published
-    @pins = Pin.space if user_signed_in?
+    @pins = Pin.space.published_not_deleted
+    @pins = Pin.space.not_deleted if user_signed_in?
 
     @event_types = @pins.pluck(:event_type).uniq
     @regions = @pins.pluck(:region).uniq

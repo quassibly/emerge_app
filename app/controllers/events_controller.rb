@@ -3,8 +3,8 @@ class EventsController < ApplicationController
 
   def index
     @page = 'index'
-    @pins = Pin.event.published
-    @pins = Pin.event if user_signed_in?
+    @pins = Pin.event.published_not_deleted
+    @pins = Pin.event.not_deleted if user_signed_in?
 
     @tags = @pins.pluck(:tag).uniq
     @event_types = @pins.pluck(:event_type).uniq
@@ -20,7 +20,7 @@ class EventsController < ApplicationController
     @pins = @pins.event_type(params[:event_type]) if params[:event_type].present?
     @pins = @pins.region(params[:location]) if params[:location].present?
     @pins = @pins.where('extract(month from date) = ?', Date::MONTHNAMES.index(params[:month])) if params[:month].present?
-    @pins = @pins.sort_by{:updated_at}.reverse!
+    @pins = sort_pins
 
     @markers = @pins.map do |pin|
       {
@@ -68,5 +68,10 @@ class EventsController < ApplicationController
 
   def event_params
     params.require(:pin).permit(:name, :category, :tag, :event_type, :location, :region, :phone, :date, :end_date, :address, :url, :description, :published, :photo)
+  end
+
+  def sort_pins
+    @pins.each { |pin| pin.published_at = Time.now if pin.published_at == nil }
+    @pins.sort_by { |pin| pin.published_at }.reverse
   end
 end
