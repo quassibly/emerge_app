@@ -11,7 +11,7 @@ class SpacesController < ApplicationController
 
     @pins = @pins.event_type(params[:event_type]) if params[:event_type].present?
     @pins = @pins.region(params[:region]) if params[:region].present?
-    @pins = @pins.sort_by{:updated_at}.reverse!
+    @pins = sort_pins
 
     @markers = @pins.map do |pin|
       {
@@ -61,5 +61,10 @@ class SpacesController < ApplicationController
 
   def space_params
     params.require(:pin).permit(:name, :category, :event_type, :location, :region, :phone, :date, :end_date, :address, :url, :description, :published, :photo)
+  end
+
+  def sort_pins
+    @pins.each { |pin| pin.published_at = Time.now if pin.published_at == nil }
+    @pins.sort_by { |pin| pin.published_at }.reverse
   end
 end
