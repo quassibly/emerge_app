@@ -23,6 +23,10 @@ class PodcastsController < ApplicationController
 
   def create
     @article = Article.new(podcast_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
     if @article.save
       redirect_to podcasts_path
     else
@@ -37,6 +41,11 @@ class PodcastsController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @article.update(podcast_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
+    @article.save
     redirect_to podcasts_path
   end
 

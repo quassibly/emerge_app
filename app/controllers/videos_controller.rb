@@ -23,6 +23,10 @@ class VideosController < ApplicationController
 
   def create
     @article = Article.new(video_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
     @article.save
     redirect_to videos_path
   end
@@ -34,6 +38,11 @@ class VideosController < ApplicationController
   def update
     @article = Article.find(params[:id])
     @article.update(video_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
+    @article.save
     redirect_to videos_path
   end
 

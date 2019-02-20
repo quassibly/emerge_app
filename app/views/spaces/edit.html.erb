@@ -14,7 +14,12 @@
     <p><%= f.text_area :url, placeholder: 'Space url' %></p>
     <p><%= f.trix_editor :description, placeholder: 'Description' %></p>
     <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>
-    <%= f.submit %>
+    <%= f.submit 'Save' %>
+    <% if @pin.published %>
+      <%= f.submit 'Unpublish' %>
+    <% else %>
+      <%= f.submit 'Publish' %>
+    <% end %>
     </div>
   <% end %>
 </div>

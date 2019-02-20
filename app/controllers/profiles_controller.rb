@@ -25,6 +25,10 @@ class ProfilesController < ArticlesController
 
   def create        # POST /profiles
     @profile = Article.new(profile_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @profile.published = !@profile.published
+      @profile.published_at = Time.now
+    end
     @profile.save
     redirect_to profile_path(@profile)
   end
@@ -43,6 +47,11 @@ class ProfilesController < ArticlesController
   def update
     @profile = Article.find(params[:id])
     @profile.update(profile_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @profile.published = !@profile.published
+      @profile.published_at = Time.now
+    end
+    @profile.save
     redirect_to profile_path(@profile)
   end
 

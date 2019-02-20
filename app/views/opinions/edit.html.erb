@@ -25,12 +25,13 @@
           <i class="social fab fa-linkedin-in"></i>
         <% end %>
       </div>
-
-
-
         <div class="profile-body"><%= f.trix_editor :body %></div>
-
-        <%= f.submit %>
+        <%= f.submit 'Save' %>
+        <% if @opinion.published %>
+          <%= f.submit 'Unpublish' %>
+        <% else %>
+          <%= f.submit 'Publish' %>
+        <% end %>
     </div>
   <% end %>
 </div>

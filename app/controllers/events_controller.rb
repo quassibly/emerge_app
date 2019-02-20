@@ -46,6 +46,10 @@ class EventsController < ApplicationController
 
   def create
     @pin = Pin.new(event_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @pin.published = !@pin.published
+      @pin.published_at = Time.now
+    end
     @pin.save
     redirect_to event_path(@pin)
   end
@@ -57,6 +61,11 @@ class EventsController < ApplicationController
   def update
     @pin = Pin.find(params[:id])
     @pin.update(event_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @pin.published = !@pin.published
+      @pin.published_at = Time.now
+    end
+    @pin.save
     redirect_to event_path(@pin)
   end
 

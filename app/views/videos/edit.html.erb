@@ -10,8 +10,12 @@
     <p><%= f.trix_editor :body, placeholder: 'Description' %></p>
     <p>Published?: <%= f.select :published, [true, false]%></p>
     <%= f.text_area :meta, placeholder: 'meta tags' %>
-
-    <%= f.submit %>
+    <%= f.submit 'Save' %>
+    <% if @article.published %>
+      <%= f.submit 'Unpublish' %>
+    <% else %>
+      <%= f.submit 'Publish' %>
+    <% end %>
     </div>
   <% end %>
 </div>

@@ -28,7 +28,11 @@
 
       <div class="profile-body"><%= f.trix_editor :body %></div>
       <%= f.text_area :meta, placeholder: 'meta tags' %>
-      <%= f.submit %>
-
+      <%= f.submit 'Save' %>
+      <% if @profile.published %>
+        <%= f.submit 'Unpublish' %>
+      <% else %>
+        <%= f.submit 'Publish' %>
+      <% end %>
   </div>
 <% end %>

@@ -38,6 +38,10 @@ class SpacesController < ApplicationController
 
   def create
     @pin = Pin.new(space_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @pin.published = !@pin.published
+      @pin.published_at = Time.now
+    end
     @pin.save
     redirect_to space_path(@pin)
   end
@@ -48,9 +52,14 @@ class SpacesController < ApplicationController
   end
 
   def update
-    @space = Pin.find(params[:id])
-    @space.update(space_params)
-    redirect_to space_path(@space)
+    @pin = Pin.find(params[:id])
+    @pin.update(space_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @pin.published = !@pin.published
+      @pin.published_at = Time.now
+    end
+    @pin.save
+    redirect_to space_path(@pin)
   end
 
   private

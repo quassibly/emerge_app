@@ -25,6 +25,10 @@ class OpinionsController < ApplicationController
 
   def create        # POST /opinions
     @opinion = Article.new(opinion_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @opinion.published = !@opinion.published
+      @opinion.published_at = Time.now
+    end
     @opinion.save
     redirect_to opinion_path(@opinion)
   end
@@ -38,6 +42,11 @@ class OpinionsController < ApplicationController
   def update
     @opinion = Article.find(params[:id])
     @opinion.update(opinion_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @opinion.published = !@opinion.published
+      @opinion.published_at = Time.now
+    end
+    @opinion.save
     redirect_to opinion_path(@opinion)
   end
 

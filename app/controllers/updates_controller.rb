@@ -22,6 +22,10 @@ class UpdatesController < ApplicationController
 
   def create
     @article = Article.new(update_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
     @article.save
     redirect_to update_path(@article)
   end
@@ -33,6 +37,11 @@ class UpdatesController < ApplicationController
   def update
     find_article
     @article.update(update_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
+    @article.save
     redirect_to update_path(@article)
   end
 
