@@ -3,12 +3,22 @@
   justify-item: stretch;
 }
 .home-grid-articles {
-  display: grid;
-  grid-gap: 100px 20px;
-  grid-template-columns: repeat(auto-fill, 420px);
+  @media (min-width: 420px) {
+    grid-template-columns: repeat(auto-fill, 420px);
+    display: grid;
+    grid-gap: 100px 20px;
+  }
   overflow: hidden;
-  max-height: 1040px;
   justify-content: center;
+  @media screen and (max-width: 859px) {
+    max-height: 3120px;
+  }
+  @media (min-width: 860px) and (max-width: 1299px) {
+    max-height: 1560px;
+  }
+  @media (min-width: 1300px) {
+    max-height: 1040px;
+  }
 }
 
 .feature-card .card {
@@ -23,7 +33,7 @@
   @media screen and (max-width: 899px) {
     min-height: 480px;
   }
-  @media screen and (min-width: 900px) {
+  @media (min-width: 900px) {
     min-height: 614px;
   }
 }
@@ -35,9 +45,14 @@
 }
 
 .home-section {
-  margin: 120px 56px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 859px) {
+    margin: 120px auto;
+  }
+  @media (min-width: 860px) {
+    margin: 120px 56px;
+  }
 }
 
 .home-section-head {

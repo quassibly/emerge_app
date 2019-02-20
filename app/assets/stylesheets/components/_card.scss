@@ -5,8 +5,11 @@
 .card {
   display: flex;
   flex-direction: column;
-  // margin: 50px 10px;
-  width: 420px;
+  @media screen and (max-width: 440px) {
+    margin: 50px auto;
+  }
+  width: 100%;
+  max-width: 420px;
   height: 440px;
   border: solid 1px black;
   padding: 30px;
@@ -70,7 +73,8 @@
 }
 .card-img {
   height: 200px;
-  width: 360px;
+  max-width: 360px;
+  width: calc(100% - 50px);
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
