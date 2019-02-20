@@ -51,5 +51,36 @@ module ApplicationHelper
     false
   end
 
+  def card_route(article)
+    case article.category
+    when 'podcast'
+      return article.url
+    when 'video'
+      if article.url.include? 'youtube'
+        return article_path(article)
+      else
+        return article.url
+      end
+    else
+      return article_path(article)
+    end
+  end
+
+  def podcast_img?(current_article)
+    return 'mediacard-img' if current_article.category == 'podcast'
+    'card-img'
+  end
+
+  def external_link(current_article)
+    if current_article.url.present?
+      if current_article.url.include? 'youtube'
+        return '_self'
+      else
+        return '_blank'
+      end
+    else
+      return '_self'
+    end
+  end
 
 end
