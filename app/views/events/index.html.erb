@@ -9,6 +9,7 @@
         <%= select_tag(:region, options_for_select(@regions), prompt: "Location") %>
         <%= select_tag(:month, options_for_select(@months), prompt: "Month") %>
         <%= submit_tag("Search") %>
+        <%= link_to 'See all' , events_path, id: 'button-clear' %>
       <% end %>
     </div>
     <div

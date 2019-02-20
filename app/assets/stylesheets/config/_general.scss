@@ -292,3 +292,22 @@ input[type=submit] {
   margin: 48px 10px 14px;
 }
 
+#button-clear {
+  font-size: 13px;
+  font-family: "Cinetype";
+  border: 1px solid black;
+  letter-spacing: .02em;
+  border-radius: 0;
+  background-color: white;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 28px;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: all 0.23s ease-in-out 0s;
+  -webkit-appearance: none;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+}

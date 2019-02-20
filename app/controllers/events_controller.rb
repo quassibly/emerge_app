@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   def index
     @page = 'index'
     @pins = Pin.event.published_not_deleted.since_today
-    @pins = Pin.event.since_today if user_signed_in?
+    @pins = Pin.event.since_today.not_deleted if user_signed_in?
 
     @tags = @pins.pluck(:tag).uniq
     @event_types = @pins.pluck(:event_type).uniq
