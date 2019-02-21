@@ -8,8 +8,7 @@ class UpdatesController < ApplicationController
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = @articles.sort_by &:published_at
-    @articles.reverse!
+    @articles = @articles.sort_recent
   end
 
   def show
@@ -56,6 +55,7 @@ class UpdatesController < ApplicationController
   end
 
   def sort_recent!
+    @article.each { |article| article.published_at = Time.now if article.published.nil? }
     @articles = @articles.sort_by &:published_at
     @articles.reverse!
   end
