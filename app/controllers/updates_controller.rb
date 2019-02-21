@@ -3,12 +3,12 @@ class UpdatesController < ApplicationController
 
   def index
     @page = 'index'
-    @article = Article.update_cat.published_not_deleted
+    @articles = Article.update_cat.published_not_deleted
     @articles = Article.update_cat.not_deleted if user_signed_in?
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = @articles.sort_recent!
+    sort_recent!
   end
 
   def show
@@ -55,9 +55,8 @@ class UpdatesController < ApplicationController
   end
 
   def sort_recent!
-    @article.each { |article| article.published_at = Time.now if article.published.nil? }
+    @articles.each { |article| article.published_at = Time.now if article.published.nil? }
     @articles = @articles.sort_by &:published_at
-    @articles.reverse!
   end
 
   def find_article

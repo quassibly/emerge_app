@@ -77,7 +77,7 @@ class ProfilesController < ArticlesController
   end
 
   def sort_by_priority
-    @profiles.each { |article| article.published_at = Time.now if article.published_at == nil }
+    @profiles.each { |article| article.published_at = Time.now if article.published_at.nil? }
     @profiles.each { |article| article.age = Time.now - article.published_at }
     @profiles.each do |article|
       case article.priority
