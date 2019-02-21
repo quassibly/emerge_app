@@ -5,6 +5,9 @@ class Article < ApplicationRecord
   friendly_id :headline, use: [:finders, :slugged]
   validates_presence_of :headline, :slug
 
+  include PgSearch
+  multisearchable against: [ :person, :headline, :seo_title, :subhead, :meta, :tag, :body ]
+
   scope :published, -> { where(published: true)}
   scope :not_published, -> { where(published: false)}
   scope :not_deleted, -> { where(deleted: false)}

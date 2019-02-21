@@ -28,6 +28,7 @@ gem 'friendly_id', '~> 5.2'
 gem 'geocoder'
 gem 'figaro'
 gem 'webpacker'
+gem 'pg_search'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

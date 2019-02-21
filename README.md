@@ -20,5 +20,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+  remember to update the indexing for the PgSearch multisearch in console
+  - PgSearch::Multisearch.rebuild(Article)
+  - PgSearch::Multisearch.rebuild(Pin)
 
 * ...
