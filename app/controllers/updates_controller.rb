@@ -8,7 +8,7 @@ class UpdatesController < ApplicationController
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = @articles.sort_recent
+    @articles = @articles.sort_recent!
   end
 
   def show
