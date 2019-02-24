@@ -13,9 +13,9 @@ class Article < ApplicationRecord
   scope :not_deleted, -> { where(deleted: false)}
   scope :published_not_deleted, -> { published.not_deleted }
 
-  scope :update_cat, -> { where(category: 'update')}
-  scope :profile, -> { where(category: 'profile')}
-  scope :opinion, -> { where(category: 'opinion')}
+  scope :journal, -> { where(category: 'journal')}
+  scope :people, -> { where(category: 'people')}
+  scope :insight, -> { where(category: 'insight')}
   scope :video, -> { where(category: 'video')}
   scope :podcast, -> { where(category: 'podcast')}
   scope :not_update, -> { where.not(category: 'update')}

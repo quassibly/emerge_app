@@ -1,30 +1,30 @@
   <h1 style="text-align: center; margin: 60px auto 40px auto;">Opinion</h1>
   <div class="opinion-head-container">
-    <div class="opinion-header-photo round" style="background-image: url('<%= @opinion.contributor.photo %>')">
+    <div class="opinion-header-photo round" style="background-image: url('<%= @article.contributor.photo %>')">
     </div>
     <div class="opinion-head-card">
-      <div class="opinion-contributor upcase"><%= @opinion.contributor.name %></div>
-      <h1 class="profile-headline"><%= @opinion.headline %></h1>
-      <h2 class="profile-subhead"><%= @opinion.subhead %></h2>
+      <div class="opinion-contributor upcase"><%= @article.contributor.name %></div>
+      <h1 class="profile-headline"><%= @article.headline %></h1>
+      <h2 class="profile-subhead"><%= @article.subhead %></h2>
     </div>
-    <div class="profile-tag tag"><%= @opinion.tag %></div>
+    <div class="profile-tag tag"><%= @article.tag %></div>
   </div>
 
 
 <div class="opinion-container">
   <div class="profile-social">
-    <%= link_to "http://twitter.com/share?text=#{@opinion.headline}&url=#{request.original_url}" do %>
+    <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
       <i class="social fab fa-twitter"></i>
     <% end %>
-    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@opinion.headline}" do %>
+    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
       <i class="social fab fa-facebook-f"></i>
     <% end %>
-    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@opinion.headline}" do %>
+    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
       <i class="social fab fa-linkedin-in"></i>
     <% end %>
   </div>
 
-  <div class="profile-body"><%= sanitize @opinion.body,
+  <div class="profile-body"><%= sanitize @article.body,
     tags: %w(strong em b i p code pre tt samp kbd var sub
     sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
     acronym a img blockquote del ins video source),

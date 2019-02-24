@@ -1,4 +1,4 @@
-<%= form_for @profile, url: {action: "update"}, html: {class: "article_form"} do |f| %>
+<%= form_for @article, url: {action: "update"}, html: {class: "article_form"} do |f| %>
       <div class="profile-body"><%= f.text_area :body %></div>
 
       <%= f.submit %>

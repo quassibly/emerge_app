@@ -15,6 +15,19 @@ module ApplicationHelper
     'tagbar-link'
   end
 
+  def navbar_tab(tab)
+    case tab
+    when 'journal'
+      return 'updates'
+    when 'people'
+      return 'profiles'
+    when 'insights'
+      return 'opinions'
+    else
+      return tab
+    end
+  end
+
   def published?(current_article)
     return 'card draft' if current_article.published == false && user_signed_in?
     'card'

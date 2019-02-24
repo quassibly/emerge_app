@@ -1,6 +1,6 @@
 <div class="opinion-container">
   <%= form_for @article, url: {action: "update"}, html: {class: "article_form"} do |f| %>
-    <%= f.hidden_field :category, value: "podcast" %>
+    <%= f.hidden_field :category, value: @category %>
     <h1>Podcast</h1>
     <p><%= f.text_area :headline, placeholder: "Title" %></p>
     <p><%= f.text_area :subhead, placeholder: "WHY TO LISTEN" %></p>

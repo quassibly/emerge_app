@@ -7,10 +7,18 @@ class PagesController < ApplicationController
 
   def about
     @page = 'grey'
+    @about = Article.find_by(category: 'about')
   end
 
   def aboutedit
     @page = 'grey'
+    @article = Article.find_by(category: 'about')
+  end
+
+  def update
+    @article = Article.find(params[:article][:id])
+    @article.update(profile_params)
+    redirect_to about_path
   end
 
   def updates
@@ -46,5 +54,9 @@ class PagesController < ApplicationController
 
   def set_page_temp
     @page = 'temp'
+  end
+
+  def profile_params
+    params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
   end
 end

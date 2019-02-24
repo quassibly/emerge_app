@@ -1,6 +1,6 @@
-<%= form_for @profile, url: {action: "update"}, html: {class: "article_form"} do |f| %>
-  <%= f.hidden_field :category, value: "profile" %>
-  <div class="profile-header-photo" style="background-image: url('<%= @profile.photo %>')">
+<%= form_for @article, url: {action: "update"}, html: {class: "article_form"} do |f| %>
+  <%= f.hidden_field :category, value: @category %>
+  <div class="profile-header-photo" style="background-image: url('<%= @article.photo %>')">
       <%= f.text_field :photo, placeholder: "photo url" %>
   </div>
     <div class="form-profile-head-card">
@@ -11,13 +11,13 @@
   <div class="form-profile-container">
     <div class="profile-social">
       <%= f.select :priority, [1, 2, 3, 4, 5] %>
-      <%= link_to "http://twitter.com/share?text=#{@profile.headline}&url=#{request.original_url}" do %>
+      <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
         <i class="social fab fa-twitter"></i>
       <% end %>
-      <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@profile.headline}" do %>
+      <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
         <i class="social fab fa-facebook-f"></i>
       <% end %>
-      <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@profile.headline}" do %>
+      <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
         <i class="social fab fa-linkedin-in"></i>
       <% end %>
     </div>
@@ -29,7 +29,7 @@
       <div class="profile-body"><%= f.trix_editor :body %></div>
       <%= f.text_area :meta, placeholder: 'meta tags' %>
       <%= f.submit 'Save' %>
-      <% if @profile.published %>
+      <% if @article.published %>
         <%= f.submit 'Unpublish' %>
       <% else %>
         <%= f.submit 'Publish' %>

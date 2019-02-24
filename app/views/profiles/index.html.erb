@@ -2,11 +2,11 @@
 
 <div class="grid-container">
   <div class="interviews_grid">
-    <h1 class="page-head">Profiles</h2>
+    <h1 class="page-head"><%= @category.upcase %></h2>
     <h2 class="page-subhead">Take a deep-dive into the life, work and perspectives of emerging culture makers.</h2>
 
     <div class="grid_flex">
-      <% @profiles.each do |article| %>
+      <% @articles.each do |article| %>
         <%= render 'shared/card', article: article %>
       <% end %>
     </div>

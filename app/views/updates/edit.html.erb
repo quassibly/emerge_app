@@ -1,5 +1,5 @@
 <%= form_for @article, url: {action: "update"}, html: {class: "article_form"} do |f| %>
-  <%= f.hidden_field :category, value: "update" %>
+  <%= f.hidden_field :category, value: @category %>
     <div class="update-form-head-card">
       <%= f.text_area :headline, placeholder: "Headline" %>
       <%= f.text_area :subhead, placeholder: "Subhead" %>

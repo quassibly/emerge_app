@@ -16,15 +16,23 @@
   def show
     @page = 'grey'
     @article = Article.find(params[:id])
-    if @article.category == "profile"
+    case @article.category
+    when 'journal'
+      redirect_to update_path(@article)
+    when 'people'
       redirect_to profile_path(@article)
-    elsif @article.category == "opinion"
+    when 'insight'
       redirect_to opinion_path(@article)
-    elsif @article.category.downcase == 'video'
+    when 'video'
       redirect_to video_path(@article)
-    elsif @article.category.downcase == 'podcast'
+    when 'podcast'
       redirect_to podcast_path(@article)
     end
+  end
+
+  def new
+    @article = Article.new
+    @article.category = @category
   end
 
   def edit
@@ -41,6 +49,25 @@
     elsif @article.category == "podcast"
       redirect_to edit_podcast_path(@article)
     end
+  end
+
+  def update
+    find_article
+    @article.update(update_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
+    @article.save
+  end
+
+  def create
+    @article = Article.new(update_params)
+    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
+      @article.published = !@article.published
+      @article.published_at = Time.now
+    end
+    @article.save
   end
 
   def publish!
@@ -65,17 +92,17 @@
     @article = Article.find(params[:id])
     @article.deleted = !@article.deleted
     @article.save
-    if @article.category == "profile"
-      redirect_to profiles_path
-    elsif @article.category == "opinion"
-      redirect_to opinions_path
-    elsif @article.category == "update"
-      redirect_to updates_path
-    elsif @article.category == "video"
-      redirect_to videos_path
-    elsif @article.category == "podcast"
-      redirect_to podcasts_path
-    end
+    # if @article.category == "profile"
+    #   redirect_to profiles_path
+    # elsif @article.category == "opinion"
+    #   redirect_to opinions_path
+    # elsif @article.category == "update"
+    #   redirect_to updates_path
+    # elsif @article.category == "video"
+    #   redirect_to videos_path
+    # elsif @article.category == "podcast"
+    #   redirect_to podcasts_path
+    # end
   end
 
   private

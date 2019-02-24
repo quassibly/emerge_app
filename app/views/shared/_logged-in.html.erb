@@ -11,9 +11,9 @@
     <%= link_to "Edit", edit_contributor_path(@contributor), class: "admin white" if contributor_view? %>
     <%= link_to "Edit", edit_photographer_path(@photographer), class: "admin white" if photographer_view? %>
 
-    <%= link_to "+Update", new_update_path, class: "logged-in-button" %>
-    <%= link_to "+Profile", new_profile_path, class: "logged-in-button" %>
-    <%= link_to "+Opinion", new_opinion_path, class: "logged-in-button" %>
+    <%= link_to "+Journal", new_update_path, class: "logged-in-button" %>
+    <%= link_to "+People", new_profile_path, class: "logged-in-button" %>
+    <%= link_to "+Insight", new_opinion_path, class: "logged-in-button" %>
     <%= link_to "+Video", new_video_path, class: "logged-in-button" %>
     <%= link_to "+Podcast", new_podcast_path, class: "logged-in-button" %>
     <%= link_to "+Event", new_event_path, class: "logged-in-button" %>

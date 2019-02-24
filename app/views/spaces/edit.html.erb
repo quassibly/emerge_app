@@ -1,7 +1,7 @@
 
 <div class="opinion-container">
   <%= form_for @pin, url: {action: "update"}, html: {class: "article_form"} do |f| %>
-    <%= f.hidden_field :category, value: "space" %>
+    <%= f.hidden_field :category, value: @category %>
     <h1>Space</h1>
     <p><%= f.text_area :name, placeholder: "Space name" %></p>
     <p><%= f.text_area :tag, placeholder: "Space tag"%></p>

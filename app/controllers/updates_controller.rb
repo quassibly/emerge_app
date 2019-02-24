@@ -1,10 +1,10 @@
-class UpdatesController < ApplicationController
+class UpdatesController < ArticlesController
   before_action :set_category, :set_background
 
   def index
     @page = 'index'
-    @articles = Article.update_cat.published_not_deleted
-    @articles = Article.update_cat.not_deleted if user_signed_in?
+    @articles = Article.journal.published_not_deleted
+    @articles = Article.journal.not_deleted if user_signed_in?
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
@@ -16,16 +16,11 @@ class UpdatesController < ApplicationController
   end
 
   def new
-    @article = Article.new
+    super
   end
 
   def create
-    @article = Article.new(update_params)
-    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
-      @article.published = !@article.published
-      @article.published_at = Time.now
-    end
-    @article.save
+    super
     redirect_to update_path(@article)
   end
 
@@ -34,20 +29,14 @@ class UpdatesController < ApplicationController
   end
 
   def update
-    find_article
-    @article.update(update_params)
-    if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
-      @article.published = !@article.published
-      @article.published_at = Time.now
-    end
-    @article.save
+    super
     redirect_to update_path(@article)
   end
 
   private
 
   def set_category
-    @category = 'update'
+    @category = 'journal'
   end
 
   def set_background
@@ -64,6 +53,6 @@ class UpdatesController < ApplicationController
   end
 
   def update_params
-    params.require(:article).permit(:headline, :subhead, :contributor_id, :body, :published, :deleted, :category, :seo_title, :meta)
+    super
   end
 end

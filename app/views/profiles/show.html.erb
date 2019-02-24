@@ -1,32 +1,32 @@
-<% content_for :meta_title, "#{@profile.headline} - #{DEFAULT_META["meta_product_name"]}" %>
-<% content_for :meta_description, @profile.subhead %>
+<% content_for :meta_title, "#{@article.headline} - #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @article.subhead %>
 <% # content_for :meta_image, cl_image_path(@offer.photo) %>
 
-<div class="profile-header-photo" style="background-image: url('<%= @profile.photo %>')">
+<div class="profile-header-photo" style="background-image: url('<%= @article.photo %>')">
   <div class="profile-head-card">
-    <h1 class="profile-headline upcase"><%= @profile.headline %></h1>
-    <h2 class="profile-subhead"><%= @profile.subhead %></h2>
+    <h1 class="profile-headline upcase"><%= @article.headline %></h1>
+    <h2 class="profile-subhead"><%= @article.subhead %></h2>
   </div>
-    <div class="profile-tag tag"><%= @profile.tag %></div>
+    <div class="profile-tag tag"><%= @article.tag %></div>
 </div>
 
 <div class="profile-container">
   <div class="profile-social">
-    <%= link_to "http://twitter.com/share?text=#{@profile.headline}&url=#{request.original_url}" do %>
+    <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
       <i class="social fab fa-twitter"></i>
     <% end %>
-    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@profile.headline}" do %>
+    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
       <i class="social fab fa-facebook-f"></i>
     <% end %>
-    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@profile.headline}" do %>
+    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
       <i class="social fab fa-linkedin-in"></i>
     <% end %>
   </div>
 
-  <div class="profile-body"><%= @profile.body.html_safe
+  <div class="profile-body"><%= @article.body.html_safe
     %>
   </div><!--
-  <div class="profile-body"><%= sanitize @profile.body,
+  <div class="profile-body"><%= sanitize @article.body,
     tags: %w(strong em b i p code pre tt samp kbd var sub
     sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
     acronym a img blockquote del ins video source figcaption figure),

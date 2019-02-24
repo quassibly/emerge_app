@@ -2,11 +2,11 @@
 
 <div class="grid-container">
   <div class="interviews_grid">
-    <h1 class="page-head">Opinions</h1>
+    <h1 class="page-head"><%= @category.upcase.pluralize %></h1>
     <h2 class="page-subhead">Expert analysis and commentary to help you to make sense of what’s emerging.</h2>
 
     <div class="grid_flex">
-      <% @opinions.each do |article| %>
+      <% @articles.each do |article| %>
         <%= render 'shared/card', article: article %>
 
       <% end %>
