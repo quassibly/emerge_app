@@ -3,7 +3,7 @@ require 'shrine'
 require "shrine/storage/cloudinary"
 
 Cloudinary.config(
-  cloud_name: "novelty142",
+  cloud_name: "dzcmggoim",
   api_key:    "862653138666628",
   api_secret: "eH1ZiEjNjxR4CjLDVrgwHxRFmko",
 )
