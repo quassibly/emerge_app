@@ -4,8 +4,8 @@ require "shrine/storage/cloudinary"
 
 Cloudinary.config(
   cloud_name: "novelty142",
-  api_key:    "462899885257868",
-  api_secret: "g1Cnpe-pNp3XX-Ieo_Z2GCFw0VE",
+  api_key:    "862653138666628",
+  api_secret: "eH1ZiEjNjxR4CjLDVrgwHxRFmko",
 )
 
 Shrine.storages = {
