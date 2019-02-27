@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'pins/:id/publish!', to: 'pins#publish!', as: 'publish_pin'
   get 'pins/:id/delete', to: 'pins#delete', as: 'delete_pin'
 
-  resources :articles, :contributors, :photographers, :profiles, :opinions, :images, :updates, :pins, :videos, :podcasts, :events, :spaces
+  resources :articles, :contributors, :photographers, :profiles, :opinions, :photos, :images, :updates, :pins, :videos, :podcasts, :events, :spaces
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
