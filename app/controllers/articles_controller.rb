@@ -51,7 +51,7 @@
 
   def update
     find_article
-    @article.update(update_params)
+    @article.update(article_params)
     if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
       @article.published = !@article.published
       @article.published_at = Time.now
