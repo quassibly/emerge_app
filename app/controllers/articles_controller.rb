@@ -38,11 +38,11 @@
   def edit
     @page = 'grey'
     @article = Article.find(params[:id])
-    if @article.category == "profile"
+    if @article.category == "people"
       redirect_to edit_profile_path(@article)
-    elsif @article.category == "opinion"
+    elsif @article.category == "insight"
       redirect_to edit_opinion_path(@article)
-    elsif @article.category == "update"
+    elsif @article.category == "journal"
       redirect_to edit_update_path(@article)
     elsif @article.category == "video"
       redirect_to edit_video_path(@article)
@@ -75,11 +75,11 @@
     @article.published = !@article.published
     @article.published_at = Time.new
     @article.save
-    if @article.category == "profile"
+    if @article.category == "people"
       redirect_to profiles_path
-    elsif @article.category == "opinion"
+    elsif @article.category == "insight"
       redirect_to opinions_path
-    elsif @article.category == "update"
+    elsif @article.category == "journal"
       redirect_to updates_path
     elsif @article.category == "video"
       redirect_to videos_path
@@ -92,11 +92,11 @@
     @article = Article.find(params[:id])
     @article.deleted = !@article.deleted
     @article.save
-    # if @article.category == "profile"
+    # if @article.category == "people"
     #   redirect_to profiles_path
-    # elsif @article.category == "opinion"
+    # elsif @article.category == "insight"
     #   redirect_to opinions_path
-    # elsif @article.category == "update"
+    # elsif @article.category == "journal"
     #   redirect_to updates_path
     # elsif @article.category == "video"
     #   redirect_to videos_path
