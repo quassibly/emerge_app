@@ -30,6 +30,9 @@ class EventsController < ApplicationController
         # Uncomment the above line if you want each of your markers to display a info window when clicked
         # (you will also need to create the partial "/flats/map_box")
         icon: 'https://res.cloudinary.com/novelty142/image/upload/v1550339075/font-awesome_4-7-0_map-marker_24_0_1bb3aa_none.png',
+        infoWindow: {
+          content: "<a href=#{event_path(pin)}>#{pin.name}</a>"
+        }
       }
     end
   end

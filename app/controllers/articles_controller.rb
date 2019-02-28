@@ -3,10 +3,8 @@
     @page = 'home'
     @articles = Article.published_not_deleted.not_update
     @articles = sort_by_priority
-    @main = @articles[0]
-    @feature1 = @articles[1]
-    @feature2 = @articles[2]
-    @articles = @articles.drop(3)
+    @main = @articles.find{|article| article.priority == 1 }
+    @articles.delete(@main)
     @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
     @podcasts = Article.where(published: true).where(deleted: false).where(category: 'podcast')
     @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
