@@ -7,3 +7,15 @@
 
   </div>
 </div>
+
+<script>
+  var heads = document.querySelectorAll('#about h1');
+  console.log(heads);
+
+  [].forEach.call(heads, function(head) {
+    var d = document.createElement('h3');
+    d.innerHTML = head.innerHTML;
+    d.classList.add('about-subhead')
+    head.parentNode.replaceChild(d, head)
+  });
+</script>
