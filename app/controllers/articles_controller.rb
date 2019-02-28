@@ -60,7 +60,7 @@
   end
 
   def create
-    @article = Article.new(update_params)
+    @article = Article.new(article_params)
     if params[:commit] == 'Publish' || params[:commit] == 'Unpublish'
       @article.published = !@article.published
       @article.published_at = Time.now
