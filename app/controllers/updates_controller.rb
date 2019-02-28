@@ -52,7 +52,7 @@ class UpdatesController < ArticlesController
     @article = Article.find(params[:id])
   end
 
-  def update_params
+  def aritcle_params
     super
   end
 end
