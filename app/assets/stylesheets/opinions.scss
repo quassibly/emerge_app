@@ -47,3 +47,23 @@
     margin: 5px auto 0 auto;
   }
 }
+
+.opinion-form-container {
+  @media screen and (max-width: 899px) {
+    margin: 52px auto 0 auto;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 5px auto 0 auto;
+  }
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+}
+.opinion-form {
+  display: flex;
+  flex-direction: column;
+}
+.opinion-buttons {
+  display: flex;
+  margin: 20px;
+}

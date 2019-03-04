@@ -1,39 +1,22 @@
-<div class="opinion-container">
-  <%= form_for @article, url: {action: "create"}, html: {class: "article_form"} do |f| %>
+<div class="opinion-form-container">
+  <%= form_for @article, url: {action: "create"}, html: {class: "opinion-form"} do |f| %>
     <%= f.hidden_field :category, value: @category %>
-    <h1>Opinion</h1>
-    <div style="height: 240px"></div>
-    <div class="form-profile-head-card">
-      <%= f.text_area :headline, placeholder: "Headline" %>
-      <%= f.text_area :subhead, placeholder: "Subhead" %>
-      <%= f.text_area :tag, placeholder: "Enter tag"%>
-    </div>
+    <h1>Insight</h1>
+    <%= f.text_area :headline, placeholder: "Headline" %>
+    <%= f.text_area :subhead, placeholder: "Subhead" %>
+    <%= f.text_area :tag, placeholder: "Enter tag"%>
     <%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %>
-
-
-    <div class="form-profile-container">
-      <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
-      <%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "priority?" %>
-      <div class="profile-social">
-        <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
-          <i class="social fab fa-twitter"></i>
-        <% end %>
-        <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
-          <i class="social fab fa-facebook-f"></i>
-        <% end %>
-        <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
-          <i class="social fab fa-linkedin-in"></i>
-        <% end %>
-      </div>
-
-        <div class="profile-body"><%= f.trix_editor :body %></div>
-        <%= f.text_area :meta, placeholder: 'meta tags' %>
-        <%= f.submit 'Save' %>
-        <% if @article.published %>
-          <%= f.submit 'Unpublish' %>
-        <% else %>
-          <%= f.submit 'Publish' %>
-        <% end %>
+    <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
+    <%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "priority?" %>
+    <div class="profile-body"><%= f.trix_editor :body %></div>
+    <%= f.text_area :meta, placeholder: 'meta tags' %>
+    <div class="opinion-buttons">
+      <%= f.submit 'Save' %>
+      <% if @article.published %>
+        <%= f.submit 'Unpublish' %>
+      <% else %>
+        <%= f.submit 'Publish' %>
+      <% end %>
     </div>
   <% end %>
 </div>
