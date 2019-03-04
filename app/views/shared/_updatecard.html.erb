@@ -1,46 +1,48 @@
 <div class="card-container">
   <% if user_signed_in? %>
-  <div class="logged-in-card">
-    <h3 class="admin">
-      <%= link_to('edit', edit_article_path(article)) %>
-    </h3>
-    <h3>
-      <%= link_to('unpublish', publish_article_path(article)) if article.published %>
-      <%= link_to('publish', publish_article_path(article)) unless article.published %>
-    </h3>
-    <h3>
-      <%= link_to('delete', delete_article_path(article)) %>
-    </h3>
-  </div>
+    <div class="logged-in-card">
+      <h3 class="admin">
+        <%= link_to('edit', edit_article_path(article)) %>
+      </h3>
+      <h3>
+        <%= link_to('unpublish', publish_article_path(article)) if article.published %>
+        <%= link_to('publish', publish_article_path(article)) unless article.published %>
+      </h3>
+      <h3>
+        <%= link_to('delete', delete_article_path(article)) %>
+      </h3>
+    </div>
   <% end %>
 
   <%= link_to update_path(article) do %>
     <%= content_tag :div, class: updates_published?(article) do %>
-    <div class="updates-card-content">
-      <h1 class='updates-card-head center'><%= article.headline %></h1>
-      <h2 class='updates-card-subhead center'><%= article.subhead %></h2>
-      <div class="updates-center">
-        <div class="updates-sharing">
-          <%= link_to "http://twitter.com/share?text=#{article.headline}&url=#{request.original_url}" do %>
-          <i class="social fab fa-twitter"></i>
-          <% end %>
-          <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{article.headline}" do %>
-          <i class="social fab fa-facebook-f"></i>
-          <% end %>
-          <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{article.headline}" do %>
-          <i class="social fab fa-linkedin-in"></i>
+      <div class="updates-card-content">
+        <h1 class='updates-card-head center'><%= article.headline %></h1>
+        <h2 class='updates-card-subhead center'><%= article.subhead %></h2>
+        <div class="updates-center">
+          <div class="updates-sharing">
+            <%= link_to "http://twitter.com/share?text=#{article.headline}&url=#{request.original_url}" do %>
+            <i class="social fab fa-twitter"></i>
+            <% end %>
+            <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{article.headline}" do %>
+            <i class="social fab fa-facebook-f"></i>
+            <% end %>
+            <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{article.headline}" do %>
+            <i class="social fab fa-linkedin-in"></i>
+            <% end %>
+          </div>
+          <% unless article.published_at.nil? %>
+            <div class="updates-bar"><hr></div>
+            <%= link_to update_path(article), class: 'updates-date' do %>
+              <%= article.published_at.strftime("%-d.%-m.%Y") %>
+            <% end %>
           <% end %>
         </div>
-        <% unless article.published_at.nil? %>
-          <div class="updates-bar"><hr></div>
-          <div class="updates-date"><%= article.published_at.strftime("%-d.%-m.%Y") %></div>
+        <%= link_to update_path(article), class: 'updates-body' do %>
+          <%= article.body.truncate(500, separator: '</div>').html_safe %>
         <% end %>
+        <%= link_to 'Read more', update_path(article), class: 'updates-more' %>
       </div>
-      <div class="updates-body">
-        <%= article.body.truncate(500, separator: '</div>').html_safe %>
-      </div>
-      <div class="updates-more">Read more</div>
-    </div>
     <% end %>
   <% end %>
 </div>

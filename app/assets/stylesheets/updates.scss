@@ -29,6 +29,8 @@
 .updates-card-content {
   margin: 0 auto;
   padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .updates-card-head {
@@ -56,6 +58,7 @@
 .updates-date {
   font-family: $primary-font;
   letter-spacing: .1em;
+  color: black;
 }
 
 .updates-body {
@@ -64,6 +67,7 @@
   letter-spacing: .02em;
   line-height: 1.5em;
   padding: 0 30px;
+  color: black;
 }
 
 .updates-more {
@@ -71,6 +75,7 @@
   text-align: center;
   margin-top: 20px;
   text-decoration: underline;
+  color: black;
 }
 
 .update-form-head-card {
