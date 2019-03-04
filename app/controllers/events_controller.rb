@@ -1,4 +1,4 @@
-class EventsController < ApplicationController
+class EventsController < ArticlesController
   before_action :set_category
 
   def index

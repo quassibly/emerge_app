@@ -1,4 +1,4 @@
-class SpacesController < ApplicationController
+class SpacesController < ArticlesController
   before_action :set_category
 
   def index

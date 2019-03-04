@@ -1,4 +1,4 @@
-class OpinionsController < ApplicationController
+class OpinionsController < ArticlesController
   before_action :set_category
 
   def index         # GET /opinions
