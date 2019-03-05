@@ -28,6 +28,11 @@ class UpdatesController < ArticlesController
     find_article
   end
 
+  def htmledit
+    @page = 'grey'
+    @article = Article.find(params[:id])
+  end
+
   def update
     super
     redirect_to update_path(@article)

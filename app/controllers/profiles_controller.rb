@@ -36,7 +36,7 @@ class ProfilesController < ArticlesController
     @article = Article.find(params[:id])
   end
 
-  def rawedit
+  def htmledit
     @page = 'grey'
     @article = Article.find(params[:id])
   end

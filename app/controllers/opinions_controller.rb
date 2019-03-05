@@ -39,6 +39,11 @@ class OpinionsController < ArticlesController
     @article = Article.find(params[:id])
   end
 
+  def htmledit
+    @page = 'grey'
+    @article = Article.find(params[:id])
+  end
+
   def update
     @article = Article.find(params[:id])
     @article.update(opinion_params)

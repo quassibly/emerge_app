@@ -1,0 +1,8 @@
+<div class="profile-container">
+  <%= form_for @article, url: {action: "update"}, html: {class: "article_form"} do |f| %>
+        <%= f.text_area :body, size: '100x20', class: 'profile-body' %>
+        <%= f.submit %>
+    </div>
+  <% end %>
+</div>
+

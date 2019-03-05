@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about', as: :about
   get 'about/edit', to: 'pages#aboutedit', as: :edit_about
   patch 'about', to: 'pages#update', as: :update_about
-  get 'profiles/:id/rawedit', to: 'profiles#rawedit', as: :rawedit
+  get 'profiles/:id/htmledit', to: 'profiles#htmledit', as: :htmledit_profile
+  get 'opinions/:id/htmledit', to: 'opinions#htmledit', as: :htmledit_opinion
+  get 'updates/:id/htmledit', to: 'updates#htmledit', as: :htmledit_update
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr
 
