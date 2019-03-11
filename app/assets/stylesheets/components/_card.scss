@@ -11,6 +11,9 @@
   width: 100%;
   max-width: 420px;
   height: 440px;
+  @media (max-width: 420px) {
+    height: 460px;
+  }
   border: solid 1px black;
   padding: 30px;
   letter-spacing: .02em;

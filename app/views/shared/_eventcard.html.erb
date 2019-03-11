@@ -32,7 +32,7 @@
         </h3>
         <h4 class="card-date"><%= "#{pin.date.strftime("%-d.%-m.%Y")}" unless pin.date.nil? %> <%= " - #{pin.end_date.strftime("%-d.%-m.%Y")}" unless pin.end_date.nil? %></h4>
         <h4 class="card-subhead"><%= pin.location %></h4>
-        <h4 class="card-subhead"><%= pin.description.truncate(175, separator: '</div>').html_safe %></h4>
+        <h4 class="card-subhead"><%= pin.description.truncate(150, separator: '</div>').html_safe %></h4>
       </div>
     <% end %>
   <% end %>

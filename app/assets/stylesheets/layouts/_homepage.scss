@@ -10,14 +10,14 @@
   }
   overflow: hidden;
   justify-content: center;
-  @media screen and (max-width: 859px) {
-    max-height: 3120px;
+  @media (max-width: 419px) {
+    max-height:3310px;
   }
-  @media (min-width: 860px) and (max-width: 1299px) {
-    max-height: 1560px;
+  @media (min-width: 420px) and (max-width: 1299px) {
+    max-height: 1520px;
   }
   @media (min-width: 1300px) {
-    max-height: 1040px;
+    max-height: 980px;
   }
 }
 
@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 859px) {
-    margin: 120px auto;
+    margin: 80px auto;
   }
   @media (min-width: 860px) {
     margin: 120px 56px;

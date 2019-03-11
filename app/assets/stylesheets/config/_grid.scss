@@ -16,11 +16,11 @@
   }
   overflow: hidden;
   justify-content: center;
-  @media screen and (max-width: 859px) {
-    max-height: 1040px;
+  @media screen and (max-width: 969px) {
+    max-height: 1130px;
   }
-  @media screen and (min-width: 860px) {
-    max-height: 470px;
+  @media screen and (min-width: 970px) {
+    max-height: 440px;
   }
 }
 
