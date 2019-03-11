@@ -73,6 +73,7 @@ class OpinionsController < ArticlesController
 
   def set_category
     @category = "insight"
+    @controller = 'opinions'
   end
 
   def sort_by_priority

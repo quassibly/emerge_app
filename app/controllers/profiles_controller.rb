@@ -69,6 +69,7 @@ class ProfilesController < ArticlesController
 
   def set_category
     @category = "people"
+    @controller = 'profiles'
   end
 
   def sort_by_priority
