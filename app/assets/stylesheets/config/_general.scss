@@ -301,7 +301,7 @@ input[type=submit] {
   background-color: white;
   vertical-align: middle;
   box-sizing: border-box;
-  height: 28px;
+  height: 30px;
   padding: 5px 10px;
   display: inline-block;
   transition: all 0.23s ease-in-out 0s;
@@ -310,4 +310,5 @@ input[type=submit] {
   text-align: center;
   cursor: default;
   color: buttontext;
+  margin: 8px 4px;
 }

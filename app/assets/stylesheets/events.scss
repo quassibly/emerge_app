@@ -42,6 +42,26 @@ html, body {
   margin: 0 auto;
 }
 
+.event-filters form {
+  display: flex;
+  @media screen and (max-width: 999px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+.event-filter-buttons-container {
+  @media screen and (max-width: 999px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 1000px) {
+    margin-left: 24px;
+  }
+}
+
 .event-date {
   overflow: hidden;
   line-height: 1.3em;

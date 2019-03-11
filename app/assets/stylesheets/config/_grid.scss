@@ -1,16 +1,19 @@
 .grid_flex {
-  @media screen and (min-width: 440px) {
+  @media screen and (min-width: 420px) {
+    grid-template-columns: repeat(auto-fill, 420px);
     display:grid;
     grid-gap: 100px 20px;
-    grid-template-columns: repeat(auto-fill, 420px);
   }
+  overflow: hidden;
   justify-content: center;
 }
 
 .home-grid-flex {
-  display:grid;
-  grid-gap: 100px 20px;
-  grid-template-columns: repeat(auto-fill, 420px);
+  @media (min-width: 420px) {
+    display:grid;
+    grid-gap: 100px 20px;
+    grid-template-columns: repeat(auto-fill, 420px);
+  }
   overflow: hidden;
   justify-content: center;
   @media screen and (max-width: 859px) {

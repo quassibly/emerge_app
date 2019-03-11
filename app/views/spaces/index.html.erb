@@ -6,8 +6,10 @@
       <%= form_tag spaces_path, method: :get do %>
         <%= select_tag(:event_type, options_for_select(@event_types), prompt: 'Category') %>
         <%= select_tag(:region, options_for_select(@regions), prompt: 'Location') %>
-        <%= submit_tag("Search") %>
-        <%= link_to 'See all' , spaces_path, id: 'button-clear' %>
+        <div class="event-filter-buttons-container">
+          <%= submit_tag("Search", id: 'button-clear') %>
+          <%= link_to 'See all' , spaces_path, id: 'button-clear' %>
+        </div>
       <% end %>
     </div>
     <div
