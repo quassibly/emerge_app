@@ -3,12 +3,14 @@
 <% # content_for :meta_image, cl_image_path(@offer.photo) %>
 
 <div class="profile-header-photo" style="background-image: url('<%= @article.photo %>')">
-  <div class="profile-head-card">
-    <h1 class="profile-headline upcase"><%= @article.headline %></h1>
-    <h2 class="profile-subhead"><%= @article.subhead %></h2>
-  </div>
-    <div class="profile-tag tag"><%= @article.tag %></div>
 </div>
+  <div class="opinion-head-container">
+    <div class="profile-head-card">
+      <h1 class="profile-headline upcase"><%= @article.headline %></h1>
+      <h2 class="profile-subhead"><%= @article.subhead %></h2>
+    </div>
+      <div class="profile-tag tag"><%= @article.tag %></div>
+  </div>
 
 <div class="profile-container">
   <div class="profile-social">
