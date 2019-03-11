@@ -49,6 +49,22 @@
     end
   end
 
+  def htmledit
+    @page = 'grey'
+    @article = Article.find(params[:id])
+    if @article.category == "people"
+      redirect_to htmledit_profile_path(@article)
+    elsif @article.category == "insight"
+      redirect_to htmledit_opinion_path(@article)
+    elsif @article.category == "journal"
+      redirect_to htmledit_update_path(@article)
+    elsif @article.category == "video"
+      redirect_to edit_video_path(@article)
+    elsif @article.category == "podcast"
+      redirect_to edit_podcast_path(@article)
+    end
+  end
+
   def update
     find_article
     @article.update(article_params)

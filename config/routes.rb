@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about', as: :about
   get 'about/edit', to: 'pages#aboutedit', as: :edit_about
   patch 'about', to: 'pages#update', as: :update_about
+  get 'articles/:id/htmledit', to: 'articles#htmledit', as: :htmledit_article
   get 'profiles/:id/htmledit', to: 'profiles#htmledit', as: :htmledit_profile
   get 'opinions/:id/htmledit', to: 'opinions#htmledit', as: :htmledit_opinion
   get 'updates/:id/htmledit', to: 'updates#htmledit', as: :htmledit_update

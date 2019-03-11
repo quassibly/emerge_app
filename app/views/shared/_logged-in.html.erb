@@ -16,6 +16,7 @@
       <%= link_to '-Edit', edit_about_path, class: 'logged-in-button' %>
     <% when 'show' %>
       <%= link_to '-Edit', edit_article_path, class: 'logged-in-button' %>
+      <%= link_to '-Edit HTML', htmledit_article_path, class: 'logged-in-button' %>
     <% else %>
       <%= link_to "+Journal", new_update_path, class: "logged-in-button" %>
       <%= link_to "+People", new_profile_path, class: "logged-in-button" %>
