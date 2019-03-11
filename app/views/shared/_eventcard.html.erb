@@ -18,10 +18,10 @@
     <%= content_tag :div, class: pin_published?(pin) do %>
       <% unless pin.photo.nil? %>
         <div class="card-img" style="background-image: url('<%= pin.photo %>')">
-          <% unless pin.tag.nil? %>
+          <% if pin.tag.present? %>
             <div class="card-tag-left category"><%= pin.tag %></div>
           <% end %>
-          <% unless pin.event_type.nil? %>
+          <% if pin.event_type.present? %>
             <div class="card-tag tag"><%= pin.event_type %></div>
           <% end %>
         </div>
