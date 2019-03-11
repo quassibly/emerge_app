@@ -54,12 +54,7 @@ html, body {
 }
 
 .event-container {
-  @media screen and (max-width: 899px) {
-    margin: 80px auto 0 auto;
-  }
-  @media screen and (min-width: 900px) {
-    margin: 100px auto 0 auto;
-  }
+  margin: 60px auto 0 auto;
 }
 
 .event-body {

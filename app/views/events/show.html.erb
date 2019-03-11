@@ -6,7 +6,7 @@
     <l3 class="event-date">
       <%= "#{@pin.date.strftime("%-d.%-m.%Y")}" unless @pin.date.nil? %> <%= " - #{@pin.end_date.strftime("%-d.%-m.%Y")}" unless @pin.end_date.nil? %></l3>
     <h2><%= @pin.location %></h2>
-    <%= link_to @pin.url, @pin.url, class: "event-link" %>
+    <%= link_to @pin.url, @pin.url, target: "_blank", class: "event-link" %>
   </div>
 
 <div class="event-container">
