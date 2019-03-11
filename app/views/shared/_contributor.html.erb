@@ -2,6 +2,9 @@
   <div class="contributor-container">
     <%= image_tag @article.contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
+      <% if user_signed_in? %>
+        <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
+      <% end %>
       <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
 
           <% if @article
@@ -27,6 +30,9 @@
   <% if @article.photographer.present? %>
     <div class="contributor-container">
       <div class="contributor-text-container-left">
+        <% if user_signed_in? %>
+          <%= link_to('edit photographer', edit_contributor_path(@article.photographer)) %>
+        <% end %>
         <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @article
    .photographer.name %></span>
           <% if @article
