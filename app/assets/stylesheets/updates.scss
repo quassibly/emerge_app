@@ -58,7 +58,7 @@
 .updates-date {
   font-family: $primary-font;
   letter-spacing: .1em;
-  color: black;
+  color: black !important;
 }
 
 .updates-body {
@@ -68,6 +68,14 @@
   line-height: 1.5em;
   padding: 0 30px;
   color: black;
+}
+
+.updates-snippet {
+  font-family: $secondary-font;
+  font-size: 18px;
+  letter-spacing: .02em;
+  line-height: 1.5em;
+  color: black !important;
 }
 
 .updates-more {
