@@ -20,7 +20,9 @@
         <% if current_page?(controller: 'articles', action: 'index') %>
           <div class="card-tag-left category"><%= article.category %></div>
         <% end %>
-        <div class="card-tag tag"><%= article.tag %></div>
+        <% if article.tag.present? %>
+          <div class="card-tag tag"><%= article.tag %></div>
+        <% end %>
       <% end %>
       <div class="card-text small">
         <h3 class="card-headline">
