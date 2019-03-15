@@ -1,6 +1,6 @@
 <% content_for :meta_title, "#{@pin.name} - #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, sanitize(@pin.description) %>
-<% content_for :meta_image, @pin.photo.sub('upload/', 'upload/q_auto:eco/') %>
+<% content_for :meta_image, @pin.photo.sub('upload/', 'upload/c_scale,h_675,w_1200/') %>
 
 <div class="event-header-photo" style="background-image: url('<%= @pin.photo %>')">
   </div>
