@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@article.headline} - #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @article.subhead %>
+<% content_for :meta_image, @article.photo %>
+
 <div class="videos-container">
   <% youtubeID = @article.url.match('v=(.{11})') %>
   <div class="video-container">
