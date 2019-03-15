@@ -5,20 +5,20 @@
     <meta name="description" content="<%= meta_description %>">
 
     <!-- Facebook Open Graph data -->
-    <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:title" content="testing title" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="<%= request.original_url %>" />
-    <meta property="og:image" content="<%= meta_image %>" />
-    <meta property="og:description" content="<%= meta_description %>" />
-    <meta property="og:site_name" content="<%= meta_title %>" />
+    <meta property="og:url" content="whatisemerging.com" />
+    <meta property="og:image" content="http://ee08f91a.ngrok.io/images/app/assets/images/Emerge_Logo.png" />
+    <meta property="og:description" content="Emerge is an independent, non-profit media platform aiming to explore the emerging cultural narratives of our time." />
+    <meta property="og:site_name" content="What is emerging" />
 
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="<%= meta_image %>">
     <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
-    <meta name="twitter:title" content="<%= meta_title %>">
-    <meta name="twitter:description" content="<%= meta_description %>">
+    <meta name="twitter:title" content="<%= DEFAULT_META["meta_title"] %>">
+    <meta name="twitter:description" content="<%= DEFAULT_META["meta_description"] %>">
     <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
-    <meta name="twitter:image:src" content="<%= meta_image %>">
+    <meta name="twitter:image:src" content="<%= DEFAULT_META["meta_image"] %>">
+    <meta name="twitter:card" content="summary_large_image">
 
     <%= csrf_meta_tags %>
     <%= favicon_link_tag asset_path('Emerge_Logo.png') %>
