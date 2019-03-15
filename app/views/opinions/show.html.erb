@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@article.headline} - #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @article.subhead %>
+<% content_for :meta_image, @article.photo %>
+
   <h1 style="text-align: center; margin: 60px auto 40px auto;"><%= @category %></h1>
   <div class="opinion-head-container">
     <div class="opinion-header-photo round" style="background-image: url('<%= @article.contributor.photo %>')">

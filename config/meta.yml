@@ -1,6 +1,6 @@
 meta_product_name: 'Emerge'
 meta_title: 'What is emerging'
 meta_description: 'Emerge is an independent, non-profit media platform aiming to explore the emerging cultural narratives of our time.'
-meta_image: 'app/assets/images/Emerge_Logo.jpg'
+meta_image: 'https://res.cloudinary.com/whatisemerging/image/upload/v1/cache/45a5f4bd2183c7657ca72d041054c5c1.png'
 twitter_account: '@whatisemerging'
 card_type: 'summary_large_image'
