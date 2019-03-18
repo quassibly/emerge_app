@@ -31,7 +31,7 @@
     <div class="contributor-container">
       <div class="contributor-text-container-left">
         <% if user_signed_in? %>
-          <%= link_to('edit photographer', edit_contributor_path(@article.photographer)) %>
+          <%= link_to('edit photographer', edit_photographer_path(@article.photographer)) %>
         <% end %>
         <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @article
    .photographer.name %></span>
