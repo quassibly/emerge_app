@@ -49,7 +49,7 @@ class UpdatesController < ArticlesController
   end
 
   def sort_recent!
-    @articles.each { |article| article.published_at = Time.now if article.published.nil? }
+    @articles.each { |article| article.published_at = Time.now if article.published_at.nil? }
     @articles = @articles.sort_by &:published_at
   end
 
