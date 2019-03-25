@@ -2,7 +2,7 @@
   <div class="tagbar">
     <div class="hidden-xs hidden-sm">
       <%= link_to "All", {controller: controller_name, action: :index}, {class: "tagbar-link blank"} %>
-      <% Article.where(category: @category).where(published: true).where(deleted: false).pluck(:tag).uniq.each do |tag| %>
+      <% Article.where(category: @category).where(published: true).where(deleted: false).pluck(:tag).uniq(&:downcase).each do |tag| %>
         <%= link_to tag, {controller: controller_name, action: :index, tag: tag}, class: current_tag?(tag) %>
       <% end %>
     </div>
