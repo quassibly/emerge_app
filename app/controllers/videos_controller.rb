@@ -1,14 +1,14 @@
-class VideosController < ApplicationController
+class VideosController < ArticlesController
   before_action :set_category
 
   def index
     @page = 'index'
-    @videos = Article.video.published_not_deleted
-    @videos = Article.video.not_deleted if user_signed_in?
+    @articles = Article.article.published_not_deleted
+    @articles = Article.article.not_deleted if user_signed_in?
     if params[:tag].present?
-      @videos = @videos.where(tag: params[:tag])
+      @articles = @articles.where(tag: params[:tag])
     end
-    @videos = sort_by_priority
+    sort_by_priority
   end
 
   def show
@@ -62,18 +62,10 @@ class VideosController < ApplicationController
   end
 
   def sort_by_priority
-    @videos.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @videos.each { |article| article.age = Time.now - article.published_at }
-    @videos.each do |article|
-      case article.priority
-      when 3
-        article.age = article.age * 4
-      when 4
-        article.age = article.age * 16
-      end
-    end
-    @videos.sort_by &:age
-    @videos.reject { |article| article.priority == 5 }
+    super
   end
 
+  def reject_by_priority
+    @articles = @articles.reject { |article| article.priority == 5 }
+  end
 end

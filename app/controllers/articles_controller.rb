@@ -2,7 +2,8 @@
   def index
     @page = 'home'
     @articles = Article.published_not_deleted.not_update
-    @articles = sort_by_priority
+    @articles = sort_by_priority(@articles)
+    @articles = reject_by_priority(@articles)
     @main = @articles.find{|article| article.priority == 1 }
     @articles.delete(@main)
     @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
@@ -125,11 +126,10 @@
     params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
   end
 
-  def sort_by_priority
-    @articles.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @articles.reject { |article| article.priority == 5 }
-    @articles.each { |article| article.age = Time.now - article.published_at }
-    @articles.each do |article|
+  def sort_by_priority(articles)
+    articles.each { |article| article.published_at = Time.now if article.published_at == nil }
+    articles.each { |article| article.age = Time.now - article.published_at }
+    articles.each do |article|
       case article.priority
       when 3
         article.age = article.age * 4
@@ -137,7 +137,11 @@
         article.age = article.age * 16
       end
     end
-    @articles.sort_by &:age
+    articles.sort_by &:age
+  end
+
+  def reject_by_priority(articles)
+    articles.reject { |article| (3..5) === article.priority }
   end
 
   def find_article

@@ -50,7 +50,7 @@ class UpdatesController < ArticlesController
 
   def sort_recent!
     @articles.each { |article| article.published_at = Time.now if article.published_at.nil? }
-    @articles = @articles.sort_by &:published_at
+    @articles = @articles.sort_by(&:published_at).reverse
   end
 
   def find_article

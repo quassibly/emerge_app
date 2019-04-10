@@ -8,7 +8,8 @@ class OpinionsController < ArticlesController
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = sort_by_priority
+    @articles = sort_by_priority(@articles)
+    @articles = reject_by_priority(@articles)
   end
 
   def show          # GET /opinions/:id
@@ -76,18 +77,11 @@ class OpinionsController < ArticlesController
     @controller = 'opinions'
   end
 
-  def sort_by_priority
-    @articles.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @articles.each { |article| article.age = Time.now - article.published_at }
-    @articles.each do |article|
-      case article.priority
-      when 3
-        article.age = article.age * 4
-      when 4
-        article.age = article.age * 16
-      end
-    end
-    @articles.sort_by &:age
-    @articles.reject { |article| article.priority == 5 }
+  def sort_by_priority(articles)
+    super
+  end
+
+  def reject_by_priority(articles)
+    @articles = @articles.reject { |article| article.priority == 5 }
   end
 end

@@ -26,7 +26,7 @@ Photographer.create(name: "Meredith Avery", photo: "https://pbs.twimg.com/profil
 
 puts "#{Photographer.count} photographers have been seeded"
 
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "Jonathan Rowson Jonathan Rowson Jonathan Rowson",
   subhead: "Jonathan Rowson Jonathan Rowson Jonathan Rowson Jonathan Rowson Jonathan Rowson",
@@ -37,7 +37,7 @@ Article.create(category: "profile",
   feature: "main",
   body: "<div>When Jonathan Rowson was 15 he competed in a chess tournament in France where he found himself pitted against Sergei Makarichev, a Russian more than twice his age. Ranked among the world’s elite players, Makarichev had earned the title of Grandmaster the year before Rowson was born. If Rowson felt intimidated, he didn’t let it affect his form. He beat the older man, then went on to become British champion and win a Grandmaster title of his own.<br><br>Looking back at the pivotal match more than 25 years later, Rowson has little interest in reliving teenage triumphs. Ever since he’d learned to play as a young boy, mastering the game was never only about winning: Rowson saw chess as a path to self-knowledge. His most enigmatic opponent had always been himself. <br>“The game was a kind of mirror for my own mind, in which I got to understand myself better, and became very interested in my mistakes,” Rowson says, speaking on a crisp autumn morning at an outdoor cafe in a park near his home in Putney in south-west London. “That’s what kept me in chess: a fascination with how our mind can screw up.”<br>With the window to avert potentially civilisation-collapsing climate breakdown closing fast, Rowson is intent on harnessing the mindset he honed in professional chess to serve a bigger agenda: tackling the world’s interlocking environmental, political and social crises.&nbsp;<br>The vehicle for this endeavour is Emerge, a new platform Rowson co-founded with Tomas Bjorkman, a Swedish entrepreneur and philanthropist. The goal is to connect activists, futurists, creatives and others who share the intuition that global mega-problems are best understood as reflections of the madness in our own minds. Solving them will therefore depend as much on spurring personal transformation at scale as it will on developing new technology or instigating political action. Shorthand for the Emerge agenda could be: ‘Spirituality meets climate change.’<br>“People are finding each other, and noticing that there’s some kind of pattern that connects those who are feeling that — on the one hand — the world’s achieved a great deal and things are in good shape in certain respects. And on the other hand, there’s a sense of which everything may have to change, or will be changed anyway, and we have to somehow steer it in a certain direction,” Rowson says, nursing a mug of coffee.<br>“Emerge recognises that this is a global phenomenon — this tumultuous change happening in various spheres of life — and there’s a response to that from the inner world: Who are we and what matters? What is purpose? What is value? How do we live together? How do we make individual lives matter? But how do we cooperate as well?”<br>Rowson’s choice of almost metaphysical language to frame the challenge may seem at odds with his background as a competitive player in a game where there are – quite literally – no shades of grey. Attaining the peak of his powers in his mid-20s, Rowson reigned as British champion from 2004-6 before retiring. But his journey of self-discovery through chess evolved in symbiosis with a deeper search for meaning, spurred by the turmoil he faced in his early life growing up in Aberdeen, the hub of Scotland’s oil industry.<br>Rowson’s father, an artist and teacher, suffered from schizophrenia and was sometimes forced to go into a psychiatric hospital, putting his mother under enormous strain. Rowson would visit a nearby park in search of sanctuary from the troubles at home.<br>“I remember the park as a child where I spent a lot of time alone, and yet not feeling really alone,” Rowson says. “Sort of feeling ‘held’ at some level, feeing that things fundamentally made sense, and I had to feel my way into them.”<br>When the family eventually fell apart, Rowson’s mother moved him to London and began a new relationship. When that didn’t work out, Rowson moved back home to live with his grand-father.&nbsp;<br>“During that time, chess was an escape, and a safe place – and a place where I could also sense myself getting stronger,” says Rowson, whose new book The Moves That Matter: a chess grandmaster on the game of life, blends memoir and philosophy. “That became a positive drug in a way, and I kept doing it for many years.”&nbsp;<br>The game also brought Rowson into contact with his own deepest vulnerability. When he was 11, he represented Scotland in a match against England in the town of Bearsden near Glasgow. Scotland had already fallen too far behind to have a hope of winning the tournament, but supporters told Rowson that if he won the next game, then his country would lose less badly to England than ever before. The pressure proved too much.&nbsp;<br>“I crumbled and lost, and I cried for hours,” Rowson says. “Looking at it with adult lenses – the feeling of crying so deeply and so long was a recognition that this really mattered to me.”<br>Rowson began to explore spirituality in a more systematic way as a student studying politics, philosophy and economics at Oxford. Learning Transcendental Meditation, the technique popularised by the film director David Lynch, he began to experience entirely new states of consciousness: the world somehow richer and more luminous. Rowson began to appreciate that reality – at its deepest level – might be a lot weirder than he had supposed.&nbsp;<br>His engagement with spiritual questions deepened at Oxford when he met his future wife Siva Thambisetty, a legal academic, who is from India. Learning Kirtan chanting on visits to her homeland, Rowson’s attitude towards religion matured as he encountered people who clearly drew a profound sense of meaning and comfort from the pantheon of Hindu deities.<br>“God has become slightly toxified in the Western tradition, because it’s associated with moral judgment and restriction of freedom, at some level,” Rowson says. “Kirtan allowed me not to be threatened by the idea.”&nbsp;<br>After graduating, Rowson spent a few years in Edinburgh and Oxford playing chess professionally while trying to figure out what to do with his life. A publisher heard about his skills on the board and asked him to come up with a book to fit what sounded like a snappy title: The Seven Deadly Chess Sins. Having being preoccupied with politics and philosophy as an undergraduate, Rowson says writing a self help-oriented book served as a kind of ‘gateway drug’ to a more profound reckoning with his own inner life.<br>“I thought: ‘I better figure out what ‘sin’ means,’” Rowson said. Reading the English author Francis Spufford, Rowson realized that “sin wasn’t about yummy transgressions such as&nbsp; chocolate and lingerie,” but a concept concerned with human fallibility.<br>“We’re the kind of creature that doesn’t ‘get’ reality: we have to work a bit harder to think about what’s going on,” Rowson says. “Something about our mental apparatus, emotions, thoughts and feelings are not perfectly suited to the world. There’s a certain sense that we have to overcome them, or develop them, to make a deeper contact with reality. I was getting into the idea that we’re fascinating creatures: Making the inward turn to see we’re not quite what we think we are.”<br>Rowson decided to return to academia. He took a one-year masters at Harvard, bridging the gap between neuroscience and education, then pursued a PhD at the University of Bristol under the supervision of Guy Claxton, a lay Buddhist academic. At the beginning of Rowson’s thesis on ‘wisdom,’ due to be published as a book in 2019, he quoted a passage from Claxton’s book Noises from the Dark Room that captured the importance of bridging the inner and the outer.<br> “Not to put too fine a point on it, the world is in a mess because the human mind is in a mess. The problems we face are not at root technological, political or economic; they are psychological and spiritual,” Claxton wrote. “And the mind is in a mess because it misunderstands itself. We pollute the skies and ruin the earth because we are confused about who and what we are... Our culture has developed a particularly disastrous mind-myth, and while that myth remains unconscious and unexamined, we will continue to wreck the nest and hurt each other.”<br>Much of Rowson’s subsequent work has been about examining that ‘mind-myth’ and looking for ways to help society find a new one.&nbsp;<br>His initial home for this enterprise was the Royal Society of Arts, where he spent six years and directed an initiative called the ‘social brain centre.’ He then co-founded a platform with Bjorkman called Perspectiva that aims to promote the evolution of a more conscious society by exploring the connections between real-world problems and what’s going on inside of us, summed up in the rubric: ‘systems, souls and society.”&nbsp;<br>Though Rowson is clear that public life should engage more with spiritual questions, he is acutely conscious of how contested and polarizing the word ‘spirituality’ can be. In his book Spiritualise, which explores the intersection of spirituality and politics, Rowson argues that it makes more sense to speak about cultivating a ‘spiritual sensibility’ in the public sphere. He thinks the term is open enough to resonate among people with widely varying belief systems, but nevertheless clear in its implication that much current social and economic discourse is missing something of fundamental importance.&nbsp;<br>“It’s a recognition that a normal relationship to the world is infused with a spiritual sensibility – it’s something about the sense of aliveness; the sense that things make sense; the sense that we belong in some way; that the best part of us comes out when we give to others and get out of our own heads. And yet reality — as it’s currently construed — pushes us away from that,” Rowson says, referring to the many ways in which consumer culture, addictive technology and the economic system isolate people and sow division.<br>“It’s not as though that stuff goes away when you have an interesting spiritual experience, or go to a Vipassana retreat, or you take a psychedelic, or you do some rituals, some chanting or meditation,” he says. “The challenge of our time is bringing that openness towards reality somehow back into the public realm.”&nbsp;<br>How exactly to do this remains an open question. Rowson believes that Emerge will start to come up with answer organically, helping to forge a ‘group consciousness’ among participants committed to transformation at the individual, social and global level. Some participants, Rowson hopes, will go on to play a more ‘top-down’ role in crafting new policies or leading movements. But Emerge also aims to spawn more tightly-focused projects by helping social entrepreneurs and other change-makers forge new connections.<br>“I think the defining feature is that we’re thinking in two directions at once that people might find a bit surprising: On the one hand we’re looking inwardly and it’s about emotional, psychological and spiritual matters,” Rowson says. “And on the other hand, we’re thinking at the civilisation level: Not merely a policy-tweak here and there, but a sense that the whole Shebang may somehow have to change — not even change, but transform…and we have some responsibility to steward it, direct it, nurture it in a certain way.”<br> “That’s what keeps us together as a group,” Rowson says. “And yet there’s also a certain amount of humility, and curiosity and discovery at its heart because we don’t quite know what the alternative really is.”<br>One of the greatest lessons Rowson learned as a chess champion was to see the game from his adversary’s perspective. He hopes that this ability to perceive the ‘whole position’ he honed as a Grandmaster will serve Emerge well as its members seek to identify the most effective ways they can work to envision – and create – a more benign planetary future.&nbsp;<br>“The opponent really gets into your head: Not just a particular person, but the whole notion of ‘what does the other side think? That’s very deeply ingrained in me,” Rowson says. “There’s a part of me that wants to lay into the delusion of the growth paradigm, or the delusion of the fetishization of work, and the insanity of destroying our only home. But I’m kind of a little tired of that slightly shrill language, because I want to forgive the people caught up in it, because I recognise that I’m also caught up in it. It’s not all about winning the battle: It’s about tilling the soil somehow.”<br>With the urgency of changing course on a global level ever more apparent, Emerge also represents a leap of faith: the hope that if enough people with enough self awareness and enough positive intent start to work together, then unexpected new possibilities will arise.<br>“Existential risks at a civilisational level are now ambient: They are part of our predicament,” Rowson says. “The hope comes in that process of re-imaging who we are and where we’re going, which is spiritual at its heart because it’s about a renewed relationship to reality.”<br><br><br></div>",
   published: true)
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "Assemble’s Joe Halligan wants to change future cities",
   subhead: "The young architecture collective works horizontally and democratically, and it has a similar vision for our cities, London",
@@ -132,7 +132,7 @@ Article.create(category: "profile",
 <p><em>Joe Halligan will speak at <a href="https://www.freundevonfreunden.com/thesoonernow-berlin-2018-friendsspace" target="_blank">The Sooner Now Berlin </a>about hidden opportunities in urban environments and how the public can actively engage in their future.</em></p>
 <p><em>The Sooner Now is a joint initiative by FvF and <a href="https://www.mini.de/de_DE/home/explore/mini-kooperationen/freunde-von-freunden.html" target="_blank">MINI</a> fostering collective imaginations of urban futures. This year, the long-standing collaboration is supported by urban design magazine <a href="https://www.instagram.com/ideatgermany/?hl=en" target="_blank">IDEAT</a>. After two years of forward-thinking conversations, the event series returns to Berlin on <a href="https://www.freundevonfreunden.com/thesoonernow-berlin-2018-friendsspace">October 13</a> to examine urban utopias then and now. Together with an eclectic cast of innovators—architects, designers, technologists, journalists, policy makers—we share inspiring ideas in a day-long program of dialogue, experiment, and play.</em></p>
 ')
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "Uncovering the forgotten female artists of Kazakhstan with an exhibition spotlighting four generations",
   subhead: "Bread & Roses mixes contemporary, modern, and folk art practices for the first time, Berlin",
@@ -140,7 +140,7 @@ Article.create(category: "profile",
   contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/auto-draft/Freunde-von-Freunden-Focus-on-Kazakhstan-4835-1600x1067.jpg",
-  feature: 'feature2',
+  priority: 1,
   body: "
   <p>“In our research we’ve uncovered a number of women artists who are extremely important to the development of Kazakh art who were invisible: They made work under their husband’s names, their art wasn’t preserved or sold and once their husbands passed away that was it,” says Dr. Rachel Rits-Volloch.</p>
   <p>As the founding director of MOMENTUM, a not-for-profit platform dedicated to time-based art, Rits-Volloch is part of the effort to shift this narrative. In collaboration with the Ministry of Culture and Sports of the Republic of Kazakhstan and the National Museum of the Republic of Kazakhstan, Momentum is organizing the exhibition Bread &#038; Roses, which will showcase four generations of female Kazakh art at Berlin’s Kunstquartier Bethanien. Bread &#038; Roses has been made possible through the cultural initiative Focus Kazakhstan, a four-pronged exhibition format aiming to bring contemporary art from Kazakhstan to an international audience. Incredibly, it’s the first time that the government has ever sponsored a contemporary art project.</p>
@@ -153,7 +153,7 @@ Article.create(category: "profile",
   <p>Although female artists no longer have to fear such extreme punishment for making art, arguably they still have a way to go to catch up to their male contemporaries. “It’s still a very patriarchal society. It’s very hierarchical, to a surprising degree,” says Rits-Volloch. “Men don’t do the washing-up! It’s unheard of,” she adds. The exhibition’s third curator, David Elliot, who has a long history of working in the region, remains optimistic about gender politics in Kazakhstan: “It&#8217;s not alone in being rather patriarchal,” he says, “and remember the origin of the Amazons—who were real!—are found in Iron Age Kazakhstan.”</p>
     ",
     published: true)
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "Slovakia, crafting plastics!",
   subhead: "In cooperation with local scientists, designers Vlasta Kubušová and Miroslav Král have developed a material of the future, Bratislava",
@@ -161,7 +161,7 @@ Article.create(category: "profile",
   contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/crafting-plastic-studio/Freunde-von-Freunden-TSN-Crafting-Plastic-Studio-18-1600x1068.jpg",
-  feature: '',
+  priority: 2,
   body: "
   <p>When crafting plastics! studio co-founder Vlasta Kubušová first heard of a fully biodegradable material with plastic-like attributes that was invented in her hometown, she was fascinated and couldn’t understand why we were not already using it.</p>
   <p>Together with her partner and fellow product designer Miroslav Král, they asked the scientist responsible, Pavel Alexy. Alexy and his team had just registered a related patent and his answer was simple: Join our laboratory and we will invent something together.</p>
@@ -176,7 +176,7 @@ Article.create(category: "profile",
   <p>“Again, marketing is not enough. Nor are half-baked solutions and materials aimed at accelerating the process. We could do that, too. Had we added a few drops of crude oil in our bioplastic, it would have been the perfect material five years ago, but we reject such a compromise. Our scientists did not do that and neither will we, even if we are running out of possibilities, money, and strength. We want to be honest and we see that the research is meaningful. We have a bioplastic that is already good enough and we offer it for further development, without cheating,” says Král.</p>
     ",
     published: true)
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "Andrea Lenardin and her transatlantic research into the shifting meaning of things",
   subhead: "A journey into object cultures, future memories and Viennese resilience, Los Angeles",
@@ -184,7 +184,7 @@ Article.create(category: "profile",
   contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/andrea-lenardin-madden/Freunde-von-Freunden-Andrea-Lenardin-85-1600x1067.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>For ‘declared_’, a current collaboration with long-time collaborator Peter Noever, Lenardin retraces the history of everyday objects that have gained iconic status today, but that might not be with us tomorrow. Physical items such as a category of tableware home to a specific region or an analog medium—like paper—that become obsolete through standardization and digitalization are redesigned for the future. Their exhibition at Galerie Rauminhalt in Vienna is also a call upon the design community to shape the evolution of familiar objects by submitting an idea for their (un)expected future use. “Today, our relation to the material world is occupied by the principles of minimalism, a sharing culture, and nomadic living,” says Lenardin without any hint of nostalgia or pessimism. “I’m just really curious how the not-having-of-things will affect future generations—how all the collections not made will be memorized.”
   <p>Thinking of her own generation and her upbringing in Austria, there are several items that Lenardin recalls to be essential in her life. One of them, the Post-it, is as mundane as it is iconic. Introduced and patented by 3M over 40 years ago, the sticky note—easily recognizable by its canary yellow color—remains a mythical object. For some, Lenardin among them, see the invention of the Post-it as the advent of a new means of communication: “It was quintessentially the first text-message, if you disregard the telegram,” she explains. “But as such, it has become obsolete with digital messaging services.” For ‘declared_’ Lenardin collaborated with 3M to produce the largest original Post-it Pad possible. Exhibition visitors can meet at the limited edition ‘Post-it bar’ and draw on an elevated pad 55 x 55 inches large, containing 840 sticky notes.
@@ -199,7 +199,7 @@ Article.create(category: "profile",
   <p>  With more and more people refusing redundant possessions, there might as well be a chance for product design to move away from the generic, back to the particular. For Lenardin, this will mean to stick with her concept of future memories, marrying the specific with an open ending. “This is where I find the biggest joy in my work, each project is like planning a new journey, then you get on the road and you allow curiosity to lead the way.”</p>
   ",
     published: true)
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "In the age of acceleration, Deniz Ova wants to reformulate design education",
   subhead: "Unlearning as a methodology in the Fourth Istanbul Design Biennial, Instanbul",
@@ -207,7 +207,7 @@ Article.create(category: "profile",
   contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/in-the-age-of-acceleration-deniz-ova-emphasizes-the-urgency-of-reformulating-design-education/Freunde-von-Freunden-Deniz-Ova-055-1600x1068.jpg",
-  feature: '',
+  priority: 2,
   body: "
   <p>When Deniz Ova first moved to Turkey in 2007 she wasn’t intending on settling there for good.</p>
   <p>Born and raised in Stuttgart—where she was working in event organization and management—Ova relocated to Istanbul after she was offered a job at the Istanbul Foundation for Culture and Arts (IKSV). “Though it was initially a short-term plan, twelve years later I’m still working for IKSV!” she says. After initially living in the heart of the city, Ova finally settled in the Bomonti district, which is well-known for its multicultural community and recent urban transformation. “Here you can still hear church bells on Sunday morning and see crowds of people gathered; it reminds me of the Noel or Easter celebrations we used to have in Germany,” she says.</p>
@@ -230,7 +230,7 @@ Article.create(category: "profile",
   <p>How does the biennial connect Turkey with the rest of the world? What kind of perspective could Turkish designers add to the global design scene?</p>
   <p>We aim to make use of the city as a dynamic space for projects, actions and interventions, which engage transdisciplinary practitioners from Turkey and abroad. It’s a great opportunity for the local design scene to build connections with international designers. Though Istanbul isn’t seen as a design city like London or Milan, there are things that we have to offer to the global scene. We’ve got a long-established tradition of crafts, for example. It’s not the case that we don’t have good design education here and we can’t educate good designers. There are lots of good designers though they may not always be in the public eye.</p>
     ")
-Article.create(category: "profile",
+Article.create(category: "people",
   person: "",
   headline: "After a book tour, the desert calls. In conversation with iO Tillett Wright",
   subhead: "The author, speaker and now self-taught furniture maker explores the notion of home in Joshua Tree",
@@ -238,7 +238,7 @@ Article.create(category: "profile",
   contributor_id: 2,
   photographer_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/io-draft/Freunde-von-Freunden-iO-Tillet-Wright-1202-1600x1065.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>Io is the fourth largest moon in the solar system. As the innermost Galilean moon that orbits Jupiter, it’s also the most volcanically active, erupting with sulphur resulting from the moon being stretched and squeezed. Named after this energetic, seemingly angry moon is 32-year-old iO Tillett Wright.</p>
   <p>The native New Yorker is, like the moon he was named after, a ball of energy—energy that’s channeled into a plethora of projects at any one time. Speaking to iO, what strikes you immediately is an uncompromising and effervescent personality (shyness simply isn’t part of his vernacular), combined with a frenetic pace—something only those who grew up in New York City can truly relate to. “I’m a multi-hyphenate, for sure! Creative life is too often defined by people asking what you do: umm, well, I wrote a book and I take pictures of people and I speak to people and I, I…,” says iO, trailing off with the sheer exhausted voice of someone who’s been asked to talk about this one too many times.</p>
@@ -254,14 +254,14 @@ Article.create(category: "profile",
   ",
     published: true)
 
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "Sampling Japanese culture with the locals in Düsseldorf’s Little Tokyo; Freunde von Freunden",
   subhead: "Companion takes a stroll between the streets and through the history of the Japanese quarter",
   tag: "Society",
   contributor_id: 1,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/auto-draft/Freunde-von-Freunden-District-Tour-Duesseldorf-0006-1600x1067.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>About one quarter of all Japanese people in Germany live in and around Düsseldorf. No wonder, then, that this metropolitan region is also being shaped by Japanese culture. Over the years, the district around the centrally located Immermannstraße in particular has become a sort of Little Tokyo that attracts locals and tourists with culinary delicacies, ceramics, art, tea, and literature from Japan—reason enough for COMPANION to have look around and meet up with the community.</p>
   <p>The table looks like a chaotic setting from a scene in an anime show: countless small plates and cups, hardly larger than a doll’s, cover almost every millimeter. Squeezing onto similarly tiny stools around the table, there are a handful of full-grown adults—ready and waiting for tea time. Here at ANMO Art/Cha, in a quiet cross street off the bustling Immermannstraße in Düsseldorf’s center, Japanese tea tasting is taking place. The interested guests sip happily through the assortment of mild-to-bitter green teas, as well as through specialties of sweet and tart tea, matcha and earthy-tasting pu-er.</p>
@@ -272,18 +272,18 @@ Article.create(category: "opinion",
   <p>Trade relations between Germany and Japan have existed from as early as the 19th century. Japan later developed strong trading ties to the Rhine and Ruhr regions after World War II, where they would find the steel and chemical products needed for rebuilding their war-ravaged nation. Centrally located, Düsseldorf was well-suited to be a commercial center, and starting in the ’50s, Japanese companies settled in the area. There are about 200 of these companies in Düsseldorf—and nearly 500 in the greater metropolitan area—making them a significant economic force in the region.</p>
   ",
     published: true)
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "A Roman curator reinvents communal and design-conscious dining experiences",
   subhead: "Our Secret Table hosts intimate dinners in secret locations, and identifies a long overdue need to diversify its city’s culinary portfolio",
   tag: "Society",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/our-secret-table/Freunde-von-Freunden-Our-Secret-Table-11_OST-1600x1067.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>Although the Italian capital boasts unparalleled relationships with food and art, the dining project Our Secret Table establishes a marriage that Rome has long missed. Merging curatorial practice and exclusive dining as a gesture of love, its founder reassesses the true essence of la dolce vita.</p>
   <p>Born out of the love for her city and a curiosity for unusual hidden places, Our Secret Table is the brainchild of Valentina Guttuso, artistic director and founder of design and event agency TALEA. Keen to push the boundaries of traditional Roman environments, Guttuso’s eye for architecture and spatial design unites people at locations across Rome that remain top-secret until the last minute, while she has kicked off a movement focused on conviviality and social experimentation.</p>
-  <p>“Rather classic” are the terms that spring to Guttuso’s mind when describing the local food scene and the scarceness of pop-ups comparable to regular occurrences in cities such as Berlin or London. “There are certainly interesting scenarios and realities but, in my opinion, too large a slice of this business is linked to mass tourism and conventional restaurants, be they historical or new, which is unfortunate. These phenomena often lead to fast-gastronomic proposals without quality, research and identity,” says Guttuso. Recognizing a breeding ground to enrich formats, the trained contemporary art historian and curator eagerly implements her vision for the intersection of event production and creativity: “With Our Secret Table, I want to break up these codes and shine a light on food outside of traditional canonical spaces.”</p>
+  <p>“Rather classic” are the terms that spring to Guttuso’s mind when describing the local food scene and the scarceness of pop-ups comparable to regular occurrences in cities such as Berlin or London. “There are certainly interesting scenarios and realities but, in my insight, too large a slice of this business is linked to mass tourism and conventional restaurants, be they historical or new, which is unfortunate. These phenomena often lead to fast-gastronomic proposals without quality, research and identity,” says Guttuso. Recognizing a breeding ground to enrich formats, the trained contemporary art historian and curator eagerly implements her vision for the intersection of event production and creativity: “With Our Secret Table, I want to break up these codes and shine a light on food outside of traditional canonical spaces.”</p>
   <p>“It’s the idea of other people falling in love with spaces that bewitched me at first sight, and creating a climate that is warm, convivial, and stimulating.&#8221;</p>
   <p>Shifting between environment and setting, space and food, the monthly event proves how contemporary design and rustic charm aren’t mutually exclusive: Our Secret Table equally screams <em>Roman Holiday</em> mixed with a modern-day urban retreat. At long wooden tables with carefully curated settings and flower arrangements, positioned between towering bookshelves, retro furnishings and state-of-the-art kitchen counters, creative locals rub shoulders to witness renowned cooks infuse gastronomic energy into offbeat locations that vary from private apartments or gardens to public art galleries. “It’s the idea of other people falling in love with spaces that bewitched me at first sight, and creating a climate that is warm, convivial, and stimulating at the same time,” Guttuso muses. “The atmosphere is always beautiful. The first guests who arrive help the chef make the last preparations for the dinner,” the founder continues. Naturally, they are greeted with wine or prosecco, and an amuse-bouche. Kept dark until the very last minute, the four-course menu is introduced by each individual chef—the project’s inaugural dishes in October were entirely dedicated to the flavors and aromas of the season with mushrooms, black cabbage, chestnuts and pumpkin.</p>
   <p>Hosted in an open-plan, airy loft in the heart of Rome, the first venue also successfully anticipated the project’s distinctive DNA: However different the locations, it’s their poetic aspect that permeates the series, representing Rome from historical, stylistic, and aesthetic point of views. “Currently, we are looking for a cool outdoor space to suit the summer time, such as a Roman terrace or a big wild garden,” Guttuso says. “Each individual dinner unfolds from that decision, including the staging, collaborators, and the chef that could best interpret the event.”</p>
@@ -294,14 +294,14 @@ Article.create(category: "opinion",
 <p>  <em>From its launch in October 2017, Our Secret Table has developed into a monthly event that hosts up to 30 people. Although communal in atmosphere, the evenings are intimate, and even the menu remains top-secret until the guests arrive; the organizers only inform their guests of the dinner’s theme. The next edition of the project, on 21 April, will revolve around spring. To sign up, visit TALEA’s website.</em></p>
   ",
     published: true)
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "A new generation of business owners are enlivening the retail sector with store concepts for a sensory shopping experience",
   subhead: "Bag label QWSTION creates its stores with a multifunctional approach, where meeting place meets design platform, and retail space",
   tag: "Business",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/eine-neue-generation-von-ladenbetreibern-belebt-den-einzelhandel-mit-konzepten-fur-zeitgemases-einkaufen/Freunde-von-Freunden-Qwestion-Vienna-14-1600x1064.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>In-store shopping may have dipped in popularity but it’s yet to be a relic of a bygone era. The once-doomed retail sector has undergone an adjustment phase to adapt to times of digitalization and the spread of major chains.</p>
   <p>In the past, consumers would enter a shop, point to the items he or she wanted, and a person behind the counter would pull them from the shelves. A lot has changed since then. Businesses reoriented themselves to better meet the needs of their customers and another paradigm shift came with the advent of online shopping. Large retailers, such as Amazon, have since offered not only a comfortable shopping experience, but also the lowest prices and largest selection. You are no longer required to leave the house to meet your daily needs; nearly everything can be ordered online and delivered straight to your door. In our convenience culture, permanent retail establishments have had to get creative in order to survive in the midst of online shopping and the unchanging presence of chains. In response, some young brands are specializing in the high-quality production of one particular item. Such is the case with Swiss bag manufacturer QWSTION.</p>
@@ -323,14 +323,14 @@ Article.create(category: "opinion",
   <p>According to industry experts, the distinction between the two categories won’t make any sense going forward. People will always shop both online and offline. The connection between the two worlds is where exciting things are happening—the space where a unique online world is translated into a real shop and vice versa.</p>
   <p><em>A goal of the Swiss bag label QWSTION is to raise awareness about sustainable manufacturing processes in contemporary product design. The business lives by this philosophy, but it also shapes the continued development of its store concept. After all, in the era of ubiquitous online shopping, it takes innovative ideas to get people into stores. Whether that means offering products from a carefully curated group of other brands or hosting regular events that open the retail space and offer transparency.</p>
   ")
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "A spotlight on women in film and gastronomy with the Clam Club collective",
   subhead: "The film and supper club dedicated to promoting the work of leading females in the fields of food and film",
   tag: "Society",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/clam-club-feminist-film-and-supper-club/Freunde-von-Freunden-Clam-Club-Friends-Space-0644-1600x1068.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>Talented women all over the world are joining forces in increasing numbers to combat the patriarchy through the concentrated synergy of their networks. One of these young communities is Clam Club, the inaugural meeting of which recently took place in Berlin. And this is only the beginning.</p>
   <p>Flickering candles give off just enough light to admire the delicate flowers and seashells scattered between dishes of glowing pink beetroot labneh and crackers spread across long communal tables. The warm scent of caramelized butter floats through the air, subtle clangs and sizzles are emitted from the kitchen, while a documentary featuring on-the-fly kitchen interviews are being screened onto the bare walls of this converted warehouse space in Berlin-Kreuzberg.</p>
@@ -347,14 +347,14 @@ Article.create(category: "opinion",
   <p>While face-to-face interaction and conversation remain irreplaceable, social networks allow for relationships and ideas to be established across geographic boundaries and time zones. The new global groundswell is equipping women with the resources and support they require to create change in their own communities and, ultimately, around the globe. Clam Club has also been organizing itself via channels such as Facebook since day one. Under the slogan “Spotlight on Women,” supporters and curious women and men can follow its page to keep up to date with current projects and join the latest events. Clam Club’s Facebook rating, by the way, is five stars: the highest the network allows. This accolade, it seems, already foreshadows the success of things to come.</p>
   ",
     published: true)
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "Once a futuristic movement that symbolized progress, the need to preserve Brutalism is more apparent than ever &#8212; Freunde von Freunden",
   subhead: "Revisiting the style that slipped in and out of fashion and favor for generations",
   tag: "Art",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/sos-brutalism/Freunde-von-Freunden-Brutalism-SOS-Kariakoo-Market-Benedikt-Redmann-1461x1200.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>There’s no architectural movement quite as polarizing as Brutalism. To some people, ugly is the first term that springs to mind. Others may enthuse over its intriguing aesthetic, evoking nostalgia; they see beauty in the raw, frank and resistant qualities.</p>
   <p>Defining Brutalism, however, causes less debate. Flourishing from the 1950s to the late ’70s the style was both futuristic and progressive. Brutalism or “beton brut” refers to the exposed concrete, architecture that simultaneously celebrates boldness and experimentalism—and not characteristically brutal or menacing. While in opposition to the sleek elegance of Bauhaus and romance of Art Deco it has gained momentous international attention—be it admiration or rejection—scholars have defined Brutalism as a global phenomenon that has surpassed material expectations.</p>
@@ -372,14 +372,14 @@ Article.create(category: "opinion",
   <p>In recent years, activist endeavors to preserve Brutalist heritage and ensure future redevelopments have increasingly found confirmation in popular culture. Whilst many colossal and dramatic concrete structures now saturate social media feeds, their history and contemporary building statuses employ academic researchers. The buildings’ everlasting appeal? An aesthetic that suggests something needn’t be fully developed to nurture creativity. Common interpretations associate the concrete buildings with artisanal perfection as well as symbols of self-exploration and societal change. Yet while Brutalism is experiencing a Renaissance—think the popularity of London’s Barbican Centre or former Soviet cities thriving on Brutalist architecture such as the Macedonian capital of Skopje—only few investments have breathed new life into often derelict complexes. Eager to reintroduce the public to the movement’s legacy and save the physical testimonies from demolition, organizations have founded the initiative #SOSBrutalism, a hashtag that now takes center stage at a namesake exhibition in Frankfurt am Main.</p>
   ",
   published: true)
-Article.create(category: "opinion",
+Article.create(category: "insight",
   person: "",
   headline: "To challenge our perceptions of queer relationships, artist Paul Mpagi Sepuya depicts intimate fragments of reality",
   subhead: "Creating honest yet playful records of society, the artist continues to take his viewers inside his studio",
   tag: "Society",
   contributor_id: 2,
   photo: "https://www.freundevonfreunden.com/wp-content/uploads/to-challenge-our-perceptions-of-queer-relationships-artist-paul-sepuya-depicts-intimate-fragments-of-reality/Freunde-von-Freunden-Paul-Sepuya-Work-Darkroom-Mirror-HR-Feature-Crop-1600x1067.jpg",
-  feature: '',
+  priority: 3,
   body: "
   <p>We strive to revisit many of our protagonists and check in on their new creative endeavours. Six years on, we followed up with artist Paul Mpagi Sepuya to see how his body of work has evolved.</p>
   <p>Varying between simple portraits, sometimes nude, and experiential collages that either portray the artist, one or more of his subjects or combine all three, the results feature carefully crafted fragments that rarely depict entire bodies. By draping fabrics, shooting against mirrors, layering extracts of older works, Sepuya experiments within the confines of his studio, whose function he sees as an important element of his practice. Years into his career, Sepuya’s photographs remain deliberately provocative: the homoerotic images depict intimacy as an exploration of human relationships—all of Sepuya’s subjects are friends, intimates, and muses.<br></p>
@@ -402,7 +402,7 @@ Article.create(
   subhead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   contributor_id: 1,
   published: true,
-  feature: '',
+  priority: 3,
   body: "
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
 
@@ -421,7 +421,7 @@ Article.create(
   subhead: "Turpis egestas sed tempus urna et pharetra.",
   contributor_id: 1,
   published: true,
-  feature: '',
+  priority: 3,
   body: "
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
 
@@ -440,7 +440,7 @@ Article.create(
     subhead: "Donec massa sapien faucibus et molestie ac feugiat sed lectus.",
     contributor_id: 1,
     published: true,
-    feature: '',
+    priority: 3,
   body: "
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit amet. Porta nibh venenatis cras sed felis eget velit. A arcu cursus vitae congue mauris. Dui vivamus arcu felis bibendum ut tristique. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Fringilla ut morbi tincidunt augue interdum velit. Elementum nibh tellus molestie nunc non blandit. Interdum varius sit amet mattis vulputate enim. Nunc lobortis mattis aliquam faucibus purus. Posuere morbi leo urna molestie at. Pretium viverra suspendisse potenti nullam. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nisl nunc mi ipsum faucibus. Aliquet porttitor lacus luctus accumsan. Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Lobortis elementum nibh tellus molestie nunc non. Nunc pulvinar sapien et ligula ullamcorper. Vel fringilla est ullamcorper eget. Metus vulputate eu scelerisque felis imperdiet.</p>
 
@@ -461,7 +461,7 @@ Article.create(
   body: 'Harari warns that the greatest danger that now faces liberal democracy is that the revolution in information technology will make dictatorships more efficient and capable of control.',
   url: 'https://www.ted.com/talks/yuval_noah_harari_why_fascism_is_so_tempting_and_how_your_data_could_power_it?language=en&fbclid=IwAR01H20xVFhjPlb6HwPxJvObd_l5zBJhzbj_x0HuhG6IsfvnW38pVAs19No',
   tag: 'politics',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category: 'video',
@@ -470,7 +470,7 @@ Article.create(
   body: 'As femininity cannot be measured, we often consider it to be without value. Being feminine is not about a measurable result, it is about the experience.',
   url:'https://www.youtube.com/watch?v=-PFYthpdEIU&feature=youtu.be&fbclid=IwAR3heiTcssdLKwD4dffaSYSNQ5ZYrw6BnTfL--UKzfq9yncM0kigstrwhCc',
   tag: 'feminism',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category: 'video',
@@ -479,7 +479,7 @@ Article.create(
   body:'Intersection of money and meaning',
   url:'https://www.youtube.com/watch?v=wg-lDwHTw8k',
   tag:'Business',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -488,7 +488,7 @@ Article.create(
   body:'The thinkers and ideas that forged the world we live in broken down and explained, in a way which means you don’t need to be a graduate level philosopher to understand.',
   url:'http://philosophizethis.org/',
   tag:'Philosophy',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -497,7 +497,7 @@ Article.create(
   body:'Provocative, profound discussions at the intersection of science, art, and philosophy with paleontologist-futurist Michael Garfield and new amazing guests each week. ',
   url:'https://www.stitcher.com/podcast/michael-garfield/future-fossils',
   tag:'science',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -506,7 +506,7 @@ Article.create(
   body:'Conversations along the journey: plant medicines, ordinary magic, and the wisdom within us all. ',
   url:'https://soundcloud.com/unbrokenchainpodcast',
   tag:'Spirituality',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -515,7 +515,7 @@ Article.create(
   body:'Synchronicity (the podcast) touches on experiences and concepts that often go overlooked. The rare moments that lift the veil. Join in as we explore the unseen worlds we interact with everyday. Each guest has a unique perspective on life, reality and the mystery behind it all.',
   url:'https://syncpodcast.com/',
   tag:'Spirituality',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -524,7 +524,7 @@ Article.create(
   body:'Discussing political philosophy, current events, activism, and the inevitable historical downfall of capitalism from a revolutionary leftist perspective.',
   url:'https://revolutionaryleftradio.libsyn.com',
   tag:'politics',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -533,7 +533,7 @@ Article.create(
   body:'Our podcast goes deeper where Amisha Ghadiali (who initiated this project) interviews people whose work and lives are challenging the dominant story. The conversations are long, authentic and unedited. They explore the weave between politics, spirituality, sustainability and creativity',
   url:'http://www.thefutureisbeautiful.co/',
   tag:'politics',
-  feature: '',
+  priority: 3,
   )
 Article.create(
   category:'podcast',
@@ -542,8 +542,87 @@ Article.create(
   body:'A podcast based inquiry into the next phase of the human experiment.',
   url:'https://anchor.fm/emerge',
   tag:'politics',
-  feature: '',
+  priority: 3,
   )
+
+Article.create(
+  category:'about',
+  headline:'About',
+  contributor_id: 1,
+  body:"Emerge is an independent, non-profit media platform highlighting the initiatives, individuals and ways of thinking that are sowing the seeds of a new civilisation.
+
+We are exploring how to act wisely in a world that seems out of control. We aim to explore the emerging cultural narratives of our time by collecting useful content from across the web, profiling change makers and thinkers, publishing thought-provoking commentary and producing original videos and podcasts.
+
+We are living in times of profound transition where our ways of working, communicating and governing are quickly transforming. Many of our received wisdoms, habits and perspectives are becoming obsolete. What will emerge in the vacuum created by this disruption is not yet clear, but some critical questions hang in the balance:
+
+Will we manage to avert ecological crisis? Will the story of the internet be one of powerful collaboration, or intense polarisation? Will we find a way to remedy the unprecedented levels of loneliness, depression and anxiety in modern societies?
+
+Nobody knows what the world will look like in 20 years time. At Emerge we believe that we all have a part to play in weaving a new story for humanity and our planet.
+
+In fact, we are already doing it.
+
+By combining live events with the power of the internet, Emerge is a hub for people and initiatives searching for solutions to pressing global challenges, asking the question: What new patterns of living, working and existing together are currently emerging?
+
+We are a network and a movement that celebrates people and projects, and we offer an invitation to each of us to discover our role in this new story.
+What We Believe
+ The challenges facing our world today are more complex and species-threatening than ever before in human history. The global threat of climate change and the social impacts of digitalisation and globalisation are currently far more complex than our collective capacity to comprehend. In order for us to move forward, our thinking about global problems has to evolve to match their complexity.
+
+Our personal psychology is of huge consequence to the outside world. If we are going to transform as a society then the personal development of individuals must be taken seriously as a societal, as well as an individual, concern.
+
+There is no one ‘true’ way of seeing the world. In order to move forward we need to transcend binary thinking. This means moving beyond left and right political divides, thinking in terms of individual and collective responsibility, national and global identity, honoring individual identities and recognising the need to focus on a greater “we”.
+
+Our world is socially constructed in more ways than we habitually tend to think. Human beings are dependent on and connected to the natural world, but when it comes to human society we are the creators. This means that we have more power than we realise to change it.
+
+The emerging future will be co-created by all of us. The world is learning to come together in new ways and each of us has a vital role to play. Emerge is a place where all are called forth to bring our gifts to the greater circle.
+
+Across the world, there are hundreds of initiatives, projects and persons who are already tackling real world problems from this place of deeper awareness. Our aim is to bring awareness to this growing movement and connect the dots between the people and projects contributing to this emergence.
+
+This is a time of profound collaboration and we see you as a vital part of this mission. We’d love to weave your voice and vision into all that is being created and keep you updated on the launch of new projects, events and initiatives around the world.  Email contribute@whatisemerging.com and sign up to our newsletter here.
+How Did Emerge Begin?
+Emerge began as a three-day live event in Berlin in November 2018 initiated by three non-profit organisations: Perspectiva, London; co-creation.loft, Berlin and Ekskäret Foundation, Stockholm. The gathering brought together pioneers in complexity science, philosophy, spirituality, psychology, sustainability, creativity, and wisdom to explore dynamic solutions to our planet’s greatest challenges and discover new pathways of working, living and creating together.
+How Is Emerge Funded?
+We are a not-for-profit venture and we are funded primarily through donations, voluntary work and contributions collected through Patreon. Please visit our Patreon page here.
+How Can You Help?
+You can help by donating through Patreon and reading, sharing our media with your friends and colleagues or becoming a contributor.
+How Do We Choose Which Content To Feature
+Visit the corresponding page to suggest a podcast, video, space or event to be featured on Emerge.
+How Can You Contribute An Original Article Or Video?
+Send suggestions for articles or videos to contribute@whatisemerging.com
+How Can You Contact Us?
+For all other inquiries reach us at: hello@whatisemerging.com
+━━
+We hope to sow the seeds for a new civilisation -  we are farmers or gardeners.
+
+We are observing and helping to give birth to a new civilisation - we are midwives.
+
+We want a more-conscious society - we are alarm clocks or zen teachers.
+
+We seek to co-create a more conscious society - we are collaborative innovators.
+
+We are interested in three kinds of transformation; the self, society and emergent systemic properties of these two together - we are alchemists, or societal chefs.
+
+We recognise that how we perceive and know and represent the world has revolutionary potential - we are artists.
+
+We seek complex integration of diverse bodies of theory and practice - we are epistemic freedom fighters.
+
+We want to support innovative forms of spiritual practice and inquiry that better connect us to the challenges of our time - we are conveners and hosts.
+
+We love powerful and beautiful communication - we are drum rolls and content curators.
+
+
+JOIN OUR NEWSLETTER
+your email address
+OR FIND US ON
+
+CREATED WITH LOVE
+IN BERLIN
+IMPRINT",
+  url:'https://anchor.fm/emerge',
+  tag:'politics',
+  priority: 3,
+  )
+
+
 
 puts "#{Article.count} articles have been seeded"
 
