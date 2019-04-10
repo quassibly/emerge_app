@@ -1,6 +1,10 @@
 class PodcastsController < ApplicationController
   # before_action :find_media
+  skip_before_action :authenticate_user!, only: :emergepodcast
   before_action :set_category
+
+  def emergepodcast
+  end
 
   def index
     @page = 'index'
