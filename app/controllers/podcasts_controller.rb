@@ -80,6 +80,6 @@ class PodcastsController < ApplicationController
   end
 
   def not_emergepodcast(articles)
-    articles.reject! { |article| article.meta.include? 'emergepodcast' unless article.meta.nil?}
+    articles.delete_if { |article| article.meta.include? 'emergepodcast' unless article.meta.nil?}
   end
 end
