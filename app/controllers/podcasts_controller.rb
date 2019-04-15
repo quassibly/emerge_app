@@ -14,7 +14,7 @@ class PodcastsController < ApplicationController
       @podcasts = @podcasts.where(tag: params[:tag])
     end
     @podcasts = sort_by_priority
-    @podcasts = not_emergepodcast(@podcasts) unless user_signed_in?
+    @podcasts = user_signed_in? ? @podcasts : not_emergepodcast(@podcasts)
   end
 
   def show
