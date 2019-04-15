@@ -1,0 +1,28 @@
+.pagy-container {
+  margin: 40px auto;
+  text-align: center;
+  font-family: $primary-font;
+}
+
+.page {
+  font-family: $primary-font;
+  padding: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  line-height: 1.3em;
+  color: black;
+  a {
+    font-family: $primary-font;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    line-height: 1.3em;
+    color: black;
+  }
+}
+
+.active {
+  color: $accent-color;
+}
+

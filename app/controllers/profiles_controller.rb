@@ -9,7 +9,7 @@ class ProfilesController < ArticlesController
       @articles = @articles.where(tag: params[:tag])
     end
     @articles = sort_by_priority(@articles)
-    @articles = reject_by_priority(@articles)
+    @pagy, @articles = pagy_array(reject_by_priority(@articles), item: 11)
   end
 
   def show          # GET /profiles/:id

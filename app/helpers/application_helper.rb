@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include Pagy::Frontend
+
   def current_home?
     return true if request.path == "/"
     false
@@ -93,6 +95,10 @@ module ApplicationHelper
     else
       return '_self'
     end
+  end
+
+  def paginate(pagy)
+    pagy_nav(pagy) if pagy.pages > 1
   end
 
 end

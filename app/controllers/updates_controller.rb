@@ -9,6 +9,7 @@ class UpdatesController < ArticlesController
       @articles = @articles.where(tag: params[:tag])
     end
     sort_recent!
+    @pagy, @articles = pagy_array(@articles, items: 5)
   end
 
   def show

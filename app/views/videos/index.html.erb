@@ -6,7 +6,7 @@
     <h2 class="page-subhead">Tune into what’s emerging with our video discovery tool.</h2>
 
     <div class='grid_flex'>
-      <% @videos.each do |article| %>
+      <% @articles.each do |article| %>
         <%= render 'shared/card', article: article %>
       <% end %>
       <div class="card-container card-contribute">
@@ -18,7 +18,9 @@
         <% end %>
       </div>
     </div>
+    <div class="pagy-container">
+      <%== paginate(@pagy) %>
+    </div>
   </div>
 </div>
-
 

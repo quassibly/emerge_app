@@ -131,6 +131,7 @@ GEM
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pagy (2.1.5)
     pg (1.1.4)
     pg_search (2.1.4)
       activerecord (>= 4.2)
@@ -260,6 +261,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks (~> 2.1)
   listen (>= 3.0.5, < 3.2)
+  pagy (~> 2.1, >= 2.1.5)
   pg
   pg_search
   puma (~> 3.7)

@@ -10,6 +10,9 @@
         <%= render 'shared/card', article: article %>
       <% end %>
     </div>
+    <div class="pagy-container">
+      <%== paginate(@pagy) %>
+    </div>
   </div>
 </div>
 

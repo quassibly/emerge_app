@@ -7,4 +7,7 @@
       <%= render 'shared/updatecard', article: article %>
     <% end %>
   </div>
+  <div class="pagy-container">
+    <%== paginate(@pagy) %>
+  </div>
 </div>

@@ -29,6 +29,7 @@ gem 'geocoder'
 gem 'figaro'
 gem 'webpacker'
 gem 'pg_search'
+gem 'pagy', '~> 2.1', '>= 2.1.5'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

@@ -14,6 +14,7 @@ class PodcastsController < ApplicationController
       @podcasts = @podcasts.where(tag: params[:tag])
     end
     @podcasts = sort_by_priority
+    @podcasts = not_emergepodcast(@podcasts) unless user_signed_in?
   end
 
   def show
@@ -76,5 +77,9 @@ class PodcastsController < ApplicationController
       end
     end
     @podcasts.sort_by &:age
+  end
+
+  def not_emergepodcast(articles)
+    articles.reject! { |article| article.meta.include? 'emergepodcast' unless article.meta.nil?}
   end
 end
