@@ -3,12 +3,13 @@ class VideosController < ArticlesController
 
   def index
     @page = 'index'
-    @articles = Article.video.published_not_deleted
-    @articles = Article.video.not_deleted if user_signed_in?
+    include_category = @category
+    include_priority = (1..4)
+    @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @pagy, @articles = pagy_array(sort_by_priority(@articles), items: 11)
+    @pagy, @articles = pagy_array(@articles, items: 11)
   end
 
   def show
@@ -59,13 +60,5 @@ class VideosController < ArticlesController
 
   def video_params
     params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
-  end
-
-  def sort_by_priority(articles)
-    super
-  end
-
-  def reject_by_priority(articles)
-    articles.reject { |article| article.priority == 5 }
   end
 end

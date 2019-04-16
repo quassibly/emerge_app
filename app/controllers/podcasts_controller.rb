@@ -1,4 +1,4 @@
-class PodcastsController < ApplicationController
+class PodcastsController < ArticlesController
   # before_action :find_media
   skip_before_action :authenticate_user!, only: :emergepodcast
   before_action :set_category
@@ -8,13 +8,14 @@ class PodcastsController < ApplicationController
 
   def index
     @page = 'index'
-    @podcasts = Article.podcast.published_not_deleted
-    @podcasts = Article.podcast.not_deleted if user_signed_in?
+    include_category = @category
+    include_priority = (1..4)
+    @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
-      @podcasts = @podcasts.where(tag: params[:tag])
+      @articles = @podcasts.where(tag: params[:tag])
     end
-    @podcasts = sort_by_priority
-    @podcasts = user_signed_in? ? @podcasts : not_emergepodcast(@podcasts)
+    @articles = user_signed_in? ? @articles : not_emergepodcast(@articles)
+    @pagy, @podcasts = pagy_array(@articles, items: 11)
   end
 
   def show
@@ -62,21 +63,6 @@ class PodcastsController < ApplicationController
 
   def podcast_params
     params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
-  end
-
-  def sort_by_priority
-    @podcasts.each { |article| article.published_at = Time.now if article.published_at == nil }
-    @podcasts.reject { |article| article.priority == 5 }
-    @podcasts.each { |article| article.age = Time.now - article.published_at }
-    @podcasts.each do |article|
-      case article.priority
-      when 3
-        article.age = article.age * 4
-      when 4
-        article.age = article.age * 16
-      end
-    end
-    @podcasts.sort_by &:age
   end
 
   def not_emergepodcast(articles)

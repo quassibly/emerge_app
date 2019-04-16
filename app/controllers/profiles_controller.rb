@@ -3,13 +3,13 @@ class ProfilesController < ArticlesController
 
   def index         # GET /profiles
     @page = 'index'
-    @articles = Article.people.published_not_deleted
-    @articles = Article.people.not_deleted if user_signed_in?
+    include_category = @category
+    include_priority = (1..4)
+    @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = sort_by_priority(@articles)
-    @pagy, @articles = pagy_array(reject_by_priority(@articles), item: 11)
+    @pagy, @articles = pagy_array(@articles, item: 11)
   end
 
   def show          # GET /profiles/:id
@@ -69,7 +69,7 @@ class ProfilesController < ArticlesController
   end
 
   def set_category
-    @category = "people"
+    @category = 'people'
     @controller = 'profiles'
   end
 

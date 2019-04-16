@@ -3,13 +3,13 @@ class OpinionsController < ArticlesController
 
   def index         # GET /opinions
     @page = 'index'
-    @articles = Article.insight.published_not_deleted
-    @articles = Article.insight.not_deleted if user_signed_in?
+    include_category = @category
+    include_priority = (1..4)
+    @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    @articles = sort_by_priority(@articles)
-    @articles = reject_by_priority(@articles)
+    @pagy, @articles = pagy_array(@articles, item: 11)
   end
 
   def show          # GET /opinions/:id
@@ -73,15 +73,7 @@ class OpinionsController < ArticlesController
   end
 
   def set_category
-    @category = "insight"
+    @category = 'insight'
     @controller = 'opinions'
-  end
-
-  def sort_by_priority(articles)
-    super
-  end
-
-  def reject_by_priority(articles)
-    @articles = @articles.reject { |article| article.priority == 5 }
   end
 end

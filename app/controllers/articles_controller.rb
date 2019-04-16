@@ -1,13 +1,16 @@
-  class ArticlesController < ApplicationController
+class ArticlesController < ApplicationController
+  include ArticlesHelper
+
   def index
     @page = 'home'
-    @articles = Article.published_not_deleted.not_update
-    @articles = sort_by_priority(@articles)
-    @articles = reject_by_priority(@articles)
+    include_category = ['people', 'insight', 'video', 'podcast']
+    include_priority = (1..2)
+    @articles = filter_and_sort_articles(include_category, include_priority)
+    # @articles = Article.published_not_deleted.not_update
+    # @articles = sort_by_priority(@articles)
+    # @articles = reject_by_priority(@articles)
     @main = @articles.find{|article| article.priority == 1 }
     @articles.delete(@main)
-    @videos = Article.where(published: true).where(deleted: false).where(category: 'video')
-    @podcasts = Article.where(published: true).where(deleted: false).where(category: 'podcast')
     @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
     @spaces = Pin.where(published: true).where(deleted: false).where(category: 'space')
   end
@@ -124,24 +127,6 @@
 
   def article_params
     params.require(:article).permit(:headline, :subhead, :tag, :contributor_id, :photographer_id, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :priority)
-  end
-
-  def sort_by_priority(articles)
-    articles.each { |article| article.published_at = Time.now if article.published_at == nil }
-    articles.each { |article| article.age = Time.now - article.published_at }
-    articles.each do |article|
-      case article.priority
-      when 3
-        article.age = article.age * 4
-      when 4
-        article.age = article.age * 16
-      end
-    end
-    articles.sort_by &:age
-  end
-
-  def reject_by_priority(articles)
-    articles.reject { |article| (3..5) === article.priority }
   end
 
   def find_article

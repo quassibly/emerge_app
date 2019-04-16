@@ -3,12 +3,12 @@ class UpdatesController < ArticlesController
 
   def index
     @page = 'index'
-    @articles = Article.journal.published_not_deleted
-    @articles = Article.journal.not_deleted if user_signed_in?
+    include_category = @category
+    include_priority = (1..5)
+    @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
       @articles = @articles.where(tag: params[:tag])
     end
-    sort_recent!
     @pagy, @articles = pagy_array(@articles, items: 5)
   end
 

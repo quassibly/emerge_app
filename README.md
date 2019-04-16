@@ -25,3 +25,18 @@ Things you may want to cover:
   - PgSearch::Multisearch.rebuild(Pin)
 
 * ...
+
+* algorithm
+    - priority == 1
+      ages normally, can appear on home page, can be main feature article
+    - priority == 2
+      same as priority 1, cannot be main feature article
+    - priority == 3
+      default priority, cannot appear on home page
+      ages 4 times as fast
+    - priority == 4
+      cannot appear on home page
+      ages 16 times as fast
+    - priority == 5
+      appears only in search
+      ages 32 times as fast
