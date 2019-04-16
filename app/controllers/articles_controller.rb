@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
     # @articles = reject_by_priority(@articles)
     @main = @articles.find{|article| article.priority == 1 }
     @articles.delete(@main)
-    @events = Pin.where(published: true).where(deleted: false).where(category: 'event')
+    @events = Pin.where(published: true).where(deleted: false).where(category: 'event').since_today
     @spaces = Pin.where(published: true).where(deleted: false).where(category: 'space')
   end
 
