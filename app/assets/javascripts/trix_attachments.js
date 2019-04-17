@@ -23,6 +23,7 @@ function uploadAttachment(attachment) {
   xhr.onload = function() {
     if (xhr.status === 201) {
       var data = JSON.parse(xhr.responseText);
+      data.image_url = data.image_url.replace("upload/", "upload/f_auto,q_auto/")
       return attachment.setAttributes({
         url: data.image_url,
         href: data.url

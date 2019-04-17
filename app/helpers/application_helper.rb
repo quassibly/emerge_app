@@ -1,6 +1,18 @@
 module ApplicationHelper
   include Pagy::Frontend
 
+  def couldinary(url, height=nil, width=nil)
+    h = ",h_#{height}" unless height.nil?
+    w = ",w_#{width}" unless width.nil?
+    transformation = "upload/f_auto,q_auto,c_fill#{h}#{w}/"
+    url.to_s.sub('upload/', transformation)
+  end
+
+  def cloudinary_background(url, height=nil, width=nil)
+    transformed_url = couldinary(url, height, width)
+    "background-image:url('#{transformed_url}')"
+  end
+
   def current_home?
     return true if request.path == "/"
     false

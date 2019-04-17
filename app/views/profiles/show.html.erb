@@ -2,7 +2,7 @@
 <% content_for :meta_description, @article.subhead %>
 <% content_for :meta_image, @article.photo.sub('upload/', 'upload/c_fill,h_675,w_1200/') %>
 
-<div class="profile-header-photo" style="background-image: url('<%= @article.photo %>')">
+<div class="profile-header-photo" style=<%=cloudinary_background(@article.photo)%> >
 </div>
   <div class="opinion-head-container">
     <div class="profile-head-card">
