@@ -20,7 +20,7 @@ class EventsController < ArticlesController
     @pins = @pins.event_type(params[:event_type]) if params[:event_type].present?
     @pins = @pins.region(params[:location]) if params[:location].present?
     @pins = @pins.where('extract(month from date) = ?', Date::MONTHNAMES.index(params[:month])) if params[:month].present?
-    @pagy, @pins = pagy_array(sort_pins, item: 8)
+    @pagy, @pins = pagy_array(sort_pins, items: 7)
 
     @markers = @pins.map do |pin|
       {

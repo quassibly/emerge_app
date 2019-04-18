@@ -16,5 +16,43 @@
     width: calc(100% - 160px);
   }
   height: 800px;
-  margin: 80px auto;
+  margin: 40px auto;
+}
+
+.emergepodcast-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.emergepodcast-head-container {
+  display: flex;
+  margin: -40px auto 40px;
+  justify-content: center;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.emergepodcast-photo {
+  margin: 0 auto;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.emergepodcast-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  min-width: 300;
+  width: 60%;
+  justify-content: space-around;
+  padding: 0 20px;
+  font-size: 18px;
+  text-align: right;
+  @media screen and (max-width: 700px) {
+    text-align: center;
+    margin: 20px auto;
+  }
 }
