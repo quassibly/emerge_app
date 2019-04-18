@@ -5,14 +5,23 @@
     <h1 class="page-head">Podcasts</h2>
     <h2 class="page-subhead">Tune into what’s emerging with our podcast discovery tool.</h2>
 
-    <div class=podcast-player-container>
-      <iframe src="https://castbox.fm/app/castbox/player/id1205127?v=4.1.190404&autoplay=0" frameborder="0" width="100%" height="350"></iframe>
-    </div>
-
     <div class="grid_flex">
       <% @podcasts.each do |article| %>
         <%= render 'shared/card', article: article %>
       <% end %>
+      <div class="card-container card-emergepodcast">
+        <%= link_to emergepodcast_path do %>
+          <div class="card">
+            <div class="emergepodcast-card-photo">
+              <img src="https://res.cloudinary.com/whatisemerging/image/upload/f_auto,c_fill,g_face,q_auto,r_max,w_300,h_300/v1555599524/cache/85e026bde8fbc5eba7265aaafb711c72.jpg" alt="">
+            </div>
+            <div class="emergepodcast-card-text">
+              <h1 class="card-emergepodcast-head">Emerge: Making Sense of What's Next</h1>
+              <h2 class=card-headline>A podcast based inquiry into the next phase of the human experiment.</h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
       <div class="card-container card-contribute">
         <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScg8Ge3BoNOY3tt2T70--AsWyDB-Q66JCt0duiZn8NQ3mU1PQ/viewform', target: "_blank" do %>
           <div class="card">

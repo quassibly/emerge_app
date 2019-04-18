@@ -41,6 +41,20 @@
   }
 }
 
+.emergepodcast-card-photo {
+  margin: 0 auto -40px;
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.emergepodcast-card-text {
+  background-color: white;
+  padding: 20px;
+  margin-top: -18px;
+}
+
 .emergepodcast-info {
   display: flex;
   flex-direction: column;

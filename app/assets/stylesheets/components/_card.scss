@@ -71,6 +71,10 @@
   }
 }
 
+.card-emergepodcast-head {
+  font-size: 20px;
+}
+
 .card-headline {
   margin: .5em 0 0;
 }
@@ -151,6 +155,17 @@
   letter-spacing: .03em;
 }
 
+.card-emergepodcast {
+  // border: solid 1px black;
+  // padding: 20px;
+  margin: 0 auto auto;
+  grid-area: 1 / 1 / 1 / 1;
+  background-color: white;
+  @media screen and (max-width: 860px) {
+    display: none !important;
+  }
+}
+
 .card-contribute {
   // border: solid 1px black;
   // padding: 20px;
@@ -161,6 +176,7 @@
     display: none !important;
   }
 }
+
 .card-plus {
   font-family: $secondary-font;
   font-size: 250px;
