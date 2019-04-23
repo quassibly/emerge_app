@@ -161,9 +161,9 @@
   margin: 0 auto auto;
   grid-area: 1 / 1 / 1 / 1;
   background-color: white;
-  @media screen and (max-width: 860px) {
-    display: none !important;
-  }
+  // @media screen and (max-width: 860px) {
+  //   display: none !important;
+  // }
 }
 
 .card-contribute {

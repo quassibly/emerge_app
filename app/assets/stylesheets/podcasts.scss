@@ -26,6 +26,7 @@
 
 .emergepodcast-head-container {
   display: flex;
+  flex-direction: row-reverse;
   margin: -40px auto 40px;
   justify-content: center;
   @media screen and (max-width: 700px) {
@@ -34,7 +35,7 @@
 }
 
 .emergepodcast-photo {
-  margin: 0 auto;
+  margin: 0 20px 0 auto;
   img {
     width: 150px;
     height: 150px;
@@ -62,9 +63,10 @@
   min-width: 300;
   width: 60%;
   justify-content: space-around;
+  margin: 0 auto 0 20px;
   padding: 0 20px;
   font-size: 18px;
-  text-align: right;
+  text-align: left;
   @media screen and (max-width: 700px) {
     text-align: center;
     margin: 20px auto;
