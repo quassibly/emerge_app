@@ -24,6 +24,11 @@
   flex-direction: column;
 }
 
+.emergepodcast-flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .emergepodcast-head-container {
   background: white;
   display: flex;
@@ -37,7 +42,7 @@
 
 .emergepodcast-photo {
   @media screen and (min-width: 700px) {
-    margin: 0 20px 0 auto;
+    margin: auto 20px auto auto;
   }
   @media screen and (max-width: 699px) {
     margin: 0 auto;
@@ -80,6 +85,13 @@
     margin: 20px auto;
     width: 100%;
   }
+}
+.emergepodcast-links {
+  max-width: 500px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 8px;
 }
 
 .emergepodcast-bio-container {
