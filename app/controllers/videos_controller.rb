@@ -7,7 +7,7 @@ class VideosController < ArticlesController
     include_priority = (1..4)
     @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
-      @articles = @articles.where(tag: params[:tag])
+      @articles = filter_by_tag
     end
     @pagy, @articles = pagy_array(@articles, items: 11)
   end

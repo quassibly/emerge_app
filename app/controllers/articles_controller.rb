@@ -133,4 +133,8 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
+  def filter_by_tag
+    @articles.select { |article| article.tag == params[:tag] unless article.tag.nil?}
+  end
+
 end

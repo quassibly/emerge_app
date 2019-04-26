@@ -17,7 +17,7 @@ class PodcastsController < ArticlesController
     include_priority = (1..4)
     @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
-      @articles = @articles.where(tag: params[:tag])
+      @articles = filter_by_tag
     end
     @articles = user_signed_in? ? @articles : not_emergepodcast(@articles)
     @pagy, @articles = pagy_array(@articles, items: 11)
