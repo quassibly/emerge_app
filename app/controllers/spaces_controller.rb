@@ -11,7 +11,6 @@ class SpacesController < ArticlesController
 
     @pins = @pins.event_type(params[:event_type]) if params[:event_type].present?
     @pins = @pins.region(params[:region]) if params[:region].present?
-    @pagy, @pins = pagy_array(sort_pins, items: 7)
 
     @markers = @pins.map do |pin|
       {
@@ -27,6 +26,9 @@ class SpacesController < ArticlesController
         }
       }
     end
+
+    @pagy, @pins = pagy_array(sort_pins, items: 7)
+
   end
 
   def show
