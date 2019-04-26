@@ -4,10 +4,11 @@ class PodcastsController < ArticlesController
   before_action :set_category
 
   def emergepodcast
+    @page = 'index'
     include_category = @category
     include_priority = (1..4)
     @articles = filter_and_sort_articles(include_category, include_priority)
-    @articles = emergepodcast(@articles)
+    @articles = select_emergepodcast(@articles)
   end
 
   def index
@@ -16,10 +17,10 @@ class PodcastsController < ArticlesController
     include_priority = (1..4)
     @articles = filter_and_sort_articles(include_category, include_priority)
     if params[:tag].present?
-      @articles = @podcasts.where(tag: params[:tag])
+      @articles = @articles.where(tag: params[:tag])
     end
     @articles = user_signed_in? ? @articles : not_emergepodcast(@articles)
-    @pagy, @podcasts = pagy_array(@articles, items: 11)
+    @pagy, @articles = pagy_array(@articles, items: 11)
   end
 
   def show
@@ -69,7 +70,7 @@ class PodcastsController < ArticlesController
     params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
   end
 
-  def emergepodcast(articles)
+  def select_emergepodcast(articles)
     articles.select { |article| article.meta.include? 'emergepodcast' unless article.meta.nil?}
   end
 

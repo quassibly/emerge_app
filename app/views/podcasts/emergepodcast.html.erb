@@ -27,14 +27,14 @@
       Daniel Thorson is currently a resident of the <a href='http://www.whatisemerging.com/spaces/the-monastic-academy'>Monastic Academy</a> in Vermont.<br><br>
     </div>
   </div>
-  <% unless @articles.nil? %>
+
     <div class="home-section">
       <h1 class="center home-section-head">Recently featured on Emerge</h1>
       <div class="home-grid-flex">
         <% @articles.each do |article| %>
-          <%= render 'shared/card', articles:article %>
+          <%= render 'shared/card', article: article %>
         <% end %>
       </div>
     </div>
-  <% end %>
+
 </div>

@@ -6,7 +6,7 @@
     <h2 class="page-subhead">Tune into what’s emerging with our podcast discovery tool.</h2>
 
     <div class="grid_flex">
-      <% @podcasts.each do |article| %>
+      <% @articles.each do |article| %>
         <%= render 'shared/card', article: article %>
       <% end %>
       <div class="card-container card-emergepodcast">
