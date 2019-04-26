@@ -4,6 +4,10 @@ class PodcastsController < ArticlesController
   before_action :set_category
 
   def emergepodcast
+    include_category = @category
+    include_priority = (1..4)
+    @articles = filter_and_sort_articles(include_category, include_priority)
+    @articles = emergepodcast(@articles)
   end
 
   def index
@@ -63,6 +67,10 @@ class PodcastsController < ArticlesController
 
   def podcast_params
     params.require(:article).permit(:headline, :subhead, :tag, :photo, :body, :published, :deleted, :category, :seo_title, :meta, :feature, :url, :priority)
+  end
+
+  def emergepodcast(articles)
+    articles.select { |article| article.meta.include? 'emergepodcast' unless article.meta.nil?}
   end
 
   def not_emergepodcast(articles)
