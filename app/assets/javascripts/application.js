@@ -13,6 +13,7 @@
 //= require rails-ujs
 //= require trix
 //= require trix_attachments
+//= require js.cookie
 //= require_tree .
 //
 

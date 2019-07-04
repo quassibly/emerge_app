@@ -1,0 +1,13 @@
+<% if cookies && cookies['gdpr.cookie_consent.ok'] != 'true' %>
+  <div class="gdpr__cookie_consent js-gdpr__cookie_consent">
+    <div class="gdpr__cookie_consent__text">
+      <%= 'By navigating on this website, you agree to our use of cookies to personalize certain website features and to measure the audience and use of this website.' %>
+    </div>
+    <div class="gdpr__cookie_consent__buttons">
+      <button class="gdpr__cookie_consent__buttons__ok js-gdpr__cookie_consent__buttons__ok"> <%= 'OK' %></button>
+    </div>
+  </div>
+<% end %>
+
+
+

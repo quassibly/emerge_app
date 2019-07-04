@@ -1,0 +1,34 @@
+.gdpr__cookie_consent {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 440px;
+    font-size: 14px;
+    align-items: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.gdpr__cookie_consent__text {
+    color: white;
+    font-family: $primary-font;
+}
+
+.gdpr__cookie_consent__buttons__ok {
+  font-family: $primary-font;
+  font-size: 13px;
+  border: 1px solid black;
+  letter-spacing: .02em;
+  background-color: white;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 34px;
+  line-height: 30px;
+  padding: 0 20px;
+  display: inline-block;
+  margin: 0 0 0 32px;
+  transition: all 0.23s ease-in-out 0s;
+}

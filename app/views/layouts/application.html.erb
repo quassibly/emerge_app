@@ -43,6 +43,8 @@
   <body class="<%= @page %>">
     <% if user_signed_in? %>
       <%= render 'shared/logged-in' %>
+    <% else %>
+      <%= render 'shared/gdpr' %>
     <% end %>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
@@ -55,5 +57,14 @@
 
     <%= javascript_pack_tag 'maps' %>
   </body>
+
+  <script>
+    $(function(){
+      $('.js-gdpr__cookie_consent__buttons__ok').click(function() {
+        Cookies.set('gdpr.cookie_consent.ok', true, { path: '/', expires: 365 });
+        $('.js-gdpr__cookie_consent').remove();
+      });
+    });
+  </script>
 
 </html>
