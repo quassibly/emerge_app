@@ -9,6 +9,8 @@ class Pin < ApplicationRecord
   include PgSearch
   multisearchable against: [ :name, :category, :tag, :classification, :event_type, :location, :address, :description ]
 
+  default_scope { order(published_at: :desc) }
+
   scope :published, -> { where(published: true) }
   scope :not_deleted, -> { where(deleted: false) }
   scope :published_not_deleted, -> { published.not_deleted }
