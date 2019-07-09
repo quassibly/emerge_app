@@ -5,7 +5,7 @@ module ArticlesHelper
     articles = user_signed_in? ? Article.not_deleted : Article.published_not_deleted
     #filter by allowed category/ies
     #filter by allowed priority
-    priority = user_signed_in? ? (1..5) : include_priority
+    priority = include_priority
     articles = articles.where(category: include_category, priority: priority)
     #calc 'age' w/ priority
     #sort by age
