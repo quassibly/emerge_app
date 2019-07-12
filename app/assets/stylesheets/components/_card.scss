@@ -144,8 +144,9 @@
 }
 
 .card-contributor {
-  font-size: 25px;
   letter-spacing: .03em;
+  color: $accent-color;
+  font-style: italic;
 }
 
 .card-quote {
