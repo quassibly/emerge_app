@@ -1,3 +1,4 @@
-<%= image_tag @image.image_url %>
+<% image_url = cloudinary(@image.image_url) %>
+<%= image_tag image_url %>
 <%= @image.image_url %>
 <%= @image.url %>

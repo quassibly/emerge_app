@@ -1,16 +1,15 @@
 <% if @article.present? %>
   <div class="contributor-container">
-    <%= image_tag @article.contributor.photo, class: "contributor-image" %>
+    <% contributor_photo = cloudinary(@article.contributor.photo, 100, 100) %>
+    <%= image_tag contributor_photo, class: "contributor-image" %>
     <div class="contributor-text-container">
       <% if user_signed_in? %>
         <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
       <% end %>
       <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
 
-          <% if @article
-       .contributor.twitter.present? %>
-            <%= link_to "https://twitter.com/#{@article
-       .contributor.twitter}", target: "_blank", rel: "nofollow" do %>
+          <% if @article.contributor.twitter.present? %>
+            <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-twitter"></i>
             <% end %>
           <% end %>
@@ -33,27 +32,22 @@
         <% if user_signed_in? %>
           <%= link_to('edit photographer', edit_photographer_path(@article.photographer)) %>
         <% end %>
-        <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @article
-   .photographer.name %></span>
-          <% if @article
-       .photographer.twitter.present? %>
-            <%= link_to "https://twitter.com/#{@article
-       .photographer.twitter}", target: "_blank", rel: "nofollow" do %>
+        <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @article.photographer.name %></span>
+          <% if @article.photographer.twitter.present? %>
+            <%= link_to "https://twitter.com/#{@article.photographer.twitter}", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-twitter"></i>
             <% end %>
           <% end %>
-          <% if @article
-       .photographer.instagram.present? %>
-            <%= link_to "https://www.instagram.com/#{@article
-       .photographer.instagram}/", target: "_blank", rel: "nofollow" do %>
+          <% if @article.photographer.instagram.present? %>
+            <%= link_to "https://www.instagram.com/#{@article.photographer.instagram}/", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-instagram"></i>
             <% end %>
           <% end %>
       </div>
-        <%= @article
-   .photographer.bio %>
+        <%= @article.photographer.bio %>
     </div>
-    <%= image_tag @article.photographer.photo, class: "contributor-image" %>
+    <% photographer_photo = cloudinary(@article.photographer.photo, 100, 100) %>
+    <%= image_tag photographer_photo, class: "contributor-image" %>
   </div>
   <% end %>
 <% end %>

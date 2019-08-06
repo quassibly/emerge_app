@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= image_tag @photo.image_url, class: "image_show" %>
+<% photo_url = cloudinary(@photo.image_url) %>
+<%= image_tag photo_url, class: "image_show" %>
 <p>
   <%= @photo.image_url %>
 </p>

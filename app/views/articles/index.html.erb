@@ -1,5 +1,6 @@
 <%= link_to article_path(@main) do %>
-<div class="home-header-photo" style="background-image: url('<%= @main.photo %>')">
+<% background_image = cloudinary_background(@main.photo, 800) %>
+<div class="home-header-photo" style=<%= background_image %>>
   </div>
 
   <div class="home-header-card-container">

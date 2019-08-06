@@ -2,7 +2,8 @@
 <% content_for :meta_description, strip_tags(@pin.description) %>
 <% content_for :meta_image, @pin.photo.sub('upload/', 'upload/c_fill,h_675,w_1200/') %>
 
-<div class="event-header-photo" style="background-image: url('<%= @pin.photo %>')">
+<% header_photo = cloudinary_background(@pin.photo) %>
+<div class="event-header-photo" style=<% header_photo %> >
   </div>
 </div>
   <div class="event-head-card">
