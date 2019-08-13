@@ -17,7 +17,7 @@
   <%= link_to pin_path(pin) do %>
     <%= content_tag :div, class: pin_published?(pin) do %>
       <% unless pin.photo.nil? %>
-        <div class="card-img" style=<%=cloudinary_background(pin.photo, 200, 360)%>>
+        <div class="card-img" style=<%=cloudinary_background(pin.photo, 400, 720)%>>
           <% if pin.tag.present? %>
             <div class="card-tag-left category"><%= pin.tag %></div>
           <% end %>

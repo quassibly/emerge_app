@@ -1,6 +1,6 @@
 <% if @article.present? %>
   <div class="contributor-container">
-    <% contributor_photo = cloudinary(@article.contributor.photo, 100, 100) %>
+    <% contributor_photo = cloudinary(@article.contributor.photo, 200, 200) %>
     <%= image_tag contributor_photo, class: "contributor-image" %>
     <div class="contributor-text-container">
       <% if user_signed_in? %>
@@ -46,7 +46,7 @@
       </div>
         <%= @article.photographer.bio %>
     </div>
-    <% photographer_photo = cloudinary(@article.photographer.photo, 100, 100) %>
+    <% photographer_photo = cloudinary(@article.photographer.photo, 200, 200) %>
     <%= image_tag photographer_photo, class: "contributor-image" %>
   </div>
   <% end %>
