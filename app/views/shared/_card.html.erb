@@ -17,7 +17,7 @@
   <%= link_to card_route(article), target: external_link(article) do %>
     <%= content_tag :div, class: published?(article) do %>
       <% article.category == 'podcast' ? width = 200 : width = 360 %>
-      <%= content_tag :div, class: podcast_img?(article), style: cloudinary_background(article.photo, 400, width) do %>
+      <%= content_tag :div, class: podcast_img?(article), style: cloudinary_background(article.photo, 400, 720) do %>
         <% if current_page?(controller: 'articles', action: 'index') %>
           <div class="card-tag-left category"><%= article.category %></div>
         <% end %>
