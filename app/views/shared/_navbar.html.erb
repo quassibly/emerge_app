@@ -20,7 +20,7 @@
 
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
-    <% @tabs = ["about", "journal", "people", "insights", "videos", "podcasts", "events", "spaces"] %>
+    <% @tabs = ["home", "journal", "people", "insights", "videos", "podcasts", "events", "spaces", "about"] %>
     <% @tabs.each do |tab| %>
       <%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: current_category?("#{navbar_tab(tab)}") %>
     <% end %>
