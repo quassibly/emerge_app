@@ -36,6 +36,8 @@ module ApplicationHelper
       return 'profiles'
     when 'insights'
       return 'opinions'
+    when 'home'
+      return 'root'
     else
       return tab
     end
