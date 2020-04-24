@@ -6,6 +6,6 @@
     "gmaps": "^0.4.24"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-dev-server": "3.10.3"
   }
 }
