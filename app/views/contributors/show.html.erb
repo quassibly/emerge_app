@@ -4,10 +4,11 @@
     <%= image_tag contributor_photo, class: "contributor-image" %>
     <div class="contributor-text-container">
       <h2><%= @contributor.name %></h2>
-      <p><%= @contributor.bio %></p>
-      <%= @contributor.twitter %>
-      <%= @contributor.instagram %>
-      <%= @contributor.website %>
+      <p><%= @contributor.bio.html_safe %></p>
+      <p><%= @contributor.twitter %></p>
+      <p><%= @contributor.instagram %></p>
+      <p><%= @contributor.linked_in %></p>
+      <p><%= @contributor.website %></p>
     </div>
   </div>
 </div>

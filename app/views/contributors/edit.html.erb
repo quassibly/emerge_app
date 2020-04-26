@@ -3,9 +3,11 @@
     <%= f.text_field :photo, placeholder: "photo url" %>
     <div class="contributor-text-container">
       <h2><%= f.text_field :name, placeholder: "contributor name" %></h2>
-      <p><%= f.text_field :bio, placeholder: "short biography" %></p>
+      <p><%= f.text_area :bio, placeholder: "short biography" %></p>
       <%= f.text_field :twitter, placeholder: "twitter username" %>
       <%= f.text_field :instagram, placeholder: "instagram username" %>
+      <%= f.text_field :linked_in, placeholder: "LinkeIn profile name" %>
+      <%= f.text_field :website, placeholder: "contributor's website url" %>
     </div>
   </div>
   <%= f.submit %>

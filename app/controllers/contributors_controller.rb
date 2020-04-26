@@ -41,7 +41,7 @@ class ContributorsController < ApplicationController
   private
 
   def contributor_params
-    params.require(:contributor).permit(:name, :photo, :bio, :twitter, :instagram, :website)
+    params.require(:contributor).permit(:name, :photo, :bio, :twitter, :instagram, :linked_in, :website)
   end
 
 end
