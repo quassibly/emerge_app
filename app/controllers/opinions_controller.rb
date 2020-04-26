@@ -19,7 +19,7 @@ class OpinionsController < ArticlesController
 
     recommended_opinions = filter_and_sort_articles(@category, include_priority).first(2)
     recommended_all = filter_and_sort_articles(
-        ['people', 'insight', 'event', 'space'],
+        ['people', 'event', 'space'],
         include_priority
     ).first(2)
 

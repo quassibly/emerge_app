@@ -15,6 +15,15 @@ class ProfilesController < ArticlesController
   def show          # GET /profiles/:id
     @page = 'grey'
     @article = Article.find(params[:id])
+    include_priority = (1..4)
+
+    recommended_profiles = filter_and_sort_articles(@category, include_priority).first(2)
+    recommended_all = filter_and_sort_articles(
+        ['insight', 'event', 'space'],
+        include_priority
+    ).first(2)
+
+    @recommended = recommended_profiles + recommended_all
   end
 
   def new           # GET /profiles/new
