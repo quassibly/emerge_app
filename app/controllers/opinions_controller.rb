@@ -15,12 +15,19 @@ class OpinionsController < ArticlesController
   def show          # GET /opinions/:id
     @page = 'grey'
     @article = Article.find(params[:id])
-    @article = Article.find(params[:id])
+    include_priority = (1..4)
+
+    recommended_opinions = filter_and_sort_articles(@category, include_priority).first(2)
+    recommended_all = filter_and_sort_articles(
+        ['people', 'insight'],
+        include_priority
+    ).first(2)
+
+    @recommended = recommended_opinions + recommended_all
   end
 
   def new           # GET /opinions/new
     @page = 'grey'
-    @article = Article.new
     @article = Article.new
   end
 
@@ -36,7 +43,6 @@ class OpinionsController < ArticlesController
 
   def edit
     @page = 'grey'
-    @article = Article.find(params[:id])
     @article = Article.find(params[:id])
   end
 

@@ -23,6 +23,21 @@
     max-height: 440px;
   }
 }
+.recommended-grid-flex {
+  @media (min-width: 420px) {
+    display:grid;
+    grid-gap: 100px 20px;
+    grid-template-columns: repeat(auto-fill, 420px);
+  }
+  overflow: hidden;
+  justify-content: center;
+  @media screen and (min-width: 969px) {
+    max-height: 1130px;
+  }
+  @media screen and (min-width: 1410px) {
+    max-height: 440px;
+  }
+}
 
 // XS
 @media screen and (max-width: 767px) {

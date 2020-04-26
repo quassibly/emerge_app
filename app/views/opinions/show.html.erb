@@ -33,7 +33,15 @@
     sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
     acronym a img blockquote del ins video source figure figcaption video br),
     attributes: %w(href src width height alt cite datetime title class name xml:lang abbr type autoplay loop) %></div>
-  <%= render 'shared/contributor' %>
+    <%= render 'shared/contributor' %>
+  </div>
+
+  <div class="home-section">
+    <div class="recommended-grid-flex">
+      <% @recommended.each do |article| %>
+        <%= render 'shared/card', article: article %>
+      <% end %>
+    </div>
   </div>
 </div>
 
