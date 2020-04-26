@@ -17,11 +17,11 @@
               <i class="social fab fa-instagram"></i>
             <% end %>
           <% end %>
-          <% if @article.contributor.linked_in.present? %>
-            <%= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
-              <i class="social fab fa-linkedin"></i>
-            <% end %>
-          <% end %>
+          <%# if @article.contributor.linked_in.present? %>
+            <%#= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
+<!--              <i class="social fab fa-linkedin"></i>-->
+            <%# end %>
+          <%# end %>
           <% if @article.contributor.website.present? %>
             <%= link_to @article.contributor.website, target: "_blank", rel: "nofollow" do %>
               <i class="social fas fa-link"></i>
