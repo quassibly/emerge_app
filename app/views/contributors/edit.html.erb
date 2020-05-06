@@ -3,7 +3,7 @@
     <%= f.text_field :photo, placeholder: "photo url" %>
     <div class="contributor-text-container">
       <h2><%= f.text_field :name, placeholder: "contributor name" %></h2>
-      <p><%= f.text_area :bio, placeholder: "short biography" %></p>
+      <p><%= f.text_area :bio, placeholder: "short biography *" %></p>
       <%= f.text_field :twitter, placeholder: "twitter username" %>
       <%= f.text_field :instagram, placeholder: "instagram username" %>
       <%= f.text_field :linked_in, placeholder: "link to LinkedIn profile" %>
@@ -12,3 +12,11 @@
   </div>
   <%= f.submit %>
 <% end %>
+
+<div class="footnote">
+  <p>
+    *If you would like to include a clickable link in the biography, insert the following html tag
+    <span class="code-snippet">&lt;a href="https://example.com"&gt;Website&lt;/a&gt;</span>
+    replacing the example link with your link, and "Website" with the text that you want the link to display.
+  </p>
+</div>
