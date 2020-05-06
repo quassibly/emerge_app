@@ -19,7 +19,7 @@
       </div>
       <div class="card-text small">
         <div class="card-headline">
-          <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+          <%= "#{article.contributor&.name}: " if article.category == "opinion" %><%= article.headline %>
         </div>
         <div class="card-subhead"><%= article.subhead %></div>
       </div>

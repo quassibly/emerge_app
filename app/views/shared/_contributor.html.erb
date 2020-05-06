@@ -1,40 +1,42 @@
 <% if @article.present? %>
-  <div class="contributor-container">
-    <% contributor_photo = cloudinary(@article.contributor.photo, 200, 200) %>
-    <%= image_tag contributor_photo, class: "contributor-image" %>
-    <div class="contributor-text-container">
-      <% if user_signed_in? %>
-        <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
-      <% end %>
+  <% if @article.contributor.present? %>
+    <div class="contributor-container">
+      <% contributor_photo = cloudinary(@article.contributor&.photo, 200, 200) %>
+      <%= image_tag contributor_photo, class: "contributor-image" %>
+      <div class="contributor-text-container">
+        <% if user_signed_in? && @article.contributor %>
+          <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
+        <% end %>
 
-      <div class="contributor-text-header">
-        Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
+        <div class="contributor-text-header">
+          Words by <span class="contributor-name upcase"><%= @article.contributor&.name %></span>
+        </div>
+        <div class="flex-start">
+          <% if @article.contributor&.twitter.present? %>
+            <%= link_to "https://twitter.com/#{@article.contributor&.twitter}", target: "_blank", rel: "nofollow" do %>
+              <i class="social fab fa-twitter"></i>
+            <% end %>
+          <% end %>
+          <% if @article.contributor&.instagram.present? %>
+            <%= link_to "https://www.instagram.com/#{@article.contributor&.instagram}/", target: "_blank", rel: "nofollow" do %>
+              <i class="social fab fa-instagram"></i>
+            <% end %>
+          <% end %>
+          <% if @article.contributor&.linked_in.present? %>
+            <%= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
+              <i class="social fab fa-linkedin"></i>
+            <% end %>
+          <% end %>
+          <% if @article.contributor&.website.present? %>
+            <%= link_to @article.contributor.website, target: "_blank", rel: "nofollow" do %>
+              <i class="social fas fa-link"></i>
+            <% end %>
+          <% end %>
+        </div>
+        <%= @article.contributor&.bio.html_safe %>
       </div>
-      <div class="flex-start">
-        <% if @article.contributor.twitter.present? %>
-          <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
-            <i class="social fab fa-twitter"></i>
-          <% end %>
-        <% end %>
-        <% if @article.contributor.instagram.present? %>
-          <%= link_to "https://www.instagram.com/#{@article.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
-            <i class="social fab fa-instagram"></i>
-          <% end %>
-        <% end %>
-        <% if @article.contributor.linked_in.present? %>
-          <%= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
-            <i class="social fab fa-linkedin"></i>
-          <% end %>
-        <% end %>
-        <% if @article.contributor.website.present? %>
-          <%= link_to @article.contributor.website, target: "_blank", rel: "nofollow" do %>
-            <i class="social fas fa-link"></i>
-          <% end %>
-        <% end %>
-      </div>
-      <%= @article.contributor.bio.html_safe %>
     </div>
-  </div>
+  <% end %>
   </div>
   <% if @article.photographer.present? %>
     <div class="contributor-container">

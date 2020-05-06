@@ -22,7 +22,7 @@
         </div>
         <div class="card-text small">
           <h3 class="card-headline">
-            <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+            <%= "#{article.contributor&.name}: " if article.category == "opinion" %><%= article.headline %>
           </h3>
           <h4 class="card-subhead"><%= article.subhead %></h4>
         </div>
@@ -36,7 +36,7 @@
         </div>
         <div class="card-text small">
           <h3 class="card-headline">
-            <%= "#{article.contributor.name}: " if article.category == "opinion" %><%= article.headline %>
+            <%= "#{article.contributor&.name}: " if article.category == "opinion" %><%= article.headline %>
           </h3>
           <h4 class="card-subhead"><%= article.subhead %></h4>
         </div>
