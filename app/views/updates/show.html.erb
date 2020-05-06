@@ -27,7 +27,7 @@
 </div>
 
 <div class="profile-body">
-  <%= @article.body.html_safe %>
+  <%= process_body(@article.body) %>
 </div>
 <%= render 'shared/contributor' %>
 

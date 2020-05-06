@@ -34,12 +34,8 @@
     </div>
   </div>
 
-  <div class="profile-body"><%= sanitize @article.body,
-    tags: %w(strong em b i p code pre tt samp kbd var sub
-    sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
-    acronym a img blockquote del ins video source figure figcaption video br),
-    attributes: %w(href src width height alt cite datetime title class name xml:lang abbr type autoplay loop) %></div>
-    <%= render 'shared/contributor' %>
+  <div class="profile-body">
+    <%= process_body(@article.body) %>
   </div>
 
   <div class="home-section">
