@@ -6,32 +6,35 @@
       <% if user_signed_in? %>
         <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
       <% end %>
-      <div class="contributor-text-header">Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
-          <% if @article.contributor.twitter.present? %>
-            <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
-              <i class="social fab fa-twitter"></i>
-            <% end %>
-          <% end %>
-          <% if @article.contributor.instagram.present? %>
-            <%= link_to "https://www.instagram.com/#{@article.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
-              <i class="social fab fa-instagram"></i>
-            <% end %>
-          <% end %>
-          <%# if @article.contributor.linked_in.present? %>
-            <%#= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
-<!--              <i class="social fab fa-linkedin"></i>-->
-            <%# end %>
-          <%# end %>
-          <% if @article.contributor.website.present? %>
-            <%= link_to @article.contributor.website, target: "_blank", rel: "nofollow" do %>
-              <i class="social fas fa-link"></i>
-            <% end %>
-          <% end %>
-        </div>
-      <%= @article.contributor.bio.html_safe %>
-      </div>
 
+      <div class="contributor-text-header">
+        Words by <span class="contributor-name upcase"><%= @article.contributor.name %></span>
+      </div>
+      <div class="flex-start">
+        <% if @article.contributor.twitter.present? %>
+          <%= link_to "https://twitter.com/#{@article.contributor.twitter}", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-twitter"></i>
+          <% end %>
+        <% end %>
+        <% if @article.contributor.instagram.present? %>
+          <%= link_to "https://www.instagram.com/#{@article.contributor.instagram}/", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-instagram"></i>
+          <% end %>
+        <% end %>
+        <% if @article.contributor.linked_in.present? %>
+          <%= link_to "www.linkedin.com/in/#{@article.contributor.linked_in}", target: "_blank", rel: "nofollow" do %>
+            <i class="social fab fa-linkedin"></i>
+          <% end %>
+        <% end %>
+        <% if @article.contributor.website.present? %>
+          <%= link_to @article.contributor.website, target: "_blank", rel: "nofollow" do %>
+            <i class="social fas fa-link"></i>
+          <% end %>
+        <% end %>
+      </div>
+      <%= @article.contributor.bio.html_safe %>
     </div>
+  </div>
   </div>
   <% if @article.photographer.present? %>
     <div class="contributor-container">
@@ -39,7 +42,10 @@
         <% if user_signed_in? %>
           <%= link_to('edit photographer', edit_photographer_path(@article.photographer)) %>
         <% end %>
-        <div class="contributor-text-header">Photos by <span class="contributor-name upcase"><%= @article.photographer.name %></span>
+        <div class="contributor-text-header">Photos by
+          <span class="contributor-name upcase"><%= @article.photographer.name %></span>
+        </div>
+        <div class="flex-start">
           <% if @article.photographer.twitter.present? %>
             <%= link_to "https://twitter.com/#{@article.photographer.twitter}", target: "_blank", rel: "nofollow" do %>
               <i class="social fab fa-twitter"></i>
@@ -50,12 +56,12 @@
               <i class="social fab fa-instagram"></i>
             <% end %>
           <% end %>
-      </div>
+        </div>
         <%= @article.photographer.bio %>
+      </div>
+      <% photographer_photo = cloudinary(@article.photographer.photo, 200, 200) %>
+      <%= image_tag photographer_photo, class: "contributor-image" %>
     </div>
-    <% photographer_photo = cloudinary(@article.photographer.photo, 200, 200) %>
-    <%= image_tag photographer_photo, class: "contributor-image" %>
-  </div>
   <% end %>
 <% end %>
 

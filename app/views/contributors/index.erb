@@ -1,0 +1,36 @@
+<div class="contributors-list-container">
+  <h1>Contributors</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @contributors.each do |contributor| %>
+      <tr>
+        <td><%= contributor.id %></td>
+        <td><%= contributor.name %></td>
+        <td>
+          <%= link_to contributor do %>
+            <i class="far fa-eye"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to edit_contributor_path(contributor) do %>
+            <i class="far fa-edit"></i>
+          <% end %>
+        </td>
+        <td>
+          <%= link_to contributor, method: :delete, data: {confirm: "Are you sure?"} do %>
+            <i class="far fa-trash-alt"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
