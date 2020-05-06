@@ -13,24 +13,40 @@
 
     <% case action_name %>
     <% when 'about' %>
-      <%= link_to '-Edit', edit_about_path, class: 'logged-in-button' %>
+      <div class="flex-end">
+        <%= link_to '-Edit', edit_about_path, class: 'logged-in-button' %>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
+          <i class="fas fa-sign-out-alt"></i>
+        <% end %>
+      </div>
     <% when 'show' %>
-      <%= link_to '-Edit', edit_article_path, class: 'logged-in-button' %>
-      <%= link_to '-Edit HTML', htmledit_article_path, class: 'logged-in-button' %>
+      <div class="flex-end">
+        <%= link_to '-Edit', edit_article_path, class: 'logged-in-button' %>
+        <%= link_to '-Edit HTML', htmledit_article_path, class: 'logged-in-button' %>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
+          <i class="fas fa-sign-out-alt"></i>
+        <% end %>
+      </div>
     <% else %>
-      <%= link_to "+Journal", new_update_path, class: "logged-in-button" %>
-      <%= link_to "+People", new_profile_path, class: "logged-in-button" %>
-      <%= link_to "+Insight", new_opinion_path, class: "logged-in-button" %>
-      <%= link_to "+Video", new_video_path, class: "logged-in-button" %>
-      <%= link_to "+Podcast", new_podcast_path, class: "logged-in-button" %>
-      <%= link_to "+Event", new_event_path, class: "logged-in-button" %>
-      <%= link_to "+Space", new_space_path, class: "logged-in-button" %>
-      <%= link_to "+Contributor", new_contributor_path, class: "logged-in-button" %>
-      <%= link_to "+Photographer", new_photographer_path, class: "logged-in-button" %>
-      <%= link_to "+Photo", new_photo_path, class: "logged-in-button" %>
+      <div class="flex-end">
+        <%= link_to "+Journal", new_update_path, class: "logged-in-button" %>
+        <%= link_to "+People", new_profile_path, class: "logged-in-button" %>
+        <%= link_to "+Insight", new_opinion_path, class: "logged-in-button" %>
+        <%= link_to "+Video", new_video_path, class: "logged-in-button" %>
+        <%= link_to "+Podcast", new_podcast_path, class: "logged-in-button" %>
+        <%= link_to "+Event", new_event_path, class: "logged-in-button" %>
+        <%= link_to "+Space", new_space_path, class: "logged-in-button" %>
+        <%= link_to "+Contributor", new_contributor_path, class: "logged-in-button" %>
+        <%= link_to "+Photographer", new_photographer_path, class: "logged-in-button" %>
+        <%= link_to "+Photo", new_photo_path, class: "logged-in-button" %>
+      </div>
+      <div class="flex-end">
+        <%= link_to 'Contributors List', contributors_path, class: 'logged-in-button' %>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
+          <i class="fas fa-sign-out-alt"></i>
+        <% end %>
+      </div>
     <% end %>
-    <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
-      <i class="fas fa-sign-out-alt"></i>
-    <% end %>
+
   </div>
 </div>
