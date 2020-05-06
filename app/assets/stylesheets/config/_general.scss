@@ -326,3 +326,13 @@ trix-toolbar {
 .trix-button:disabled {
   display: none;
 }
+
+.form-submit-buttons {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

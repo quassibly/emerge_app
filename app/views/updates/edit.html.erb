@@ -6,17 +6,19 @@
   </div>
   <div class="form-profile-container">
     <div><%= f.text_field :photo, placeholder: "photo url" %></div>
-    <div><%= f.text_area :tag, placeholder: "Enter tag"%></div>
-    <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
+    <div><%= f.text_area :tag, placeholder: "Enter tag" %></div>
+    <%= f.collection_select :contributor_id, Contributor.all.sort + [Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
     <%= f.collection_select :photographer_id, Photographer.all.sort, :id, :name, prompt: "select photographer" %>
 
     <div class="profile-body"><%= f.trix_editor :body %></div>
     <%= f.text_area :meta, placeholder: 'meta tags' %>
-    <%= f.submit 'Save' %>
-    <% if @article.published %>
-      <%= f.submit 'Unpublish' %>
-    <% else %>
-      <%= f.submit 'Publish' %>
-    <% end %>
+    <div class="form-submit-buttons">
+      <%= f.submit 'Save' %>
+      <% if @article.published %>
+        <%= f.submit 'Unpublish' %>
+      <% else %>
+        <%= f.submit 'Publish' %>
+      <% end %>
+    </div>
   </div>
 <% end %>
