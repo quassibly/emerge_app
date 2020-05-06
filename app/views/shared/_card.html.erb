@@ -30,7 +30,7 @@
           <%= article.headline %>
         </h3>
         <h3 class="card-contributor">
-          <%= "#{article.contributor.name}" if article.category == "insight" %>
+          <%= "#{article.contributor.name}" if article.category == "insight" && article.contributor.present? %>
         </h3>
         <h4 class="card-subhead"><%= article.subhead %></h4>
       </div>
