@@ -20,6 +20,8 @@
       <%= content_tag :div, class: podcast_img?(article), style: cloudinary_background(article.photo, 400, width) do %>
         <% if current_page?(controller: 'articles', action: 'index') %>
           <div class="card-tag-left category"><%= article.category %></div>
+        <% elsif current_page?(action: 'show') %>
+          <div class="card-tag-left category"><%= article.category %></div>
         <% end %>
         <% if article.tag.present? %>
           <div class="card-tag tag"><%= article.tag %></div>

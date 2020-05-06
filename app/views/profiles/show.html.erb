@@ -39,6 +39,7 @@
   <%= render 'shared/contributor' %>
 
   <div class="home-section">
+    <h1 class='center home-section-head'>Recommended</h1>
     <div class="recommended-grid-flex">
       <% @recommended.each do |article| %>
         <%= render 'shared/card', article: article %>

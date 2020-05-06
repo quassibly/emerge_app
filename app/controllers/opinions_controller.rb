@@ -17,13 +17,10 @@ class OpinionsController < ArticlesController
     @article = Article.find(params[:id])
     include_priority = (1..4)
 
-    recommended_opinions = filter_and_sort_articles(@category, include_priority).first(2)
-    recommended_all = filter_and_sort_articles(
-        ['people', 'event', 'space'],
-        include_priority
-    ).first(2)
+    recommended_opinions = filter_and_sort_articles(@category, include_priority).reject{ |article| article == @article }.first(2)
+    recommended_profiles = filter_and_sort_articles('people', include_priority).first(2)
 
-    @recommended = recommended_opinions + recommended_all
+    @recommended = recommended_opinions + recommended_profiles
   end
 
   def new           # GET /opinions/new
