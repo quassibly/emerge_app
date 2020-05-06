@@ -2,6 +2,7 @@ class ContributorsController < ApplicationController
 
   def index         # GET /contributors
     @contributors = Contributor.all
+    @photographers = Photographer.all
   end
 
   def show          # GET /contributors/:id
