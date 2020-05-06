@@ -56,6 +56,11 @@
               <i class="social fab fa-instagram"></i>
             <% end %>
           <% end %>
+          <% if @article.photographer.website.present? %>
+            <%= link_to @article.photographer.website, target: "_blank", rel: "nofollow" do %>
+              <i class="social fas fa-link"></i>
+            <% end %>
+          <% end %>
         </div>
         <%= @article.photographer.bio %>
       </div>
