@@ -317,8 +317,12 @@ input[type=submit] {
   margin: 8px 4px;
 }
 
-.trix-toolbar {
+trix-toolbar {
   position: sticky;
     top: 20px;
     background: white;
+}
+
+.trix-button:disabled {
+  display: none;
 }
