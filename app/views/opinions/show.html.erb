@@ -16,16 +16,22 @@
 
 
 <div class="opinion-container">
-  <div class="profile-social">
-    <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
-      <i class="social fab fa-twitter"></i>
-    <% end %>
-    <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
-      <i class="social fab fa-facebook-f"></i>
-    <% end %>
-    <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
-      <i class="social fab fa-linkedin-in"></i>
-    <% end %>
+  <div class="flex-center">
+    <div class="profile-social flex-center">
+      <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
+        <i class="social fab fa-twitter"></i>
+      <% end %>
+      <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
+        <i class="social fab fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
+        <i class="social fab fa-linkedin-in"></i>
+      <% end %>
+      <% unless @article.published_at.nil? %>
+        <div class="updates-bar"><hr></div>
+        <div class="updates-date"><%= @article.published_at.strftime("%-d.%-m.%Y") %></div>
+      <% end %>
+    </div>
   </div>
 
   <div class="profile-body"><%= sanitize @article.body,
