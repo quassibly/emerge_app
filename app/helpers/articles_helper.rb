@@ -32,15 +32,12 @@ module ArticlesHelper
     body = article_body
         .gsub(/&lt;/, '<')
         .gsub(/&gt;/, '>')
-        #.gsub(/<pre><iframe/, '<iframe class="video"')
-        #.gsub(/<\/pre>/, '')
 
-    body = sanitize body,
+    sanitize body,
       tags: %w(strong em b i p code pre tt samp kbd var sub
-      sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
-      acronym a img blockquote del ins video source figcaption figure br iframe),
-      attributes: %w(href src width height alt cite datetime title class name xml:lang abbr type autoplay loop data-trix-attachment data-trix-content-type)
-
-    return body
+        sup dfn cite big small address hr div span h1 h2 h3 h4 h5 h6 ul ol li dl dt dd abbr
+        acronym a img blockquote del ins video source figcaption figure br iframe),
+      attributes: %w(href src width height alt cite datetime title class name xml:lang abbr
+        type autoplay loop data-trix-attachment data-trix-content-type)
   end
 end

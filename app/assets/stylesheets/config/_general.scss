@@ -118,6 +118,14 @@ video {
   margin: 48px auto;
 }
 
+pre iframe {
+    height: 472px;
+    width: 840px;
+    margin: 12px auto;
+    position: relative;
+    display: block;
+}
+
 figcaption {
   margin-top: -6px;
   font-size: 13px;
@@ -337,26 +345,3 @@ trix-toolbar {
     justify-content: flex-end;
 }
 
-.video-md {
-    height: 374px;
-    width: 664px;
-    margin: 12px auto;
-    position: relative;
-    display: block;
-}
-
-.video-lg {
-    height: 472px;
-    width: 840px;
-    margin: 12px auto;
-    position: relative;
-    display: block;
-}
-
-.video-sm {
-    height: 315px;
-    width: 560px;
-    margin: 12px auto;
-    position: relative;
-    display: block;
-}
