@@ -36,3 +36,5 @@ yarn-debug.log*
 # ignore db dumps
 dumps/
 latest.dump*
+
+.env
