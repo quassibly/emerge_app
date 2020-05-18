@@ -1,40 +1,44 @@
 <div class="grid-container">
   <div class="interviews_grid">
     <h1 class="page-head">Events</h2>
-    <h2 class="page-subhead">Explore live events near you.</h2>
-    <div class="event-filters">
-      <%= form_tag events_path, method: :get do %>
-        <%= select_tag(:tag, options_for_select(@tags), prompt: "Category") %>
-        <%= select_tag(:event_type, options_for_select(@event_types), prompt: "Event Type") %>
-        <%= select_tag(:region, options_for_select(@regions), prompt: "Location") %>
-        <%= select_tag(:month, options_for_select(@months), prompt: "Month") %>
-        <div class="event-filter-buttons-container">
-          <%= submit_tag("Search", id: 'button-clear') %>
-          <%= link_to 'See all' , events_path, id: 'button-clear' %>
-        </div>
-      <% end %>
-    </div>
-    <div
-      id="map"
-      data-markers="<%= @markers.to_json %>"
-    ></div>
+      <h2 class="page-subhead">Explore live events near you.</h2>
 
-    <div class="grid_flex">
-      <% @pins.each do |event| %>
-        <%= render "shared/eventcard", pin: event %>
-      <% end %>
-      <div class="card-container card-contribute">
-        <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScshf5S8vloW4_4pwLZGAEoc-VaraB9uiKdbYlHEtIHkkLZzQ/viewform', target: "_blank" do %>
-          <div class="card">
-            <div class="card-plus">+</div>
-            <h2 class=card-headline>Do you have an event to share with the emerge community?</h2>
+      <% if @pin %>
+        <div class="event-filters">
+          <%= form_tag events_path, method: :get do %>
+            <%= select_tag(:tag, options_for_select(@tags), prompt: "Category") %>
+            <%= select_tag(:event_type, options_for_select(@event_types), prompt: "Event Type") %>
+            <%= select_tag(:region, options_for_select(@regions), prompt: "Location") %>
+            <%= select_tag(:month, options_for_select(@months), prompt: "Month") %>
+            <div class="event-filter-buttons-container">
+              <%= submit_tag("Search", id: 'button-clear') %>
+              <%= link_to 'See all', events_path, id: 'button-clear' %>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="grid_flex">
+          <% @pins.each do |event| %>
+            <%= render "shared/eventcard", pin: event %>
+          <% end %>
+          <div class="card-container card-contribute">
+            <%= link_to 'https://docs.google.com/forms/d/e/1FAIpQLScshf5S8vloW4_4pwLZGAEoc-VaraB9uiKdbYlHEtIHkkLZzQ/viewform', target: "_blank" do %>
+              <div class="card">
+                <div class="card-plus">+</div>
+                <h2 class=card-headline>Do you have an event to share with the emerge community?</h2>
+              </div>
+            <% end %>
           </div>
-        <% end %>
-      </div>
-    </div>
-    <div class="pagy-container">
-      <%== paginate(@pagy) %>
-    </div>
-  </div>
-</div>
+        </div>
+        <div class="pagy-container">
+          <%== paginate(@pagy) %>
+        </div>
+        </div>
+        </div>
+      <% else %>
+        <h2 class="page-subhead">
+          <%= "We're working on our next Gathering, let us know if you would like us to " %>
+          <%= link_to "list your event.", "https://docs.google.com/forms/d/e/1FAIpQLScshf5S8vloW4_4pwLZGAEoc-VaraB9uiKdbYlHEtIHkkLZzQ/viewform" %>
+        </h2>
+      <% end %>
 

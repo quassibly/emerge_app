@@ -1,15 +1,15 @@
 <%= link_to article_path(@main) do %>
-<% background_image = cloudinary_background(@main.photo, 800) %>
-<div class="home-header-photo" style=<%= background_image %>>
+  <% background_image = cloudinary_background(@main.photo, 800) %>
+  <div class="home-header-photo" style=<%= background_image %>>
   </div>
 
   <div class="home-header-card-container">
     <div class="profile-category category"><%= @main.category %></div>
-      <div class="home-head-card">
-        <div class="card-headline upcase"><h1><%= @main.headline %></h1></div>
-        <h2 class="profile-subhead"><%= @main.subhead %></h2>
-        <div class="main-tag tag"><%= @main.tag %></div>
-      </div>
+    <div class="home-head-card">
+      <div class="card-headline upcase"><h1><%= @main.headline %></h1></div>
+      <h2 class="profile-subhead"><%= @main.subhead %></h2>
+      <div class="main-tag tag"><%= @main.tag %></div>
+    </div>
   </div>
 <% end %>
 
@@ -22,32 +22,38 @@
 </div>
 
 <div class="home-section">
-  <h1 class='center home-section-head'>Events</h1>
-  <div class="home-grid-flex">
-    <% @events.each do |event| %>
-      <%= render 'shared/eventcard', pin: event %>
-    <% end %>
-  </div>
+  <% if @events.count < 0 %>
+    <h1 class='center home-section-head'>Events</h1>
+    <div class="home-grid-flex">
+      <% @events.each do |event| %>
+        <%= render 'shared/eventcard', pin: event %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <div class="home-section">
-  <h1 class='center home-section-head'>Spaces</h1>
-  <div class="home-grid-flex">
-    <% @spaces.each do |space| %>
-      <%= render 'shared/eventcard', pin: space %>
-    <% end %>
-  </div>
+  <% if @spaces.count < 0 %>
+    <h1 class='center home-section-head'>Spaces</h1>
+    <div class="home-grid-flex">
+      <% @spaces.each do |space| %>
+        <%= render 'shared/eventcard', pin: space %>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <script>
-  window.onscroll = function() {hideLogo()};
-  document.getElementById("logo").classList.add("hidden-logo");
+    window.onscroll = function () {
+        hideLogo()
+    };
+    document.getElementById("logo").classList.add("hidden-logo");
 
-  function hideLogo() {
-    if (document.body.scrollTop > 145 || document.documentElement.scrollTop > 145) {
-      document.getElementById("logo").classList.remove("hidden-logo");
-    } else {
-      document.getElementById("logo").classList.add("hidden-logo");
+    function hideLogo() {
+        if (document.body.scrollTop > 145 || document.documentElement.scrollTop > 145) {
+            document.getElementById("logo").classList.remove("hidden-logo");
+        } else {
+            document.getElementById("logo").classList.add("hidden-logo");
+        }
     }
-  }
 </script>

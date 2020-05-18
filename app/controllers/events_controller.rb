@@ -21,22 +21,7 @@ class EventsController < ArticlesController
     @pins = @pins.region(params[:location]) if params[:location].present?
     @pins = @pins.where('extract(month from date) = ?', Date::MONTHNAMES.index(params[:month])) if params[:month].present?
 
-    @markers = @pins.map do |pin|
-      {
-        lat: pin.latitude,
-        lng: pin.longitude,
-        # infoWindow: { content: render_to_string(partial: "/events/map_box", locals: { event: event }) }
-        # Uncomment the above line if you want each of your markers to display a info window when clicked
-        # (you will also need to create the partial "/flats/map_box")
-        icon: 'https://res.cloudinary.com/novelty142/image/upload/v1550339075/font-awesome_4-7-0_map-marker_24_0_1bb3aa_none.png',
-        infoWindow: {
-          content: "<a href=#{event_path(pin)} class='map-pin-link'>#{pin.name}</a>"
-        }
-      }
-    end
-
     @pagy, @pins = pagy_array(sort_pins, items: 7)
-
   end
 
   def show
