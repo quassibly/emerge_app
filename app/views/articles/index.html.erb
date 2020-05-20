@@ -33,14 +33,12 @@
 </div>
 
 <div class="home-section">
-  <% if @spaces.count < 0 %>
-    <h1 class='center home-section-head'>Spaces</h1>
-    <div class="home-grid-flex">
-      <% @spaces.each do |space| %>
-        <%= render 'shared/eventcard', pin: space %>
-      <% end %>
-    </div>
-  <% end %>
+  <h1 class='center home-section-head'>Spaces</h1>
+  <div class="home-grid-flex">
+    <% @spaces.each do |space| %>
+      <%= render 'shared/eventcard', pin: space %>
+    <% end %>
+  </div>
 </div>
 
 <script>
