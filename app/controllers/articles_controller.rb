@@ -6,9 +6,6 @@ class ArticlesController < ApplicationController
     include_category = ['people', 'insight', 'video', 'podcast']
     include_priority = (1..2)
     @articles = filter_and_sort_articles(include_category, include_priority)
-    # @articles = Article.published_not_deleted.not_update
-    # @articles = sort_by_priority(@articles)
-    # @articles = reject_by_priority(@articles)
     @main = @articles.find{|article| article.priority == 1 }
     @articles.delete(@main)
     @events = Pin.where(published: true).where(deleted: false).where(category: 'event').since_today
