@@ -12,6 +12,7 @@
   z-index: 1;
   margin: 0;
 }
+
 .navbar-home {
   // background-color: white;
   z-index: 0;
@@ -72,6 +73,35 @@
 .navbar-link:hover {
   color: grey;
   text-decoration: none;
+}
+
+.navbar-item-menu {
+  position: relative;
+  padding: 20px 0;
+}
+
+.navbar-item-dropdown-menu {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  z-index: $zindex-dropdown;
+  display: none; // none by default, but block on "open" of the menu
+  padding: 0 20px 8px 20px;
+  float: left;
+  min-width: $dropdown-min-width;
+  max-width: $dropdown-max-width;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 17px; // Redeclare because nesting can cause inheritance issues
+  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  list-style: none;
+  background-color: $dropdown-bg;
+  background-clip: padding-box;
+}
+
+.navbar-item-menu:hover > .navbar-item-dropdown-menu {
+  position: absolute;
+  display: block;
 }
 
 .navbar-item.active {

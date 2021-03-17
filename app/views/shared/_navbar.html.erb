@@ -20,10 +20,26 @@
 
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
-    <% @tabs = ["home", "journal", "people", "insights", "videos", "podcasts", "events", "spaces", "about"] %>
-    <% @tabs.each do |tab| %>
-      <%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: current_category?("#{navbar_tab(tab)}") %>
-    <% end %>
+    <%= link_to "journal", send("#{navbar_tab("journal")}_path"), class: current_category?("journal") %>
+    <div class="navbar-item-menu">
+      <%= link_to send("#{navbar_tab("insights")}_path"), class: current_category?("insights") do %>
+        insights
+      <% end %>
+      <div class="navbar-item-dropdown-menu" aria-labelledby="navbarDropdown">
+        <%= link_to "videos", send("#{navbar_tab("videos")}_path"), class: current_category?("videos") %>
+        <%= link_to "podcasts", send("#{navbar_tab("podcasts")}_path"), class: current_category?("podcasts") %>
+      </div>
+    </div>
+    <div class="navbar-item-menu">
+      <%= link_to send("#{navbar_tab("events")}_path"), class: current_category?("events") do %>
+        events
+      <% end %>
+      <div class="navbar-item-dropdown-menu" aria-labelledby="navbarDropdown">
+        <%= link_to "spaces", send("#{navbar_tab("spaces")}_path"), class: current_category?("spaces") %>
+      </div>
+    </div>
+    <%= link_to "about", send("#{navbar_tab("about")}_path"), class: current_category?("about") %>
+    <%= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", class: current_category?("community") %>
   </div>
 
   <!-- right Navigation -->
