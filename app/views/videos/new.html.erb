@@ -1,13 +1,13 @@
 <div class="opinion-container">
   <%= form_for @article, url: {action: "create"}, html: {class: "article_form"} do |f| %>
-    <%= f.hidden_field :category, value: @category %>
+    <%= f.hidden_field :category, value: @category, required: true %>
     <h1>Video</h1>
-    <p><%= f.text_area :headline, placeholder: "Title" %></p>
-    <p><%= f.text_area :subhead, placeholder: "WHY TO WATCH" %></p>
-    <p><%= f.text_area :tag, placeholder: "Enter tag"%></p>
-    <p><%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %></p>
-    <p><%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "level of piority?" %></p>
-    <p><%= f.text_area :url, placeholder: "video url" %></p>
+    <p><%= f.text_area :headline, placeholder: "Title", required: true %></p>
+    <p><%= f.text_area :subhead, placeholder: "WHY TO WATCH", required: true %></p>
+    <p><%= f.text_area :tag, placeholder: "Enter tag", required: true%></p>
+    <p><%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select', required: true %></p>
+    <p><%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "level of piority?", required: true %></p>
+    <p><%= f.text_area :url, placeholder: "video url", required: true %></p>
     <p><%= f.trix_editor :body, placeholder: 'Description (optional)' %></p>
     <%= f.text_area :meta, placeholder: 'meta tags' %>
     <%= f.submit 'Save' %>

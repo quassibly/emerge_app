@@ -3,14 +3,14 @@
   <%= form_for @pin, url: {action: "create"}, html: {class: "article_form"} do |f| %>
     <%= f.hidden_field :category, value: @category %>
     <h1>Space</h1>
-    <p><%= f.text_area :name, placeholder: "Space name" %></p>
-    <p><%= f.text_area :tag, placeholder: "Space tag"%></p>
-    <p><%= f.text_area :event_type, placeholder: "Type of space" %></p>
-    <p><%= f.text_area :location, placeholder: 'Location' %></p>
-    <p><%= f.text_area :region, placeholder: 'Region' %></p>
+    <p><%= f.text_area :name, placeholder: "Space name", required: true %></p>
+    <p><%= f.text_area :tag, placeholder: "Space tag", required: true %></p>
+    <p><%= f.text_area :event_type, placeholder: "Type of space", required: true %></p>
+    <p><%= f.text_area :location, placeholder: 'Location', required: true %></p>
+    <p><%= f.text_area :region, placeholder: 'Region', required: true %></p>
     <p><%= f.text_area :phone, placeholder: 'Phone Number' %></p>
-    <p><%= f.text_area :address, placeholder: 'Address' %></p>
-    <p><%= f.text_field :photo, placeholder: 'preview photo url', :prompt => 'Select' %></p>
+    <p><%= f.text_area :address, placeholder: 'Address', required: true %></p>
+    <p><%= f.text_field :photo, placeholder: 'preview photo url', :prompt => 'Select', required: true %></p>
     <p><%= f.text_area :url, placeholder: 'Space url' %></p>
     <p><%= f.trix_editor :description, placeholder: 'Description' %></p>
     <p><%= f.select :published, [true, false], :include_blank => 'publish?' %></p>
