@@ -32,15 +32,6 @@
   <% end %>
 </div>
 
-<div class="home-section">
-  <h1 class='center home-section-head'>Spaces</h1>
-  <div class="home-grid-flex">
-    <% @spaces.each do |space| %>
-      <%= render 'shared/eventcard', pin: space %>
-    <% end %>
-  </div>
-</div>
-
 <script>
     window.onscroll = function () {
         hideLogo()
