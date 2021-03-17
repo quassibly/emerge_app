@@ -39,7 +39,7 @@
       </div>
     </div>
     <%= link_to "about", send("#{navbar_tab("about")}_path"), class: current_category?("about") %>
-    <%= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", class: current_category?("community") %>
+    <%#= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", rel: "nofollow", class: current_category?("community") %>
   </div>
 
   <!-- right Navigation -->
@@ -70,6 +70,7 @@
           <% @tabs.each do |tab| %>
             <li><%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: 'navbar-item navbar-link' %></li>
           <% end %>
+<!--          <li><%#= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", rel: "nofollow", class: 'navbar-item navbar-link' %></li>-->
           <% @tabs = ["videos", "podcasts", "events", "spaces", "about"] %>
           <% @tabs.each do |tab| %>
             <li><%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: 'navbar-item navbar-link' %></li>
