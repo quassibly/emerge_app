@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'updates/:id/htmledit', to: 'updates#htmledit', as: :htmledit_update
   get 'emergepodcast', to: 'podcasts#emergepodcast', as: :emergepodcast
   get 'imprint', to: 'pages#imprint', as: :imprint
+  get 'imprint/edit', to: 'pages#imprintedit', as: :edit_imprint
   get 'gdpr', to: 'pages#gdpr', as: :gdpr
 
   get 'articles/:id/publish!', to: 'articles#publish!', as: 'publish_article'

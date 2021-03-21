@@ -1,0 +1,6 @@
+<%= form_for @article, url: {controller: 'pages', action: "update"}, html: {class: "temp-card", id: 'imprint'} do |f| %>
+      <%= f.hidden_field :id %>
+      <div><%= f.trix_editor :body %></div>
+      <%= f.submit %>
+  </div>
+<% end %>

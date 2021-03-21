@@ -19,6 +19,13 @@
           <i class="fas fa-sign-out-alt"></i>
         <% end %>
       </div>
+    <% when 'imprint' %>
+      <div class="flex-end">
+        <%= link_to '-Edit', edit_imprint_path, class: 'logged-in-button' %>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logged-in-button" do %>
+          <i class="fas fa-sign-out-alt"></i>
+        <% end %>
+      </div>
     <% when 'show' %>
       <div class="flex-end">
         <%= link_to '-Edit', edit_article_path, class: 'logged-in-button' %>

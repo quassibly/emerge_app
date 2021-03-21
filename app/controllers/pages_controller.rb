@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   def update
     @article = Article.find(params[:article][:id])
     @article.update(profile_params)
-    redirect_to about_path
+    redirect_to send("#{@article.category}_path")
   end
 
   def updates
@@ -44,6 +44,12 @@ class PagesController < ApplicationController
 
   def imprint
     @page = 'grey'
+    @imprint = Article.find_by(category: 'imprint')
+  end
+
+  def imprintedit
+    @page = 'grey'
+    @article = Article.find_by(category: 'imprint')
   end
 
   def gdpr
