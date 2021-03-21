@@ -1,7 +1,6 @@
 .footer {
   background: white;
   min-height: 80px;
-  border: solid 1px black;
   display: flex;
   @media (max-width: 1200px) {
     flex-wrap: wrap;
@@ -127,9 +126,6 @@
   @media (max-width: 1200px) {
     margin: 20px 40px;
   }
-  // justify-content: space-around;
-  // width: 70%;
-  // flex-wrap: wrap;
 }
 
 .footer-center-right a {
@@ -140,9 +136,6 @@
 .footer-right {
   display: flex;
   align-items: left;
-  // justify-content: space-between;
-  // font-size: 14px;
-  // margin-right: 5px;
   min-width: 80px;
   @media (max-width: 1200px) {
     margin: 20px 40px;
