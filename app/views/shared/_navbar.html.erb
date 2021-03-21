@@ -20,7 +20,7 @@
 
   <!-- Center Navigation -->
   <div class="navbar-center hidden-xs hidden-sm">
-    <%= link_to "journal", send("#{navbar_tab("journal")}_path"), class: current_category?("journal") %>
+    <%= link_to "journal", send("#{navbar_tab("journal")}_path"), class: current_category?("journal") if user_signed_in? %>
     <div class="navbar-item-menu">
       <%= link_to send("#{navbar_tab("insights")}_path"), class: current_category?("insights") do %>
         insights
