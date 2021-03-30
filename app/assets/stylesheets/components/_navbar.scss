@@ -110,6 +110,10 @@
   font-size: 16px;
 }
 
+.navbar-item-dropdown-menu > .navbar-item.active {
+  font-size: 14px;
+}
+
 /* Dropdown menu */
 .navbar-dropdown-menu {
   margin-top: 15px;
