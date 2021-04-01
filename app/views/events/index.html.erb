@@ -3,7 +3,7 @@
     <h1 class="page-head">Events</h2>
       <h2 class="page-subhead">Explore live events near you.</h2>
 
-      <% if @pin %>
+      <% if @pins %>
         <div class="event-filters">
           <%= form_tag events_path, method: :get do %>
             <%= select_tag(:tag, options_for_select(@tags), prompt: "Category") %>
