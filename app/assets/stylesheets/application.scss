@@ -1,4 +1,4 @@
-  // Graphical variables
+// Graphical variables
 @import "config/fonts";
 @import "config/variables";
 @import "config/general";
@@ -12,12 +12,13 @@
 
 @import "trix";
 
+@import "articles";
+@import "dispatches";
+@import "events";
+@import "media";
+@import "pages";
+@import "podcasts";
 @import "profiles";
 @import "opinions";
-@import "articles";
+@import "updates";
 @import "videos";
-@import 'updates';
-@import 'events';
-@import 'media';
-@import 'podcasts';
-@import 'pages';

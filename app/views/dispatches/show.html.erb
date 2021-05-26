@@ -1,0 +1,79 @@
+<% content_for :meta_title, "#{@article.headline} - #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @article.subhead %>
+<% content_for :meta_image, dispatches_photo.sub('upload/', 'upload/c_fill,h_675,w_1200/') %>
+
+  <h1 style="text-align: center; margin: 60px auto 40px auto;"><%= @category %></h1>
+  <div class="dispatch-head-container">
+    <div class="dispatch-header-photo round" style=<%= cloudinary_background(@article.contributor&.photo, 550, 550) %>>
+    </div>
+    <div class="dispatch-head-card">
+      <div class="dispatch-contributor upcase"><%= @article.contributor&.name %></div>
+      <h1 class="profile-headline"><%= @article.headline %></h1>
+      <h2 class="profile-subhead"><%= @article.subhead %></h2>
+    </div>
+    <div class="profile-tag tag"><%= @article.tag %></div>
+  </div>
+
+
+<div class="dispatch-container">
+  <div class="flex-center">
+    <div class="profile-social flex-center">
+      <%= link_to "http://twitter.com/share?text=#{@article.headline}&url=#{request.original_url}" do %>
+        <i class="social fab fa-twitter"></i>
+      <% end %>
+      <%= link_to "http://www.facebook.com/sharer.php?u=#{request.original_url}/&t=#{@article.headline}" do %>
+        <i class="social fab fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/shareArticle?mini=true&url=#{request.original_url}&title=#{@article.headline}" do %>
+        <i class="social fab fa-linkedin-in"></i>
+      <% end %>
+      <% unless @article.published_at.nil? %>
+        <div class="updates-bar"><hr></div>
+        <div class="updates-date"><%= @article.published_at.strftime("%-d.%-m.%Y") %></div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="profile-body">
+    <%= process_body(@article.body) %>
+  </div>
+
+  <%= render 'shared/contributor' %>
+
+  <div class="home-section">
+    <h1 class='center home-section-head'>Recommended</h1>
+    <div class="recommended-grid-flex">
+      <% @recommended.each do |article| %>
+        <%= render 'shared/card', article: article, category_tag: true %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script>
+  var imgs = document.querySelectorAll('.profile-body img');
+  var divs = document.querySelectorAll('.profile-body div');
+  var h1s = document.querySelectorAll('.profile-body h1')
+  var videos = document.querySelectorAll('.profile-body video');
+  console.log(imgs);
+  console.log(divs);
+
+  [].forEach.call(divs, function(div) {
+    div.classList.add("body");
+  });
+
+  [].forEach.call(h1s, function(h1) {
+    h1.classList.add("body");
+  });
+
+  [].forEach.call(imgs, function(img) {
+    img.closest("div").classList.remove("body");
+    img.closest("div").classList.add("wide");
+  });
+
+  [].forEach.call(videos, function(video) {
+    video.closest("div").classList.remove("body");
+    video.closest("div").classList.add("video");
+  });
+</script>
+

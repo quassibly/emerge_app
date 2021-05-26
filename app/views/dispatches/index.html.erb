@@ -1,0 +1,17 @@
+<%= render 'shared/tagbar' %>
+
+<div class="grid-container">
+  <div class="interviews_grid">
+    <h1 class="page-head"><%= @category.upcase.pluralize %></h1>
+    <h2 class="page-subhead">What is Emerging? Dispatches from the Future</h2>
+
+    <div class="grid_flex">
+      <% @articles.each do |article| %>
+        <%= render 'shared/card', article: article %>
+      <% end %>
+    </div>
+    <div class="pagy-container">
+      <%== paginate(@pagy) %>
+    </div>
+  </div>
+</div>

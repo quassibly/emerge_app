@@ -1,5 +1,4 @@
 module ArticlesHelper
-
   def filter_and_sort_articles(include_category, include_priority)
     #logged in or logged out
     articles = user_signed_in? ? Article.not_deleted : Article.published_not_deleted

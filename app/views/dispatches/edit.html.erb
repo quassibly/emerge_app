@@ -1,0 +1,22 @@
+<div class="dispatch-form-container">
+  <%= form_for @article, url: {action: "update"}, html: {class: "dispatch-form"} do |f| %>
+    <%= f.hidden_field :category, value: @category %>
+    <h1>Dispatch</h1>
+    <%= f.text_area :headline, placeholder: "Headline" %>
+    <%= f.text_area :subhead, placeholder: "Subhead" %>
+    <%= f.text_area :tag, placeholder: "Enter tag"%>
+    <%= f.text_field :photo, placeholder: "preview photo url", :prompt => 'Select' %>
+    <%= f.collection_select :contributor_id, Contributor.all.sort+[Contributor.new(name: "default_name")], :id, :name, prompt: "select contributor" %>
+    <%= f.select :priority, [1, 2, 3, 4, 5], :include_blank => "priority?" %>
+    <div class="profile-body"><%= f.trix_editor :body %></div>
+    <%= f.text_area :meta, placeholder: 'meta tags' %>
+    <div class="dispatch-buttons">
+      <%= f.submit 'Save' %>
+      <% if @article.published %>
+        <%= f.submit 'Unpublish' %>
+      <% else %>
+        <%= f.submit 'Publish' %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

@@ -26,6 +26,8 @@ class ArticlesController < ApplicationController
       redirect_to video_path(@article)
     when 'podcast'
       redirect_to podcast_path(@article)
+    when 'dispatches'
+      redirect_to dispatches_path(@article)
     end
   end
 
@@ -47,6 +49,8 @@ class ArticlesController < ApplicationController
       redirect_to edit_video_path(@article)
     elsif @article.category == "podcast"
       redirect_to edit_podcast_path(@article)
+    elsif @article.category == "dispatch"
+      redirect_to edit_dispatch_path(@article)
     end
   end
 
@@ -63,6 +67,8 @@ class ArticlesController < ApplicationController
       redirect_to edit_video_path(@article)
     elsif @article.category == "podcast"
       redirect_to edit_podcast_path(@article)
+    elsif @article.category == "dispatch"
+      redirect_to htmledit_dispatch_path(@article)
     end
   end
 
@@ -100,6 +106,8 @@ class ArticlesController < ApplicationController
       redirect_to videos_path
     elsif @article.category == "podcast"
       redirect_to podcasts_path
+    elsif @article.category == "dispatch"
+      redirect_to dispatches_path
     end
   end
 

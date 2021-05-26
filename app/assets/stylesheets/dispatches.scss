@@ -1,0 +1,70 @@
+// Place all the styles related to the Dispatches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dispatch-head-container {
+  display: flex;
+  flex-direction: column;
+}
+.dispatch-header-photo {
+  height: 275px;
+  width: 275px;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  background-size: cover;
+}
+.dispatch-contributor {
+  font-size: 21px;
+  font-family: $primary-font;
+}
+.dispatch-head-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 720px;
+    border: solid 1px black;
+    padding: 30px;
+    background-color: #ffffff;
+    // height: 275px;
+    text-align: center;
+}
+.dispatch-subhead{
+  font-size: 25px;
+  letter-spacing: .03em;
+  margin: 10px 0 16px 0;
+  @media screen and (max-width: 1399px) {
+    padding: 0 8px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 0 60px;
+  }
+}
+.dispatch-container {
+  @media screen and (max-width: 899px) {
+    margin: 52px auto 0 auto;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 5px auto 0 auto;
+  }
+}
+
+.dispatch-form-container {
+  @media screen and (max-width: 899px) {
+    margin: 52px auto 0 auto;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 5px auto 0 auto;
+  }
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+}
+.dispatch-form {
+  display: flex;
+  flex-direction: column;
+}
+.dispatch-buttons {
+  display: flex;
+  margin: 20px;
+}
