@@ -3,20 +3,20 @@
   justify-item: stretch;
 }
 .home-grid-articles {
-  overflow: hidden;
-  justify-content: center;
   @media (min-width: 420px) {
     grid-template-columns: repeat(auto-fill, 420px);
     display: grid;
     grid-gap: 100px 20px;
   }
+  overflow: hidden;
+  justify-content: center;
   @media (max-width: 419px) {
     max-height:3310px;
   }
-  @media (min-width: 420px) and (max-width: 1411px) {
+  @media (min-width: 420px) and (max-width: 1299px) {
     max-height: 1520px;
   }
-  @media (min-width: 1412px) {
+  @media (min-width: 1300px) {
     max-height: 980px;
   }
 }
