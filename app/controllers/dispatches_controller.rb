@@ -1,5 +1,6 @@
 class DispatchesController < ArticlesController
   before_action :set_category
+  before_action :authenticate_user!
 
   def index         # GET /dispatches
     @page = 'index'

@@ -33,16 +33,18 @@
       </div>
     </div>
 
-    <%= link_to "dispatches", send("#{navbar_tab("dispatches")}_path"), class: current_category?("dispatches") %>
+    <%= link_to "dispatches", send("#{navbar_tab("dispatches")}_path"), class: current_category?("dispatches") if user_signed_in? %>
 
-    <div class="navbar-item-menu">
-      <%= link_to send("#{navbar_tab("events")}_path"), class: current_category?("events") do %>
-        events
-      <% end %>
-      <div class="navbar-item-dropdown-menu" aria-labelledby="navbarDropdown">
-        <%= link_to "spaces", send("#{navbar_tab("spaces")}_path"), class: current_category?("spaces") %>
+    <% if user_signed_in? %>
+      <div class="navbar-item-menu">
+        <%= link_to send("#{navbar_tab("events")}_path"), class: current_category?("events") do %>
+          events
+        <% end %>
+        <div class="navbar-item-dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to "spaces", send("#{navbar_tab("spaces")}_path"), class: current_category?("spaces") %>
+        </div>
       </div>
-    </div>
+    <% end %>
 
     <%= link_to "about", send("#{navbar_tab("about")}_path"), class: current_category?("about") %>
     <%#= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", rel: "nofollow", class: current_category?("community") %>

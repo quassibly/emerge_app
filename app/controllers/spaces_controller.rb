@@ -1,5 +1,6 @@
 class SpacesController < ArticlesController
   before_action :set_category
+  before_action :authenticate_user!
 
   def index
     @page = 'index'
