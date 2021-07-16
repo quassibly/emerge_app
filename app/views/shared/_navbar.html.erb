@@ -28,6 +28,7 @@
         insights
       <% end %>
       <div class="navbar-item-dropdown-menu" aria-labelledby="navbarDropdown">
+        <%= link_to "essays", send("#{navbar_tab("insights")}_path"), class: current_category?("insights") %>
         <%= link_to "videos", send("#{navbar_tab("videos")}_path"), class: current_category?("videos") %>
         <%= link_to "podcasts", send("#{navbar_tab("podcasts")}_path"), class: current_category?("podcasts") %>
       </div>
