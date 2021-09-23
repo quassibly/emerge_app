@@ -38,6 +38,8 @@ module ApplicationHelper
       return 'opinions'
     when 'home'
       return 'root'
+    when 'gathering 2021'
+      return 'gathering'
     else
       return tab
     end

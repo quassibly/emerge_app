@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'profiles/:id/htmledit', to: 'profiles#htmledit', as: :htmledit_profile
   get 'opinions/:id/htmledit', to: 'opinions#htmledit', as: :htmledit_opinion
   get 'updates/:id/htmledit', to: 'updates#htmledit', as: :htmledit_update
+  get 'gathering', to: 'pages#gathering', as: :gathering
+  get 'gathering?edit', to: 'pages#gathering', as: :edit_gathering
   get 'emergepodcast', to: 'podcasts#emergepodcast', as: :emergepodcast
   get 'imprint', to: 'pages#imprint', as: :imprint
   get 'imprint/edit', to: 'pages#imprintedit', as: :edit_imprint

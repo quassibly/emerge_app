@@ -47,6 +47,7 @@
       </div>
     <% end %>
 
+    <%= link_to "gathering 2021", send("#{navbar_tab("gathering")}_path"), class: current_category?("gathering") %>
     <%= link_to "about", send("#{navbar_tab("about")}_path"), class: current_category?("about") %>
     <%#= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", rel: "nofollow", class: current_category?("community") %>
   </div>
@@ -80,7 +81,7 @@
             <li><%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: 'navbar-item navbar-link' %></li>
           <% end %>
           <!--          <li><%#= link_to "community", "https://network-3229053.mn.co/feed", target: "_blank", rel: "nofollow", class: 'navbar-item navbar-link' %></li>-->
-          <% @tabs = ["podcasts", "events", "spaces", "about"] %>
+          <% @tabs = ["podcasts", "events", "spaces", "gathering 2021", "about"] %>
           <% @tabs.each do |tab| %>
             <li><%= link_to tab.capitalize, send("#{navbar_tab(tab)}_path"), class: 'navbar-item navbar-link' %></li>
           <% end %>

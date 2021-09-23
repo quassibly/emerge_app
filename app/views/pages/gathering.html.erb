@@ -1,0 +1,21 @@
+<% if params.has_key?(:edit) && user_signed_in? %>
+
+  <%= form_for @gathering, url: {controller: 'pages', action: "update"}, html: {class: "temp-card", id: 'gathering'} do |f| %>
+    <%= f.hidden_field :id %>
+    <div>
+      <%= f.text_field :headline %>
+      <%= f.trix_editor :body %></div>
+      <%= f.submit 'Save' %>
+    </div>
+  <% end %>
+
+<% else %>
+
+  <div class="temp-container">
+    <h1 class="temp-head"><%= @gathering.headline %></h1>
+    <div class="imprint-container">
+      <%= @gathering.body.html_safe %>
+    </div>
+  </div>
+
+<% end %>

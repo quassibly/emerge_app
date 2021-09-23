@@ -42,6 +42,15 @@ class PagesController < ApplicationController
   def spaces
   end
 
+  def gathering
+    @page = 'grey'
+    @gathering = Article.find_by(category: 'gathering')
+  end
+
+  def gdpr
+    @page = 'grey'
+  end
+
   def imprint
     @page = 'grey'
     @imprint = Article.find_by(category: 'imprint')
@@ -50,10 +59,6 @@ class PagesController < ApplicationController
   def imprintedit
     @page = 'grey'
     @article = Article.find_by(category: 'imprint')
-  end
-
-  def gdpr
-    @page = 'grey'
   end
 
   private

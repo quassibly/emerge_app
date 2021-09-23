@@ -5,6 +5,8 @@ class Article < ApplicationRecord
   friendly_id :headline, use: [:finders, :slugged]
   validates_presence_of :headline, :slug
 
+  validates :category, inclusion: { in: %w(insight people video podcast journal imprint about gathering) }
+
   include PgSearch
   multisearchable against: [ :person, :headline, :seo_title, :subhead, :meta, :tag, :body ]
 
