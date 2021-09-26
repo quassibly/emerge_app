@@ -1,11 +1,12 @@
 module ArticlesHelper
-  def filter_and_sort_articles(include_category, include_priority)
+  def filter_and_sort_articles(include_category, include_priority, tag: nil )
     #logged in or logged out
     articles = user_signed_in? ? Article.not_deleted : Article.published_not_deleted
     #filter by allowed category/ies
     #filter by allowed priority
     priority = include_priority
     articles = articles.where(category: include_category, priority: priority)
+    articles = articles.where("lower(tag) = ?", tag.downcase) if tag
     #calc 'age' w/ priority
     #sort by age
     sort_by_priority(articles)

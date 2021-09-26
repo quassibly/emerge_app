@@ -19,3 +19,9 @@
   </div>
 
 <% end %>
+
+<div class="grid_flex">
+  <% @articles.each do |article| %>
+    <%= render 'shared/card', article: article %>
+  <% end %>
+</div>

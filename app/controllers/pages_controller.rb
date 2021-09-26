@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  include ArticlesHelper
+
   skip_before_action :authenticate_user!
   before_action :set_page_temp
 
@@ -43,8 +45,12 @@ class PagesController < ApplicationController
   end
 
   def gathering
-    @page = 'grey'
     @gathering = Article.find_by(category: 'gathering')
+    include_category = %w(insight people video podcast journal)
+    include_priority = (1..5)
+    tag = 'gathering 2021'
+    @articles = filter_and_sort_articles(include_category, include_priority, tag: tag)
+    render layout: 'grey'
   end
 
   def gdpr
