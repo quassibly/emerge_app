@@ -1,7 +1,6 @@
 <div class="profile-container">
   <div class="contributor-container">
-    <% contributor_photo = cloudinary(@contributor.photo, 200, 200) %>
-    <%= image_tag contributor_photo, class: "contributor-image" %>
+    <%= image_tag @contributor.photo, class: "contributor-image" %>
     <div class="contributor-text-container">
       <h2><%= @contributor.name %></h2>
       <p><%= @contributor.bio.html_safe %></p>

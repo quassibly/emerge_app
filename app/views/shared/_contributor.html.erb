@@ -1,8 +1,7 @@
 <% if @article.present? %>
   <% if @article.contributor.present? %>
     <div class="contributor-container">
-      <% contributor_photo = cloudinary(@article.contributor&.photo, 200, 200) %>
-      <%= image_tag contributor_photo, class: "contributor-image" %>
+      <%= image_tag @article.contributor&.photo, class: "contributor-image" %>
       <div class="contributor-text-container">
         <% if user_signed_in? && @article.contributor %>
           <%= link_to('edit contributor', edit_contributor_path(@article.contributor)) %>
@@ -66,8 +65,7 @@
         </div>
         <%= @article.photographer.bio %>
       </div>
-      <% photographer_photo = cloudinary(@article.photographer.photo, 200, 200) %>
-      <%= image_tag photographer_photo, class: "contributor-image" %>
+      <%= image_tag @article.photographer.photo, class: "contributor-image" %>
     </div>
   <% end %>
 <% end %>

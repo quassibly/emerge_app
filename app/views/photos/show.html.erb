@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-<% photo_url = cloudinary(@photo.image_url) %>
-<%= image_tag photo_url, class: "image_show" %>
+<%= image_tag s3_url(@photo.image), class: "image_show" %>
 <p>
-  <%= @photo.image_url %>
+  <%= s3_url(@photo.image) %>
 </p>

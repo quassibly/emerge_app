@@ -13,6 +13,15 @@ module ApplicationHelper
     "background-image:url('#{transformed_url}')"
   end
 
+  def s3_url(image)
+    "http://whatisemerging.s3-website.eu-central-1.amazonaws.com/store/#{image.id}"
+  end
+
+  def cloudinary_to_s3_url(url)
+    filename = url.split('/').last
+    "http://whatisemerging.s3-website.eu-central-1.amazonaws.com/store/#{filename}"
+  end
+
   def current_home?
     return true if request.path == "/"
     false

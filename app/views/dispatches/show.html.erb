@@ -4,7 +4,8 @@
 
   <h1 style="text-align: center; margin: 60px auto 40px auto;"><%= @category %></h1>
   <div class="dispatch-head-container">
-    <div class="dispatch-header-photo round" style=<%= cloudinary_background(@article.contributor&.photo, 550, 550) %>>
+    <% background_url = cloudinary_to_s3_url(@article.contriburot&.photo) %>
+    <div class="dispatch-header-photo round" style=<%= "background-image:url('#{background_url}')" %>>
     </div>
     <div class="dispatch-head-card">
       <div class="dispatch-contributor upcase"><%= @article.contributor&.name %></div>

@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'shrine'
 gem 'shrine-cloudinary'
+gem 'aws-sdk-s3'
 gem 'cloudinary'
 gem 'trix'
 gem 'responders'
@@ -55,6 +56,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'down'
 end
 
 group :development do
