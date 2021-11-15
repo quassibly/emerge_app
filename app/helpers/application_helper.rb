@@ -14,12 +14,12 @@ module ApplicationHelper
   end
 
   def s3_url(image)
-    "https://whatisemerging.s3-website.eu-central-1.amazonaws.com/store/#{image.id}"
+    "https://whatisemerging.s3.eu-central-1.amazonaws.com/store/#{image.id}"
   end
 
   def cloudinary_to_s3_url(url)
     filename = url.split('/').last
-    "https://whatisemerging.s3-website.eu-central-1.amazonaws.com/store/#{filename}"
+    "https://whatisemerging.s3.eu-central-1.amazonaws.com/store/#{filename}"
   end
 
   def current_home?
