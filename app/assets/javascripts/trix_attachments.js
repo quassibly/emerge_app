@@ -20,10 +20,12 @@ function uploadAttachment(attachment) {
     attachment.setUploadProgress(progress);
   };
 
+  console.log({xhr.responseText})
+
   xhr.onload = function() {
     if (xhr.status === 201) {
       var data = JSON.parse(xhr.responseText);
-      data.image_url = data.image_url.replace("upload/", "upload/f_auto,q_auto/")
+      data.image_url = data.image_url
       return attachment.setAttributes({
         url: data.image_url,
         href: data.url
