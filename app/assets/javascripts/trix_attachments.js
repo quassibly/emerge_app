@@ -20,8 +20,6 @@ function uploadAttachment(attachment) {
     attachment.setUploadProgress(progress);
   };
 
-  console.log({xhr.responseText})
-
   xhr.onload = function() {
     if (xhr.status === 201) {
       var data = JSON.parse(xhr.responseText);
